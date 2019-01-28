@@ -1,0 +1,59 @@
+﻿*前端代码是搬http://www.huibo.com/的代码   可能在https://github.com/tjdreams/或https://github.com/jflyfox/jfinal_cms/tree/master/src/main/webapp能找到注释
+
+*前端代码中的http://cdn1.597.com/min/??/路径对应\\192.168.1.10\ui597img目录
+
+*global.js配置的combo模块在http://cdn1.597.com/min/??/js/v2/目录，即\\192.168.1.10\ui597img\min\js\v2\
+
+？以下两种AMD模块的方式有什么不同。 ！可能是AMD和CMD的区别，到时候同写页面做测试
+  shape = module['base.shape'], //AMD
+  util = require('base.util'),  //CMD
+
+*\ui597img为静态资源
+
+
+？组件或者业务模块在\ui597img目录里，但是有多个版本，如changeClass模块就有：
+  \ui597img\min\js\v2\widge\changeClass.js
+  \ui597img\crm\min\js\v2\widge\changeClass.js
+  \ui597img\min2\js\v2\widge\changeClass.js
+  注意：在\ui597img\crm\min\js\v2\widge\目录里的资源是完整的
+
+
+？调研js、css、img规范及结构；搞清楚几个常用组件或工具的使用方式
+
+？如果jpjs.js可以实现AMD，那在global.js为何要做那么多的AMD配置。如果是重复的作用，则后期可直接在业务模块里CMD即可
+
+*引入模块的几种写法 
+  shape = module['base.shape'],
+  util = require('base.util'),
+  jobSearch = m['product.jobSearch.jobTopSearch']
+
+\\192.168.1.10\ui597img\js\v2
+\\192.168.1.10\ui597img\m\js\m3
+\\192.168.1.10\ui597img\min2\js\v2
+\\192.168.1.10\ui597img\min\js\v2
+\\192.168.1.10\ui597img\crm\min\js\v2
+
+
+http://cdn1.597.com/min/??/js/v2/module/verifier.js,
+/js/v2/widge/validator/rule.js,/js/v2/widge/validator/item.js,/js/v2/widge/validator/handler.js,/js/v2/widge/validator/form.js,/js/v2/product/resume/editResume.js,/js/v2/product/resume/editMutilResume.js,/js/v2/widge/checkBoxer.js,/js/v2/widge/multipleSelect.js,/js/v2/product/jpCommon.js,/js/v2/jpjob/jobDater.js,/js/v2/jpjob/areaSimple.js,/js/v2/jpjob/jobDialog.js,/js/v2/jpjob/jobsort.js,/js/v2/jpjob/jobValidate.js,/js/v2/jpjob/jobForm.js,/js/v2/jpjob/calling.js,/js/v2/jpjob/areaMulitiple.js,/js/v2/jpjob/jobCertificate.js,
+/js/v2/jpjob/jobSkill.js,/js/v2/jpjob/uploadify/uploadify.js,/js/v2/tools/dateFormat.js?v=402816083
+
+*Node和CommonJs规范http://javascript.ruanyifeng.com/nodejs/module.html
+
+*requireJs和seaJs对比
+  requireJs遵循AMD规范，是异步加载模块，通过回调执行，在可以防止模块加载过多过大时，页面渲染被阻塞。
+           提供了一个优化工具，当模块部署完毕以后，可以用这个工具将多个模块合并在一个文件中，减少HTTP请求数。
+           有很多插件，如加载图片和文本文件的插件使得文本和图片可以异步加载，
+           可以做非AMD模块的兼容处理，如JQ        
+           很多语言中的import, include, useing都是先将导入的类或者模块执行好。如果被导入的模块都有问题，有错误，执行当前模块有何意义？ 
+           
+  seaJs是玉伯提出的CMD规范，可以延迟加载，如果当页面涉及模块过多过大，但某些模块及其依赖用户不一定用到时，这时候seaJs就很适合。
+
+？测试一下seajs引入模块的模块名能不能支持动态字符串
+ define('a',function(require,exports,modules){
+    var b = require('Us'+'er')
+ })
+
+？测试下seajs根据条件加载依赖模块。
+
+*郭总技术选型：学习成本、符合现有业务、扩展性、效率性能

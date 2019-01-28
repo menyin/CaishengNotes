@@ -1,0 +1,5 @@
+﻿在cookie、dialog等基础框架上，由于网站的都不一样，所以现有框架
+
+*融云上使用cookie功能而引入commos.js，
+comms.js里包含cookie dialog等基础框架会与现有的功能页面冲突，由于现有功能页面里的基础框架各用各的。
+如 dialog前台用的是一套，而企业后台用的又是另一套（dialog.js），所以周一还是讲融云的cookie使用jQuery.cookie.js省得许多冲突。

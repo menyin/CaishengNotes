@@ -1,0 +1,141 @@
+﻿*融云IM系统地址\账号\密码  https://developer.rongcloud.cn/profile/index    13328770863  Ry-597917
+
+WebSDK（RongIMLib.js）、WebIM、WebIMWidget 三者是什么关系？    
+  WebSDK 是 Web 通讯的底层库，负责封装 API ，供开发者使用。
+  WebIM 是基于 WebSDK 封装的即时通讯工具。
+  WebIMWidget 是为了方便开发者，提供的简易版本的 WebIM。
+
+*各个资源下载 http://www.rongcloud.cn/downloads#dl_anchor
+
+*聊天插件开发文档http://www.rongcloud.cn/docs/web.html#im_widget
+
+*各类API调试接口（有相关文档链接）https://developer.rongcloud.cn/apitool/Y+JKyU44tXXR8sbGJr4=
+
+*各类Demo资料 https://rongcloud.github.io/websdk-demo/
+
+？登录/退出时 Token处理（赠删）
+？融云app向PC发送消息时，携带用户信息的图像字段不对应，导致头像不能显示
+  解决：在其angular的ng-repeat遍历模板时的item.content.userInfo.portraitUri||item.content.userInfo.icon修改为item.content.userInfo.portraiitem.content.userInfo.portrait||tUri||item.content.userInfo.icon
+
+*模块定义CSIM
+
+
+修改用户显示名称，查看此条代码_this.providerdata.getUserInfo(msg.senderUserId, {
+
+ _this.RongIMSDKServer.setOnReceiveMessageListener({  //原始接收消息的监听初始化，但是为什么监听到的数据没有携带user信息？
+
+
+var userinfo = new RongIMLib.UserInfo(providerdata.currentUserInfo.userId, providerdata.currentUserInfo.name, providerdata.currentUserInfo.portraitUri);
+
+var ProviderData = (function () { //ProviderData服务  插件中很多需要用到用户具体信息都是通过此供应商服务获取
+
+
+
+ _this.providerdata.currentUserInfo = new RongWebIMWidget.UserInfo(data.userId, data.name, data.portraitUri);//设置当前用户
+
+ RongIMLib.RongIMClient.getInstance().getConversationList({//用户列表初始化处理  每次发送消息后都会通过此方法更新这个列表
+
+
+if (scope.item.unreadMessageCount > 0) {//会话列表单击后判断未读消息来初始化对话框
+
+
+当用户是发送者本身，在连接融云时，只返回userId，此时_this.providerdata.getUserInfo(userId,obj) 参数是字符串，可由后端写到页面。
+当用户
+
+http://cdn.597.com/img/common/smLogo.jpg
+
+*各个数据格式对比：
+ 获取历史消息data[0]用于填充对话窗口   RongIMLib.RongIMClient.getInstance().getHistoryMessages(targetType, targetId, reset ? 0 : null, number, {  onSuccess: function (data, has) {} })
+     "{"content":{"messageName":"TextMessage","content":"厦门才盛人才服务有限公司（内测）邀请您面试【销售中】。时间：2018-01-03今天8:00分。地点：天津市和平区。联系人：郭小平115632632541","user":{"id":"dc525c3","name":"郭小平1","portrait":"https://pic.597.com/logo/2017/12/25/17122503172149907.jpeg"}},"conversationType":1,"objectName":"RC:TxtMsg","messageDirection":2,"messageId":"1_7308155","receivedStatus":1,"receivedTime":1514961686613,"senderUserId":"dc525c3","sentTime":1514960794126,"targetId":"dc525c3","messageType":"TextMessage","messageUId":"5GBL-CPI1-O4SV-TGN3","offLineMessage":true}"
+     处理 msg.content.userInfo = new RongWebIMWidget.UserInfo(obj.userId, obj.name, obj.portraitUri);
+     在此部分接收到数据是历史消息数据，每条数据都携带用户信息(user字段)
+ 
+ 获取会话列表data[0]用于填充右边列表  RongIMLib.RongIMClient.getInstance().getConversationList({ onSuccess: function (data) {} }）
+     "{"conversationTitle":"郭小平1","conversationType":1,"latestMessage":{"content":{"messageName":"TextMessage","content":"rttt","user":{"id":"dc525c3","name":"郭小平1","portrait":"https://pic.597.com/logo/2017/12/25/17122503172149907.jpeg"}},"conversationType":1,"objectName":"RC:TxtMsg","messageDirection":2,"messageId":"1_15104854","receivedStatus":0,"receivedTime":1514963175653,"senderUserId":"dc525c3","sentTime":1514963176343,"targetId":"dc525c3","messageType":"TextMessage","messageUId":"5GBL-LSBI-S4SV-TGN3","offLineMessage":false},"latestMessageId":"1_15104854","notificationStatus":0,"objectName":"RC:TxtMsg","receivedStatus":0,"receivedTime":1514963175653,"sentTime":1514963176343,"targetId":"dc525c3","unreadMessageCount":0,"senderPortraitUri":"https://pic.597.com/logo/2017/12/25/17122503172149907.jpeg","mentionedMsg":null,"name":"郭小平1","portraitUri":"https://pic.597.com/logo/2017/12/25/17122503172149907.jpeg"}"
+     在此部分接收到的数据是历史会话列表，每条数据只包含当前用户会话的用户列表，以及和每个用户最后一次对话内容(内容包含发送者的用户信息)
+
+ 消息监听得到数据data用于触发更新以上两者
+     "{"content":{"messageName":"TypingStatusMessage","typingContentType":"RC:TxtMsg"},"conversationType":1,"objectName":"RC:TypSts","messageDirection":2,"messageId":"1_8635307","receivedStatus":1,"receivedTime":1514962996707,"senderUserId":"dc525c3","sentTime":1514962997415,"targetId":"dc525c3","messageType":"TypingStatusMessage","messageUId":"5GBL-L6GK-S1AU-2LI9","offLineMessage":false}"
+     处理 msg.content.userInfo = new RongWebIMWidget.UserInfo(data.userId, data.name, data.portraitUri);
+
+https://rongcloud.github.io/websdk-demo/connect-check.html
+消息监听出来的数据格式为什么不一样
+另外，我消息里明明是带有用户信息数据   为什么在消息里面却没有？ 
+
+？发送消息如何携带用户信息  http://support.rongcloud.cn/kb/NDMy
+
+*获取用户信息 应用服务接口  
+ //www.597.cs/api/web/user.api
+ https://api.597.cs/web/user/getRongyunInfo/?uid=dc525c3
+
+
+imUser_dc525c3
+
+*增加的优化需求：
+  拦截用户请求消息列表进行，用户信息过滤处理。
+  融云用户信息列表请求获取后存储在localstorage并在初始化时判断唯一清理，？是否需要定时清理以保证用户信息和服务器的一致性
+  请求用户信息列表时必须按时间排序，后端根据顺序进行筛选过滤
+  -----------------------------------------------------------------------------------------------------------------------
+  页面document.title显示未读消息
+  右下角消息提示样式修改
+  简历页面的增加聊天按钮
+
+融云测试用例：两个账号 个人 13328770863 / zxc123  企业 hk59777 / cs597110
+
+?苏凡给我的截图中显示，融云IOS SDK可以设置 setEnableMessageAttachUserInfo:YES; 来携带用户信息。但是此部分信息应该是携带在消息体里还是，融云服务器注入的？
+
+*2018年7月23号，做了一次扩展功能（发送模板消息功能）
+
+
+*需要修改bug：
+ 1.融云用户信息请求逻辑要检查修改
+ 2.用户会话列表要根据接口返回的删除列表对应删除会话列表项
+ 3.融云用户信息列表在本地存储要根据当前用户做区分，价格_d7aa9a3876594
+
+
+*融云代码分析：
+angular.module("RongWebIMWidget")
+.service("RongIMSDKServer", RongIMSDKServer);
+.service("ProviderData", ProviderData)
+.service("WidgetConfig", WidgetConfig);
+.directive("rongWidget", RongWebIMWidget.DirectiveFactory.GetFactoryFor(rongWidget))
+.controller("rongWidgetController", rongWidgetController);
+.service("RongCustomerService", RongCustomerService);
+.service("WebIMWidget", WebIMWidget);
+.directive('errSrc', errSrc.instance)
+.directive("contenteditableDire", DirectiveFactory.GetFactoryFor(contenteditableDire))
+.directive("ctrlEnterKeys", DirectiveFactory.GetFactoryFor(ctrlEnterKeys))
+.filter('trustHtml', ["$sce", function ($sce) {
+.filter("historyTime",
+angular.module("RongWebIMWidget", [
+        "RongWebIMWidget.conversation",
+        "RongWebIMWidget.conversationlist",
+        "Evaluate"
+    ]);
+
+
+angular.module("RongWebIMWidget.conversationlist")
+.service("ConversationListServer", ConversationListServer);
+.directive("rongConversationList", ['WebIMWidget',  
+.directive("conversationItem", factory(conversationItem));
+.controller("conversationListController", conversationListController);
+
+ angular.module("RongWebIMWidget.conversation")
+.service("ConversationServer", conversationServer);
+.directive("rongConversation", factory(rongConversation))
+.directive("emoji", factory(emoji))
+.directive("textmessage", factory(textmessage))
+.directive("includinglinkmessage", factory(includinglinkmessage))
+.directive("imagemessage", factory(imagemessage))
+.directive("voicemessage", factory(voicemessage))
+.directive("locationmessage", factory(locationmessage))
+.directive("richcontentmessage", factory(richcontentmessage));
+.controller("conversationController", ConversationController);
+
+
+
+
+
+ 
+
+

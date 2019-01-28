@@ -1,0 +1,155 @@
+﻿
+
+*抵税发票抬头【厦门才盛人才服务有限公司 91350206556246989C】，技术服务费发票、购买电脑等办公用品可用
+
+*征信登录名menyin0 密码cfcny362331
+
+*597人才网测试环境账号密码 个人账号 597per/112233    企业账号 dxfcxadq meimima
+
+*http://agent.597.com  http://agent.597.cs  xm597zph 123465
+
+*597企业微信小程序：qyzpzs597@qq.com 密码：597QYzs8566
+
+*crm  账号597pm1 密码tu1819   账号guo guo116   cny cny9293
+ 
+*597人才网测试环境搭建详见《597测试环境搭建.txt》
+
+*597数据统计方案elasticsearch选型参考官网https://www.elastic.co/cn/
+
+*才盛微信企业账号 ajiu ajiu123
+
+*91人才网的企业测试账号ajiu ajiu123
+
+*917   18759209664  123456      18060900339  123456
+
+*郭总git地址https://github.com/JonGates/jquery-jonWebim
+
+*账号chenny 密码Cny9663    lsf lsf597
+
+*MaterialUI框架够买平台的地址/账号/密码  
+ https://www.creative-tim.com/     xm5917p@163.com  597rcw917XM
+ 字体图标库 https://material.io/tools/icons/?style=baseline
+
+*融云IM系统地址\账号\密码  https://developer.rongcloud.cn/profile/index    13328770863  qq111111
+
+*接口api http://api.597.cs/tip/index.php
+
+*各个移动端app下载页面 http://xm.597.com/download/app/
+
+*禅道地址192.168.1.30  帐号adminstrator密码xm597123456,,
+ 数据库账号密码root xm597123456
+ 绑定QQ企业邮箱账号：sdxm@vip.597.com  xm597RCW 
+ 禅道账号 chennanyang xm597123456
+
+*企业qq  2355751744  CFcny54288
+
+*个人版微信小程序
+ 账号 xm917fcw@126.com   qq123852
+ appId   wx81d21fe6887a932e
+ AppSecret fa4a13422486299fa9f80faeaeed7e10
+ 企业版小程序
+ 账号 qyzpzs597@qq.com 密码：597QYzs8566
+ appId  wx1e2155f7eaa0cad1
+ AppSecret  fba0464b8e6e10861dab22a0a8675eac
+
+*源码网络位置\\192.168.1.10  cny cnymeimima
+
+https://open.baidu.com/#/ucenter/statistic  xm597rcw/Xm597795
+
+
+
+*产品管理相关建议
+ 建立规范工作流程及规范，如怎么提需求及其模板
+ 建立学习机制
+ 功能流程梳理整理积累
+ 自己去做产品流程梳理和规划
+ 597所有页面风格要基本统一，除了专题页等，如头部尽量统一。
+
+*产品经验分享http://www.woshipm.com/pmd/660589.html
+
+*note
+ 禁止掉VMWare win7自动更新
+ 梳理597简历代码，总结各个层都做了哪些工作，暴露给外界哪些内容、Css加载顺序、模块加载器使用、总结变量、继承/函数等的命名规则、总结继承如何实现，最后单独将框架抽离出去使用
+
+
+*设置求职意向-岗位级别默认选择“请选择”
+
+*597最近修改过的代码：
+ 简历修改-婚姻状况等3个下拉框是否必填项修改
+ m版597闪屏问题
+ 简历头像放大问题
+ 发现了简历下拉框选择保存接口问题
+ 扩展了地区选择工具的热门城市功能
+ 企业账号头像上传功能
+ 597首页企业登录框自动获取焦点问题。
+
+！！！检查岗位级别首项有没有显示
+
+*面向切面是通过将原有方法包裹成AOP方法，即aspect模块里wrap方法
+
+
+*组件
+ 单/复选框
+ 校验组件
+ 地区选择组件
+ 时间选择组件
+ 下拉框组件（可做联动）
+ 手机号组件
+ 邮箱组件
+ 职位类别组件
+ 行业类别组件
+ 地区多选组件
+ 证书选择器
+ 文件上传组件
+ 图片裁切工具
+
+
+ *在测试服务器上测试下jpjs.js
+
+*查看seajs如压缩文件
+
+
+*显示器
+https://item.jd.com/10088161728.html   1450
+https://item.jd.com/10020285757.html   959
+
+*禅道的安全-常用弱口令 123456,password,12345,12345678,qwerty,123456789,1234,1234567,abc123,111111,123123
+
+*597Nginx连接数查看地址http://status.597.com/nginx
+ 通过此地址链接查询到597居然有8万以上的并发，实际上是因为郭总在页面上加了10常链接，所以实际上只有8千左右的并发
+
+*597统计系统http://analysis.597.cs/tongji/loginAndReg.php?t=100  在crm里的统计数据会比较准确
+ 搜索时相关参数解释：
+  客户端：来源终端，按下拉选择
+  类型：个人登录、企业登录、个人注册、企业注册，按下拉选择
+  来源：如xm.597.com或xm.m.597.com
+  utm_term、utm_work：如果搜索引擎推广的，在推广链接里会携带这个参数。
+  用户id、ip、开始结束时间
+
+*腾讯有一套BadJs前端错误和信息上报的解决方案，可以直接用。
+ 手动部署 http://www.cnblogs.com/wang2650/p/9087824.html
+ 镜像部署 https://www.cnblogs.com/purpleraintear/p/6486180.html
+ 前端库 https://github.com/BetterJS/badjs-report
+
+*597服务器内存有64G，大部分数据都放在内存（但后端编写的代码还会出现几T的内存溢出）。 个人觉得这样很容易出问题。
+
+*597的nignx服务器是单台服务器，2个12核的cpu
+*597使用docker进行自动部署
+
+*郭总提了一个面试题：当多并发情况下，如果服务器接收到json数据请求数量有百万，那如果给客户端发送，会有什么问题：
+ 1.服务器发给客户端时的json数据量大，而普通服务器网卡是百兆或千兆（再除以8就所剩无几），此时网卡势必会有拥塞；
+ 2.在json封包时，一般开发者会循环数组，读取数组元素，打包进json，发送。 可以改变下顺序，不必每次都打包，等到循环完后一起封包进json；
+
+*郭总说，当我们客户端带着ip:port请求入口服务器（如Nginx），而Nginx则需要带着客户端的请求去请求具体的服务（如web服务），此时Nginx就相当于客户端。
+ 所以其实对于单个web服务来说，它的并发量也会由于端口数量而受到限制。好像一台机器的可用端口有65535个，其中1-1023号为系统保留。可用只有五万左右。
+
+*女孩
+想念
+我以为
+You are my love
+写给雨停
+断章
+再见戈多
+独白
+河流
+宝贝

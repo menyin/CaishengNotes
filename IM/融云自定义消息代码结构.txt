@@ -1,0 +1,97 @@
+﻿$scope.targetId 发送人
+Conversation{targetType:微聊类型（私聊）,targetId:接收人,title:}
+
+
+
+
+一、自定义结构
+HouseMessage
+
+步骤1） 定义 自定义消息结构
+  //用户自定义类型——二手房，租房图文链接 step 3-1
+            var housePropertys = ["title","size","price","imageUri","url","type","user","extra"];
+            RongIMLib.RongIMClient.registerMessageType('HouseMessage', 'FC:ImgTextMsg', mesasgeTag, housePropertys);
+
+            var jobMsgPropertys = ["title","size","price","imageUri","url","type","user","extra"];//cny_wait
+            RongIMLib.RongIMClient.registerMessageType('JobMsg', 'FC:ImgTextMsg', mesasgeTag, jobMsgPropertys);
+            
+
+步骤2）
+在RongIMLib.RongIMClient.getInstance().getHistoryMessages下添加
+case 'HouseMessage':  //自定义
+case 'JobMsg':  //cny_add
+
+步骤3）
+在Message.convert = function (SDKmsg) 方法中添加case "HouseMessage",如下
+ case 'HouseMessage': //用户自定义类型——二手房，租房图文链接 step 3-2
+                    var rich = new HouseMessage();
+                    rich.size = SDKmsg.content.size;
+                    rich.price = SDKmsg.content.price;
+                    rich.type = SDKmsg.content.type;
+                    rich.title = SDKmsg.content.title;
+                    rich.imageUri = SDKmsg.content.imageUri;
+                    rich.extra = SDKmsg.content.extra;
+                    msg.content = rich;
+                    break;
+步骤4）
+自定义模板 
+//自定义  housemessage模板
+        var housemessage = (function () {
+            function housemessage() {
+                this.restrict = "E";
+                this.scope = { msg: "=" };
+                this.template = '<div class="">' +
+                    '<div class="rongcloud-Message-image-text">' +
+                    '<span class="rongcloud-Message-entry" style="">' +
+                    '<div class="rongcloud-image-textBox">' +
+                    '<h4>{{msg.title}}</h4>' +
+                    '<div class="rongcloud-cont rongcloud-clearfix">' +
+                    '<img ng-src="{{msg.imageUri}}" alt="">' +
+                    '<div>{{msg.content}}</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</span>' +
+                    '</div>' +
+                    '</div>';
+            }
+            return housemessage;
+        })();
+        //end 自定义
+步骤5）		
+		
+		 //自定义
+    var HouseMessage = (function () {
+        function HouseMessage() {
+        }
+        return HouseMessage;
+        RongWebIMWidget.HouseMessage = HouseMessage;
+    })();
+    //end 自定义
+	
+	
+
+ 在angular.module("RongWebIMWidget.conversation")添加
+            .directive("housemessage", factory(housemessage))
+			
+步骤6）	
+ $templateCache.put('./ts/conversation/conversation.tpl.html', 那边添加
+
+<housemessage ng-switch-when=HouseMessage msg=item.content></housemessage>
+<jobMsg auth=cny ng-switch-when=JobMsg msg=item.content></jobMsg>
+
+二、房源链接
+步骤1) 后台生成要发送的数据，然后json_encode
+步骤2） .html  接收数据  var fangLinkCon = '{$fangLink}';//用单引号
+步骤3） config.js  接收fangLinkCon 。不为空，则JSON.parse() 转成对象, 设置$scope.houseLink = true;
+步骤4） 在融云聊天窗添加<div class="rongcloud-MessageForm-tool" ng-click=sendHouseMessage() ng-show='houseLink'>房源链接</div>
+        <div class="rongcloud-MessageForm-tool" ng-click=sendHouseMessage() ng-show='houseLink'>房源链接</div>
+步骤5)  定义$scope.sendHouseMessage=function(){}  参考$scope.send=function(){//发送文本}
+
+
+*自定义消息需要抽象到CSIM_Init里的
+  1.模板定义（点击完后的回调操作）、模板的字段（其中提示语也包含在内）
+  2.发送按钮的显隐逻辑（可能要个人，可能要限制条数，如果要限制条数就要记录）
+  3.发送自定义消息成功后的回调
+//在angular之外获取angular的服务
+ var config=angular.module('CSIM_Config')._invokeQueue[0][2][1][0]();//cny_add 获取CSIM_Config里config服务内容
+           

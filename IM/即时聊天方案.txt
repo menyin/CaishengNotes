@@ -1,0 +1,14 @@
+﻿58方案
+*求职者
+ 职位页面添加，个人后台不添加
+
+*企业
+ 职位页面添加，企业后台不添加
+
+597方案
+ 求职者在所有页面||职位页添加
+ 企业在后台添加
+
+*当前页面获取cookie
+
+2eg8Ji6h+yogIydGYyAZgHryPPkHsvRwWZV8SVI5ICdaNPahtVMiWMCJhI1JMB9njzkH9uHxCkg=

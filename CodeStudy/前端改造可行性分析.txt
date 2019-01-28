@@ -1,0 +1,34 @@
+﻿*如何配置组件合并，写实例，需在测试环境下测试
+
+*简历页面的基本信息修改
+
+*常用的属性初始化
+
+*面向对象基本概念及在现有框架的应用  
+ this的理解
+ 属性、方法继承，
+ 构造函数调用顺序，属性值调用实际值
+
+*整体架构
+ MVC模式
+ 面向对象编程
+ 工厂模式
+ 模块化编程
+ AOP
+ 
+
+*注意：
+  this.get('trigger')//get函数是从attribute模块继承，是用于从attrs对象中获取属性值
+  this.getDom('#dropApplyStatus')//在主DOM下查找对应的元素，类似于$Dom.find();注意此处获取的是jQuery对象
+  this.getElement(name)根据名称来查找Dom，严格意义上说不算是基类型方法；
+
+
+*最后达到的目的
+ 可以自己写一个单独的组件调用并进行讲解
+
+*类型代码基本的规则
+ init初始化 initElements();initData();initEvents();
+  
+ 
+
+

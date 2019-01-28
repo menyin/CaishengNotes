@@ -1,0 +1,11 @@
+﻿请求：
+ 刑如 http://ImgCut.api?imgUrl=/upload/album/photo/20170307/testimg.png&x=10&y=10&width=100&height=100
+ 参数说明
+    imgUrl为目标裁切图片uri
+    x为裁切起点x坐标
+    y为裁切起点y坐标
+    width为裁切宽度
+    height为裁切高度
+
+响应：
+ 返回裁切结果相关信息，包括结果标识，结果提示语，裁切后图片uri等信息

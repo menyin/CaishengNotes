@@ -1,0 +1,76 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+127.0.0.1 localhost
+127.0.0.1 www.917.net
+127.0.0.1 917.net
+127.0.0.1 m.917.net
+127.0.0.1 fz.m.917.net
+127.0.0.1 pt.m.917.net
+127.0.0.1 shell.917.net
+127.0.0.1 nd.m.917.net
+127.0.0.1 zz.m.917.net
+127.0.0.1 qz.m.917.net
+127.0.0.1 fz.917.net
+127.0.0.1 zz.917.net
+127.0.0.1 pt.917.net
+127.0.0.1 qz.917.net
+127.0.0.1 nd.917.net
+127.0.0.1 img.917.net
+127.0.0.1 pics.917.net
+127.0.0.1 crm.917.net
+127.0.0.1 yun.917.net
+127.0.0.1 esf.917.net
+127.0.0.1 fz.esf.917.net
+127.0.0.1 qz.esf.917.net
+127.0.0.1 zz.esf.917.net
+127.0.0.1 zu.917.net
+127.0.0.1 fz.zu.917.net
+127.0.0.1 qz.zu.917.net
+127.0.0.1 zz.zu.917.net
+127.0.0.1 api.917.net
+127.0.0.1 home.917.net
+127.0.0.1 xm.home.917.net
+127.0.0.1 qz.home.917.net
+127.0.0.1 www.lvbang.net
+127.0.0.1  www.test.net
+
+#测试服务器s
+192.168.1.212 www.917.cs
+192.168.1.212 fz.917.cs
+192.168.1.212 zz.917.cs
+192.168.1.212 crm.917.cs
+192.168.1.212 yun.917.cs
+192.168.1.212 img.917.cs
+192.168.1.212 m.917.cs
+192.168.1.212 api.917.cs
+192.168.1.212 esf.917.cs
+127.0.0.1 www.ijh.cc       
+0.0.0.0 account.jetbrains.com
+127.0.0.1 redisadmin.com
+
+127.0.0.1 www.blog.com
+127.0.0.1 admin.blog.com
+
+127.0.0.1       localhost
+127.0.0.1       localhost
+127.0.0.1       localhost

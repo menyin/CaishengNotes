@@ -1,0 +1,284 @@
+--------[ 鲁大师 ]--------------------------------------------------------------------------------
+
+  软件:             鲁大师 5.15.16.1265
+  时间:             2017-08-28 17:24:01
+  网站:             http://www.ludashi.com
+
+--------[ 概览 ]----------------------------------------------------------------------------------
+
+  电脑型号            技嘉 X150-PLUS WS 台式电脑
+  操作系统            Windows 7 旗舰版 64位 SP1 ( DirectX 11 )
+
+  处理器              英特尔 Core i5-7500 @ 3.40GHz 四核
+  主板                技嘉 X150-PLUS WS-CF ( 英特尔 Xeon E3 - 1200 v6/7th Gen Intel Core/DRAM Registers - 591F - 100 Series/C230 Series 芯片组 Family - )
+  显卡                Nvidia GeForce GTX 750 Ti ( 2 GB / 影驰 )
+  内存                16 GB ( 金士顿 DDR4 2133MHz )
+  主硬盘              西数 WDC WDS240G1G0A-00SS50 ( 240 GB / 固态硬盘 )
+  显示器              惠科 HKC1900 ( 19.1 英寸  )
+  声卡                瑞昱 ALC892 @ 英特尔 High Definition Audio 控制器
+  网卡                英特尔 Ethernet Connection  I219-V / 技嘉
+
+--------[ 主板 ]----------------------------------------------------------------------------------
+
+  主板型号            技嘉 X150-PLUS WS-CF
+  芯片组              英特尔 Xeon E3 - 1200 v6/7th Gen Intel Core/DRAM Registers - 591F - 100 Series/C230 Series 芯片组 Family -
+  序列号              Default string
+  主板版本            x.x
+  BIOS                American Megatrends Inc. F21  /  制造日期: 2016年12月26日
+  BIOS的大小          8192 KB
+  BIOS的序列号        63-0100-000001-00101111-040416-Chipset
+
+  板载设备            视频设备 (启用)
+
+--------[ 处理器 ]--------------------------------------------------------------------------------
+
+  处理器              英特尔 Core i5-7500 @ 3.40GHz 四核
+  速度                3.60 GHz (100 MHz x 36.0)
+  处理器数量          核心数: 4 / 线程数: 4
+  插槽/插座           U3E1
+  一级数据缓存        2 x 32 KB, 8-Way, 64 byte lines
+  一级代码缓存        2 x 32 KB, 8-Way, 64 byte lines
+  二级缓存            2 x 256 KB, 4-Way, 64 byte lines
+  三级缓存            6 MB, 12-Way, 64 byte lines
+  特征                MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, EM64T, EIST, Turbo Boost
+
+--------[ 硬盘 ]----------------------------------------------------------------------------------
+
+  产品                西数 WDC WD20EZRZ-00Z5HB0
+  大小                2 TB
+  转速                5400 转/分
+  缓存                64 MB
+  硬盘已使用          共 8 次，累计 1 小时
+  固件                80.00A80
+  接口                SATA III
+  数据传输率          600.00 MB/秒
+  特征                S.M.A.R.T,  48-bit LBA,  NCQ
+
+  产品                西数 WDC WDS240G1G0A-00SS50 (固态硬盘)
+  大小                240 GB
+  硬盘已使用          共 8 次，累计 0 小时
+  固件                Z3311000
+  接口                SATA III
+  数据传输率          600 MB/秒
+  特征                S.M.A.R.T,  APM,  48-bit LBA,  NCQ
+
+--------[ 内存 ]----------------------------------------------------------------------------------
+
+  ChannelA-DIMM1      金士顿 DDR4 2133MHz 8GB
+  制造日期            2016 年 11月
+  型号                7F98 9905678-027.A00G
+  序列号              9D2B1729
+  厂商                Kingston
+  模块位宽:           64 Bits
+  模块电压:           SSTL 1.2V
+
+  ChannelB-DIMM1      金士顿 DDR4 2133MHz 8GB
+  制造日期            2016 年 11月
+  型号                7F98 9905678-027.A00G
+  序列号              9F2B6029
+  厂商                Kingston
+  模块位宽:           64 Bits
+  模块电压:           SSTL 1.2V
+
+--------[ 显卡 ]----------------------------------------------------------------------------------
+
+  主显卡              Nvidia GeForce GTX 750 Ti
+  显存                2 GB
+  制造商              影驰
+  制造商              Nvidia
+  BIOS版本            Version82.7.84.0.29
+  BIOS日期            2016年01月04日
+  驱动版本            22.21.13.8528
+  驱动日期            8-9-2017
+
+--------[ 显示器 ]--------------------------------------------------------------------------------
+
+  产品                惠科 HKC1900
+  厂商                惠科
+  固件日期            2010 年 01月
+  屏幕尺寸            19.1 英寸 (41 厘米 x 26 厘米)
+  显示比例            宽屏 16 : 10
+  分辨率              1440 x 900 32 位真彩色
+  Gamma               2.20
+  电源管理            Standby, Suspend, Active-Off
+
+--------[ 其他设备 ]------------------------------------------------------------------------------
+
+
+  网卡                英特尔 Ethernet Connection  I219-V
+  制造商              技嘉
+
+  声卡                瑞昱 ALC892 @ 英特尔 High Definition Audio 控制器
+
+  声卡                Nvidia nForce2 ISA Bridge @ Nvidia High Definition Audio Controller
+
+  键盘                PS/2 标准键盘
+  键盘                HID 标准键盘
+  鼠标                微软 PS/2 鼠标
+  鼠标                HID-compliant 鼠标
+
+
+--------[ PCI设备 ]-------------------------------------------------------------------------------
+
+  设备                Xeon E3 - 1200 v6/7th Gen Intel Core Host Bridge/DRAM Registers - 591F
+  设备ID              591F
+  制造商              Intel
+  制造商ID            8086
+  类别                Bridge / PCI to HOST
+  子系统制造商        Gigabyte
+  子系统ID            50001458
+
+  设备                Xeon E3 - 1200/1500 v5/6th Gen Intel Core PCIe Controller  - 1901
+  设备ID              1901
+  制造商              Intel
+  制造商ID            8086
+  类别                Bridge / PCI to PCI
+  子系统ID            00000000
+
+  设备                USB 3.0 eXtensible Host Controller
+  设备ID              A12F
+  制造商              Intel
+  制造商ID            8086
+  类别                Serial / USB (UHCI)
+  子系统制造商        Gigabyte
+  子系统ID            50071458
+
+  设备                Management Engine Interface
+  设备ID              A13A
+  制造商              Intel
+  制造商ID            8086
+  类别                Simple Communication / Other
+  子系统制造商        Gigabyte
+  子系统ID            1C3A1458
+
+  设备                100 Series/C230 Chipset Family SATA AHCI Controller
+  设备ID              A102
+  制造商              Intel
+  制造商ID            8086
+  类别                Storage / Serial ATA (AHCI 1.0)
+  子系统制造商        Gigabyte
+  子系统ID            B0051458
+
+  设备                100 Series/C230 Series Chipset Family PCI Express Root Port #5 - A114
+  设备ID              A114
+  制造商              Intel
+  制造商ID            8086
+  类别                Bridge / PCI to PCI
+  子系统ID            00000000
+
+  设备                100 Series/C230 Series Chipset Family PCI Express Root Port #9 - A118
+  设备ID              A118
+  制造商              Intel
+  制造商ID            8086
+  类别                Bridge / PCI to PCI
+  子系统ID            00000000
+
+  设备                100 Series/C230 Series Chipset Family PCI Express Root Port #11 - A11A
+  设备ID              A11A
+  制造商              Intel
+  制造商ID            8086
+  类别                Bridge / PCI to PCI
+  子系统ID            00000000
+
+  设备                100 Series/C230 Series Chipset Family PCI Express Root Port #12 - A11B
+  设备ID              A11B
+  制造商              Intel
+  制造商ID            8086
+  类别                Bridge / PCI to PCI
+  子系统ID            00000000
+
+  设备                100 Series/C230 Series Chipset Family LPC Controller - A14A
+  设备ID              A14A
+  制造商              Intel
+  制造商ID            8086
+  类别                Bridge / PCI to ISA
+  子系统制造商        Gigabyte
+  子系统ID            50011458
+
+  设备                100 Series/C230 Series Chipset Family PMC - A121
+  设备ID              A121
+  制造商              Intel
+  制造商ID            8086
+  类别                Memory / Other
+  子系统制造商        Gigabyte
+  子系统ID            50011458
+
+  设备                High Definition Audio 控制器
+  设备ID              A170
+  制造商              Intel
+  制造商ID            8086
+  类别                Multimedia / Hi-definition Audio
+  子系统制造商        Gigabyte
+  子系统ID            A1821458
+
+  设备                100 Series/C230 Series Chipset Family SMBus - A123
+  设备ID              A123
+  制造商              Intel
+  制造商ID            8086
+  类别                Serial / SMBus Controller
+  子系统制造商        Gigabyte
+  子系统ID            50011458
+
+  设备                Ethernet Connection  I219-V
+  设备ID              15B8
+  制造商              Intel
+  制造商ID            8086
+  类别                Network / Ethernet
+  子系统制造商        Gigabyte
+  子系统ID            E0001458
+
+  设备                GeForce GTX 750 Ti
+  设备ID              1380
+  制造商              Nvidia
+  制造商ID            10DE
+  类别                Display / VGA
+  子系统制造商        Galaxy
+  子系统ID            105F1B4C
+
+  设备                High Definition Audio Controller
+  设备ID              0FBC
+  制造商              Nvidia
+  制造商ID            10DE
+  类别                Multimedia / Hi-definition Audio
+  子系统制造商        Galaxy
+  子系统ID            105F1B4C
+
+--------[ USB设备 ]-------------------------------------------------------------------------------
+
+  制造商ID            0951
+  产品ID              1666
+  类别                0 / 0 / 0
+  设备                Kingston DataTraveler 3.0
+  Serial              00190F0C02B2B06029A6F425
+
+  制造商ID            413C
+  产品ID              2107
+  类别                0 / 0 / 0
+  设备                Dell Dell USB Entry Keyboard
+  Serial              ?
+  版本                USB 1.1
+
+  制造商ID            2188
+  产品ID              0AE1
+  类别                0 / 0 / 0
+  设备                ? USB OPTICAL MOUSE
+  Serial              ?
+  版本                USB 1.1
+
+  制造商ID            0BC2
+  产品ID              AB21
+  类别                0 / 0 / 0
+  设备                Seagate BUP Slim RD
+  Serial              NA77FKGV
+
+--------[ 传感器 ]--------------------------------------------------------------------------------
+
+  名称                ITE IT8628
+  CPU温度             34℃
+  CPU核心             34℃
+  CPU封装             34℃
+  主板                34℃
+  显卡                33℃
+  硬盘温度            36℃
+  风扇                869转
+
