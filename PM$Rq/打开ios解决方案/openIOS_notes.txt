@@ -1,0 +1,15 @@
+https://api.597.com/testIos.php
+https://api.597.com/apple-app-site-association
+
+http://www.jianshu.com/p/738ac2b8865d
+http://www.jianshu.com/p/678e31813ca4
+
+http://blog.csdn.net/kuangdacaikuang/article/details/52955070
+http://www.jianshu.com/p/c2ca5b5f391f
+
+
+配置的path
+链接 https://api.597.com/iosopen/ios_per.html    path： /iosopen/ios_per.html 
+链接 https://api.597.com/iosopen/ios_com.html    path： /iosopen/ios_per.html
+
+注意：要测试此功能需要本地下载的应该是带有配置信息的App

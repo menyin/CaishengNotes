@@ -1,0 +1,21 @@
+1.和开发人员协商页面及放置目录的名称，
+  PC版页面：
+    html目录：597.com/www/topic/zhaopinhui/index.html    
+    image目录：597.com/img/www/zhaopinghui/images/banner1.gif  
+    css目录：597.com/img/www/zhaopinghui/css/zhaopinhui.css    
+    js目录：597.com/img/www/zhaopinghui/js/zhaopinhui.js     
+  M版页面：
+    html目录：597.com/m/topic/zhaopinhui/index.html
+    image目录：597.com/img/m/zhaopinghui/images/banner1.gif
+    css目录：597.com/img/m/zhaopinghui/css/zhaopinhui.css 
+    js目录：597.com/img/m/zhaopinghui/js/zhaopinhui.js
+
+2.页面相关的SEO词汇，包含以下信息
+  <title>597人才网</title>
+  <meta name="description" content="597人才网,597人才网是专注于泉州的求职招聘网站,597人才网为企业提供职位发布,简历搜索等专业人才招聘服务,为求职者提供最新招聘信息,找工作上597泉州人才网">
+  <meta name="keywords" content="597人才网官方网站、人才网、招聘网、泉州最新招聘信息">
+
+3.如果是m版，是否需要另外定义分享logo
+
+
+*将以上字符串提交给静态页面设计人员，其余需求信息可通过沟通传达。  

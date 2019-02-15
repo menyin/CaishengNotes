@@ -1,0 +1,364 @@
+@charset "utf-8";
+/* CSS Document */
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+	color: #666;
+}
+
+h1 { font-size: 18px; /* 18px / 12px = 1.5 */ }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a { 
+	color: #666;
+	text-decoration: none; }
+abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+q:before, q:after { content: ''; }
+
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { overflow-y: scroll; }
+
+.wrap {
+	min-width: 1200px;
+	background-color: #fb7875;
+}
+.main {
+	width: 100%;
+	background-color: #fb7875;
+	font-family: "微软雅黑";
+	height: 500px;
+}
+
+
+.logotext {
+	width: 420px;
+	margin: auto;
+	overflow: hidden;
+	line-height: 43px;
+	padding: 60px 0 60px 0;
+}
+
+.logo {
+	display: block;
+	width: 159px;
+	height: 43px;
+	background: url(/www/images/newLogin/597logo.png) no-repeat center;
+	margin:auto;
+}
+
+.loginbox {
+	width: 420px;
+	height: 540px;
+	box-shadow: 0 0 8px rgba(0,0,0,.4);
+	border-radius: 8px;
+	margin: auto;
+	background-color: #fff;
+	position: relative;
+	z-index: 9;
+}
+
+.lbhead {
+	height: 60px;
+	width: 420px;
+	background-color: #fff;
+	border-radius: 8px 8px 0 0;
+}
+
+.logntitle {
+	width: 100%;
+	height: 60px;
+	color: #f85d5a;
+	font-size: 22px;
+	text-align: center;
+	line-height: 80px;
+	border-radius: 8px 8px 0 0;
+}
+
+.formbox {
+	width: 320px;
+	margin: auto;
+}
+.formbox i{
+	display: inline-block;
+	width: 22px;
+	height: 18px;
+}
+
+.tabtitle {
+	width: 100%;
+	font-size: 14px;
+	color: #999;
+	overflow: hidden;
+	line-height: 48px;
+	position: relative;
+	height: 48px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.tabtitle span{
+	display: block;
+	width: 50%;
+	float: left;
+	text-align: center;
+	height: 48px;
+}
+
+.slideline {
+	width: 100%;
+	height: 2px;
+	background-color: #dcdcdc;
+	position: absolute;
+	bottom: 0;
+}
+
+.activeline {
+	width: 50%;
+	height: 2px;
+	background-color: #f85d5a;
+	position: absolute;
+}
+
+.inputcont {
+	width: 100%;
+}
+
+.inpbox {
+	height: 40px;
+	border: 1px solid #e3e7ed;
+	position: relative;
+	padding-left: 42px;
+	margin-bottom: 30px;
+}
+.user {
+	background: url(/www/images/newLogin/spring-icon.png) no-repeat 0 0;
+	position: absolute;
+	top: 11px;
+	left: 12px;
+}
+.inpusty {
+	border: none;
+	padding: 11px 0;
+	font-size: 14px;
+	outline: none;
+	width: 100%;
+	line-height: 18px;
+}
+.password {
+	background: url(/www/images/newLogin/spring-icon.png) no-repeat 0 -36px;
+	position: absolute;
+	top: 11px;
+	left: 12px;
+}
+.checkbox {
+	width: 14px;
+	height: 14px;
+	border: 1px solid #e3e7ed;
+}
+
+.chelasty {
+	display: block;
+	width: 14px;
+	height: 14px;
+	border: 1px solid #e3e7ed;
+}
+
+.chbox {
+	height: 16px;
+	overflow: hidden;
+}
+.chbox label{
+	float: left;
+	margin-right: 10px;
+	line-height: 16px;
+	cursor: pointer;
+}
+#remember:checked + .chelasty{
+	border: 1px solid #f85d5a;
+	background:url(/www/images/newLogin/truecheck.png) no-repeat 1px 3px;
+}
+.subbtn {
+	width: 320px;
+	height: 40px;
+	border: none;
+	background-color: #f85d5a;
+	color: #fff;
+	font-size: 16px;
+	outline: none;
+	margin-top: 30px;
+	cursor: pointer;
+}
+.subbtn:active{
+	background-color: #de4340;
+}
+.toregister {
+	text-align: center;
+	font-size: 14px;
+	margin: 30px 0;
+}
+.toregister a{
+	color: #f85d5a;
+}
+.othergo ul li{
+	float: left;
+}
+.othergo ul li a{
+	display: block;
+	margin-right: 77px;
+}
+
+.toqq {
+	background: url(/www/images/newLogin/spring-icon.png) 0 -72px;
+}
+.toqq:hover{
+	background: url(/www/images/newLogin/spring-icon.png) 0 -90px;
+}
+
+.toweixin {
+	background: url(/www/images/newLogin/spring-icon.png) 0 -108px;
+}
+.toweixin:hover{
+	background: url(/www/images/newLogin/spring-icon.png) 0 -126px;
+}
+.toweibo {
+	background: url(/www/images/newLogin/spring-icon.png) 0 -144px;
+}
+.toweibo:hover{
+	background: url(/www/images/newLogin/spring-icon.png) 0 -162px;
+}
+
+.otherto {
+	text-align: center;
+	margin-top: 15px;
+	font-size: 14px;
+	color: #333;
+	border-top: 1px dashed#f85d5a;
+	padding-top: 15px;
+}
+.sweepcode {
+	padding:30px 20px;
+}
+.codep {
+	font-size: 14px;
+	color: #333;
+}
+
+.codeimg {
+	width: 188px;
+	height: 188px;
+	background: url(/www/images/newLogin/sweepcode.png) center no-repeat;
+	margin: 50px auto 10px;
+}
+
+.help {
+	width: 340px;
+	height: 540px;
+	position: absolute;
+	left: 430px;
+	top: 0;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 0 8px rgba(0,0,0,.3);
+	background-color: #fff;
+	display: none;
+}
+
+.helpp {
+	font-size: 20px;
+	line-height: 80px;
+	color: #333;
+}
+
+.helpimg {
+	width: 232px;
+	height: 376px;
+	margin: 20px auto;
+}
+
+.tipbox {
+	height: 0;
+	width: 0;
+	border-top: 10px solid rgba(0,0,0,0);
+	border-right: 10px solid rgba(255,255,255,1);
+	border-bottom: 10px solid rgba(0,0,0,0);
+	border-left: 10px solid rgba(0,0,0,0);
+	position: absolute;
+	top: 154px;
+	left: -20px;
+}
+
+.mainbg {
+	width: 100%;
+	height: 420px;
+	background-image: url(/www/images/newLogin/bigbg.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.person {
+	background: url(/www/images/newLogin/helpimg.png) center no-repeat;
+}
+
+.company {
+	background: url(/www/images/newLogin/cphelpimg.png) center no-repeat;
+}
+
+.chlogin {
+	display: block;
+	margin: auto;
+	width: 200px;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 30px;
+	text-align: center;
+}
+.yzmdl {
+	float: right;
+	line-height: 16px;
+	color: #f85d5a;
+}

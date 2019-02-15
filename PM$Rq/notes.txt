@@ -1,0 +1,35 @@
+*熟悉基本的一些组件名称
+
+*参考resumeTest.html.php
+
+*img下新建test(img),test下建js，js下建index.js
+ img:\www\js\index1.js
+ js写法参考V:\min\js\v2\business\test\index.js || indexParam.js
+
+*m引用的组件模块(带@是组件模块)或简单模块，组件模块的查看再global.js里
+
+jpjs.use(['zujian1,@zujian2','@confirmBox'],function(m){
+
+var $ = m['jquery'],
+
+
+})
+
+jpjs.use(function(m){
+ //什么都没引用
+
+})
+
+*www下建index1.html.php、index2.html.php
+ 有数据传递情况：
+    var data='${data}';
+    jpjs.loadJS4Data('http://cdn1.597.cs/min/js/v2/business/test/indexParam.js', {applyStatusItems: mydata,selectedIndex:0,data:data});
+    index.js里用_dataObj.data
+
+
+
+
+
+
+
+

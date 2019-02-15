@@ -1,0 +1,16 @@
+{
+  "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "7T6PAEL8WA.com.597.company",
+                "paths": ["/iosopen/ios_com.html"]
+            },
+	    {
+                "appID": "7T6PAEL8WA.com.597.geren",
+                "paths": ["/iosopen/ios_per.html"]
+            }
+
+        ]
+    }
+}

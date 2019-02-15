@@ -1,0 +1,167 @@
+﻿前台
+http://xm.m.597.cs/             M:\index.html.php    M:\header.html.php
+http://cdn.597.cs/m/css/m_index2.css?v=20150915   I:\m\css\m_index2.css  
+
+http://xm.m.597.cs/person/login.html    M:\person\login.html.php
+
+http://xm.m.597.cs/person/register.html  M:\person\register.html.php
+
+http://xm.m.597.cs/company/register.html M:\company\register.html.php
+
+http://xm.m.597.cs/suggestion.html   M:\suggestion.html.php
+http://cdn.597.cs/js/wechat.js?v=100  I:\js\wechat.js
+
+http://xm.m.597.cs/file/download.html  M:\file\download.html.php
+  
+http://xm.m.597.cs/zhaopin/siji/   M:\zhaopin\gz91_search.html.php
+http://cdn.597.cs/m/css/jobs.css?v=1  I:\m\css\jobs.css
+
+
+http://xm.m.597.cs/job-743b213506725.html     M:\job.html.php
+
+http://xm.m.597.cs/com-dc525c3/?jid=743b213506725    M:\company.html.php
+
+http://xm.m.597.cs/job_list.html?act=joblist&id=dc525c3&jid=743b213506725    M:\job_list.html.php
+
+
+http://xm.m.597.cs/qyzf/detail.html?id=65531   M:\qyzf\detail.html.php
+
+个人后台
+http://xm.m.597.cs/person/    M:\person\index.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=photo
+
+http://xm.m.597.cs/person/job.html?act=join   M:\person\job_join.html.php
+
+http://xm.m.597.cs/person/job.html?act=visit   M:\person\job_visit.html.php
+
+http://xm.m.597.cs/person/job.html?act=download    M:\person\job_download.html.php
+
+http://xm.m.597.cs/person/resumes.html    M:\person\resumes.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=base   M:\person\resumes_base.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=join2  
+http://xm.m.597.cs/templates/default/m3/m_base.css  M:\m3\m_base.css
+http://xm.m.597.cs/templates/default/m3/personage.css    M:\m3\personage.css
+http://xm.m.597.cs/templates/default/m3/m_font_style.css  M:\m3\m_font_style.css
+http://cdn.597.com/m/css/m_index2.css   I:\m\css\m_index2.css
+http://xm.m.597.cs/templates/default/js/m3/mobile.thirdselect.js  M:\js\m3\mobile.thirdselect.js
+
+http://xm.m.597.cs/person/resumes.html?act=evaluate  M:\person\resumes_evaluate.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=work   M:\person\resumes_work.html.php   M:\person\resumes_work_edit.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=edu   M:\person\resumes_edu.html.php   
+http://xm.m.597.cs/person/resumes.html?act=edu_edit&hidEduTypeID=edu&rid=&eduid=1643183  M:\person\resumes_edu_edit.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=language   M:\person\resumes_language.html.php
+http://xm.m.597.cs/person/resumes.html?act=language_edit  M:\person\resumes_language_edit.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=skill  M:\person\resumes_skill.html.php
+http://xm.m.597.cs/person/resumes.html?act=skill_edit  M:\person\resumes_skill_edit.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=certificate   M:\person\resumes_certificate.html.php
+http://xm.m.597.cs/person/resumes.html?act=certificate_edit   M:\person\resumes_certificate_edit.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=project    M:\person\resumes_project.html.php
+http://xm.m.597.cs/person/resumes.html?act=project_edit   M:\person\resumes_practice_edit.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=practice      M:\person\resumes_practice.html.php
+http://xm.m.597.cs/person/resumes.html?act=practice_edit M:\person\resumes_practice_edit.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=other     M:\person\resumes_other.html.php
+http://xm.m.597.cs/person/resumes.html?act=other_edit     M:\person\resumes_other_edit.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=photo   M:\person\resumes_photo.html.php 
+
+http://xm.m.597.cs/person/resumes.html?act=view   M:\person\resumes_view.html.php
+
+http://xm.m.597.cs/person/resumes.html?act=sendEmail  M:\person\resumes_sendEmail.html.php 
+
+
+http://xm.m.597.cs/person/job.html?act=invite  M:\person\job_invite.html.php
+http://xm.m.597.cs/person/job.html?act=inviteInfo&id=45725 M:\person\job_inviteInfo.html.php
+
+http://xm.m.597.cs/person/job.html?act=favorites  M:\person\job_favorites.html.php
+
+http://xm.m.597.cs/person/privacy.html   M:\person\privacy.html.php
+http://cdn.597.com/m/css/m3/m_font_style.css?v=20150111  I:\m\css\m3\m_font_style.css
+http://cdn.597.com/m/css/m3/m_base.css?v=20150111   I:\m\css\m3\m_base.css
+http://cdn.597.com/m/css/m3/personage.css?v=20150111  I:\m\css\m3\personage.css
+
+--------------------------------------------------------------------------------
+http://xm.m.597.com/person/account.html?act=psw  M:\person\account_psw.html.php
+
+
+企业后台
+http://xm.m.597.com/company/  M:\company\index.html.php
+http://cdn.597.com/m/css/com/m_font_style.css?v=20150111  I:\m\css\com\m_font_style.css
+
+http://xm.m.597.com/company/account/com_logo.html   M:\company\account\com_logo.html.php
+
+http://xm.m.597.com/company/job/job.html?act=edit&status=3  M:\company\job\job.html.php
+M:\company\job\job_list2.html.php
+M:\company\job\job_list3.html.php
+M:\company\job\job_list4.html.php
+M:\company\job\job_list5.html.php
+M:\company\job\editUnit.html.php
+M:\company\job\log.html.php
+M:\company\job\tuiGuang.html.php
+M:\company\job\tuiGuangList.html.php
+M:\company\job\unitList.html.php
+I:\m\css\m_base1.css
+I:\m\css\m_font_style.css
+
+http://xm.m.597.cs/company/resume/searchResume.html  M:\company\resume\searchResume.html.php
+http://cdn.597.cs/m/css/m_base1.css   I:\m\css\m_base1.css
+ M:\company\resume\searchResumeDetail.html.php
+http://xm.m.597.cs/company/resume/resume.html?rid=0cd6214025096   M:\company\resume\resume.html.php
+
+http://xm.m.597.cs/company/job/  
+http://xm.m.597.cs/company/job/index.html?status=3 
+http://xm.m.597.cs/company/job/job.html?act=edit   M:\company\job\edit.html.php
+M:\company\job\job_stop.html.php
+M:\company\resume\apply.html.php
+
+
+
+后面修改bug补充
+https://xm.m.597.com/qyzf/detail.html?id=65531   M:\qyzf\detail.html.php
+
+https://xm.m.597.com/com-dc525c3/?jid=743b213506725    M:\company.html.php
+
+https://xm.m.597.com/job_list.html?act=joblist&id=dc525c3&jid=743b213506725    M:\job_list.html.php
+
+https://xm.m.597.com/company/account/info.html   M:\company\account\info.html.php
+-------------------------------------------------
+https://zz.m.597.com/company/resume/index.html   M:\company\resume\index.html.php
+
+I:\m\css\m3\m_font_style.css
+I:\m\css\com\m_font_style.css
+I:\m\css\m_font_style.css
+
+https://cdn.597.com/css/font/cpb-icon.woff?y5skd1
+
+http://zz.m.597.com/company/resume/index.html
+
+I:\www\css\v2\default\v2-widge.css
+I:\css\default\v2-resumeManage.css
+I:\css\v2-widge.css
+
+I:\css\search_main.css
+
+面试邀请 icon-uniE602
+收到的简历 icon-uniE606
+收藏的简历 icon-uniE600
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+﻿*应急预案控制流程：
+   App启动后另起webview线程，并且webview隐藏。   
+   正常情况:h5页面发送空消息，App接收空消息则立即kill掉webview线程。 
+   出现事故:App重启后，h5页面发送非空消息至App，App接收该格式消息并判断当前App版本号小于消息内版本号则放大webview界面覆盖全屏展示h5页面。
+
+*h5调用App发送消息,使用js方法sendMsg(msg)
+
+*msg为通信消息，消息规定如下：
+   空消息实例     {activity:'',version:null,msg:''}
+   非空消息实例   {activity:'clog2jump',version:{iosPer:'1.3.8',iosCom:'2.1.0',androidPer:'1.1.1',androidCom:'2.2.2'},msg:'跳转到应用下载h5页面'}
+
+*注意：当出现https不能访问api而http可以时，可以调用switchHttps2Http方法进行协议切换，则以上发送消息逻辑则不执行(由h5页面控制)。
+
+*App链接地址：https://api.597.com/app/webpage/appwebview.html
+    
