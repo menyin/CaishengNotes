@@ -1,0 +1,22 @@
+*非IE
+ 业务表单外构建input[type=file]
+ 选择图片（可多选）
+ 判断是否存在
+ 预览
+ 是自动上传则上传，否则button触发上传
+ 存在则不上传 不存在则上传
+              上传成功
+ 回调开发者自己处理结果
+ 
+*IE
+ 选择
+ 业务表单外构建input[type=file]
+ 选择图片（只能单选）
+ 不能判断是否存在
+ 不能预览
+ 是自动上传则上传，否则button触发上传
+ 直接上传
+ 回调开发者自己处理结果
+ 
+
+document.getElementById('iframeF').contentDocument
