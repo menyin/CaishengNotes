@@ -1,0 +1,218 @@
+*框架介绍
+ bootstrap介绍（先过官网，再提要点） 
+ metrialUI介绍（过功能）
+ 
+
+*规范约束（陆续完善）
+ *页面主体布局再1200px，不采用container而使用container-fluid
+ *所有的页面采用单页形式开发，主要是弹出框内容html要在当前页初始化，不用iframe
+ *所有页面的主体都会包含在main-panel下，它初始化了滚动条
+ *所有页面只引入核心js、css和功能js。额外css和js写在页面或以页面为准建文件
+ *布局在1200px的范围内用栅格布局，居中用col-md-offset-n，会有一些默认的间距
+ *表单风格采用xxx，
+ *字体图标采用xxx，后期UI维护，我们负责使用。使用bootstrap官方的Glyphicons可以减少请求、使用fontawesome可以使用相关的大小规范
+ *表格样式采用xxx，会再扩展分页等功能
+ *颜色涉及按钮、文本、背景色尽量用6种基本色，其它色尽量不用。
+ *一般用col-sm-n以保证最小屏幕下不做响应式
+ *所有页面兼容等级为IE9+ 
+
+*配合过程
+ *设计和产品尽量往meterialUI风格靠拢思考
+ *技术实现页面按框架标准尽量还原设计图。间距和线条尺寸等细节一般按框架标准实施，如有需要调整再做讨论。
+ 
+*下步工作
+ 拆分代码，整理模板，扩展公共功能，编写公共模块
+？统一表单风格，关乎验证，框架内没有验证信息提示
+？统一字体图标，建议框架内两套图标库之一   http://www.fontawesome.com.cn/  、 https://fonts.googleapis.com/
+？统一表格样式，都是没有列竖线的，对于文字过多的单元格会比较混乱
+？基本功能颜色确定，default、primary、info、success、warning、danger
+65535
+
+问题集锦资源地址：
+ http://getbootstrap.com
+ https://github.com/twbs
+ http://www.bootcss.com/  中文网
+
+*bootstrap.js是基于JQ的，需要引入JQ
+
+*bootstrap需要引入2个meta标签
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE下兼容渲染-->
+ <meta name="viewport" content="width=device-width, initial-scale=1">  <!--移动端配置-->
+
+*IE关于H5 CSS3兼容相关（实际上是有些问题）
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+*bootstrap栅格系统
+ 分12列
+ 使用方式：
+ <div class="row">
+   <div class="col-lg-1">该部分占1列网格</div>
+   <div class="col-lg-11">该部分占11列网格</div>
+ </div>
+ 容器：(注意这2种容器尽量不要有嵌套关系，因为他们都有padding)
+   container-fluid 流式(调整浏览器宽度，其宽度也跟着调整)
+   container 固定(针对不同设备分辨率有不同固定宽度，其实是浏览器宽度。用媒询实现)
+    阈值           对应container的固定值    对应的列样式
+    >=1200           1170                     col-lg-n
+   992<=值<=1200     970                      col-md-n
+   768<=值<=992      750                      col-sm-n
+    <768             auto                     col-xs-n
+   注意：如果col元素直接放在容器里会有padding但如果row就没有padding。所以将col元素放在row元素下再放到容器里就能解决padding问题。
+ 列样式：col-lg-n col-md-n col-sm-n col-xs-n当屏幕(浏览器)分辨率大于对应阈值则横排排列添加了此列样式的元素，否则竖排排列。
+ 列样式的组合使用：在一个row内的col都使用多个列样式，可以使得屏幕逐渐缩小时实现官网的4321布局效果
+     注意：
+     1.列样式控制的布局和浮动的区别是浮动被挤到下一行后，上一行会留白。
+     2.列样式或者列偏移的n都是小于12，否则无效
+ 列偏移：一样通过类样式，偏移的格子数。如：col-lg-offset-4
+     注意：
+     1.如果未设置对应的列样式，但设置了对应的列偏移，则列样式值会自动计算=12-列偏移
+     2.只能往右偏移，并且偏移后会将右边的元素往右挤。
+     3.当一行有多个元素，并且最右边元素偏移了并且排不下时，这个元素就会挤到下一行并相对下一行偏移。
+ 列排序：一样通过类样式，如：col-lg-push-4或col-lg-pull
+     注意：
+     1.可以往左或往右移动布局块，这也是列排序和列偏移的区别
+     2.向右push时，不会将相邻的元素挤开而是被盖到相邻元素下面。向左pull则是会盖住左边元素
+ 浮动：class="pull-left"左浮动 class="pull-right"右浮动
+ 清浮动：<div class="clearfix"></div> 可以让其包住浮动子元素
+ 固定定位：class="affix" 
+ 
+
+*bootstrap响应式工具(用于针对不同设备显隐页面内容) 一样通过类样式控制
+ visible-lg-block 其中block代表display方式，有3种值：block、inline、inline-block。意为：lg情况下显示
+ hidden-lg 意为：lg情况下隐藏
+ visible-print-block其中block代表display方式，有3种值：block、inline、inline-block。意为：打印模式下显示
+ hidden-print 意为：打印模式下隐藏
+
+*bootstrap的Glyphicons字体图标(减少请求，可控样式)
+  介绍及使用： http://www.bootcss.com/ 官网首页-组件
+  字体图标基本使用：
+  1.在css文件里设置font-face(bootstrap已经在bootstrap.css里设置，默认字体文件夹路径是根目录下的fonts)
+  2.页面引入1步的css文件
+  3.页面中定义一个元素并添加相应的图标class
+  字体图标制作(http://jingyan.baidu.com/article/f79b7cb346cf499145023e78.html)：
+  1.在矢量绘制工具里绘制出图标，并导出svg文件。
+  2.用转换工具IconMoon将svg文件转换为图标并导出。就可以得到fonts文件夹里的内容。
+  3.新建css文件，在font-face定义图标文件夹路径，并编写类样式使得class与图标编码对应。图标编码在IconMoon里可以获得。
+
+*bootstrap的预定义风格样式：
+  风格样式在class里的关键字:
+      primary首选项
+      success成功
+      info一般信息
+      warning警告
+      danger危险
+  元素性质在class里的关键字:
+      btn按钮
+      bg背景
+      text文本
+      alert弹出框，属于插件范围
+      panel面板，属于插件范围
+  使用：
+  以上2种class关键字组合成class名使用即可，如<div class="bg-sprimary"></div>
+  注意如果是按钮或弹出框之类还要多加一个对应class，如<div class="btn btn-sprimary"></div>
+
+*bootstrap的按钮
+   基类: btn  只要要渲染成按钮就必须添加此class
+   样式: btn-defaul默认、btn-link链接 2中按钮形式
+   大小: btn-* 其中*为lg、sm、xs中的一个值
+   状态: active选中状态、disabled不可用(状态通常有正常、选中、按下3种)
+   种类:按钮一般是用a、input、button标签实现，3种标签实现有些细微不同：a和button可给按钮添加向上或向下的下拉小箭头。
+   块级：btn-block将按钮变成块级元素，可自适应父级元素
+   按钮组：
+     btn-group让多个按钮组合成一排按钮，同样可以用btn-group-lg、btn-group-sm、btn-group-xs调整其大小
+     btn-group-justified端点对齐 让一排的按钮自适应父级容器。需要和btn-group配合使用。注意除a标签形式以外，input和botton标签形式都需要在套个btn-group的父容器才能实现自适应。
+     btn-group-vertical 让一排按钮呈纵向显示。不需要和btn-group配合使用(否则会出现四个角没有统一圆角的问题)。
+   下拉小箭头：如<a class="btn btn-primary">下拉菜单按钮<span class="caret"></span></a>
+    
+ 
+*bootstrap插件
+ 插件使用和JQ的差不多，基本都包括配置、方法、事件
+ 下拉菜单、按钮组都属于插件范围
+ 下拉菜单可改变其样式、对齐、菜单标题及分割线及禁用项及宽度设置等 
+ 自定义属性(用于实现交互，在bootstrap.js用到):
+     role 用于定义元素是什么，属于特殊人群(如盲人)才会使用到
+     aria-* 用于定义元素有什么行为，属于特殊人群(如盲人)才会使用
+     data-toggle定义单击切换样式,其实其值是bootstrap.js里的方法名。如下拉菜单是dropdown 选项卡是tab
+     data-target指定哪些菜单进行操作，如在下拉菜单中一般只针对当前菜单按钮，但做联动就需要此属性。
+
+*bootstrap标签页(选项卡，官网里归属于【导航】)
+  class="nav nav-tabs"基本设置
+  tab-content类：设置标签页内容页的父容器(ul)
+  tab-panel类：设置标签页内容页的列表项(li)，默认切换没有任何效果，添加运动效果可再追加 fade in类
+  nav-justified类：端点对齐，可使多个页签平均分配宽度。
+  nav-tabs-justified类：使得选项卡下面的线变成自适应的。
+  nav-pills类：设置选项卡“药丸”样式，用此类替代nav-tabs
+  nav-stacked类：设置选项卡竖排排列，注意不能和nav-justified同时使用，并且适用于nav-pills展示方式不适用于nav-tabs展示方式。
+  选项卡显示也是通过active类实现
+  整体控制选项卡的标签和标签页可加限宽父级元素。
+  标签与标签页对应：通过href对应id
+  设置淡入淡出：在标签页li添加类fade in
+  js控制标签页显示：$('标签不是标签页对象').tab('show');
+
+1.选项卡样式、交互、结合下拉菜单
+
+*bootstrap导航条
+ class="nav navbar-default" 一般用nav标签
+ 导航条在采用container类做布局时候，为解决padding问题，可以加一个row类元素包裹导航条内容或将nav类元素包裹container类元素再包裹导航条内容。
+ nav navbar-nav类设置导航内容 一般用ul标签
+ navbar-inverse类设置导航条为黑色样式
+ navbar-static-top类设置导航条非圆角
+ nabar-fixed-top和nabar-fixed-bottom固定定位到顶部和底部
+ 解决固定定位会遮盖body内容问题可以给body设置margin-top
+ 添加logo占位：<div class="navbar-header"><a href="#" class="navbar-brand"></a></div> 注意单写a标签在移动端会不显示。其实navbar-header是通过float:left实现
+ 对齐：navbar-right  可以添加2个ul  一个在左一个在右。
+ 导航条按钮：用btn btn-default navbar-btn类
+ 导航条输入框和按钮：要用form标签包裹，form用navbar-form类，浮动用navbar-left
+ 导航条连接：用navbar-link
+ 导航条文字：用navbar-text
+ 导航条表单：用navbar-form
+ 知乎网站导航条例子
+ navbar-toggle类将元素变成可切换的按钮，并且该按钮只有在分辨率<768时候才显示
+ navbar-collapse则是在div.nav.navbar上套一层div.navbar-collapse使得其本身在分辨率<768时为折叠状态
+
+ 
+*js判断是否是移动端if(window.navigator.userAgent.tolowerCase().indexOf('mobile')>=0)
+
+*提示框
+ data-selector、data-dataplacement功能需要用js才能有效，在自定义属性声明方式有问题
+ ？data-html='true'无效，测试未通过
+
+*弹出提示框
+ data-selector、data-dataplacement、data-container、data-viewport功能需要测试
+？？问题集锦：
+ 1.col-lg-6和span6有什么区别 span是bootstrap2.0的写法，bootstrap3.0以后都用col替代了
+ 2.解决bootstrap导航条菜单在Firefox下单击时有虚线框。
+ 3.control-label类有什么用，教程说：“在表单中的元素用此类可以同步父元素的样式”,未能理解
+   其实就是在表单中表单中label和对应input通过栅格系统水平并排时，可以使label在左边部分靠右对齐
+   另外在表单校验中在包含一组label和input的div.input-group里设置提示状态后，通过control-label会同步到label标签
+ 4.表单中的div.form-group在做表单校验提示信息会用到，如果不做提示信息就不用。
+ 5.按钮组里的分列式下拉菜单，右边的按钮没有圆角
+ 6.解决模态框在没有焦点后还能按esc关闭模态框，需要给div.modal元素设置tabindex="-1"属性，即没有焦点。
+ 7.弹出框提示框插件的出现方式，即data-trigger="manual"是怎么回事
+ 8.轮播图的左右按钮图标如何响应式居中：一种是js获取img高度然后设置行高，另一种是图片用span.glyphicon-chevron-left和span.glyphicon-chevron-left填充，就会自动识别
+ 9.视网膜屏幕（Retina）下的图片是什么东西
+ 10.display:table-cell是好东西
+ 11.什么是js严格模式
+
+*latter-spacing设置每个字符之间的间距
+
+*设置文字在标签内不换行，多余字符加省略号：如下例子：
+ h2
+ {
+  overflow:hidden;--设置溢出隐藏
+  white-space:nowrap;--设置不换行
+  text-overflow:ellipsis;--设置省略号
+ }
+
+
+*由于谷歌浏览器图片加载顺序问题，会导致在$(function(){代码});的代码里获取不到图片高度，可用$(window).load(function(){代码});
+
+*html5shiv主要解决HTML5提出的新的元素不被IE6-8识别用以下代码
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
