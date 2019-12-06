@@ -5,3 +5,27 @@
 *集成DEMO下载：https://yunxin.163.com/im-sdk-demo
 
 *云信账号 18106969297   zxc597597
+
+*JS API 文档https://dev.yunxin.163.com/docs/interface/%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AFWeb%E7%AB%AF/NIMSDK-Web/NIM.html#getFriends
+ 	    https://dev.yunxin.163.com/docs/product/IM%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF/SDK%E5%BC%80%E5%8F%91%E9%9B%86%E6%88%90/Web%E5%BC%80%E5%8F%91%E9%9B%86%E6%88%90/%E6%9C%80%E8%BF%91%E4%BC%9A%E8%AF%9D
+
+
+基于之前累计的16点需求做可行性讨论。
+1、PC版支持快速查看求职者简历。
+2、PC版支持消息数量动态提醒功能。
+3、PC版支持自定义聊天内容。
+4、PC/APP版支持限制聊天数量上限。（不确定易信云是否支持）
+5、PC聊天窗口打开卡顿。（可通过限制聊天数量来变相降低读取负荷）
+6、PC支持黑名单功能。
+7、PC/APP支持标签标注功能。并可对标签进行筛选。
+8、PC支持消息列表按业务需求排序。
+9、PC/APP支持自动回复。（BOSS不支持，王总同意暂不考虑）
+10、PC/APP历史记录漫游（BOSS为30天漫游）
+11、PC/APP交换微信/电话
+12、PC/APP涉黄涉爆关键词屏蔽（不确定易信云是否支持）
+13、PC/APP搜索人名/公司/聊天记录
+14、增加求职者在线状态（王总刚提的）
+15、PC/APP消息已读未读状态（补上之前王总提的）
+16、安卓APP消息推送
+17、PC/APP消息提醒声音
+*显示未读消息总数量 前端处理不了
