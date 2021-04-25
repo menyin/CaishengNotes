@@ -1,0 +1,10 @@
+需要拿这个json的信息到后端去请求信息，后端通过微信API获取unionID和手机号，然后返回判断处理。
+
+{"type":"getphonenumber","timeStamp":1764299,"target":{"id":"","offsetLeft":15,"offsetTop":63,"dataset":{}},"currentTarget":{"id":"","offsetLeft":15,"offsetTop":63,"dataset":{}},"detail":{"errMsg":"getPhoneNumber:ok","encryptedData":"H7kbkQOdR8iIEN0O37otHFjMmod0nifbAgy3SuiGsQsQaaJYPWW9ZURY2Q/ySy21nCk82iCuCpO9cMoRb/NEMGFdhxaCKLt6X5hyKC7EbEpugEUx64eKIf7dEc11APJbslgANgGkgdwRn1I6dITLjCMft4qW1IpUViMW8XGQ5mBgrFNZFBgEQkoA6g3CevKpFXAzYey6Y0aZHspN31gwCQ==","iv":"7BzH2pDccYxABh2wRWn4pA=="}}
+
+*现有597登录3种方式：
+  *通过微信信息 到后端获取unionID+登录信息
+  *微信接口获取信息传给后端得到手机号，然后判断登录与否，然后返回登录信息
+  *用户名密码请求登录  ，返回登录信息
+
+*597源码：\\DESKTOP-UNE69AB\597.cs1\xcx

@@ -1,0 +1,3436 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="MinPHP/res/favicon.ico">
+    <link href="MinPHP/res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="MinPHP/res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./MinPHP/res/html5shiv.min.js"></script>
+    <script src="./MinPHP/res/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="height:100%">
+<div class="container-fluid" style="background:white;height:100%;">
+    <div class="row" style="height:100%;">
+        <!--左侧导航start-->
+        <div id="navbar" class="col-md-3" style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+            <div style="height:50px;font-size:30px;line-height:50px;">
+                <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none" href="index.htm">
+                    <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+        <span style="position: relative;top:-3px;">API Manager <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.1</span>
+                </a>
+                </span>
+            </div>
+            <!--导航-->
+    <div class="form-group">
+        <input type="text" class="form-control" id="searchapi" placeholder="search here" onkeyup="search('api',this)">
+    </div>
+    <div class="list">
+        <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_158f3069a435b314a80bdcb024f8e422" >
+                <a href="index_23.htm#info_api_158f3069a435b314a80bdcb024f8e422" id="menu_158f3069a435b314a80bdcb024f8e422">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    HR屏蔽简历                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="158f3069a435b314a80bdcb024f8e422">HR屏蔽简历<|-|>c32<|-|><|-|>ridStr         多个值用英文逗号（,）隔开。 例如：1,2<|-|>a:5:{s:4:"name";a:3:{i:0;s:5:"token";i:1;s:9:"banStatus";i:2;s:6:"ridStr";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:23:"0取消屏蔽，1屏蔽";i:2;s:17:"加密的简历id";}}<|-|>https://api.597.com/company/hrBanResume<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_950a4152c2b4aa3ad78bdd6b366cc179" >
+                <a href="index_23.htm#info_api_950a4152c2b4aa3ad78bdd6b366cc179" id="menu_950a4152c2b4aa3ad78bdd6b366cc179">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    HR隐私设置（单一设置, 自定义设置）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="950a4152c2b4aa3ad78bdd6b366cc179">HR隐私设置（单一设置, 自定义设置）<|-|>c31<|-|><|-|>display          如有多个值，用，隔开。 例如：1,2<|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:7:"display";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:8:"隐私id";}}<|-|>https://api.597.com/company/hrDisplay<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9dfcd5e558dfa04aaf37f137a1d9d3e5" >
+                <a href="index_23.htm#info_api_9dfcd5e558dfa04aaf37f137a1d9d3e5" id="menu_9dfcd5e558dfa04aaf37f137a1d9d3e5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    HR隐私设置（组合设置）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9dfcd5e558dfa04aaf37f137a1d9d3e5">HR隐私设置（组合设置）<|-|>c30<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:7:"display";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:8:"隐私id";}}<|-|>https://api.597.com/company/hrDisplayShow<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_06eb61b839a0cefee4967c67ccb099dc" >
+                <a href="index_23.htm#info_api_06eb61b839a0cefee4967c67ccb099dc" id="menu_06eb61b839a0cefee4967c67ccb099dc">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取公司成员（HR）日志                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="06eb61b839a0cefee4967c67ccb099dc">获取公司成员（HR）日志<|-|>c29<|-|><|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:31:"登录成功返回的SESSIONKEY";}}<|-|>https://api.597.com/company/HrLogList<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_eddea82ad2755b24c4e168c5fc2ebd40" >
+                <a href="index_23.htm#info_api_eddea82ad2755b24c4e168c5fc2ebd40" id="menu_eddea82ad2755b24c4e168c5fc2ebd40">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除公司文化环境照片                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="eddea82ad2755b24c4e168c5fc2ebd40">删除公司文化环境照片<|-|>c28<|-|>{picId}-照片编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:20:"登录产生的token";}}<|-|>https://api.597.com/company/companyPic/{picId}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_a8c88a0055f636e4a163a5e3d16adab7" >
+                <a href="index_23.htm#info_api_a8c88a0055f636e4a163a5e3d16adab7" id="menu_a8c88a0055f636e4a163a5e3d16adab7">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    设置公司文化环境照片                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="a8c88a0055f636e4a163a5e3d16adab7">设置公司文化环境照片<|-|>c27<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:7:"picPath";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:12:"照片地址";}}<|-|>http://api.597.com/company/companyPic<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_8e98d81f8217304975ccb23337bb5761" >
+                <a href="index_23.htm#info_api_8e98d81f8217304975ccb23337bb5761" id="menu_8e98d81f8217304975ccb23337bb5761">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    公司文化环境照片排序                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="8e98d81f8217304975ccb23337bb5761">公司文化环境照片排序<|-|>c26<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:6:"picIds";i:1;s:5:"token";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:42:"排序好的照片id（多个用,隔开）";i:1;s:20:"登录产生的token";}}<|-|>https://api.597.com/company/companyPicSort<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_577bcc914f9e55d5e4e4f82f9f00e7d4" >
+                <a href="index_23.htm#info_api_577bcc914f9e55d5e4e4f82f9f00e7d4" id="menu_577bcc914f9e55d5e4e4f82f9f00e7d4">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    公司高管排序                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="577bcc914f9e55d5e4e4f82f9f00e7d4">公司高管排序<|-|>c25<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:10:"managerIds";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:42:"排序好的高管id（多个用,隔开）";}}<|-|>https://api.597.com/company/managerSort<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_34ed066df378efacc9b924ec161e7639" >
+                <a href="index_23.htm#info_api_34ed066df378efacc9b924ec161e7639" id="menu_34ed066df378efacc9b924ec161e7639">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    公司产品排序                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="34ed066df378efacc9b924ec161e7639">公司产品排序<|-|>c24<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:10:"productIds";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:42:"排序好的产品id（多个用,隔开）";}}<|-|>https://api.597.com/company/productSort<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_94f6d7e04a4d452035300f18b984988c" >
+                <a href="index_23.htm#info_api_94f6d7e04a4d452035300f18b984988c" id="menu_94f6d7e04a4d452035300f18b984988c">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    公司地址排序                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="94f6d7e04a4d452035300f18b984988c">公司地址排序<|-|>c23<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:10:"addressIds";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:42:"排序好的地址id（多个用,隔开）";}}<|-|>https://api.597.com/company/addressSort<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ef0d3930a7b6c95bd2b32ed45989c61f" >
+                <a href="index_23.htm#info_api_ef0d3930a7b6c95bd2b32ed45989c61f" id="menu_ef0d3930a7b6c95bd2b32ed45989c61f">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    HR绑定公司                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="ef0d3930a7b6c95bd2b32ed45989c61f">HR绑定公司<|-|>c22<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:3:"cid";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:17:"加密的企业id";}}<|-|>https://api.597.com/company/hrBin<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_26e359e83860db1d11b6acca57d8ea88" >
+                <a href="index_23.htm#info_api_26e359e83860db1d11b6acca57d8ea88" id="menu_26e359e83860db1d11b6acca57d8ea88">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取HR招聘者注册的公司信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="26e359e83860db1d11b6acca57d8ea88">获取HR招聘者注册的公司信息<|-|>c21<|-|><|-|>cname   公司名称
+csName   公司简称
+comWorkers   公司规模
+comIndustryId   公司行业id
+comIndustry    公司行业<|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:6:"fields";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"N";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:51:"需要返回的字段名称（多个用，隔开）";}}<|-|>https://api.597.com/company/comTemp<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9fd81843ad7f202f26c1a174c7357585" >
+                <a href="index_23.htm#info_api_9fd81843ad7f202f26c1a174c7357585" id="menu_9fd81843ad7f202f26c1a174c7357585">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑职位信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9fd81843ad7f202f26c1a174c7357585">编辑职位信息<|-|>c20<|-|><|-|><|-|>a:5:{s:4:"name";a:28:{i:0;s:5:"token";i:1;s:3:"jid";i:2;s:5:"jname";i:3;s:12:"jobSalaryMin";i:4;s:12:"jobSalaryMax";i:5;s:9:"jobDegree";i:6;s:11:"jobWorkYear";i:7;s:10:"jobClassId";i:8;s:9:"addressId";i:9;s:10:"jobContent";i:10;s:13:"worktimeStart";i:11;s:11:"worktimeEnd";i:12;s:8:"resttime";i:13;s:8:"rewardID";i:14;s:7:"urgency";i:15;s:4:"best";i:16;s:7:"jobType";i:17;s:9:"jobGender";i:18;s:8:"nativeId";i:19;s:8:"marriage";i:20;s:9:"political";i:21;s:6:"nation";i:22;s:12:"statureStart";i:23;s:10:"statureEnd";i:24;s:9:"jobAgeMin";i:25;s:9:"jobAgeMax";i:26;s:9:"skillList";i:27;s:8:"bestTime";}s:9:"paramType";a:28:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:3:"int";i:4;s:3:"int";i:5;s:3:"int";i:6;s:3:"int";i:7;s:3:"int";i:8;s:3:"int";i:9;s:4:"time";i:10;s:4:"time";i:11;s:4:"time";i:12;s:3:"int";i:13;s:6:"string";i:14;s:3:"int";i:15;s:3:"int";i:16;s:3:"int";i:17;s:3:"int";i:18;s:3:"int";i:19;s:3:"int";i:20;s:3:"int";i:21;s:3:"int";i:22;s:3:"int";i:23;s:3:"int";i:24;s:3:"int";i:25;s:3:"int";i:26;s:6:"string";i:27;s:4:"time";}s:4:"type";a:28:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";i:6;s:1:"Y";i:7;s:1:"Y";i:8;s:1:"Y";i:9;s:1:"N";i:10;s:1:"N";i:11;s:1:"N";i:12;s:1:"N";i:13;s:1:"N";i:14;s:1:"N";i:15;s:1:"N";i:16;s:1:"N";i:17;s:1:"N";i:18;s:1:"N";i:19;s:1:"N";i:20;s:1:"N";i:21;s:1:"N";i:22;s:1:"N";i:23;s:1:"N";i:24;s:1:"N";i:25;s:1:"N";i:26;s:1:"N";i:27;s:1:"N";}s:7:"default";a:28:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";i:11;s:0:"";i:12;s:0:"";i:13;s:0:"";i:14;s:0:"";i:15;s:0:"";i:16;s:0:"";i:17;s:0:"";i:18;s:0:"";i:19;s:0:"";i:20;s:0:"";i:21;s:0:"";i:22;s:0:"";i:23;s:0:"";i:24;s:0:"";i:25;s:0:"";i:26;s:0:"";i:27;s:0:"";}s:3:"des";a:28:{i:0;s:20:"登录产生的token";i:1;s:35:"加密的职位id（修改时传）";i:2;s:12:"职位名称";i:3;s:12:"最低薪资";i:4;s:12:"最高薪资";i:5;s:6:"学历";i:6;s:6:"经验";i:7;s:14:"职位类型id";i:8;s:8:"地址id";i:9;s:12:"岗位描述";i:10;s:20:"工作时间(开始)";i:11;s:20:"工作时间(结束)";i:12;s:12:"休息时间";i:13;s:35:"福利ID（多个值用 , 隔开）";i:14;s:23:"急聘 ： 0 否，1是";i:15;s:20:"精品：0否，1是";i:16;s:12:"职位性质";i:17;s:6:"性别";i:18;s:14:"户籍地区id";i:19;s:12:"婚姻状况";i:20;s:12:"政治面貌";i:21;s:6:"民族";i:22;s:18:"身高（最低）";i:23;s:18:"身高（最高）";i:24;s:18:"年龄（最低）";i:25;s:18:"年龄（最高）";i:26;s:108:"技能。格式： [[&#039;a&#039;,&#039;b&#039;,&#039;c&#039;],[&#039;a&#039;,&#039;b&#039;,&#039;c&#039;]]";i:27;s:22:"上下架时间  00:00";}}<|-|>https://api.597.com/job/info<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_49182f81e6a13cf5eaa496d51fea6406" >
+                <a href="index_23.htm#info_api_49182f81e6a13cf5eaa496d51fea6406" id="menu_49182f81e6a13cf5eaa496d51fea6406">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取职位信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="49182f81e6a13cf5eaa496d51fea6406">获取职位信息<|-|>c19<|-|>jid  加密的职位id<|-|>可以传的字段
+
+jname    职位名称
+jobSalaryMin   最小薪资
+jobSalaryMax    最高薪资
+jobDegree    学历
+jobWorkYear    工作年限
+worktimeStart   工作时间（开始）
+worktimeEnd    工作时间（结束）
+resttime    休息时间
+statureStart    最低身高
+statureEnd    最高身高
+nation    	民族
+political    政治面貌
+nativeId    户籍id
+native    户籍
+marriage    婚姻状态
+rewardID    福利id
+rewardStr    福利
+jobType     职位性质
+jobTypeStr    职位性质
+jobClassId    职位类型id
+jobClassStr   职位类型
+jobContent    描述
+urgency    急聘（1是，0否）
+best    精品（1是，0否）
+cid    获取企业信息
+uid    获取hr信息
+skillList   技能<|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:39:"获取字段值（多个用 , 隔开）";}}<|-|>https://api.597.com/job/info/{jid}<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_0f49c89d1e7298bb9930789c8ed59d48" >
+                <a href="index_23.htm#info_api_0f49c89d1e7298bb9930789c8ed59d48" id="menu_0f49c89d1e7298bb9930789c8ed59d48">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    通过公司名称获取相识公司                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="0f49c89d1e7298bb9930789c8ed59d48">通过公司名称获取相识公司<|-|>C18<|-|>通过公司名称获取公司名称及编号及hr数量<|-|>cid    加密公司id
+cname    公司名称
+hrNum   招聘者人数<|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"cname";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:30:"查询的公司名称关键字";}}<|-|>http://api.597.com/company/cname<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_e3796ae838835da0b6f6ea37bcf8bcb7" >
+                <a href="index_23.htm#info_api_e3796ae838835da0b6f6ea37bcf8bcb7" id="menu_e3796ae838835da0b6f6ea37bcf8bcb7">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    HR招聘者注册公司信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="e3796ae838835da0b6f6ea37bcf8bcb7">HR招聘者注册公司信息<|-|>C16<|-|>招聘者注册公司信息<|-|>注册成功不返回加密的cid<|-|>a:5:{s:4:"name";a:6:{i:0;s:5:"token";i:1;s:5:"cname";i:2;s:10:"comWorkers";i:3;s:13:"comIndustryId";i:4;s:6:"csName";i:5;s:7:"logoUrl";}s:9:"paramType";a:6:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";}s:4:"type";a:6:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"N";}s:7:"default";a:6:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";}s:3:"des";a:6:{i:0;s:20:"登录产生的token";i:1;s:12:"公司名称";i:2;s:12:"公司规模";i:3;s:31:"行业类别,多个用 , 隔开";i:4;s:12:"公司简称";i:5;s:10:"LOGO地址";}}<|-|>http://api.597.com/company/comTemp<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_92c8c96e4c37100777c7190b76d28233" >
+                <a href="index_23.htm#info_api_92c8c96e4c37100777c7190b76d28233" id="menu_92c8c96e4c37100777c7190b76d28233">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除企业高管信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="92c8c96e4c37100777c7190b76d28233">删除企业高管信息<|-|>C15<|-|>通过企业高管ID获取详细信息，{managerId}-企业高管编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:20:"登录产生的token";}}<|-|>http://api.597.com/company/manager/{managerId}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d395771085aab05244a4fb8fd91bf4ee" >
+                <a href="index_23.htm#info_api_d395771085aab05244a4fb8fd91bf4ee" id="menu_d395771085aab05244a4fb8fd91bf4ee">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取企业高管信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d395771085aab05244a4fb8fd91bf4ee">获取企业高管信息<|-|>C14<|-|>{manageId}-企业高管编号<|-|>managerName   高管姓名
+managerJobname   高管职务
+managerLogo   logo
+managerInfo    高管介绍
+managerId    id<|-|>a:5:{s:4:"name";a:2:{i:0;s:3:"cid";i:1;s:9:"managerId";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:8:"企业id";i:1;s:8:"高管id";}}<|-|>http://api.597.com/company/manager/{manageId}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_07cdfd23373b17c6b337251c22b7ea57" >
+                <a href="index_23.htm#info_api_07cdfd23373b17c6b337251c22b7ea57" id="menu_07cdfd23373b17c6b337251c22b7ea57">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑公司高管信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="07cdfd23373b17c6b337251c22b7ea57">编辑公司高管信息<|-|>C13<|-|>HR添加或修改公司高管信息<|-|><|-|>a:5:{s:4:"name";a:6:{i:0;s:5:"token";i:1;s:9:"managerId";i:2;s:11:"managerName";i:3;s:14:"managerJobname";i:4;s:11:"managerLogo";i:5;s:11:"managerInfo";}s:9:"paramType";a:6:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";}s:4:"type";a:6:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"N";i:5;s:1:"N";}s:7:"default";a:6:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";}s:3:"des";a:6:{i:0;s:20:"登录产生的token";i:1;s:38:"编辑的时候需要编辑的高管ID";i:2;s:12:"高管名字";i:3;s:12:"高管职务";i:4;s:10:"高管LOGO";i:5;s:12:"高管介绍";}}<|-|>http://api.597.com/company/manager<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_20f07591c6fcb220ffe637cda29bb3f6" >
+                <a href="index_23.htm#info_api_20f07591c6fcb220ffe637cda29bb3f6" id="menu_20f07591c6fcb220ffe637cda29bb3f6">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除公司产品信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="20f07591c6fcb220ffe637cda29bb3f6">删除公司产品信息<|-|>C12<|-|>{productId}-企业产品编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:20:"登录产生的token";}}<|-|>http://api.597.com/company/product/{productId}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_db8e1af0cb3aca1ae2d0018624204529" >
+                <a href="index_23.htm#info_api_db8e1af0cb3aca1ae2d0018624204529" id="menu_db8e1af0cb3aca1ae2d0018624204529">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取公司产品信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="db8e1af0cb3aca1ae2d0018624204529">获取公司产品信息<|-|>C11<|-|>{productId}-企业产品编号<|-|>productName     名称
+productLogo      logo
+productSlogan     口号
+productPoint     亮点
+productSite    网站
+productId   id<|-|>a:5:{s:4:"name";a:2:{i:0;s:9:"productId";i:1;s:3:"cid";}s:9:"paramType";a:2:{i:0;s:3:"int";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:8:"产品id";i:1;s:17:"加密的企业id";}}<|-|>http://api.597.com/company/product<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_7a614fd06c325499f1680b9896beedeb" >
+                <a href="index_23.htm#info_api_7a614fd06c325499f1680b9896beedeb" id="menu_7a614fd06c325499f1680b9896beedeb">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑公司产品信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="7a614fd06c325499f1680b9896beedeb">编辑公司产品信息<|-|>C10<|-|>HR添加或修改公司产品信息<|-|><|-|>a:5:{s:4:"name";a:7:{i:0;s:5:"token";i:1;s:9:"productId";i:2;s:11:"productLogo";i:3;s:11:"productName";i:4;s:13:"productSlogan";i:5;s:12:"productPoint";i:6;s:11:"productSite";}s:9:"paramType";a:7:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";i:6;s:6:"string";}s:4:"type";a:7:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"N";i:3;s:1:"Y";i:4;s:1:"N";i:5;s:1:"N";i:6;s:1:"N";}s:7:"default";a:7:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";}s:3:"des";a:7:{i:0;s:20:"登录产生的token";i:1;s:32:"编辑的时候需要编辑的ID";i:2;s:16:"产品logo地址";i:3;s:12:"产品名称";i:4;s:12:"产品口号";i:5;s:12:"产品亮点";i:6;s:12:"产品官网";}}<|-|>http://api.597.com/company/product<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_7f100b7b36092fb9b06dfb4fac360931" >
+                <a href="index_23.htm#info_api_7f100b7b36092fb9b06dfb4fac360931" id="menu_7f100b7b36092fb9b06dfb4fac360931">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除公司地址信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="7f100b7b36092fb9b06dfb4fac360931">删除公司地址信息<|-|>C9<|-|>通过企业地址ID获取详细信息，{addressId}-企业地址编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:20:"登录产生的token";}}<|-|>http://api.597.com/company/address/{addressId}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_39059724f73a9969845dfe4146c5660e" >
+                <a href="index_23.htm#info_api_39059724f73a9969845dfe4146c5660e" id="menu_39059724f73a9969845dfe4146c5660e">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取公司地址信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="39059724f73a9969845dfe4146c5660e">获取公司地址信息<|-|>C8<|-|>{addressId}-企业地址编号<|-|><|-|>N;<|-|>http://api.597.com/company/address/{addressId}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_06138bc5af6023646ede0e1f7c1eac75" >
+                <a href="index_23.htm#info_api_06138bc5af6023646ede0e1f7c1eac75" id="menu_06138bc5af6023646ede0e1f7c1eac75">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑公司地址信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="06138bc5af6023646ede0e1f7c1eac75">编辑公司地址信息<|-|>C7<|-|>HR添加或修改公司地址<|-|><|-|>a:5:{s:4:"name";a:7:{i:0;s:5:"token";i:1;s:9:"addressId";i:2;s:6:"cityId";i:3;s:7:"address";i:4;s:7:"hNumber";i:5;s:12:"comLongitude";i:6;s:11:"comLatitude";}s:9:"paramType";a:7:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:3:"int";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"double";i:6;s:6:"double";}s:4:"type";a:7:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";i:6;s:1:"Y";}s:7:"default";a:7:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";}s:3:"des";a:7:{i:0;s:20:"登录产生的token";i:1;s:38:"编辑的时候需要编辑的地址ID";i:2;s:12:"城市编号";i:3;s:12:"详细地址";i:4;s:9:"门牌号";i:5;s:12:"地址经度";i:6;s:12:"地址纬度";}}<|-|>http://api.597.com/company/address<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_8f121ce07d74717e0b1f21d122e04521" >
+                <a href="index_23.htm#info_api_8f121ce07d74717e0b1f21d122e04521" id="menu_8f121ce07d74717e0b1f21d122e04521">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取企业下的HR列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="8f121ce07d74717e0b1f21d122e04521">获取企业下的HR列表<|-|>C6<|-|><|-|>uid     用户加密id
+cid     企业加密id
+licenceurl    上传的营业执照地址
+jobName    	职务名称字段
+jobProve    	工作证明字段
+jobCert    工作证字段
+cardPhotoA    法人正面身份证
+cardPhotoB    法人反面身份证
+banTime    绑定时间
+loginTime    最后登录时间
+loginIP    最后登录IP
+isCheck    是否审核0-未审核，1-审核通过，2-审核不通过	
+checkInfo    	审核结果
+cname    公司名称
+realname    姓名
+gender    性别id<|-|>a:5:{s:4:"name";a:3:{i:0;s:5:"token";i:1;s:3:"cid";i:2;s:3:"num";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";}s:4:"type";a:3:{i:0;s:1:"N";i:1;s:1:"N";i:2;s:1:"N";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:22:"hr登录状态的token";i:1;s:17:"加密的企业id";i:2;s:34:"返回的hr个数（默认10个）";}}<|-|>http://api.597.com/company/hrList<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_36660e59856b4de58a219bcf4e27eba3" >
+                <a href="index_23.htm#info_api_36660e59856b4de58a219bcf4e27eba3" id="menu_36660e59856b4de58a219bcf4e27eba3">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑企业信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="36660e59856b4de58a219bcf4e27eba3">编辑企业信息<|-|>C5<|-|>认证HR编辑企业信息<|-|>editType有如下类型：baseinfo-基础信息，worktimes-工作时间，cominfo-公司简介，reward-公司福利。
+基础信息： comWorkers，comIndustryId 两字段必填
+编辑工作时间：worktimeStart，worktimeEnd，resttime
+编辑公司简介：cominfo
+编辑公司福利：rewardID<|-|>a:5:{s:4:"name";a:17:{i:0;s:5:"token";i:1;s:3:"cid";i:2;s:10:"comWorkers";i:3;s:7:"comType";i:4;s:13:"comIndustryId";i:5;s:6:"csName";i:6;s:7:"logoUrl";i:7;s:9:"setupDate";i:8;s:9:"financing";i:9;s:7:"comSite";i:10;s:13:"worktimeStart";i:11;s:11:"worktimeEnd";i:12;s:8:"resttime";i:13;s:7:"comInfo";i:14;s:8:"rewardID";i:15;s:8:"editType";i:16;s:6:"comStr";}s:9:"paramType";a:17:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";i:3;s:3:"int";i:4;s:6:"string";i:5;s:6:"string";i:6;s:6:"string";i:7;s:6:"string";i:8;s:3:"int";i:9;s:6:"string";i:10;s:6:"string";i:11;s:6:"string";i:12;s:3:"int";i:13;s:6:"string";i:14;s:6:"string";i:15;s:6:"string";i:16;s:6:"string";}s:4:"type";a:17:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"N";i:3;s:1:"N";i:4;s:1:"N";i:5;s:1:"N";i:6;s:1:"N";i:7;s:1:"N";i:8;s:1:"N";i:9;s:1:"N";i:10;s:1:"N";i:11;s:1:"N";i:12;s:1:"N";i:13;s:1:"N";i:14;s:1:"N";i:15;s:1:"Y";i:16;s:1:"N";}s:7:"default";a:17:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";i:11;s:0:"";i:12;s:0:"";i:13;s:0:"";i:14;s:0:"";i:15;s:0:"";i:16;s:0:"";}s:3:"des";a:17:{i:0;s:17:"会员登录token";i:1;s:21:"会员编号加密值";i:2;s:12:"公司规模";i:3;s:12:"企业类型";i:4;s:39:"行业类别，多个行业用 , 隔开";i:5;s:12:"公司简称";i:6;s:10:"LOGO地址";i:7;s:12:"成立时间";i:8;s:12:"融资阶段";i:9;s:22:"公司官网/公众号";i:10;s:35:"上班时间（开始）（08:00）";i:11;s:35:"上班时间（结束）（08:00）";i:12;s:12:"休息时间";i:13;s:12:"公司简介";i:14;s:34:"公司福利（多个用,隔开）";i:15;s:140:"编辑类型：baseinfo-基础信息，worktimes-工作时间，cominfo-公司简介，reward-公司福利，delWorkTimes-清空工作时间";i:16;s:9:"一句话";}}<|-|>http://api.597.com/company/info<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_539fd53b59e3bb12d203f45a912eeaf2" >
+                <a href="index_23.htm#info_api_539fd53b59e3bb12d203f45a912eeaf2" id="menu_539fd53b59e3bb12d203f45a912eeaf2">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    HR提交企业申请认证信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="539fd53b59e3bb12d203f45a912eeaf2">HR提交企业申请认证信息<|-|>C4<|-|>jobProve,jobCert,与（cardPhotoA，cardPhotoB）三证必传一个<|-|>cid有值，招聘者加入已经存在的公司。cid没有值，则新注册公司信息到公司临时表<|-|>a:5:{s:4:"name";a:6:{i:0;s:10:"licenceurl";i:1;s:8:"jobProve";i:2;s:7:"jobCert";i:3;s:10:"cardPhotoA";i:4;s:10:"cardPhotoB";i:5;s:5:"token";}s:9:"paramType";a:6:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";}s:4:"type";a:6:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"N";i:3;s:1:"N";i:4;s:1:"N";i:5;s:1:"Y";}s:7:"default";a:6:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";}s:3:"des";a:6:{i:0;s:27:"上传的营业执照路径";i:1;s:18:"工作证明字段";i:2;s:15:"工作证字段";i:3;s:27:"法人正面身份证字段";i:4;s:27:"法人反面身份证字段";i:5;s:20:"登录产生的token";}}<|-|>http://api.597.com/company/hrCert<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_289dff07669d7a23de0ef88d2f7129e7" >
+                <a href="index_23.htm#info_api_289dff07669d7a23de0ef88d2f7129e7" id="menu_289dff07669d7a23de0ef88d2f7129e7">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取HR信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="289dff07669d7a23de0ef88d2f7129e7">获取HR信息<|-|>C3<|-|><|-|>uid     用户加密id（必传）
+cid     企业加密id（必传）
+licenceurl    上传的营业执照地址
+jobName    	职务名称字段
+jobProve    	工作证明字段
+jobCert    工作证字段
+cardPhotoA    法人正面身份证
+cardPhotoB    法人反面身份证
+banTime    绑定时间
+loginTime    最后登录时间
+loginIP    最后登录IP
+isCheck    是否审核：0未审核，1审核通过，-1审核不通过，-2离开		
+checkInfo    	审核失败的原因
+cname    公司名称
+realname    姓名
+realname1 称呼
+nameShow 称呼字段
+gender    性别id
+isAuth     实名（1是，0否）
+comTempRow 公司临时表（下面为公司临时表字段）
+       isCheck    企业临时表审核状态（-1未通过，0审核中，1审核通过）
+       checkInfo   审核失败的原因<|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:6:"fields";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"N";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:51:"需要返回的字段名称（多个用，隔开）";}}<|-|>http://api.597.com/company/hr<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_e165421110ba03099a1c0393373c5b43" >
+                <a href="index_23.htm#info_api_e165421110ba03099a1c0393373c5b43" id="menu_e165421110ba03099a1c0393373c5b43">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取企业信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="e165421110ba03099a1c0393373c5b43">获取企业信息<|-|>C2<|-|>通过企业cid获取企业详细信息,{cid}-企业加密的企业id<|-|>cname    公司名称
+csName   公司简称
+logoUrl    公司logo
+comIndustry     行业名称
+comIndustryId    行业id
+comWorkers    规模id
+productList   产品列表
+managerList  高管列表
+addressList   地址列表
+financing    融资
+resttime     休息时间
+worktimeStart    	工作时间（开始）
+worktimeEnd         工作时间（结束）
+rewardID    福利
+setupDate    成立时间
+comStr    一句话
+comInfo    企业简介
+comSite   网址
+isAuth   实地认证
+companyPicList   公司文化照片<|-|>a:5:{s:4:"name";a:3:{i:0;s:6:"fields";i:1;s:5:"token";i:2;s:3:"cid";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"N";i:1;s:1:"N";i:2;s:1:"N";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:39:"获取字段值（多个用 , 隔开）";i:1;s:20:"登录产生的token";i:2;s:17:"加密的企业id";}}<|-|>http://api.597.com/company/info<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_be83ab3ecd0db773eb2dc1b0a17836a1" >
+                <a href="index_23.htm#info_api_be83ab3ecd0db773eb2dc1b0a17836a1" id="menu_be83ab3ecd0db773eb2dc1b0a17836a1">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑HR信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="be83ab3ecd0db773eb2dc1b0a17836a1">编辑HR信息<|-|>C1<|-|>HR招聘者填写个人信息申请加入公司<|-|>注册已经存在的公司会返回一个 cid，进入加入已经存在的公司页面。注册的公司名称不存在，不会产生cid，进入注册新公司页面。
+isAuth  实名认证标识：0未认证，1已认证<|-|>a:5:{s:4:"name";a:9:{i:0;s:8:"realname";i:1;s:6:"gender";i:2;s:10:"attachment";i:3;s:5:"token";i:4;s:5:"cname";i:5;s:7:"jobName";i:6;s:8:"nameShow";i:7;s:8:"weixinNO";i:8;s:5:"motto";}s:9:"paramType";a:9:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";i:6;s:3:"int";i:7;s:6:"string";i:8;s:6:"string";}s:4:"type";a:9:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"N";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"N";i:6;s:1:"N";i:7;s:1:"N";i:8;s:1:"N";}s:7:"default";a:9:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";}s:3:"des";a:9:{i:0;s:6:"姓名";i:1;s:20:"性别,1-男。2-女";i:2;s:6:"头像";i:3;s:20:"登录产生的token";i:4;s:36:"招聘者手动输入的公司名称";i:5;s:8:"hr职务";i:6;s:12:"称呼字段";i:7;s:9:"微信号";i:8;s:9:"座右铭";}}<|-|>http://api.597.com/company/hr<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+    </div>
+    <form action="index_32.htm" method="post">
+            </form>
+<!--jquery模糊查询start-->
+<script>
+    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+    function search(type,obj){
+        var $find = $.trim($(obj).val());//得到搜索内容
+        if(type == 'cate'){//对接口分类进行搜索操作
+            if($find != ''){
+                $(".menu").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#info_"+menu_id).show();
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+            }
+        }else if(type == 'api'){//对接口进行搜索操作
+            if($find != ''){
+                $(".menu").hide();//左侧导航菜单隐藏
+                $(".info_api").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#api_"+menu_id).show();//左侧导航菜单 部份 隐藏
+                    $("#info_api_"+menu_id).show();//接口详情 部份 隐藏
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+            }
+        }
+    }
+
+    window.onload=function(){
+        //添加关闭,打开左侧菜单的功能
+        var status_flg="&lt";var cursor="w-resize"
+        var navbarButton = '<div onclick="navbar(this)" ' +
+            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:'+cursor+';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+            status_flg +
+            '</div>'
+        $('body').append(navbarButton);
+    }
+    // 全屏和normal
+    function navbar(obj){
+        if($('#mainwindow').hasClass('col-md-9')){
+            $(obj).html('&gt;');
+            $(obj).css("cursor","e-resize");
+            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+            $('#navbar').hide();
+            $.cookie($COOKIE_KEY, '1');
+        }else{
+            $(obj).html('&lt;');
+            $(obj).css("cursor","w-resize");
+            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+            $('#navbar').show();
+            $.cookie($COOKIE_KEY, '0');
+        }
+    }
+</script>
+<!--jquery模糊查询end-->
+<!--end-->        </div>
+        <!--左侧导航end-->
+        <div id="mainwindow" class="col-md-9"   style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+            <!--顶部导航start-->
+            <div class="textshadow" style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                <span> <a class="home" href="index.htm">Home</a> - 新企业api</span>
+        <span id="topbutton" style="float:right">
+            <a href="index_11.htm">登录&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>        </span>
+            </div>
+            <!--顶部导航end-->
+            <!--主窗口start-->
+            <div style="padding:16px;">
+                <!--接口详情列表与接口管理start-->
+    <script type="text/javascript" src="MinPHP/res/jquery.min.js"></script>
+    <script type="text/javascript" src="MinPHP/res/layer.js"></script>
+    <!--接口详细列表start-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_158f3069a435b314a80bdcb024f8e422">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-27 15:36:32&nbsp;
+                                    </div>
+                <h4 class="textshadow">HR屏蔽简历</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c32</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/company/hrBanResume</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>banStatus</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>0取消屏蔽，1屏蔽</td>
+                    </tr>
+                                        <tr>
+                        <td>ridStr</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>加密的简历id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;设置成功!‘}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">ridStr         多个值用英文逗号（,）隔开。 例如：1,2</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_950a4152c2b4aa3ad78bdd6b366cc179">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-27 15:36:05&nbsp;
+                                    </div>
+                <h4 class="textshadow">HR隐私设置（单一设置, 自定义设置）</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c31</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/company/hrDisplay</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>display</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>隐私id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;设置成功!‘}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">display          如有多个值，用，隔开。 例如：1,2</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_9dfcd5e558dfa04aaf37f137a1d9d3e5">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-27 15:32:26&nbsp;
+                                    </div>
+                <h4 class="textshadow">HR隐私设置（组合设置）</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c30</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/company/hrDisplayShow</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>display</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>隐私id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;设置成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_06eb61b839a0cefee4967c67ccb099dc">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-10 11:24:28&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取公司成员（HR）日志</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c29</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>https://api.597.com/company/HrLogList</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录成功返回的SESSIONKEY</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;msg&quot;: &quot;操作成功&quot;,
+  &quot;row&quot;: [
+    {
+      &quot;attachment&quot;: &quot;//cdn.597.tv/www/img/www.passport.people@2x.png&quot;,//头像
+      &quot;realname&quot;: &quot;苏凡在&quot;,//名称
+      &quot;log&quot;: &quot;苏凡在加入公司&quot;,//日志
+      &quot;logTime&quot;: &quot;2019-05-08&quot;//时间
+    },
+    {
+      &quot;attachment&quot;: &quot;//cdn.597.tv/www/img/www.passport.people@2x.png&quot;,
+      &quot;realname&quot;: &quot;苏凡&quot;,
+      &quot;log&quot;: &quot;苏凡加入公司&quot;,
+      &quot;logTime&quot;: &quot;2019-04-26&quot;
+    }
+  ]
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_eddea82ad2755b24c4e168c5fc2ebd40">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-07 16:35:32&nbsp;
+                                    </div>
+                <h4 class="textshadow">删除公司文化环境照片</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c28</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">DELETE</kbd> - <kbd>https://api.597.com/company/companyPic/{picId}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {picId}-照片编号            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;删除成功&quot;
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_a8c88a0055f636e4a163a5e3d16adab7">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-07 16:33:49&nbsp;
+                                    </div>
+                <h4 class="textshadow">设置公司文化环境照片</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c27</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/company/companyPic</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>picPath</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>照片地址</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;编辑成功&quot;,
+    &quot;picId&quot;:1
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_8e98d81f8217304975ccb23337bb5761">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-07 16:31:54&nbsp;
+                                    </div>
+                <h4 class="textshadow">公司文化环境照片排序</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c26</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/company/companyPicSort</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>picIds</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>排序好的照片id（多个用,隔开）</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;设置成功&quot;
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_577bcc914f9e55d5e4e4f82f9f00e7d4">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-26 14:09:42&nbsp;
+                                    </div>
+                <h4 class="textshadow">公司高管排序</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c25</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/company/managerSort</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>managerIds</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>排序好的高管id（多个用,隔开）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;设置成功&quot;
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_34ed066df378efacc9b924ec161e7639">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-25 16:28:06&nbsp;
+                                    </div>
+                <h4 class="textshadow">公司产品排序</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c24</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/company/productSort</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>productIds</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>排序好的产品id（多个用,隔开）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;设置成功&quot;
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_94f6d7e04a4d452035300f18b984988c">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-25 16:26:33&nbsp;
+                                    </div>
+                <h4 class="textshadow">公司地址排序</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c23</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/company/addressSort</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>addressIds</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>排序好的地址id（多个用,隔开）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;设置成功&quot;
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_ef0d3930a7b6c95bd2b32ed45989c61f">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-25 16:04:40&nbsp;
+                                    </div>
+                <h4 class="textshadow">HR绑定公司</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c22</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/company/hrBin</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>cid</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>加密的企业id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;绑定成功！&quot;,
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_26e359e83860db1d11b6acca57d8ea88">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-25 15:13:50&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取HR招聘者注册的公司信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c21</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>https://api.597.com/company/comTemp</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>fields</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>需要返回的字段名称（多个用，隔开）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;msg&quot;: &quot;获取成功&quot;,
+  &quot;row&quot;: {
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;uid&quot;: &quot;5075862&quot;,
+    &quot;cid&quot;: &quot;0&quot;,
+    &quot;cname&quot;: &quot;你好公司&quot;,
+    &quot;csName&quot;: &quot;你好&quot;,
+    &quot;comWorkers&quot;: &quot;999&quot;,
+    &quot;comIndustryId&quot;: &quot;13&quot;,
+    &quot;comIndustry&quot;: &quot;计算机硬件&quot;,
+    &quot;logoUrl&quot;: &quot;&quot;,
+    &quot;regTime&quot;: &quot;1556106906&quot;,
+    &quot;isCheck&quot;: &quot;0&quot;,
+    &quot;checkTime&quot;: &quot;0&quot;
+  }
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">cname   公司名称
+csName   公司简称
+comWorkers   公司规模
+comIndustryId   公司行业id
+comIndustry    公司行业</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_9fd81843ad7f202f26c1a174c7357585">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-06 13:50:19&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑职位信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c20</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/job/info</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>jid</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>加密的职位id（修改时传）</td>
+                    </tr>
+                                        <tr>
+                        <td>jname</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>职位名称</td>
+                    </tr>
+                                        <tr>
+                        <td>jobSalaryMin</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>最低薪资</td>
+                    </tr>
+                                        <tr>
+                        <td>jobSalaryMax</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>最高薪资</td>
+                    </tr>
+                                        <tr>
+                        <td>jobDegree</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>学历</td>
+                    </tr>
+                                        <tr>
+                        <td>jobWorkYear</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>经验</td>
+                    </tr>
+                                        <tr>
+                        <td>jobClassId</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>职位类型id</td>
+                    </tr>
+                                        <tr>
+                        <td>addressId</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>地址id</td>
+                    </tr>
+                                        <tr>
+                        <td>jobContent</td>
+						<td>time</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>岗位描述</td>
+                    </tr>
+                                        <tr>
+                        <td>worktimeStart</td>
+						<td>time</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>工作时间(开始)</td>
+                    </tr>
+                                        <tr>
+                        <td>worktimeEnd</td>
+						<td>time</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>工作时间(结束)</td>
+                    </tr>
+                                        <tr>
+                        <td>resttime</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>休息时间</td>
+                    </tr>
+                                        <tr>
+                        <td>rewardID</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>福利ID（多个值用 , 隔开）</td>
+                    </tr>
+                                        <tr>
+                        <td>urgency</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>急聘 ： 0 否，1是</td>
+                    </tr>
+                                        <tr>
+                        <td>best</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>精品：0否，1是</td>
+                    </tr>
+                                        <tr>
+                        <td>jobType</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>职位性质</td>
+                    </tr>
+                                        <tr>
+                        <td>jobGender</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>性别</td>
+                    </tr>
+                                        <tr>
+                        <td>nativeId</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>户籍地区id</td>
+                    </tr>
+                                        <tr>
+                        <td>marriage</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>婚姻状况</td>
+                    </tr>
+                                        <tr>
+                        <td>political</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>政治面貌</td>
+                    </tr>
+                                        <tr>
+                        <td>nation</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>民族</td>
+                    </tr>
+                                        <tr>
+                        <td>statureStart</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>身高（最低）</td>
+                    </tr>
+                                        <tr>
+                        <td>statureEnd</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>身高（最高）</td>
+                    </tr>
+                                        <tr>
+                        <td>jobAgeMin</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>年龄（最低）</td>
+                    </tr>
+                                        <tr>
+                        <td>jobAgeMax</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>年龄（最高）</td>
+                    </tr>
+                                        <tr>
+                        <td>skillList</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>技能。格式： [[&#039;a&#039;,&#039;b&#039;,&#039;c&#039;],[&#039;a&#039;,&#039;b&#039;,&#039;c&#039;]]</td>
+                    </tr>
+                                        <tr>
+                        <td>bestTime</td>
+						<td>time</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>上下架时间  00:00</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;编辑成功&quot;
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_49182f81e6a13cf5eaa496d51fea6406">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-09 13:55:01&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取职位信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">c19</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>https://api.597.com/job/info/{jid}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                jid  加密的职位id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>fields</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>获取字段值（多个用 , 隔开）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;msg&quot;: &quot;获取成功&quot;,
+  &quot;row&quot;: {
+    &quot;jid&quot;: &quot;3972939&quot;,
+    &quot;jobKeyword&quot;: &quot;&quot;,
+    &quot;jobLanguage&quot;: &quot;&quot;,
+    &quot;jobPeriod&quot;: &quot;&quot;,
+    &quot;jobProbationPeriodFee&quot;: &quot;&quot;,
+    &quot;jobContent&quot;: &quot;&quot;,
+    &quot;jobAddInfo&quot;: &quot;&quot;,
+    &quot;linkWay&quot;: &quot;0&quot;,
+    &quot;emailArray&quot;: &quot;0&quot;,
+    &quot;jobSalaryType&quot;: &quot;0&quot;,
+    &quot;jobSalaryMin1&quot;: &quot;0&quot;,
+    &quot;jobSalaryMax1&quot;: &quot;0&quot;,
+    &quot;jobTypeStr&quot;: &quot;&quot;,
+    &quot;jobClassStr&quot;: &quot;会计/会计师&quot;,
+    &quot;rewardStr&quot;: &quot;生日礼物,年度旅游,年底双薪&quot;,
+    &quot;worktimeStart&quot;: &quot;08:30:00&quot;,
+    &quot;worktimeEnd&quot;: &quot;17:30:00&quot;,
+    &quot;resttime&quot;: &quot;3&quot;,
+    &quot;statureStart&quot;: &quot;0&quot;,
+    &quot;statureEnd&quot;: &quot;0&quot;,
+    &quot;nation&quot;: &quot;0&quot;,
+    &quot;political&quot;: &quot;1&quot;,
+    &quot;nativeId&quot;: &quot;210102&quot;,
+    &quot;native&quot;: &quot;和平区&quot;,
+    &quot;marriage&quot;: &quot;1&quot;,
+    &quot;skillList&quot;: &quot;毫不拖延|01|注册咨询工程师&quot;,
+    &quot;jname&quot;: &quot;会计/会计师&quot;,
+    &quot;uid&quot;: &quot;4529301&quot;,
+    &quot;cid&quot;: &quot;4140061&quot;,
+    &quot;cuid&quot;: &quot;0&quot;,
+    &quot;ccid&quot;: &quot;0&quot;,
+    &quot;pid&quot;: &quot;-1&quot;,
+    &quot;jobSalaryMin&quot;: &quot;5000&quot;,
+    &quot;jobSalaryMax&quot;: &quot;9000&quot;,
+    &quot;jobDegree&quot;: &quot;30&quot;,
+    &quot;jobWorkYear&quot;: &quot;5&quot;,
+    &quot;jobAgeMin&quot;: &quot;16&quot;,
+    &quot;jobAgeMax&quot;: &quot;18&quot;,
+    &quot;jobSalaryShow&quot;: &quot;1&quot;,
+    &quot;jobNewGraduate&quot;: &quot;0&quot;,
+    &quot;worktimeLimit&quot;: &quot;0&quot;,
+    &quot;workdayLimit&quot;: &quot;0&quot;,
+    &quot;rewardID&quot;: &quot;21,33,17&quot;,
+    &quot;createTime&quot;: &quot;1557307964&quot;,
+    &quot;modTime&quot;: &quot;0&quot;,
+    &quot;updateTime&quot;: &quot;0&quot;,
+    &quot;outTime&quot;: &quot;0&quot;,
+    &quot;activityTime&quot;: &quot;1557307964&quot;,
+    &quot;resumeNum&quot;: &quot;0&quot;,
+    &quot;resumeViewNum&quot;: &quot;0&quot;,
+    &quot;resumeReplyNum&quot;: &quot;0&quot;,
+    &quot;isCheck&quot;: &quot;0&quot;,
+    &quot;jobType&quot;: &quot;1&quot;,
+    &quot;jobNumber&quot;: &quot;0&quot;,
+    &quot;jobGender&quot;: &quot;1&quot;,
+    &quot;jobClassId&quot;: &quot;2310&quot;,
+    &quot;jobAreaId&quot;: &quot;0&quot;,
+    &quot;resNumber&quot;: &quot;0&quot;,
+    &quot;click&quot;: &quot;0&quot;,
+    &quot;checkId&quot;: &quot;0&quot;,
+    &quot;dispalyOrder&quot;: &quot;0&quot;,
+    &quot;display&quot;: &quot;0&quot;,
+    &quot;urgency&quot;: &quot;1&quot;,
+    &quot;best&quot;: &quot;0&quot;,
+    &quot;bestTime&quot;: &quot;00:00:00&quot;,
+    &quot;addressId&quot;: &quot;9&quot;,
+    &quot;_jobDegree&quot;: &quot;高中&quot;,
+    &quot;_jobWorkYear&quot;: &quot;3-5年&quot;,
+    &quot;_resttime&quot;: &quot;单休&quot;,
+    &quot;_political&quot;: &quot;中共党员&quot;,
+    &quot;_marriage&quot;: &quot;未婚&quot;,
+    &quot;hrRow&quot;: {//招聘者信息
+      &quot;uid&quot;: &quot;4e5ce84529301&quot;,
+      &quot;jobName&quot;: &quot;招聘者&quot;,
+      &quot;realname&quot;: &quot;苏凡在&quot;,
+      &quot;gender&quot;: &quot;1&quot;,
+      &quot;_gender&quot;: &quot;男&quot;,
+      &quot;attachment&quot;: &quot;&quot;,
+      &quot;_attachment&quot;: &quot;//cdn.597.tv/www/img/www.passport.people@2x.png&quot;,
+      &quot;isAuth&quot;: &quot;0&quot;,
+      &quot;loginTime&quot;: &quot;1557306449&quot;,
+      &quot;_active&quot;: &quot;昨日活跃&quot;
+    },
+    &quot;comRow&quot;: {//公司信息
+      &quot;cname&quot;: &quot;你我贷福安加盟商&quot;,
+      &quot;csName&quot;: &quot;你我贷&quot;,
+      &quot;comStr&quot;: &quot;不想和人的感情&quot;,
+      &quot;logoUrl&quot;: &quot;&quot;,
+      &quot;comIndustry&quot;: &quot;金融/银行/证券/基金&quot;,
+      &quot;comType&quot;: &quot;9&quot;,
+      &quot;comWorkers&quot;: &quot;999&quot;,
+      &quot;isAuth&quot;: &quot;0&quot;,//是否实地认证
+      &quot;score&quot;: &quot;0&quot;,//评分
+      &quot;_comWorkers&quot;: &quot;500-999人&quot;,
+      &quot;tianuanchaRow&quot;: {//天眼查信息
+        &quot;name&quot;: &quot;&quot;,//公司名称
+        &quot;legalPersonName&quot;: &quot;&quot;,//法人名称
+        &quot;regCapital&quot;: &quot;&quot;,//注册资本
+        &quot;estiblishTime&quot;: &quot;&quot;,//成立时间
+        &quot;regStatus&quot;: &quot;&quot;,//经营状态
+        &quot;regLocation&quot;: &quot;&quot;,//注册地址
+        &quot;creditCode&quot;: &quot;&quot;,//信用代码
+        &quot;businessScope&quot;: &quot;&quot;//经营范围
+      }
+    },
+    &quot;_address&quot;: {//地址信息
+      &quot;addressId&quot;: &quot;9&quot;,
+      &quot;cid&quot;: &quot;4140061&quot;,
+      &quot;cityId&quot;: &quot;3502&quot;,
+      &quot;cityName&quot;: &quot;厦门市&quot;,
+      &quot;address&quot;: &quot;湖里高新技术园A区21栋&quot;,
+      &quot;hNumber&quot;: &quot;12号&quot;,
+      &quot;comLongitude&quot;: &quot;118.162669&quot;,
+      &quot;comLatitude&quot;: &quot;24.528593&quot;,
+      &quot;sort&quot;: &quot;0&quot;
+    },
+     &quot;_skillList&quot;: [
+      [
+        &quot;毫不拖延&quot;,
+        &quot;01&quot;,
+        &quot;注册咨询工程师&quot;
+      ]
+    ],
+    &quot;isCollect&quot;: 0,
+    &quot;isJoin&quot;: 0
+  }
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">可以传的字段
+
+jname    职位名称
+jobSalaryMin   最小薪资
+jobSalaryMax    最高薪资
+jobDegree    学历
+jobWorkYear    工作年限
+worktimeStart   工作时间（开始）
+worktimeEnd    工作时间（结束）
+resttime    休息时间
+statureStart    最低身高
+statureEnd    最高身高
+nation    	民族
+political    政治面貌
+nativeId    户籍id
+native    户籍
+marriage    婚姻状态
+rewardID    福利id
+rewardStr    福利
+jobType     职位性质
+jobTypeStr    职位性质
+jobClassId    职位类型id
+jobClassStr   职位类型
+jobContent    描述
+urgency    急聘（1是，0否）
+best    精品（1是，0否）
+cid    获取企业信息
+uid    获取hr信息
+skillList   技能</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_0f49c89d1e7298bb9930789c8ed59d48">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-09 08:58:30&nbsp;
+                                    </div>
+                <h4 class="textshadow">通过公司名称获取相识公司</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C18</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">GET</kbd> - <kbd>http://api.597.com/company/cname</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                通过公司名称获取公司名称及编号及hr数量            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>cname</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>查询的公司名称关键字</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;获取成功&quot;,
+    &quot;rows&quot;: [
+        {
+            &quot;cid&quot;: &quot;e26ee9807337&quot;,
+            &quot;cname&quot;: &quot;厦门丹厦房产行销策划有限公司&quot;,
+            &quot;hrNum&quot;: 0
+        },
+        {
+            &quot;cid&quot;: &quot;c9f9fe815751&quot;,
+            &quot;cname&quot;: &quot;厦门丹厦房产行销策划有限公司&quot;,
+            &quot;hrNum&quot;: 0
+        }
+    ]
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">cid    加密公司id
+cname    公司名称
+hrNum   招聘者人数</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_e3796ae838835da0b6f6ea37bcf8bcb7">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-12 10:15:02&nbsp;
+                                    </div>
+                <h4 class="textshadow">HR招聘者注册公司信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C16</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/company/comTemp</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                招聘者注册公司信息            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>cname</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>公司名称</td>
+                    </tr>
+                                        <tr>
+                        <td>comWorkers</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>公司规模</td>
+                    </tr>
+                                        <tr>
+                        <td>comIndustryId</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>行业类别,多个用 , 隔开</td>
+                    </tr>
+                                        <tr>
+                        <td>csName</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>公司简称</td>
+                    </tr>
+                                        <tr>
+                        <td>logoUrl</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>LOGO地址</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;注册成功！&quot;
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">注册成功不返回加密的cid</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_92c8c96e4c37100777c7190b76d28233">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-28 16:39:47&nbsp;
+                                    </div>
+                <h4 class="textshadow">删除企业高管信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C15</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">DELETE</kbd> - <kbd>http://api.597.com/company/manager/{managerId}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                通过企业高管ID获取详细信息，{managerId}-企业高管编号            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;删除成功&quot;
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_d395771085aab05244a4fb8fd91bf4ee">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-28 16:38:44&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取企业高管信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C14</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">GET</kbd> - <kbd>http://api.597.com/company/manager/{manageId}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {manageId}-企业高管编号            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>cid</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>企业id</td>
+                    </tr>
+                                        <tr>
+                        <td>managerId</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>高管id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;row&quot;: {
+        &quot;managerId&quot;: &quot;9&quot;,
+        &quot;cid&quot;: &quot;3&quot;,
+        &quot;managerLogo&quot;: &quot;&quot;,
+        &quot;managerName&quot;: &quot;高管名称&quot;,
+        &quot;managerJobname&quot;: &quot;高管职务&quot;,
+        &quot;managerInfo&quot;: &quot;高管介绍&quot;
+  }
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">managerName   高管姓名
+managerJobname   高管职务
+managerLogo   logo
+managerInfo    高管介绍
+managerId    id</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_07cdfd23373b17c6b337251c22b7ea57">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-28 16:39:23&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑公司高管信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C13</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/company/manager</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                HR添加或修改公司高管信息            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>managerId</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>编辑的时候需要编辑的高管ID</td>
+                    </tr>
+                                        <tr>
+                        <td>managerName</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>高管名字</td>
+                    </tr>
+                                        <tr>
+                        <td>managerJobname</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>高管职务</td>
+                    </tr>
+                                        <tr>
+                        <td>managerLogo</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>高管LOGO</td>
+                    </tr>
+                                        <tr>
+                        <td>managerInfo</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>高管介绍</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;操作成功&quot;
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_20f07591c6fcb220ffe637cda29bb3f6">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-28 16:32:59&nbsp;
+                                    </div>
+                <h4 class="textshadow">删除公司产品信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C12</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">DELETE</kbd> - <kbd>http://api.597.com/company/product/{productId}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {productId}-企业产品编号            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;删除成功&quot;
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_db8e1af0cb3aca1ae2d0018624204529">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-22 11:07:37&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取公司产品信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C11</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">GET</kbd> - <kbd>http://api.597.com/company/product</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {productId}-企业产品编号            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>productId</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>产品id</td>
+                    </tr>
+                                        <tr>
+                        <td>cid</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>加密的企业id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;row&quot;: {
+        &quot;productId&quot;: &quot;5&quot;,
+        &quot;cid&quot;: &quot;3&quot;,
+        &quot;productLogo&quot;: &quot;&quot;,
+        &quot;productName&quot;: &quot;产品名称&quot;,
+        &quot;productSlogan&quot;: &quot;产品口号&quot;,
+        &quot;productPoint&quot;: &quot;产品亮点&quot;,
+        &quot;productSite&quot;: &quot;产品官网&quot;
+  }
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">productName     名称
+productLogo      logo
+productSlogan     口号
+productPoint     亮点
+productSite    网站
+productId   id</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_7a614fd06c325499f1680b9896beedeb">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-22 11:04:02&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑公司产品信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C10</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/company/product</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                HR添加或修改公司产品信息            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>productId</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>编辑的时候需要编辑的ID</td>
+                    </tr>
+                                        <tr>
+                        <td>productLogo</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>产品logo地址</td>
+                    </tr>
+                                        <tr>
+                        <td>productName</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>产品名称</td>
+                    </tr>
+                                        <tr>
+                        <td>productSlogan</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>产品口号</td>
+                    </tr>
+                                        <tr>
+                        <td>productPoint</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>产品亮点</td>
+                    </tr>
+                                        <tr>
+                        <td>productSite</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>产品官网</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;msg&quot;: &quot;操作成功&quot;
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_7f100b7b36092fb9b06dfb4fac360931">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-12 09:07:28&nbsp;
+                                    </div>
+                <h4 class="textshadow">删除公司地址信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C9</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">DELETE</kbd> - <kbd>http://api.597.com/company/address/{addressId}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                通过企业地址ID获取详细信息，{addressId}-企业地址编号            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;删除成功&quot;
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_39059724f73a9969845dfe4146c5660e">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-12 09:12:54&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取公司地址信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C8</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">GET</kbd> - <kbd>http://api.597.com/company/address/{addressId}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {addressId}-企业地址编号            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;获取成功&quot;,
+    &quot;row&quot;: {
+            &quot;addressId&quot;: &quot;1&quot;,
+            &quot;cid&quot;: &quot;8b905f5075866&quot;,
+            &quot;uid&quot;: &quot;c8901c4884870&quot;,
+            &quot;cityId&quot;: &quot;3502&quot;,
+            &quot;cityname&quot;: &quot;福建省-厦门市&quot;,
+            &quot;address&quot;: &quot;湖里区安岭二路&quot;,
+            &quot;hNumber&quot;: &quot;98号&quot;,
+            &quot;comLongitude&quot;: &quot;0&quot;,
+            &quot;comLatitude&quot;: &quot;0&quot;,
+         }
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_06138bc5af6023646ede0e1f7c1eac75">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-05 08:42:50&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑公司地址信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C7</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/company/address</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                HR添加或修改公司地址            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>addressId</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>编辑的时候需要编辑的地址ID</td>
+                    </tr>
+                                        <tr>
+                        <td>cityId</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>城市编号</td>
+                    </tr>
+                                        <tr>
+                        <td>address</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>详细地址</td>
+                    </tr>
+                                        <tr>
+                        <td>hNumber</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>门牌号</td>
+                    </tr>
+                                        <tr>
+                        <td>comLongitude</td>
+						<td>double</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>地址经度</td>
+                    </tr>
+                                        <tr>
+                        <td>comLatitude</td>
+						<td>double</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>地址纬度</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;msg&quot;: &quot;操作成功&quot;
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_8f121ce07d74717e0b1f21d122e04521">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-13 14:46:55&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取企业下的HR列表</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C6</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>http://api.597.com/company/hrList</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>hr登录状态的token</td>
+                    </tr>
+                                        <tr>
+                        <td>cid</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>加密的企业id</td>
+                    </tr>
+                                        <tr>
+                        <td>num</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>返回的hr个数（默认10个）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;msg&quot;: &quot;获取成功&quot;,
+  &quot;row&quot;: [
+    {
+      &quot;uid&quot;: &quot;dc525c3&quot;,
+      &quot;cid&quot;: &quot;dc525c3&quot;,
+      &quot;licenceurl&quot;: &quot;2019/4/9/person.jpg&quot;,
+      &quot;jobName&quot;: &quot;hr&quot;,
+      &quot;jobProve&quot;: &quot;2019/4/9/person.jpg&quot;,
+      &quot;jobCert&quot;: &quot;&quot;,
+      &quot;cardPhotoA&quot;: &quot;&quot;,
+      &quot;cardPhotoB&quot;: &quot;&quot;,
+      &quot;banTime&quot;: &quot;1554719626&quot;,
+      &quot;loginTime&quot;: &quot;1554719626&quot;,
+      &quot;loginIP&quot;: &quot;2130706433&quot;,
+      &quot;isCheck&quot;: &quot;1&quot;,
+      &quot;checkInfo&quot;: &quot;&quot;,
+      &quot;cname&quot;: &quot;厦门才盛人才服务有限公司（内测）&quot;,
+      &quot;realname&quot;: &quot;陈剑侠&quot;,
+      &quot;gender&quot;: &quot;2&quot;,
+      &quot;_gender&quot;: &quot;女&quot;,
+      &quot;attachment&quot;: &quot;2019/4/9/BHFZPb53kN.jpg&quot;,
+      &quot;_attachment&quot;: &quot;https://597-test.oss-cn-hangzhou.aliyuncs.com/pic/test/2019/4/9/BHFZPb53kN.jpg&quot;
+    }
+  ]
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">uid     用户加密id
+cid     企业加密id
+licenceurl    上传的营业执照地址
+jobName    	职务名称字段
+jobProve    	工作证明字段
+jobCert    工作证字段
+cardPhotoA    法人正面身份证
+cardPhotoB    法人反面身份证
+banTime    绑定时间
+loginTime    最后登录时间
+loginIP    最后登录IP
+isCheck    是否审核0-未审核，1-审核通过，2-审核不通过	
+checkInfo    	审核结果
+cname    公司名称
+realname    姓名
+gender    性别id</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_36660e59856b4de58a219bcf4e27eba3">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-27 14:08:22&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑企业信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C5</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/company/info</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                认证HR编辑企业信息            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>会员登录token</td>
+                    </tr>
+                                        <tr>
+                        <td>cid</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>会员编号加密值</td>
+                    </tr>
+                                        <tr>
+                        <td>comWorkers</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>公司规模</td>
+                    </tr>
+                                        <tr>
+                        <td>comType</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>企业类型</td>
+                    </tr>
+                                        <tr>
+                        <td>comIndustryId</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>行业类别，多个行业用 , 隔开</td>
+                    </tr>
+                                        <tr>
+                        <td>csName</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>公司简称</td>
+                    </tr>
+                                        <tr>
+                        <td>logoUrl</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>LOGO地址</td>
+                    </tr>
+                                        <tr>
+                        <td>setupDate</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>成立时间</td>
+                    </tr>
+                                        <tr>
+                        <td>financing</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>融资阶段</td>
+                    </tr>
+                                        <tr>
+                        <td>comSite</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>公司官网/公众号</td>
+                    </tr>
+                                        <tr>
+                        <td>worktimeStart</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>上班时间（开始）（08:00）</td>
+                    </tr>
+                                        <tr>
+                        <td>worktimeEnd</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>上班时间（结束）（08:00）</td>
+                    </tr>
+                                        <tr>
+                        <td>resttime</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>休息时间</td>
+                    </tr>
+                                        <tr>
+                        <td>comInfo</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>公司简介</td>
+                    </tr>
+                                        <tr>
+                        <td>rewardID</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>公司福利（多个用,隔开）</td>
+                    </tr>
+                                        <tr>
+                        <td>editType</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>编辑类型：baseinfo-基础信息，worktimes-工作时间，cominfo-公司简介，reward-公司福利，delWorkTimes-清空工作时间</td>
+                    </tr>
+                                        <tr>
+                        <td>comStr</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>一句话</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;msg&quot;: &quot;操作成功&quot;
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">editType有如下类型：baseinfo-基础信息，worktimes-工作时间，cominfo-公司简介，reward-公司福利。
+基础信息： comWorkers，comIndustryId 两字段必填
+编辑工作时间：worktimeStart，worktimeEnd，resttime
+编辑公司简介：cominfo
+编辑公司福利：rewardID</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_539fd53b59e3bb12d203f45a912eeaf2">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-04-09 10:09:38&nbsp;
+                                    </div>
+                <h4 class="textshadow">HR提交企业申请认证信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C4</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/company/hrCert</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                jobProve,jobCert,与（cardPhotoA，cardPhotoB）三证必传一个            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>licenceurl</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>上传的营业执照路径</td>
+                    </tr>
+                                        <tr>
+                        <td>jobProve</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>工作证明字段</td>
+                    </tr>
+                                        <tr>
+                        <td>jobCert</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>工作证字段</td>
+                    </tr>
+                                        <tr>
+                        <td>cardPhotoA</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>法人正面身份证字段</td>
+                    </tr>
+                                        <tr>
+                        <td>cardPhotoB</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>法人反面身份证字段</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;操作成功&quot;
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">cid有值，招聘者加入已经存在的公司。cid没有值，则新注册公司信息到公司临时表</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_289dff07669d7a23de0ef88d2f7129e7">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-06-05 16:33:33&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取HR信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C3</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>http://api.597.com/company/hr</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>fields</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>需要返回的字段名称（多个用，隔开）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;msg&quot;: &quot;操作成功&quot;,
+  &quot;row&quot;: {
+    &quot;id&quot;: &quot;29&quot;,
+    &quot;uid&quot;: &quot;580a945075891&quot;,
+    &quot;cid&quot;: &quot;0&quot;,
+    &quot;licenceurl&quot;: &quot;www.passport.people@2x.png&quot;,
+    &quot;jobName&quot;: &quot;&quot;,
+    &quot;changeNameTime&quot;: &quot;0&quot;,
+    &quot;jobProve&quot;: &quot;www.passport.people@2x.png&quot;,
+    &quot;jobCert&quot;: &quot;&quot;,
+    &quot;cardPhotoA&quot;: &quot;&quot;,
+    &quot;cardPhotoB&quot;: &quot;&quot;,
+    &quot;isCheck&quot;: &quot;-1&quot;,
+    &quot;checkInfo&quot;: &quot;你太帅，不让你过。&quot;,
+    &quot;checkTime&quot;: &quot;1558334047&quot;,
+    &quot;banTime&quot;: &quot;0&quot;,
+    &quot;leaveTime&quot;: &quot;0&quot;,
+    &quot;modTime&quot;: &quot;1558509115&quot;,
+    &quot;cname&quot;: &quot;不是说的话都不说&quot;,
+    &quot;comIndustry&quot;: &quot;计算机软件&quot;,
+    &quot;comTempRow&quot;: {
+      &quot;id&quot;: &quot;11&quot;,
+      &quot;uid&quot;: &quot;5075891&quot;,
+      &quot;cid&quot;: &quot;0&quot;,
+      &quot;cname&quot;: &quot;不是说的话都不说&quot;,
+      &quot;csName&quot;: &quot;在线教育&quot;,
+      &quot;comWorkers&quot;: &quot;999&quot;,
+      &quot;comIndustryId&quot;: &quot;12&quot;,
+      &quot;comIndustry&quot;: &quot;计算机软件&quot;,
+      &quot;logoUrl&quot;: &quot;&quot;,
+      &quot;licenceurl&quot;: &quot;&quot;,
+      &quot;regTime&quot;: &quot;1558509115&quot;,
+      &quot;isCheck&quot;: &quot;0&quot;,
+      &quot;checkInfo&quot;: &quot;&quot;,
+      &quot;checkTime&quot;: &quot;0&quot;
+    },
+&quot;_banResume&quot;: [
+      {
+        &quot;realname&quot;: &quot;苏凡&quot;,
+        &quot;rid&quot;: &quot;be1c9c4717298&quot;
+      }
+    ],
+    &quot;isAuth&quot;: &quot;1&quot;,
+    &quot;realname&quot;: &quot;苏凡&quot;,
+    &quot;gender&quot;: &quot;1&quot;,
+    &quot;_gender&quot;: &quot;男&quot;,
+    &quot;attachment&quot;: &quot;&quot;,
+    &quot;_attachment&quot;: &quot;//cdn.597.tv/www/img/www.passport.people@2x.png&quot;,
+&quot;weixinNo&quot;: &quot;123456131&quot;,
+    &quot;mobile&quot;: &quot;18850333364&quot;
+    &quot;email&quot;:&quot;123@qq.com&quot;
+  }
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">uid     用户加密id（必传）
+cid     企业加密id（必传）
+licenceurl    上传的营业执照地址
+jobName    	职务名称字段
+jobProve    	工作证明字段
+jobCert    工作证字段
+cardPhotoA    法人正面身份证
+cardPhotoB    法人反面身份证
+banTime    绑定时间
+loginTime    最后登录时间
+loginIP    最后登录IP
+isCheck    是否审核：0未审核，1审核通过，-1审核不通过，-2离开		
+checkInfo    	审核失败的原因
+cname    公司名称
+realname    姓名
+realname1 称呼
+nameShow 称呼字段
+gender    性别id
+isAuth     实名（1是，0否）
+comTempRow 公司临时表（下面为公司临时表字段）
+       isCheck    企业临时表审核状态（-1未通过，0审核中，1审核通过）
+       checkInfo   审核失败的原因</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_e165421110ba03099a1c0393373c5b43">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-08 15:16:53&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取企业信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C2</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>http://api.597.com/company/info</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                通过企业cid获取企业详细信息,{cid}-企业加密的企业id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>fields</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>获取字段值（多个用 , 隔开）</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>cid</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>加密的企业id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;msg&quot;: &quot;获取成功&quot;,
+  &quot;row&quot;: {
+    &quot;cid&quot;: &quot;dc525c3&quot;,
+    &quot;comWeixin&quot;: &quot;1&quot;,
+    &quot;licenceNo&quot;: &quot;&quot;,
+    &quot;licenceName&quot;: &quot;&quot;,
+    &quot;licenceYear&quot;: &quot;0&quot;,
+    &quot;createFunds&quot;: &quot;&quot;,
+    &quot;createFundsType&quot;: &quot;&quot;,
+    &quot;comAddress&quot;: &quot;天津市和平区&quot;,
+    &quot;comCity&quot;: &quot;福建省厦门市&quot;,
+    &quot;comSite&quot;: &quot;www.597.com1&quot;,
+    &quot;comZipcode&quot;: &quot;&quot;,
+    &quot;comIndustry&quot;: &quot;通信(设备/运营/增值服务)&quot;,
+    &quot;csName&quot;: &quot;&quot;,
+    &quot;comStr&quot;: &quot;&quot;,
+    &quot;comInfo&quot;: &quot;test&quot;,
+    &quot;comUser&quot;: &quot;肖经理&quot;,
+    &quot;comPhone&quot;: &quot;&quot;,
+    &quot;comFax&quot;: &quot;&quot;,
+    &quot;comMobile&quot;: &quot;18855500000&quot;,
+    &quot;comEmail&quot;: &quot;245307389@qq.com&quot;,
+    &quot;comEmailBak&quot;: &quot;&quot;,
+    &quot;User597&quot;: &quot;caos&quot;,
+    &quot;Phone597&quot;: &quot;133222&quot;,
+    &quot;Mobile597&quot;: &quot;13328770863&quot;,
+    &quot;QQ597&quot;: &quot;&quot;,
+    &quot;islicenceName&quot;: &quot;0&quot;,
+    &quot;iscreateFunds&quot;: &quot;0&quot;,
+    &quot;iscomWorkers&quot;: &quot;0&quot;,
+    &quot;licencePic&quot;: &quot;&quot;,
+    &quot;logoUrl&quot;: &quot;&quot;,
+    &quot;comPic&quot;: &quot;&quot;,
+    &quot;setupDate&quot;: &quot;&quot;,
+    &quot;qq&quot;: &quot;&quot;,
+    &quot;zan&quot;: &quot;1&quot;,
+    &quot;comQQ&quot;: &quot;1234567&quot;,
+    &quot;showPhone&quot;: &quot;0&quot;,
+    &quot;financing&quot;: &quot;0&quot;,
+    &quot;worktimeStart&quot;: &quot;00:00:00&quot;,
+    &quot;worktimeEnd&quot;: &quot;00:00:00&quot;,
+    &quot;resttime&quot;: &quot;1&quot;,
+    &quot;rewardID&quot;: &quot;1,2&quot;,
+    &quot;productList&quot;: &quot;5&quot;,
+    &quot;managerList&quot;: &quot;9&quot;,
+    &quot;addressList&quot;: &quot;5&quot;,
+    &quot;caid&quot;: &quot;3&quot;,
+    &quot;username&quot;: &quot;597com&quot;,
+    &quot;cname&quot;: &quot;厦门才盛人才服务有限公司（内测）&quot;,
+    &quot;comCityId&quot;: &quot;1200&quot;,
+    &quot;comAreaId&quot;: &quot;1200&quot;,
+    &quot;comLevel&quot;: &quot;0&quot;,
+    &quot;money&quot;: &quot;0&quot;,
+    &quot;regTime&quot;: &quot;1392279392&quot;,
+    &quot;modTime&quot;: &quot;1555902566&quot;,
+    &quot;updateTime&quot;: &quot;1510970379&quot;,
+    &quot;loginTime&quot;: &quot;1555633247&quot;,
+    &quot;checkTime&quot;: &quot;0&quot;,
+    &quot;vipTime&quot;: &quot;1526486399&quot;,
+    &quot;vipTime1&quot;: &quot;1569686399&quot;,
+    &quot;vipTime2&quot;: &quot;1574870399&quot;,
+    &quot;followType&quot;: &quot;2&quot;,
+    &quot;followTime&quot;: &quot;1547779687&quot;,
+    &quot;firstFollowTime&quot;: &quot;1540179983&quot;,
+    &quot;endFollowTime&quot;: &quot;1510307665&quot;,
+    &quot;expireFollowTime&quot;: &quot;1576598399&quot;,
+    &quot;nextType&quot;: &quot;3&quot;,
+    &quot;nextTime&quot;: &quot;1547779681&quot;,
+    &quot;isCheck&quot;: &quot;1&quot;,
+    &quot;licenceCheck&quot;: &quot;1&quot;,
+    &quot;comType&quot;: &quot;3&quot;,
+    &quot;jobNum&quot;: &quot;8&quot;,
+    &quot;jobNums&quot;: &quot;20&quot;,
+    &quot;resumeNum&quot;: &quot;94&quot;,
+    &quot;firstNum&quot;: &quot;0&quot;,
+    &quot;topNum&quot;: &quot;0&quot;,
+    &quot;comPoints&quot;: &quot;0&quot;,
+    &quot;comMoney&quot;: &quot;0&quot;,
+    &quot;comPrepaid&quot;: &quot;0&quot;,
+    &quot;comInvoice&quot;: &quot;0&quot;,
+    &quot;display&quot;: &quot;1&quot;,
+    &quot;adminId&quot;: &quot;1&quot;,
+    &quot;statusId&quot;: &quot;1&quot;,
+    &quot;comIndustryId&quot;: &quot;17&quot;,
+    &quot;isTry&quot;: &quot;0&quot;,
+    &quot;comIntegrity&quot;: &quot;90&quot;,
+    &quot;comLongitude&quot;: &quot;117.202814&quot;,
+    &quot;comLatitude&quot;: &quot;39.124809&quot;,
+    &quot;comWorkers&quot;: &quot;99&quot;,
+    &quot;skin&quot;: &quot;105&quot;,
+    &quot;isbot&quot;: &quot;0&quot;,
+    &quot;assignType&quot;: &quot;0&quot;,
+    &quot;isSave&quot;: &quot;0&quot;,
+    &quot;_comWorkers&quot;: &quot;20-99人&quot;,
+    &quot;_resttime&quot;: &quot;双休&quot;,
+    &quot;_rewardID&quot;: [
+      &quot;双休&quot;,
+      &quot;大小周&quot;
+    ],
+    &quot;_managerList&quot;: [
+      {
+        &quot;managerId&quot;: &quot;9&quot;,
+        &quot;cid&quot;: &quot;3&quot;,
+        &quot;managerLogo&quot;: &quot;&quot;,
+        &quot;managerName&quot;: &quot;高管名称&quot;,
+        &quot;managerJobname&quot;: &quot;高管职务&quot;,
+        &quot;managerInfo&quot;: &quot;高管介绍&quot;
+      }
+    ],
+    &quot;managerNum&quot;: 1,
+    &quot;_productList&quot;: [
+      {
+        &quot;productId&quot;: &quot;5&quot;,
+        &quot;cid&quot;: &quot;3&quot;,
+        &quot;productLogo&quot;: &quot;&quot;,
+        &quot;productName&quot;: &quot;产品名称&quot;,
+        &quot;productSlogan&quot;: &quot;产品口号&quot;,
+        &quot;productPoint&quot;: &quot;产品亮点&quot;,
+        &quot;productSite&quot;: &quot;产品官网&quot;
+      }
+    ],
+    &quot;productNum&quot;: 1,
+    &quot;_addressList&quot;: [
+      {
+        &quot;addressId&quot;: &quot;5&quot;,
+        &quot;cid&quot;: &quot;3&quot;,
+        &quot;cityId&quot;: &quot;3502&quot;,
+        &quot;cityName&quot;: &quot;厦门市&quot;,
+        &quot;address&quot;: &quot;厦门宝远集团&quot;,
+        &quot;hNumber&quot;: &quot;302&quot;,
+        &quot;comLongitude&quot;: &quot;1.1&quot;,
+        &quot;comLatitude&quot;: &quot;2.2&quot;,
+        &quot;sort&quot;: &quot;0&quot;
+      }
+    ],
+    &quot;addressNum&quot;: 1
+  },
+&quot;_companyPicList&quot;: [
+      {
+        &quot;id&quot;: &quot;8&quot;,
+        &quot;picPath&quot;: &quot;https://597-test.oss-cn-hangzhou.aliyuncs.com/pic/test/11&quot;
+      },
+      {
+        &quot;id&quot;: &quot;8&quot;,
+        &quot;picPath&quot;: &quot;https://597-test.oss-cn-hangzhou.aliyuncs.com/pic/test/11&quot;
+      }
+    ],
+    &quot;companyPicNum&quot;: 2
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">cname    公司名称
+csName   公司简称
+logoUrl    公司logo
+comIndustry     行业名称
+comIndustryId    行业id
+comWorkers    规模id
+productList   产品列表
+managerList  高管列表
+addressList   地址列表
+financing    融资
+resttime     休息时间
+worktimeStart    	工作时间（开始）
+worktimeEnd         工作时间（结束）
+rewardID    福利
+setupDate    成立时间
+comStr    一句话
+comInfo    企业简介
+comSite   网址
+isAuth   实地认证
+companyPicList   公司文化照片</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_be83ab3ecd0db773eb2dc1b0a17836a1">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-06-05 16:35:39&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑HR信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">C1</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/company/hr</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                HR招聘者填写个人信息申请加入公司            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>realname</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>姓名</td>
+                    </tr>
+                                        <tr>
+                        <td>gender</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>性别,1-男。2-女</td>
+                    </tr>
+                                        <tr>
+                        <td>attachment</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>头像</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>登录产生的token</td>
+                    </tr>
+                                        <tr>
+                        <td>cname</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>招聘者手动输入的公司名称</td>
+                    </tr>
+                                        <tr>
+                        <td>jobName</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>hr职务</td>
+                    </tr>
+                                        <tr>
+                        <td>nameShow</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>称呼字段</td>
+                    </tr>
+                                        <tr>
+                        <td>weixinNO</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>微信号</td>
+                    </tr>
+                                        <tr>
+                        <td>motto</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>座右铭</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>加入已经存在的公司，返回如下值：
+{
+    &quot;status&quot;: 1,
+    &quot;msg&quot;: &quot;加入成功！&quot;,
+    &quot;isAuth&quot;:0,
+    &quot;cid&quot;: &quot;加密的cid编号&quot;
+}
+加入不存在的公司，返回如下值：
+{
+    &quot;status&quot;: 2,
+    “isAuth”:0,
+    &quot;msg&quot;: &quot;请注册公司！&quot;，
+    &quot;cname&quot;: &quot;输入的公司名称！&quot;
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">注册已经存在的公司会返回一个 cid，进入加入已经存在的公司页面。注册的公司名称不存在，不会产生cid，进入注册新公司页面。
+isAuth  实名认证标识：0未认证，1已认证</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <script>
+        //删除某个接口
+        var $url = 'index.php?act=ajax&op=apiDelete';
+        function deleteApi(apiId,divId){
+            if(confirm('是否确认删除此接口?')){
+                $.post($url,{id:apiId},function(data){
+                    if(data == '1'){
+                        $('#api_'+divId).remove();//删除左侧菜单
+                        $('#info_api_'+divId).remove();//删除接口详情
+                    }
+                })
+            }
+        }
+        //编辑某个接口
+        function editApi(gourl){
+            window.location.href=gourl;
+        }
+        //复制某个api
+        function copyApi( apiId ) {
+          var askName = layer.prompt({
+            title: '输入新的api名称',
+            formType: 0 //prompt风格，支持0-2
+          }, function(pass){
+            location.href = "index.php?act=api&op=copy&id="+apiId+"&name="+pass;
+          });
+        }
+
+        //返回顶部
+        function goTop(){
+            $('#mainwindow').animate(
+                { scrollTop: '0px' }, 200
+            );
+        }
+
+        //检测滚动条,显示返回顶部按钮
+        document.getElementById('mainwindow').onscroll = function () {
+            if(document.getElementById('mainwindow').scrollTop > 100){
+                document.getElementById('gotop').style.display='block';
+            }else{
+                document.getElementById('gotop').style.display='none';
+            }
+        };
+    </script>
+<!--接口详情列表与接口管理end-->            </div>
+            <!--主窗口end-->
+        </div>
+    </div>
+</div>
+<script src="MinPHP/res/jquery.min.js"></script>
+<script src="MinPHP/res/jquery.cookie.js"></script>
+<script src="MinPHP/res/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

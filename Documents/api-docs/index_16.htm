@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="MinPHP/res/favicon.ico">
+    <link href="MinPHP/res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="MinPHP/res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./MinPHP/res/html5shiv.min.js"></script>
+    <script src="./MinPHP/res/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="height:100%">
+<div class="container-fluid" style="background:white;height:100%;">
+    <div class="row" style="height:100%;">
+        <!--左侧导航start-->
+        <div id="navbar" class="col-md-3" style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+            <div style="height:50px;font-size:30px;line-height:50px;">
+                <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none" href="index.htm">
+                    <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+        <span style="position: relative;top:-3px;">API Manager <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.1</span>
+                </a>
+                </span>
+            </div>
+            <!--导航-->
+    <div class="form-group">
+        <input type="text" class="form-control" id="searchapi" placeholder="search here" onkeyup="search('api',this)">
+    </div>
+    <div class="list">
+        <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_9c838d2e45b2ad1094d42f4ef36764f6" >
+                <a href="index_5.htm#info_api_9c838d2e45b2ad1094d42f4ef36764f6" id="menu_9c838d2e45b2ad1094d42f4ef36764f6">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    行业数据                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9c838d2e45b2ad1094d42f4ef36764f6">行业数据<|-|>106<|-|><|-|><|-|>N;<|-|>http://cdn.597.com/data/industry.597.min.json<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_f90f2aca5c640289d0a29417bcb63a37" >
+                <a href="index_5.htm#info_api_f90f2aca5c640289d0a29417bcb63a37" id="menu_f90f2aca5c640289d0a29417bcb63a37">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    职位类型数据                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="f90f2aca5c640289d0a29417bcb63a37">职位类型数据<|-|>105<|-|><|-|><|-|>N;<|-|>http://cdn.597.com/data/jobclass.597.min.json<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_839ab46820b524afda05122893c2fe8e" >
+                <a href="index_5.htm#info_api_839ab46820b524afda05122893c2fe8e" id="menu_839ab46820b524afda05122893c2fe8e">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    城市数据                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="839ab46820b524afda05122893c2fe8e">城市数据<|-|>104<|-|><|-|><|-|>N;<|-|>http://cdn.597.com/data/area.597.min.json<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_48aedb8880cab8c45637abc7493ecddd" >
+                <a href="index_5.htm#info_api_48aedb8880cab8c45637abc7493ecddd" id="menu_48aedb8880cab8c45637abc7493ecddd">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    证书数据                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="48aedb8880cab8c45637abc7493ecddd">证书数据<|-|>103<|-|><|-|><|-|>N;<|-|>http://cdn.597.com/data/cert.597.min.json<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_918317b57931b6b7a7d29490fe5ec9f9" >
+                <a href="index_5.htm#info_api_918317b57931b6b7a7d29490fe5ec9f9" id="menu_918317b57931b6b7a7d29490fe5ec9f9">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    技能 数据                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="918317b57931b6b7a7d29490fe5ec9f9">技能 数据<|-|>102<|-|><|-|><|-|>N;<|-|>http://cdn.597.com/data/skill.597.min.json<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_16a5cdae362b8d27a1d8f8c7b78b4330" >
+                <a href="index_5.htm#info_api_16a5cdae362b8d27a1d8f8c7b78b4330" id="menu_16a5cdae362b8d27a1d8f8c7b78b4330">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取服务器时间                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="16a5cdae362b8d27a1d8f8c7b78b4330">获取服务器时间<|-|>101<|-|><|-|>type  未传则返回时间戳<|-|>a:5:{s:4:"name";a:1:{i:0;s:4:"type";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:50:"时间显示类型：Y-m-d H:i:s ;  Y ; Y-m 等等";}}<|-|>https://api.597.com/data/time<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_0e01938fc48a2cfb5f2217fbfb00722d" >
+                <a href="index_5.htm#info_api_0e01938fc48a2cfb5f2217fbfb00722d" id="menu_0e01938fc48a2cfb5f2217fbfb00722d">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    公用数据                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="0e01938fc48a2cfb5f2217fbfb00722d">公用数据<|-|>100<|-|>结束工作年限时间和结束生日年限时间，  请用 接口编号101 获取服务器时间，根据产品规则处理获得;<|-|>genderRows    性别
+salaryRows     薪资
+salaryMaxRows      薪资对应对大值
+eduRows     学历
+jobstateRows    工作状态
+rewardRows    福利
+compropertyRows    公司性质
+comsizeRows    公司规模
+stageRows    融资
+levelRows    熟练程度
+identificationRows    597认证
+expRows    经验
+ageRows    年龄
+marriageRows    婚姻状态
+polittcalRows    政治面貌
+nationRows    民族
+statureStart    起始身高
+statureEnd    结束身高
+avoirdupoisStart    起始体重
+avoirdupoisEnd    结束体重
+workyearStart    起始工作年限 (1989为1990年以前)
+learningStateRows    学习状态
+birthdayStart    起始生日年限
+displayShowRows    隐私（组合）
+displayRows    隐私
+resttimeRows    休息时间
+joinTypeRows   职位性质
+ageStart      年龄开始
+ageEnd      年龄结束
+zoneRow   电话区号
+comDisplayShowRows  公司隐私设置（组合设置）
+comDisplayRows   公司隐私设置（单一设置）<|-|>N;<|-|>https://api.597.com/data/all<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9cfdf10e8fc047a44b08ed031e1f0ed1" >
+                <a href="index_5.htm#info_api_9cfdf10e8fc047a44b08ed031e1f0ed1" id="menu_9cfdf10e8fc047a44b08ed031e1f0ed1">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    意见反馈的回复处理                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9cfdf10e8fc047a44b08ed031e1f0ed1">意见反馈的回复处理<|-|>S4<|-|>意见反馈的备注，邮件回复，短信回复。<|-|><|-|>a:5:{s:4:"name";a:4:{i:0;s:2:"id";i:1;s:4:"note";i:2;s:8:"emailtxt";i:3;s:8:"phonetxt";}s:9:"paramType";a:4:{i:0;s:3:"int";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"N";i:3;s:1:"N";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:18:"意见反馈编号";i:1;s:18:"意见反馈备注";i:2;s:12:"邮件回复";i:3;s:12:"短信回复";}}<|-|>http://api.597.com/suggestion/info<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d1c38a09acc34845c6be3a127a5aacaf" >
+                <a href="index_5.htm#info_api_d1c38a09acc34845c6be3a127a5aacaf" id="menu_d1c38a09acc34845c6be3a127a5aacaf">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    意见反馈的删除                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d1c38a09acc34845c6be3a127a5aacaf">意见反馈的删除<|-|>S3<|-|>删除意见反馈的信息，验证管理admin 登录session<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:2:"id";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:26:"多条记录ID用 , 隔开";}}<|-|>http://api.597.com/suggestion/info<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_13fe9d84310e77f13a6d184dbf1232f3" >
+                <a href="index_5.htm#info_api_13fe9d84310e77f13a6d184dbf1232f3" id="menu_13fe9d84310e77f13a6d184dbf1232f3">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取意见反馈分页信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="13fe9d84310e77f13a6d184dbf1232f3">获取意见反馈分页信息<|-|>S2<|-|>获取意见反馈分页信息,page-分页数，pp-每页记录数<|-|><|-|>a:5:{s:4:"name";a:5:{i:0;s:8:"userType";i:1;s:6:"mobile";i:2;s:1:"q";i:3;s:4:"page";i:4;s:2:"pp";}s:9:"paramType";a:5:{i:0;s:3:"int";i:1;s:6:"string";i:2;s:6:"string";i:3;s:3:"int";i:4;s:3:"int";}s:4:"type";a:5:{i:0;s:1:"N";i:1;s:1:"N";i:2;s:1:"N";i:3;s:1:"Y";i:4;s:1:"Y";}s:7:"default";a:5:{i:0;s:3:"1,2";i:1;s:0:"";i:2;s:0:"";i:3;s:1:"1";i:4;s:2:"20";}s:3:"des";a:5:{i:0;s:19:"1-个人，2-企业";i:1;s:12:"电话号码";i:2;s:15:"查询关键字";i:3;s:12:"当前页数";i:4;s:15:"每页记录数";}}<|-|>http://api.597.com/suggestion/list<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_115f89503138416a242f40fb7d7f338e" >
+                <a href="index_5.htm#info_api_115f89503138416a242f40fb7d7f338e" id="menu_115f89503138416a242f40fb7d7f338e">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    意见反馈的提交                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="115f89503138416a242f40fb7d7f338e">意见反馈的提交<|-|>S1<|-|>意见反馈的提交<|-|><|-|>a:5:{s:4:"name";a:12:{i:0;s:6:"linker";i:1;s:6:"cityid";i:2;s:8:"userType";i:3;s:7:"content";i:4;s:8:"telphone";i:5;s:5:"email";i:6;s:2:"qq";i:7;s:5:"stars";i:8;s:10:"createTime";i:9;s:2:"ip";i:10;s:4:"port";i:11;s:7:"fromUrl";}s:9:"paramType";a:12:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";i:6;s:6:"string";i:7;s:3:"int";i:8;s:3:"int";i:9;s:3:"int";i:10;s:3:"int";i:11;s:6:"string";}s:4:"type";a:12:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"N";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";i:6;s:1:"N";i:7;s:1:"N";i:8;s:1:"Y";i:9;s:1:"N";i:10;s:1:"N";i:11;s:1:"N";}s:7:"default";a:12:{i:0;s:0:"";i:1;s:1:"1";i:2;s:1:"0";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:1:"3";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";i:11;s:0:"";}s:3:"des";a:12:{i:0;s:6:"姓名";i:1;s:22:"城市编号,3502,3506";i:2;s:19:"0-个人，1-企业";i:3;s:18:"最长600个字符";i:4;s:6:"电话";i:5;s:6:"邮箱";i:6;s:2:"QQ";i:7;s:9:"星星数";i:8;s:12:"提交时间";i:9;s:17:"获取客户端IP";i:10;s:15:"客户端端口";i:11;s:6:"来源";}}<|-|>http://api.597.com/suggestion/info<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_bcbe3365e6ac95ea2c0343a2395834dd" >
+                <a href="index_5.htm#info_api_bcbe3365e6ac95ea2c0343a2395834dd" id="menu_bcbe3365e6ac95ea2c0343a2395834dd">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    城市名称获取信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="bcbe3365e6ac95ea2c0343a2395834dd">城市名称获取信息<|-|>R7<|-|>根据城市名称获取信息<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:8:"cityName";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:18:"完整城市名称";}}<|-|>http://api.597.com/region/getRegionByName<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_060ad92489947d410d897474079c1477" >
+                <a href="index_5.htm#info_api_060ad92489947d410d897474079c1477" id="menu_060ad92489947d410d897474079c1477">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取热门区域信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="060ad92489947d410d897474079c1477">获取热门区域信息<|-|>R6<|-|>获取热门区域信息,//厦门、泉州、南平、福州、漳州、莆田、龙岩、三明、宁德、金华、义乌、襄阳、上饶、北京<|-|><|-|>N;<|-|>http://api.597.com/region/hotArea<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ec8ce6abb3e952a85b8551ba726a1227" >
+                <a href="index_5.htm#info_api_ec8ce6abb3e952a85b8551ba726a1227" id="menu_ec8ce6abb3e952a85b8551ba726a1227">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取单个或多个区域及父级区域信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="ec8ce6abb3e952a85b8551ba726a1227">获取单个或多个区域及父级区域信息<|-|>R5<|-|>获取单个或多个区域及父级区域信息<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"cityid";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:30:"多个时，用逗号分割开";}}<|-|>http://api.597.com/region/multipleList<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c0e190d8267e36708f955d7ab048990d" >
+                <a href="index_5.htm#info_api_c0e190d8267e36708f955d7ab048990d" id="menu_c0e190d8267e36708f955d7ab048990d">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取直辖市的区域信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="c0e190d8267e36708f955d7ab048990d">获取直辖市的区域信息<|-|>R4<|-|>根据编号获取直辖市的区域信息，id-直辖市编号<|-|><|-|>N;<|-|>http://api.597.com/region/multiple/{id}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_e96ed478dab8595a7dbda4cbcbee168f" >
+                <a href="index_5.htm#info_api_e96ed478dab8595a7dbda4cbcbee168f" id="menu_e96ed478dab8595a7dbda4cbcbee168f">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取某个区域及父级区域信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="e96ed478dab8595a7dbda4cbcbee168f">获取某个区域及父级区域信息<|-|>R3<|-|>获取某个区域及父级区域信息,id-区域ID<|-|><|-|>N;<|-|>http://api.597.com/region/path/{id}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_63dc7ed1010d3c3b8269faf0ba7491d4" >
+                <a href="index_5.htm#info_api_63dc7ed1010d3c3b8269faf0ba7491d4" id="menu_63dc7ed1010d3c3b8269faf0ba7491d4">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取区域的所有列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="63dc7ed1010d3c3b8269faf0ba7491d4">获取区域的所有列表<|-|>R2<|-|><|-|>regionId    地址id
+regionName           地址名称
+parent_id       父类id
+order_no       排序
+subItems       子城市<|-|>N;<|-|>http://api.597.com/region/all<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_45fbc6d3e05ebd93369ce542e8f2322d" >
+                <a href="index_5.htm#info_api_45fbc6d3e05ebd93369ce542e8f2322d" id="menu_45fbc6d3e05ebd93369ce542e8f2322d">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取某个区域的子区域                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="45fbc6d3e05ebd93369ce542e8f2322d">获取某个区域的子区域<|-|>R1<|-|>通过区域ID获取该区域的子区域信息数组（返回数组）,id-区域id<|-|><|-|>N;<|-|>http://api.597.com/region/subList/{id}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_3b8a614226a953a8cd9526fca6fe9ba5" >
+                <a href="index_5.htm#info_api_3b8a614226a953a8cd9526fca6fe9ba5" id="menu_3b8a614226a953a8cd9526fca6fe9ba5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取子职位类别数据(是否有子类别)                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="3b8a614226a953a8cd9526fca6fe9ba5">获取子职位类别数据(是否有子类别)<|-|>J5<|-|>根据职位类别获取子职位类别数据(是否有子类别),id-职位类别id<|-|><|-|>N;<|-|>http://api.597.com/jobClass/jobSort/{id}<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ca46c1b9512a7a8315fa3c5a946e8265" >
+                <a href="index_5.htm#info_api_ca46c1b9512a7a8315fa3c5a946e8265" id="menu_ca46c1b9512a7a8315fa3c5a946e8265">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取职位类别的所有列表（3级）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="ca46c1b9512a7a8315fa3c5a946e8265">获取职位类别的所有列表（3级）<|-|>J4<|-|><|-|><|-|>N;<|-|>http://api.597.com/jobClass/allThree<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_979d472a84804b9f647bc185a877a8b5" >
+                <a href="index_5.htm#info_api_979d472a84804b9f647bc185a877a8b5" id="menu_979d472a84804b9f647bc185a877a8b5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取单个或多个职位类别数据                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="979d472a84804b9f647bc185a877a8b5">获取单个或多个职位类别数据<|-|>J3<|-|>获取单个或多个职位类别数据<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:2:"id";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:24:"多个职位用 , 隔开";}}<|-|>http://api.597.com/jobClass/multiple<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_1534b76d325a8f591b52d302e7181331" >
+                <a href="index_5.htm#info_api_1534b76d325a8f591b52d302e7181331" id="menu_1534b76d325a8f591b52d302e7181331">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取职位类别的所有列表（2级）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="1534b76d325a8f591b52d302e7181331">获取职位类别的所有列表（2级）<|-|>J2<|-|>获取职位类别的所有列表（2级）<|-|><|-|>N;<|-|>http://api.597.com/jobClass/all<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_eb163727917cbba1eea208541a643e74" >
+                <a href="index_5.htm#info_api_eb163727917cbba1eea208541a643e74" id="menu_eb163727917cbba1eea208541a643e74">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取所有子职位类别数据                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="eb163727917cbba1eea208541a643e74">获取所有子职位类别数据<|-|>J1<|-|>通过ID获取该jobClass的子信息数组,id-父类别<|-|><|-|>N;<|-|>http://api.597.com/jobClass/subList/{id}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_6f3ef77ac0e3619e98159e9b6febf557" >
+                <a href="index_5.htm#info_api_6f3ef77ac0e3619e98159e9b6febf557" id="menu_6f3ef77ac0e3619e98159e9b6febf557">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取ID的所有子行业列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="6f3ef77ac0e3619e98159e9b6febf557">获取ID的所有子行业列表<|-|>I4<|-|>获取ID的所有字行业列表,id-行业ID<|-|><|-|>N;<|-|>http://api.597.com/industry/calling/{id}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_b1d10e7bafa4421218a51b1e1f1b0ba2" >
+                <a href="index_5.htm#info_api_b1d10e7bafa4421218a51b1e1f1b0ba2" id="menu_b1d10e7bafa4421218a51b1e1f1b0ba2">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取单个或多个行业行业信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="b1d10e7bafa4421218a51b1e1f1b0ba2">获取单个或多个行业行业信息<|-|>I3<|-|>获取单个或多个行业行业信息<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:2:"id";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:18:"多个ID用,隔开";}}<|-|>http://api.597.com/industry/multiple<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_091d584fced301b442654dd8c23b3fc9" >
+                <a href="index_5.htm#info_api_091d584fced301b442654dd8c23b3fc9" id="menu_091d584fced301b442654dd8c23b3fc9">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取行业的所有列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="091d584fced301b442654dd8c23b3fc9">获取行业的所有列表<|-|>I2<|-|>获取行业的所有列表<|-|>success:
+calling_id-&gt;行业ID
+calling_name-&gt;行业名称
+parent_id-&gt;父级ID
+order_no-&gt;排序<|-|>N;<|-|>http://api.597.com/industry/all<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_69adc1e107f7f7d035d7baf04342e1ca" >
+                <a href="index_5.htm#info_api_69adc1e107f7f7d035d7baf04342e1ca" id="menu_69adc1e107f7f7d035d7baf04342e1ca">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取所有子行业类别数据                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="69adc1e107f7f7d035d7baf04342e1ca">获取所有子行业类别数据<|-|>I1<|-|>通过ID获取该industry的子信息数组,id-父类别<|-|><|-|>N;<|-|>http://api.597.com/industry/subList/{id}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_7eabe3a1649ffa2b3ff8c02ebfd5659f" >
+                <a href="index_5.htm#info_api_7eabe3a1649ffa2b3ff8c02ebfd5659f" id="menu_7eabe3a1649ffa2b3ff8c02ebfd5659f">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取参加招聘会的公司职位                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="7eabe3a1649ffa2b3ff8c02ebfd5659f">获取参加招聘会的公司职位<|-|>Z9<|-|>同过招聘会编号和公司编号获取公司发布的职位,zphid-招聘会编号，cid-公司编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>http://api.597.com/zph/comJob/{zphid}/{cid}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_eae27d77ca20db309e056e3d2dcd7d69" >
+                <a href="index_5.htm#info_api_eae27d77ca20db309e056e3d2dcd7d69" id="menu_eae27d77ca20db309e056e3d2dcd7d69">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取参加招聘会职位列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="eae27d77ca20db309e056e3d2dcd7d69">获取参加招聘会职位列表<|-|>Z8<|-|>通过招聘会编号获取招聘会职位信息,zphid-招聘会编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>http://api.597.com/zph/job/{zphid}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_274ad4786c3abca69fa097b85867d9a4" >
+                <a href="index_5.htm#info_api_274ad4786c3abca69fa097b85867d9a4" id="menu_274ad4786c3abca69fa097b85867d9a4">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取参加招聘会求职者列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="274ad4786c3abca69fa097b85867d9a4">获取参加招聘会求职者列表<|-|>Z7<|-|>通过招聘会编号获取与会求职者信息,zphid-招聘会编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>http://api.597.com/zph/person/{zphid}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_e2c0be24560d78c5e599c2a9c9d0bbd2" >
+                <a href="index_5.htm#info_api_e2c0be24560d78c5e599c2a9c9d0bbd2" id="menu_e2c0be24560d78c5e599c2a9c9d0bbd2">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取参加招聘会公司列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="e2c0be24560d78c5e599c2a9c9d0bbd2">获取参加招聘会公司列表<|-|>Z6<|-|>通过招聘会编号获取与会公司列表,zphid-招聘会编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>http://api.597.com/zph/company/{zphid}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_854d6fae5ee42911677c739ee1734486" >
+                <a href="index_5.htm#info_api_854d6fae5ee42911677c739ee1734486" id="menu_854d6fae5ee42911677c739ee1734486">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取城市所有招聘会举办点                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="854d6fae5ee42911677c739ee1734486">获取城市所有招聘会举办点<|-|>Z5<|-|>通过城市编号获取招聘会所有举办点信息,city-城市编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>http://api.597.com/zph/cityPoint/{city}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_757b505cfd34c64c85ca5b5690ee5293" >
+                <a href="index_5.htm#info_api_757b505cfd34c64c85ca5b5690ee5293" id="menu_757b505cfd34c64c85ca5b5690ee5293">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取招聘会点详细信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="757b505cfd34c64c85ca5b5690ee5293">获取招聘会点详细信息<|-|>Z4<|-|>获取招聘会举办点详细信息,id-招聘点编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>http://api.597.com/zph/pointInfo/{id}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_3644a684f98ea8fe223c713b77189a77" >
+                <a href="index_5.htm#info_api_3644a684f98ea8fe223c713b77189a77" id="menu_3644a684f98ea8fe223c713b77189a77">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取招聘点招聘会列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="3644a684f98ea8fe223c713b77189a77">获取招聘点招聘会列表<|-|>Z3<|-|>通过招聘点获取招聘会列表信息,id-招聘点编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>http://api.597.com/zph/point/{id}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_84d9ee44e457ddef7f2c4f25dc8fa865" >
+                <a href="index_5.htm#info_api_84d9ee44e457ddef7f2c4f25dc8fa865" id="menu_84d9ee44e457ddef7f2c4f25dc8fa865">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取城市招聘会列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="84d9ee44e457ddef7f2c4f25dc8fa865">获取城市招聘会列表<|-|>Z2<|-|>通过城市编号获取招聘会列表<|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:8:"citylist";i:1;s:6:"fields";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"N";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:38:"城市编号(用，隔开多个城市)";i:1;s:12:"数据字段";}}<|-|>http://api.597.com/zph/list<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_0e65972dce68dad4d52d063967f0a705" >
+                <a href="index_5.htm#info_api_0e65972dce68dad4d52d063967f0a705" id="menu_0e65972dce68dad4d52d063967f0a705">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取招聘会详细信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="0e65972dce68dad4d52d063967f0a705">获取招聘会详细信息<|-|>Z1<|-|>通过招聘会编号获取招聘会详细信息,id-招聘会编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>http://api.597.com/zph/info/{id}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_85d8ce590ad8981ca2c8286f79f59954" >
+                <a href="index_5.htm#info_api_85d8ce590ad8981ca2c8286f79f59954" id="menu_85d8ce590ad8981ca2c8286f79f59954">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取站点友情链接                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="85d8ce590ad8981ca2c8286f79f59954">获取站点友情链接<|-|>L1<|-|>通过站点城市编号获取友情链接,cityid-城市编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>http://api.597.com/link/city/{cityid}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_084b6fbb10729ed4da8c3d3f5a3ae7c9" >
+                <a href="index_5.htm#info_api_084b6fbb10729ed4da8c3d3f5a3ae7c9" id="menu_084b6fbb10729ed4da8c3d3f5a3ae7c9">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取新闻分页列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="084b6fbb10729ed4da8c3d3f5a3ae7c9">获取新闻分页列表<|-|>N4<|-|>获取新闻分页列表<|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:4:"page";i:1;s:5:"files";i:2;s:5:"types";}s:9:"paramType";a:3:{i:0;s:3:"int";i:1;s:6:"string";i:2;s:3:"int";}s:4:"type";a:3:{i:0;s:1:"N";i:1;s:1:"N";i:2;s:1:"N";}s:7:"default";a:3:{i:0;s:1:"1";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:12:"新闻页数";i:1;s:12:"查询字段";i:2;s:12:"新闻分类";}}<|-|>http://api.597.com/news/list<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_0336dcbab05b9d5ad24f4333c7658a0e" >
+                <a href="index_5.htm#info_api_0336dcbab05b9d5ad24f4333c7658a0e" id="menu_0336dcbab05b9d5ad24f4333c7658a0e">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取新闻详细内容                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="0336dcbab05b9d5ad24f4333c7658a0e">获取新闻详细内容<|-|>N3<|-|>通过新闻编号获取详细内容,id-新闻编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>http://api.597.com/news/info/{id}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_a597e50502f5ff68e3e25b9114205d4a" >
+                <a href="index_5.htm#info_api_a597e50502f5ff68e3e25b9114205d4a" id="menu_a597e50502f5ff68e3e25b9114205d4a">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取新闻分类列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="a597e50502f5ff68e3e25b9114205d4a">获取新闻分类列表<|-|>N2<|-|>获取新闻所有分类列表<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>http://api.597.com/news/typeList<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_bd686fd640be98efaae0091fa301e613" >
+                <a href="index_5.htm#info_api_bd686fd640be98efaae0091fa301e613" id="menu_bd686fd640be98efaae0091fa301e613">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取新闻分类信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="bd686fd640be98efaae0091fa301e613">获取新闻分类信息<|-|>N1<|-|>通过新闻类别编号获取新闻类别信息。id-类别编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>http://api.597.com/news/types/{id}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+    </div>
+    <form action="index_16.htm" method="post">
+            </form>
+<!--jquery模糊查询start-->
+<script>
+    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+    function search(type,obj){
+        var $find = $.trim($(obj).val());//得到搜索内容
+        if(type == 'cate'){//对接口分类进行搜索操作
+            if($find != ''){
+                $(".menu").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#info_"+menu_id).show();
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+            }
+        }else if(type == 'api'){//对接口进行搜索操作
+            if($find != ''){
+                $(".menu").hide();//左侧导航菜单隐藏
+                $(".info_api").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#api_"+menu_id).show();//左侧导航菜单 部份 隐藏
+                    $("#info_api_"+menu_id).show();//接口详情 部份 隐藏
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+            }
+        }
+    }
+
+    window.onload=function(){
+        //添加关闭,打开左侧菜单的功能
+        var status_flg="&lt";var cursor="w-resize"
+        var navbarButton = '<div onclick="navbar(this)" ' +
+            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:'+cursor+';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+            status_flg +
+            '</div>'
+        $('body').append(navbarButton);
+    }
+    // 全屏和normal
+    function navbar(obj){
+        if($('#mainwindow').hasClass('col-md-9')){
+            $(obj).html('&gt;');
+            $(obj).css("cursor","e-resize");
+            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+            $('#navbar').hide();
+            $.cookie($COOKIE_KEY, '1');
+        }else{
+            $(obj).html('&lt;');
+            $(obj).css("cursor","w-resize");
+            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+            $('#navbar').show();
+            $.cookie($COOKIE_KEY, '0');
+        }
+    }
+</script>
+<!--jquery模糊查询end-->
+<!--end-->        </div>
+        <!--左侧导航end-->
+        <div id="mainwindow" class="col-md-9"   style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+            <!--顶部导航start-->
+            <div class="textshadow" style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                <span> <a class="home" href="index.htm">Home</a> - 新系统api</span>
+        <span id="topbutton" style="float:right">
+            <a href="index_11.htm">登录&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>        </span>
+            </div>
+            <!--顶部导航end-->
+            <!--主窗口start-->
+            <div style="padding:16px;">
+                <!--接口详情列表与接口管理start-->
+    <!--添加接口 start-->
+    
+<!--js自动保存到cookie  star-->
+    <script src="MinPHP/res/jquery.min.js"></script>
+    <script>
+    	
+    	$(function(){
+    		
+					$("textarea[name='des'],textarea[name='re'],textarea[name='memo']").keydown(function () {
+						AutoSave();
+					});
+					
+					$(".btn-success").click(function(){
+						DeleteCookie('apimanage');
+					});
+    		
+    	});
+		</script>
+<script>	
+/**
+*
+*自动保存文字到cookie中
+*http://www.xuebuyuan.com/1323493.html
+*
+*/
+function AutoSave() {
+	var des = $("textarea[name='des']").val();
+	var re  = $("textarea[name='re']").val();
+  var er  = $("textarea[name='er']").val();
+	var memo= $("textarea[name='memo']").val();
+	var _value = des + ";"+ re + ";"+ er+";"+memo;
+	if (_value==";;"){
+		var LastContent = GetCookie('apimanage');
+		
+		if (LastContent == ";;") return;
+		var text = LastContent.split(";");
+		if (des != text[0] || re!=text[1] || er!=text[2] || memo!=text[3] ){
+			if (confirm("加载保存的记录")) {
+				$("textarea[name='des']").html(text[0]);
+        $("textarea[name='re']").html(text[1]);
+        $("textarea[name='er']").html(text[2]);
+				$("textarea[name='memo']").html(text[3]);
+				return true;
+			}
+		}
+
+	} else {
+		var expDays = 30;
+		var exp = new Date();
+		exp.setTime(exp.getTime() + (expDays * 86400000)); // 24*60*60*1000 = 86400000
+		var expires = '; expires=' + exp.toGMTString();
+
+		// SetCookie
+		document.cookie = "apimanage=" + escape(_value) + expires;
+	}
+}
+
+function getCookieVal(offset) {
+	var endstr = document.cookie.indexOf(";", offset);
+	if (endstr == -1) endstr = document.cookie.length;
+	return unescape(document.cookie.substring(offset, endstr));
+}
+
+function GetCookie(name) {
+	var arg = name + "=";
+	var alen = arg.length;
+	var clen = document.cookie.length;
+	var i = 0;
+	while (i < clen) {
+		var j = i + alen;
+		if (document.cookie.substring(i, j) == arg) return getCookieVal(j);
+		i = document.cookie.indexOf(" ", i) + 1;
+		if (i == 0) break;
+	}
+	return null;
+}
+
+function DeleteCookie(name) {
+	var exp = new Date();
+	exp.setTime(exp.getTime() - 1);
+	var cval = GetCookie(name);
+	document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+}
+</script>
+<!--js自动保存到cookie  end-->
+
+    <div style="border:1px solid #ddd">
+        <div style="background:#f5f5f5;padding:20px;position:relative">
+            <h4>添加接口<span style="font-size:12px;padding-left:20px;color:#a94442">注:"此色"边框为必填项</span></h4>
+            <div style="margin-left:20px;">
+                <form action="index_27.htm" method="post">
+                    <h5>基本信息</h5>
+                    <div class="form-group has-error">
+                        <div class="input-group">
+                            <div class="input-group-addon">接口编号</div>
+                            <input type="text" class="form-control" name="num" placeholder="接口编号" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group has-error">
+                        <div class="input-group">
+                            <div class="input-group-addon">接口名称</div>
+                            <input type="text" class="form-control" name="name" placeholder="接口名称" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group has-error">
+                        <div class="input-group">
+                            <div class="input-group-addon">请求地址</div>
+                            <input type="text" class="form-control" name="url" placeholder="请求地址" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="des" class="form-control" placeholder="描述"></textarea>
+                    </div>
+                    <div class="form-group" required="required">
+                        <select class="form-control" name="type">
+                            <option value="GET">GET</option>
+                            <option value="POST">POST</option>
+                            <option value="PUT">PUT</option>
+                            <option value="DELETE">DELETE</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <h5>请求参数</h5>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th class="col-md-3">参数名</th>
+								<th class="col-md-2">参数类型</th>
+                                <th class="col-md-2">必传</th>
+                                <th class="col-md-2">缺省值</th>
+                                <th class="col-md-4">描述</th>
+                                <th class="col-md-1">
+                                    <button type="button" class="btn btn-success" onclick="add()">新增</button>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody id="parameter">
+                            <tr>
+                                <td class="form-group has-error">
+                                    <input type="text" class="form-control" name="p[name][]" placeholder="参数名" required="required">
+                                </td>
+								<td class="form-group has-error"><input type="text" class="form-control" name="p[paramType][]" placeholder="参数类型" required="required"></td>
+                                <td>
+                                    <select class="form-control" name="p[type][]">
+                                        <option value="Y">Y</option>
+                                        <option value="N">N</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control" name="p[default][]" placeholder="缺省值"></td>
+                                <td><textarea name="p[des][]" rows="1" class="form-control" placeholder="描述"></textarea></td>
+                                <td><button type="button" class="btn btn-danger" onclick="del(this)">删除</button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form-group">
+                        <h5>返回结果</h5>
+                        <textarea name="re" rows="3" class="form-control" placeholder="返回结果"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <h5>错误</h5>
+                        <textarea name="er" rows="3" class="form-control" placeholder="错误"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <h5>备注</h5>
+                        <textarea name="memo" rows="3" class="form-control" placeholder="备注"></textarea>
+                    </div>
+                    <button class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function add(){
+            var $html ='<tr>' +
+                '<td class="form-group has-error" ><input type="text" class="form-control has-error" name="p[name][]" placeholder="参数名" required="required"></td>' +
+				'<td class="form-group has-error">' +
+				'<input type="text" class="form-control" name="p[paramType][]" placeholder="参数类型" required="required"></td>' +
+                '<td>' +
+                '<select class="form-control" name="p[type][]">' +
+                '<option value="Y">Y</option> <option value="N">N</option>' +
+                '</select >' +
+                '</td>' +
+                '<td>' +
+                '<input type="text" class="form-control" name="p[default][]" placeholder="缺省值"></td>' +
+                '<td>' +
+                '<textarea name="p[des][]" rows="1" class="form-control" placeholder="描述"></textarea>' +
+                '</td>' +
+                '<td>' +
+                '<button type="button" class="btn btn-danger" onclick="del(this)">删除</button>' +
+                '</td>' +
+                '</tr >';
+            $('#parameter').append($html);
+        }
+        function del(obj){
+            $(obj).parents('tr').remove();
+        }
+    </script>
+    <!--添加接口 end-->
+<!--接口详情列表与接口管理end-->            </div>
+            <!--主窗口end-->
+        </div>
+    </div>
+</div>
+<script src="MinPHP/res/jquery.min.js"></script>
+<script src="MinPHP/res/jquery.cookie.js"></script>
+<script src="MinPHP/res/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

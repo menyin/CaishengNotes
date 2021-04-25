@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="MinPHP/res/favicon.ico">
+    <link href="MinPHP/res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="MinPHP/res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./MinPHP/res/html5shiv.min.js"></script>
+    <script src="./MinPHP/res/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="height:100%">
+<div class="container-fluid" style="background:white;height:100%;">
+    <div class="row" style="height:100%;">
+        <!--左侧导航start-->
+        <div id="navbar" class="col-md-3" style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+            <div style="height:50px;font-size:30px;line-height:50px;">
+                <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none" href="index.htm">
+                    <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+        <span style="position: relative;top:-3px;">API Manager <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.1</span>
+                </a>
+                </span>
+            </div>
+            <!--导航-->
+    <div class="form-group">
+        <input type="text" class="form-control" id="searchapi" placeholder="search here" onkeyup="search('api',this)">
+    </div>
+    <div class="list">
+        <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_158f3069a435b314a80bdcb024f8e422" >
+                <a href="index_23.htm#info_api_158f3069a435b314a80bdcb024f8e422" id="menu_158f3069a435b314a80bdcb024f8e422">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    HR屏蔽简历                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="158f3069a435b314a80bdcb024f8e422">HR屏蔽简历<|-|>c32<|-|><|-|>ridStr         多个值用英文逗号（,）隔开。 例如：1,2<|-|>a:5:{s:4:"name";a:3:{i:0;s:5:"token";i:1;s:9:"banStatus";i:2;s:6:"ridStr";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:23:"0取消屏蔽，1屏蔽";i:2;s:17:"加密的简历id";}}<|-|>https://api.597.com/company/hrBanResume<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_950a4152c2b4aa3ad78bdd6b366cc179" >
+                <a href="index_23.htm#info_api_950a4152c2b4aa3ad78bdd6b366cc179" id="menu_950a4152c2b4aa3ad78bdd6b366cc179">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    HR隐私设置（单一设置, 自定义设置）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="950a4152c2b4aa3ad78bdd6b366cc179">HR隐私设置（单一设置, 自定义设置）<|-|>c31<|-|><|-|>display          如有多个值，用，隔开。 例如：1,2<|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:7:"display";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:8:"隐私id";}}<|-|>https://api.597.com/company/hrDisplay<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9dfcd5e558dfa04aaf37f137a1d9d3e5" >
+                <a href="index_23.htm#info_api_9dfcd5e558dfa04aaf37f137a1d9d3e5" id="menu_9dfcd5e558dfa04aaf37f137a1d9d3e5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    HR隐私设置（组合设置）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9dfcd5e558dfa04aaf37f137a1d9d3e5">HR隐私设置（组合设置）<|-|>c30<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:7:"display";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:8:"隐私id";}}<|-|>https://api.597.com/company/hrDisplayShow<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_06eb61b839a0cefee4967c67ccb099dc" >
+                <a href="index_23.htm#info_api_06eb61b839a0cefee4967c67ccb099dc" id="menu_06eb61b839a0cefee4967c67ccb099dc">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取公司成员（HR）日志                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="06eb61b839a0cefee4967c67ccb099dc">获取公司成员（HR）日志<|-|>c29<|-|><|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:31:"登录成功返回的SESSIONKEY";}}<|-|>https://api.597.com/company/HrLogList<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_eddea82ad2755b24c4e168c5fc2ebd40" >
+                <a href="index_23.htm#info_api_eddea82ad2755b24c4e168c5fc2ebd40" id="menu_eddea82ad2755b24c4e168c5fc2ebd40">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除公司文化环境照片                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="eddea82ad2755b24c4e168c5fc2ebd40">删除公司文化环境照片<|-|>c28<|-|>{picId}-照片编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:20:"登录产生的token";}}<|-|>https://api.597.com/company/companyPic/{picId}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_a8c88a0055f636e4a163a5e3d16adab7" >
+                <a href="index_23.htm#info_api_a8c88a0055f636e4a163a5e3d16adab7" id="menu_a8c88a0055f636e4a163a5e3d16adab7">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    设置公司文化环境照片                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="a8c88a0055f636e4a163a5e3d16adab7">设置公司文化环境照片<|-|>c27<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:7:"picPath";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:12:"照片地址";}}<|-|>http://api.597.com/company/companyPic<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_8e98d81f8217304975ccb23337bb5761" >
+                <a href="index_23.htm#info_api_8e98d81f8217304975ccb23337bb5761" id="menu_8e98d81f8217304975ccb23337bb5761">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    公司文化环境照片排序                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="8e98d81f8217304975ccb23337bb5761">公司文化环境照片排序<|-|>c26<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:6:"picIds";i:1;s:5:"token";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:42:"排序好的照片id（多个用,隔开）";i:1;s:20:"登录产生的token";}}<|-|>https://api.597.com/company/companyPicSort<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_577bcc914f9e55d5e4e4f82f9f00e7d4" >
+                <a href="index_23.htm#info_api_577bcc914f9e55d5e4e4f82f9f00e7d4" id="menu_577bcc914f9e55d5e4e4f82f9f00e7d4">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    公司高管排序                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="577bcc914f9e55d5e4e4f82f9f00e7d4">公司高管排序<|-|>c25<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:10:"managerIds";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:42:"排序好的高管id（多个用,隔开）";}}<|-|>https://api.597.com/company/managerSort<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_34ed066df378efacc9b924ec161e7639" >
+                <a href="index_23.htm#info_api_34ed066df378efacc9b924ec161e7639" id="menu_34ed066df378efacc9b924ec161e7639">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    公司产品排序                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="34ed066df378efacc9b924ec161e7639">公司产品排序<|-|>c24<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:10:"productIds";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:42:"排序好的产品id（多个用,隔开）";}}<|-|>https://api.597.com/company/productSort<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_94f6d7e04a4d452035300f18b984988c" >
+                <a href="index_23.htm#info_api_94f6d7e04a4d452035300f18b984988c" id="menu_94f6d7e04a4d452035300f18b984988c">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    公司地址排序                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="94f6d7e04a4d452035300f18b984988c">公司地址排序<|-|>c23<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:10:"addressIds";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:42:"排序好的地址id（多个用,隔开）";}}<|-|>https://api.597.com/company/addressSort<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ef0d3930a7b6c95bd2b32ed45989c61f" >
+                <a href="index_23.htm#info_api_ef0d3930a7b6c95bd2b32ed45989c61f" id="menu_ef0d3930a7b6c95bd2b32ed45989c61f">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    HR绑定公司                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="ef0d3930a7b6c95bd2b32ed45989c61f">HR绑定公司<|-|>c22<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:3:"cid";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:17:"加密的企业id";}}<|-|>https://api.597.com/company/hrBin<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_26e359e83860db1d11b6acca57d8ea88" >
+                <a href="index_23.htm#info_api_26e359e83860db1d11b6acca57d8ea88" id="menu_26e359e83860db1d11b6acca57d8ea88">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取HR招聘者注册的公司信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="26e359e83860db1d11b6acca57d8ea88">获取HR招聘者注册的公司信息<|-|>c21<|-|><|-|>cname   公司名称
+csName   公司简称
+comWorkers   公司规模
+comIndustryId   公司行业id
+comIndustry    公司行业<|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:6:"fields";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"N";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:51:"需要返回的字段名称（多个用，隔开）";}}<|-|>https://api.597.com/company/comTemp<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9fd81843ad7f202f26c1a174c7357585" >
+                <a href="index_23.htm#info_api_9fd81843ad7f202f26c1a174c7357585" id="menu_9fd81843ad7f202f26c1a174c7357585">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑职位信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9fd81843ad7f202f26c1a174c7357585">编辑职位信息<|-|>c20<|-|><|-|><|-|>a:5:{s:4:"name";a:28:{i:0;s:5:"token";i:1;s:3:"jid";i:2;s:5:"jname";i:3;s:12:"jobSalaryMin";i:4;s:12:"jobSalaryMax";i:5;s:9:"jobDegree";i:6;s:11:"jobWorkYear";i:7;s:10:"jobClassId";i:8;s:9:"addressId";i:9;s:10:"jobContent";i:10;s:13:"worktimeStart";i:11;s:11:"worktimeEnd";i:12;s:8:"resttime";i:13;s:8:"rewardID";i:14;s:7:"urgency";i:15;s:4:"best";i:16;s:7:"jobType";i:17;s:9:"jobGender";i:18;s:8:"nativeId";i:19;s:8:"marriage";i:20;s:9:"political";i:21;s:6:"nation";i:22;s:12:"statureStart";i:23;s:10:"statureEnd";i:24;s:9:"jobAgeMin";i:25;s:9:"jobAgeMax";i:26;s:9:"skillList";i:27;s:8:"bestTime";}s:9:"paramType";a:28:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:3:"int";i:4;s:3:"int";i:5;s:3:"int";i:6;s:3:"int";i:7;s:3:"int";i:8;s:3:"int";i:9;s:4:"time";i:10;s:4:"time";i:11;s:4:"time";i:12;s:3:"int";i:13;s:6:"string";i:14;s:3:"int";i:15;s:3:"int";i:16;s:3:"int";i:17;s:3:"int";i:18;s:3:"int";i:19;s:3:"int";i:20;s:3:"int";i:21;s:3:"int";i:22;s:3:"int";i:23;s:3:"int";i:24;s:3:"int";i:25;s:3:"int";i:26;s:6:"string";i:27;s:4:"time";}s:4:"type";a:28:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";i:6;s:1:"Y";i:7;s:1:"Y";i:8;s:1:"Y";i:9;s:1:"N";i:10;s:1:"N";i:11;s:1:"N";i:12;s:1:"N";i:13;s:1:"N";i:14;s:1:"N";i:15;s:1:"N";i:16;s:1:"N";i:17;s:1:"N";i:18;s:1:"N";i:19;s:1:"N";i:20;s:1:"N";i:21;s:1:"N";i:22;s:1:"N";i:23;s:1:"N";i:24;s:1:"N";i:25;s:1:"N";i:26;s:1:"N";i:27;s:1:"N";}s:7:"default";a:28:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";i:11;s:0:"";i:12;s:0:"";i:13;s:0:"";i:14;s:0:"";i:15;s:0:"";i:16;s:0:"";i:17;s:0:"";i:18;s:0:"";i:19;s:0:"";i:20;s:0:"";i:21;s:0:"";i:22;s:0:"";i:23;s:0:"";i:24;s:0:"";i:25;s:0:"";i:26;s:0:"";i:27;s:0:"";}s:3:"des";a:28:{i:0;s:20:"登录产生的token";i:1;s:35:"加密的职位id（修改时传）";i:2;s:12:"职位名称";i:3;s:12:"最低薪资";i:4;s:12:"最高薪资";i:5;s:6:"学历";i:6;s:6:"经验";i:7;s:14:"职位类型id";i:8;s:8:"地址id";i:9;s:12:"岗位描述";i:10;s:20:"工作时间(开始)";i:11;s:20:"工作时间(结束)";i:12;s:12:"休息时间";i:13;s:35:"福利ID（多个值用 , 隔开）";i:14;s:23:"急聘 ： 0 否，1是";i:15;s:20:"精品：0否，1是";i:16;s:12:"职位性质";i:17;s:6:"性别";i:18;s:14:"户籍地区id";i:19;s:12:"婚姻状况";i:20;s:12:"政治面貌";i:21;s:6:"民族";i:22;s:18:"身高（最低）";i:23;s:18:"身高（最高）";i:24;s:18:"年龄（最低）";i:25;s:18:"年龄（最高）";i:26;s:108:"技能。格式： [[&#039;a&#039;,&#039;b&#039;,&#039;c&#039;],[&#039;a&#039;,&#039;b&#039;,&#039;c&#039;]]";i:27;s:22:"上下架时间  00:00";}}<|-|>https://api.597.com/job/info<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_49182f81e6a13cf5eaa496d51fea6406" >
+                <a href="index_23.htm#info_api_49182f81e6a13cf5eaa496d51fea6406" id="menu_49182f81e6a13cf5eaa496d51fea6406">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取职位信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="49182f81e6a13cf5eaa496d51fea6406">获取职位信息<|-|>c19<|-|>jid  加密的职位id<|-|>可以传的字段
+
+jname    职位名称
+jobSalaryMin   最小薪资
+jobSalaryMax    最高薪资
+jobDegree    学历
+jobWorkYear    工作年限
+worktimeStart   工作时间（开始）
+worktimeEnd    工作时间（结束）
+resttime    休息时间
+statureStart    最低身高
+statureEnd    最高身高
+nation    	民族
+political    政治面貌
+nativeId    户籍id
+native    户籍
+marriage    婚姻状态
+rewardID    福利id
+rewardStr    福利
+jobType     职位性质
+jobTypeStr    职位性质
+jobClassId    职位类型id
+jobClassStr   职位类型
+jobContent    描述
+urgency    急聘（1是，0否）
+best    精品（1是，0否）
+cid    获取企业信息
+uid    获取hr信息
+skillList   技能<|-|>a:5:{s:4:"name";a:1:{i:0;s:6:"fields";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:39:"获取字段值（多个用 , 隔开）";}}<|-|>https://api.597.com/job/info/{jid}<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_0f49c89d1e7298bb9930789c8ed59d48" >
+                <a href="index_23.htm#info_api_0f49c89d1e7298bb9930789c8ed59d48" id="menu_0f49c89d1e7298bb9930789c8ed59d48">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    通过公司名称获取相识公司                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="0f49c89d1e7298bb9930789c8ed59d48">通过公司名称获取相识公司<|-|>C18<|-|>通过公司名称获取公司名称及编号及hr数量<|-|>cid    加密公司id
+cname    公司名称
+hrNum   招聘者人数<|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"cname";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:30:"查询的公司名称关键字";}}<|-|>http://api.597.com/company/cname<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_e3796ae838835da0b6f6ea37bcf8bcb7" >
+                <a href="index_23.htm#info_api_e3796ae838835da0b6f6ea37bcf8bcb7" id="menu_e3796ae838835da0b6f6ea37bcf8bcb7">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    HR招聘者注册公司信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="e3796ae838835da0b6f6ea37bcf8bcb7">HR招聘者注册公司信息<|-|>C16<|-|>招聘者注册公司信息<|-|>注册成功不返回加密的cid<|-|>a:5:{s:4:"name";a:6:{i:0;s:5:"token";i:1;s:5:"cname";i:2;s:10:"comWorkers";i:3;s:13:"comIndustryId";i:4;s:6:"csName";i:5;s:7:"logoUrl";}s:9:"paramType";a:6:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";}s:4:"type";a:6:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"N";}s:7:"default";a:6:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";}s:3:"des";a:6:{i:0;s:20:"登录产生的token";i:1;s:12:"公司名称";i:2;s:12:"公司规模";i:3;s:31:"行业类别,多个用 , 隔开";i:4;s:12:"公司简称";i:5;s:10:"LOGO地址";}}<|-|>http://api.597.com/company/comTemp<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_92c8c96e4c37100777c7190b76d28233" >
+                <a href="index_23.htm#info_api_92c8c96e4c37100777c7190b76d28233" id="menu_92c8c96e4c37100777c7190b76d28233">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除企业高管信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="92c8c96e4c37100777c7190b76d28233">删除企业高管信息<|-|>C15<|-|>通过企业高管ID获取详细信息，{managerId}-企业高管编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:20:"登录产生的token";}}<|-|>http://api.597.com/company/manager/{managerId}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d395771085aab05244a4fb8fd91bf4ee" >
+                <a href="index_23.htm#info_api_d395771085aab05244a4fb8fd91bf4ee" id="menu_d395771085aab05244a4fb8fd91bf4ee">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取企业高管信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d395771085aab05244a4fb8fd91bf4ee">获取企业高管信息<|-|>C14<|-|>{manageId}-企业高管编号<|-|>managerName   高管姓名
+managerJobname   高管职务
+managerLogo   logo
+managerInfo    高管介绍
+managerId    id<|-|>a:5:{s:4:"name";a:2:{i:0;s:3:"cid";i:1;s:9:"managerId";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:8:"企业id";i:1;s:8:"高管id";}}<|-|>http://api.597.com/company/manager/{manageId}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_07cdfd23373b17c6b337251c22b7ea57" >
+                <a href="index_23.htm#info_api_07cdfd23373b17c6b337251c22b7ea57" id="menu_07cdfd23373b17c6b337251c22b7ea57">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑公司高管信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="07cdfd23373b17c6b337251c22b7ea57">编辑公司高管信息<|-|>C13<|-|>HR添加或修改公司高管信息<|-|><|-|>a:5:{s:4:"name";a:6:{i:0;s:5:"token";i:1;s:9:"managerId";i:2;s:11:"managerName";i:3;s:14:"managerJobname";i:4;s:11:"managerLogo";i:5;s:11:"managerInfo";}s:9:"paramType";a:6:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";}s:4:"type";a:6:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"N";i:5;s:1:"N";}s:7:"default";a:6:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";}s:3:"des";a:6:{i:0;s:20:"登录产生的token";i:1;s:38:"编辑的时候需要编辑的高管ID";i:2;s:12:"高管名字";i:3;s:12:"高管职务";i:4;s:10:"高管LOGO";i:5;s:12:"高管介绍";}}<|-|>http://api.597.com/company/manager<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_20f07591c6fcb220ffe637cda29bb3f6" >
+                <a href="index_23.htm#info_api_20f07591c6fcb220ffe637cda29bb3f6" id="menu_20f07591c6fcb220ffe637cda29bb3f6">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除公司产品信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="20f07591c6fcb220ffe637cda29bb3f6">删除公司产品信息<|-|>C12<|-|>{productId}-企业产品编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:20:"登录产生的token";}}<|-|>http://api.597.com/company/product/{productId}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_db8e1af0cb3aca1ae2d0018624204529" >
+                <a href="index_23.htm#info_api_db8e1af0cb3aca1ae2d0018624204529" id="menu_db8e1af0cb3aca1ae2d0018624204529">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取公司产品信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="db8e1af0cb3aca1ae2d0018624204529">获取公司产品信息<|-|>C11<|-|>{productId}-企业产品编号<|-|>productName     名称
+productLogo      logo
+productSlogan     口号
+productPoint     亮点
+productSite    网站
+productId   id<|-|>a:5:{s:4:"name";a:2:{i:0;s:9:"productId";i:1;s:3:"cid";}s:9:"paramType";a:2:{i:0;s:3:"int";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:8:"产品id";i:1;s:17:"加密的企业id";}}<|-|>http://api.597.com/company/product<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_7a614fd06c325499f1680b9896beedeb" >
+                <a href="index_23.htm#info_api_7a614fd06c325499f1680b9896beedeb" id="menu_7a614fd06c325499f1680b9896beedeb">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑公司产品信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="7a614fd06c325499f1680b9896beedeb">编辑公司产品信息<|-|>C10<|-|>HR添加或修改公司产品信息<|-|><|-|>a:5:{s:4:"name";a:7:{i:0;s:5:"token";i:1;s:9:"productId";i:2;s:11:"productLogo";i:3;s:11:"productName";i:4;s:13:"productSlogan";i:5;s:12:"productPoint";i:6;s:11:"productSite";}s:9:"paramType";a:7:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";i:6;s:6:"string";}s:4:"type";a:7:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"N";i:3;s:1:"Y";i:4;s:1:"N";i:5;s:1:"N";i:6;s:1:"N";}s:7:"default";a:7:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";}s:3:"des";a:7:{i:0;s:20:"登录产生的token";i:1;s:32:"编辑的时候需要编辑的ID";i:2;s:16:"产品logo地址";i:3;s:12:"产品名称";i:4;s:12:"产品口号";i:5;s:12:"产品亮点";i:6;s:12:"产品官网";}}<|-|>http://api.597.com/company/product<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_7f100b7b36092fb9b06dfb4fac360931" >
+                <a href="index_23.htm#info_api_7f100b7b36092fb9b06dfb4fac360931" id="menu_7f100b7b36092fb9b06dfb4fac360931">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除公司地址信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="7f100b7b36092fb9b06dfb4fac360931">删除公司地址信息<|-|>C9<|-|>通过企业地址ID获取详细信息，{addressId}-企业地址编号<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:20:"登录产生的token";}}<|-|>http://api.597.com/company/address/{addressId}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_39059724f73a9969845dfe4146c5660e" >
+                <a href="index_23.htm#info_api_39059724f73a9969845dfe4146c5660e" id="menu_39059724f73a9969845dfe4146c5660e">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取公司地址信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="39059724f73a9969845dfe4146c5660e">获取公司地址信息<|-|>C8<|-|>{addressId}-企业地址编号<|-|><|-|>N;<|-|>http://api.597.com/company/address/{addressId}<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_06138bc5af6023646ede0e1f7c1eac75" >
+                <a href="index_23.htm#info_api_06138bc5af6023646ede0e1f7c1eac75" id="menu_06138bc5af6023646ede0e1f7c1eac75">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑公司地址信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="06138bc5af6023646ede0e1f7c1eac75">编辑公司地址信息<|-|>C7<|-|>HR添加或修改公司地址<|-|><|-|>a:5:{s:4:"name";a:7:{i:0;s:5:"token";i:1;s:9:"addressId";i:2;s:6:"cityId";i:3;s:7:"address";i:4;s:7:"hNumber";i:5;s:12:"comLongitude";i:6;s:11:"comLatitude";}s:9:"paramType";a:7:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:3:"int";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"double";i:6;s:6:"double";}s:4:"type";a:7:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";i:6;s:1:"Y";}s:7:"default";a:7:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";}s:3:"des";a:7:{i:0;s:20:"登录产生的token";i:1;s:38:"编辑的时候需要编辑的地址ID";i:2;s:12:"城市编号";i:3;s:12:"详细地址";i:4;s:9:"门牌号";i:5;s:12:"地址经度";i:6;s:12:"地址纬度";}}<|-|>http://api.597.com/company/address<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_8f121ce07d74717e0b1f21d122e04521" >
+                <a href="index_23.htm#info_api_8f121ce07d74717e0b1f21d122e04521" id="menu_8f121ce07d74717e0b1f21d122e04521">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取企业下的HR列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="8f121ce07d74717e0b1f21d122e04521">获取企业下的HR列表<|-|>C6<|-|><|-|>uid     用户加密id
+cid     企业加密id
+licenceurl    上传的营业执照地址
+jobName    	职务名称字段
+jobProve    	工作证明字段
+jobCert    工作证字段
+cardPhotoA    法人正面身份证
+cardPhotoB    法人反面身份证
+banTime    绑定时间
+loginTime    最后登录时间
+loginIP    最后登录IP
+isCheck    是否审核0-未审核，1-审核通过，2-审核不通过	
+checkInfo    	审核结果
+cname    公司名称
+realname    姓名
+gender    性别id<|-|>a:5:{s:4:"name";a:3:{i:0;s:5:"token";i:1;s:3:"cid";i:2;s:3:"num";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";}s:4:"type";a:3:{i:0;s:1:"N";i:1;s:1:"N";i:2;s:1:"N";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:22:"hr登录状态的token";i:1;s:17:"加密的企业id";i:2;s:34:"返回的hr个数（默认10个）";}}<|-|>http://api.597.com/company/hrList<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_36660e59856b4de58a219bcf4e27eba3" >
+                <a href="index_23.htm#info_api_36660e59856b4de58a219bcf4e27eba3" id="menu_36660e59856b4de58a219bcf4e27eba3">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑企业信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="36660e59856b4de58a219bcf4e27eba3">编辑企业信息<|-|>C5<|-|>认证HR编辑企业信息<|-|>editType有如下类型：baseinfo-基础信息，worktimes-工作时间，cominfo-公司简介，reward-公司福利。
+基础信息： comWorkers，comIndustryId 两字段必填
+编辑工作时间：worktimeStart，worktimeEnd，resttime
+编辑公司简介：cominfo
+编辑公司福利：rewardID<|-|>a:5:{s:4:"name";a:17:{i:0;s:5:"token";i:1;s:3:"cid";i:2;s:10:"comWorkers";i:3;s:7:"comType";i:4;s:13:"comIndustryId";i:5;s:6:"csName";i:6;s:7:"logoUrl";i:7;s:9:"setupDate";i:8;s:9:"financing";i:9;s:7:"comSite";i:10;s:13:"worktimeStart";i:11;s:11:"worktimeEnd";i:12;s:8:"resttime";i:13;s:7:"comInfo";i:14;s:8:"rewardID";i:15;s:8:"editType";i:16;s:6:"comStr";}s:9:"paramType";a:17:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";i:3;s:3:"int";i:4;s:6:"string";i:5;s:6:"string";i:6;s:6:"string";i:7;s:6:"string";i:8;s:3:"int";i:9;s:6:"string";i:10;s:6:"string";i:11;s:6:"string";i:12;s:3:"int";i:13;s:6:"string";i:14;s:6:"string";i:15;s:6:"string";i:16;s:6:"string";}s:4:"type";a:17:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"N";i:3;s:1:"N";i:4;s:1:"N";i:5;s:1:"N";i:6;s:1:"N";i:7;s:1:"N";i:8;s:1:"N";i:9;s:1:"N";i:10;s:1:"N";i:11;s:1:"N";i:12;s:1:"N";i:13;s:1:"N";i:14;s:1:"N";i:15;s:1:"Y";i:16;s:1:"N";}s:7:"default";a:17:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";i:11;s:0:"";i:12;s:0:"";i:13;s:0:"";i:14;s:0:"";i:15;s:0:"";i:16;s:0:"";}s:3:"des";a:17:{i:0;s:17:"会员登录token";i:1;s:21:"会员编号加密值";i:2;s:12:"公司规模";i:3;s:12:"企业类型";i:4;s:39:"行业类别，多个行业用 , 隔开";i:5;s:12:"公司简称";i:6;s:10:"LOGO地址";i:7;s:12:"成立时间";i:8;s:12:"融资阶段";i:9;s:22:"公司官网/公众号";i:10;s:35:"上班时间（开始）（08:00）";i:11;s:35:"上班时间（结束）（08:00）";i:12;s:12:"休息时间";i:13;s:12:"公司简介";i:14;s:34:"公司福利（多个用,隔开）";i:15;s:140:"编辑类型：baseinfo-基础信息，worktimes-工作时间，cominfo-公司简介，reward-公司福利，delWorkTimes-清空工作时间";i:16;s:9:"一句话";}}<|-|>http://api.597.com/company/info<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_539fd53b59e3bb12d203f45a912eeaf2" >
+                <a href="index_23.htm#info_api_539fd53b59e3bb12d203f45a912eeaf2" id="menu_539fd53b59e3bb12d203f45a912eeaf2">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    HR提交企业申请认证信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="539fd53b59e3bb12d203f45a912eeaf2">HR提交企业申请认证信息<|-|>C4<|-|>jobProve,jobCert,与（cardPhotoA，cardPhotoB）三证必传一个<|-|>cid有值，招聘者加入已经存在的公司。cid没有值，则新注册公司信息到公司临时表<|-|>a:5:{s:4:"name";a:6:{i:0;s:10:"licenceurl";i:1;s:8:"jobProve";i:2;s:7:"jobCert";i:3;s:10:"cardPhotoA";i:4;s:10:"cardPhotoB";i:5;s:5:"token";}s:9:"paramType";a:6:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";}s:4:"type";a:6:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"N";i:3;s:1:"N";i:4;s:1:"N";i:5;s:1:"Y";}s:7:"default";a:6:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";}s:3:"des";a:6:{i:0;s:27:"上传的营业执照路径";i:1;s:18:"工作证明字段";i:2;s:15:"工作证字段";i:3;s:27:"法人正面身份证字段";i:4;s:27:"法人反面身份证字段";i:5;s:20:"登录产生的token";}}<|-|>http://api.597.com/company/hrCert<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_289dff07669d7a23de0ef88d2f7129e7" >
+                <a href="index_23.htm#info_api_289dff07669d7a23de0ef88d2f7129e7" id="menu_289dff07669d7a23de0ef88d2f7129e7">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取HR信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="289dff07669d7a23de0ef88d2f7129e7">获取HR信息<|-|>C3<|-|><|-|>uid     用户加密id（必传）
+cid     企业加密id（必传）
+licenceurl    上传的营业执照地址
+jobName    	职务名称字段
+jobProve    	工作证明字段
+jobCert    工作证字段
+cardPhotoA    法人正面身份证
+cardPhotoB    法人反面身份证
+banTime    绑定时间
+loginTime    最后登录时间
+loginIP    最后登录IP
+isCheck    是否审核：0未审核，1审核通过，-1审核不通过，-2离开		
+checkInfo    	审核失败的原因
+cname    公司名称
+realname    姓名
+realname1 称呼
+nameShow 称呼字段
+gender    性别id
+isAuth     实名（1是，0否）
+comTempRow 公司临时表（下面为公司临时表字段）
+       isCheck    企业临时表审核状态（-1未通过，0审核中，1审核通过）
+       checkInfo   审核失败的原因<|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:6:"fields";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"N";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:20:"登录产生的token";i:1;s:51:"需要返回的字段名称（多个用，隔开）";}}<|-|>http://api.597.com/company/hr<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_e165421110ba03099a1c0393373c5b43" >
+                <a href="index_23.htm#info_api_e165421110ba03099a1c0393373c5b43" id="menu_e165421110ba03099a1c0393373c5b43">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取企业信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="e165421110ba03099a1c0393373c5b43">获取企业信息<|-|>C2<|-|>通过企业cid获取企业详细信息,{cid}-企业加密的企业id<|-|>cname    公司名称
+csName   公司简称
+logoUrl    公司logo
+comIndustry     行业名称
+comIndustryId    行业id
+comWorkers    规模id
+productList   产品列表
+managerList  高管列表
+addressList   地址列表
+financing    融资
+resttime     休息时间
+worktimeStart    	工作时间（开始）
+worktimeEnd         工作时间（结束）
+rewardID    福利
+setupDate    成立时间
+comStr    一句话
+comInfo    企业简介
+comSite   网址
+isAuth   实地认证
+companyPicList   公司文化照片<|-|>a:5:{s:4:"name";a:3:{i:0;s:6:"fields";i:1;s:5:"token";i:2;s:3:"cid";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"N";i:1;s:1:"N";i:2;s:1:"N";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:39:"获取字段值（多个用 , 隔开）";i:1;s:20:"登录产生的token";i:2;s:17:"加密的企业id";}}<|-|>http://api.597.com/company/info<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_be83ab3ecd0db773eb2dc1b0a17836a1" >
+                <a href="index_23.htm#info_api_be83ab3ecd0db773eb2dc1b0a17836a1" id="menu_be83ab3ecd0db773eb2dc1b0a17836a1">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑HR信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="be83ab3ecd0db773eb2dc1b0a17836a1">编辑HR信息<|-|>C1<|-|>HR招聘者填写个人信息申请加入公司<|-|>注册已经存在的公司会返回一个 cid，进入加入已经存在的公司页面。注册的公司名称不存在，不会产生cid，进入注册新公司页面。
+isAuth  实名认证标识：0未认证，1已认证<|-|>a:5:{s:4:"name";a:9:{i:0;s:8:"realname";i:1;s:6:"gender";i:2;s:10:"attachment";i:3;s:5:"token";i:4;s:5:"cname";i:5;s:7:"jobName";i:6;s:8:"nameShow";i:7;s:8:"weixinNO";i:8;s:5:"motto";}s:9:"paramType";a:9:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";i:5;s:6:"string";i:6;s:3:"int";i:7;s:6:"string";i:8;s:6:"string";}s:4:"type";a:9:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"N";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"N";i:6;s:1:"N";i:7;s:1:"N";i:8;s:1:"N";}s:7:"default";a:9:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";}s:3:"des";a:9:{i:0;s:6:"姓名";i:1;s:20:"性别,1-男。2-女";i:2;s:6:"头像";i:3;s:20:"登录产生的token";i:4;s:36:"招聘者手动输入的公司名称";i:5;s:8:"hr职务";i:6;s:12:"称呼字段";i:7;s:9:"微信号";i:8;s:9:"座右铭";}}<|-|>http://api.597.com/company/hr<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+    </div>
+    <form action="index_32.htm" method="post">
+            </form>
+<!--jquery模糊查询start-->
+<script>
+    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+    function search(type,obj){
+        var $find = $.trim($(obj).val());//得到搜索内容
+        if(type == 'cate'){//对接口分类进行搜索操作
+            if($find != ''){
+                $(".menu").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#info_"+menu_id).show();
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+            }
+        }else if(type == 'api'){//对接口进行搜索操作
+            if($find != ''){
+                $(".menu").hide();//左侧导航菜单隐藏
+                $(".info_api").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#api_"+menu_id).show();//左侧导航菜单 部份 隐藏
+                    $("#info_api_"+menu_id).show();//接口详情 部份 隐藏
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+            }
+        }
+    }
+
+    window.onload=function(){
+        //添加关闭,打开左侧菜单的功能
+        var status_flg="&lt";var cursor="w-resize"
+        var navbarButton = '<div onclick="navbar(this)" ' +
+            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:'+cursor+';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+            status_flg +
+            '</div>'
+        $('body').append(navbarButton);
+    }
+    // 全屏和normal
+    function navbar(obj){
+        if($('#mainwindow').hasClass('col-md-9')){
+            $(obj).html('&gt;');
+            $(obj).css("cursor","e-resize");
+            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+            $('#navbar').hide();
+            $.cookie($COOKIE_KEY, '1');
+        }else{
+            $(obj).html('&lt;');
+            $(obj).css("cursor","w-resize");
+            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+            $('#navbar').show();
+            $.cookie($COOKIE_KEY, '0');
+        }
+    }
+</script>
+<!--jquery模糊查询end-->
+<!--end-->        </div>
+        <!--左侧导航end-->
+        <div id="mainwindow" class="col-md-9"   style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+            <!--顶部导航start-->
+            <div class="textshadow" style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                <span> <a class="home" href="index.htm">Home</a> - 新企业api</span>
+        <span id="topbutton" style="float:right">
+            <a href="index_11.htm">登录&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>        </span>
+            </div>
+            <!--顶部导航end-->
+            <!--主窗口start-->
+            <div style="padding:16px;">
+                <!--接口详情列表与接口管理start-->
+只有超级管理员才可对接口进行操作

@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="MinPHP/res/favicon.ico">
+    <link href="MinPHP/res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="MinPHP/res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./MinPHP/res/html5shiv.min.js"></script>
+    <script src="./MinPHP/res/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="height:100%">
+<div class="container-fluid" style="background:white;height:100%;">
+    <div class="row" style="height:100%;">
+        <!--左侧导航start-->
+        <div id="navbar" class="col-md-3" style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+            <div style="height:50px;font-size:30px;line-height:50px;">
+                <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none" href="index.htm">
+                    <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+        <span style="position: relative;top:-3px;">API Manager <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.1</span>
+                </a>
+                </span>
+            </div>
+            <!--导航-->
+    <div class="form-group">
+        <input type="text" class="form-control" id="searchapi" placeholder="search here" onkeyup="search('api',this)">
+    </div>
+    <div class="list">
+        <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_c058f544c737782deacefa532d9add4c" >
+                <a href="index_2.htm#info_api_c058f544c737782deacefa532d9add4c" id="menu_c058f544c737782deacefa532d9add4c">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    企业关联搜索                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="c058f544c737782deacefa532d9add4c">企业关联搜索<|-|>8<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:7:"keyword";i:2;s:6:"cityid";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"字符型";i:2;s:6:"整型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"N";}s:7:"default";a:3:{i:0;s:14:"company_search";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:9:"关键词";i:2;s:8:"城市id";}}<|-|>https://api.597.com/web/company.api<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_138bb0696595b338afbab333c555292a" >
+                <a href="index_2.htm#info_api_138bb0696595b338afbab333c555292a" id="menu_138bb0696595b338afbab333c555292a">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    个人关注企业列表（或判断关注的企业）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="138bb0696595b338afbab333c555292a">个人关注企业列表（或判断关注的企业）<|-|>7<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:5:"token";i:2;s:3:"cid";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"字符型";i:2;s:9:"字符型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"N";}s:7:"default";a:3:{i:0;s:16:"get_company_fans";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:3:"uid";i:2;s:62:"加密的企业id，可以用来判断有没有关注该企业";}}<|-|>https://api.597.com/web/person.api<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_371bce7dc83817b7893bcdeed13799b5" >
+                <a href="index_2.htm#info_api_371bce7dc83817b7893bcdeed13799b5" id="menu_371bce7dc83817b7893bcdeed13799b5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    公司搜索                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="371bce7dc83817b7893bcdeed13799b5">公司搜索<|-|>6<|-|>公司搜索
+知名名企 famous=1<|-|><|-|>a:5:{s:4:"name";a:15:{i:0;s:3:"act";i:1;s:2:"pp";i:2;s:4:"page";i:3;s:1:"q";i:4;s:5:"order";i:5;s:4:"area";i:6;s:13:"comIndustryId";i:7;s:7:"comType";i:8;s:10:"comWorkers";i:9;s:4:"auth";i:10;s:9:"financing";i:11;s:8:"distance";i:12;s:11:"comLatitude";i:13;s:12:"comLongitude";i:14;s:6:"famous";}s:9:"paramType";a:15:{i:0;s:9:"字符型";i:1;s:6:"整型";i:2;s:6:"整型";i:3;s:9:"字符型";i:4;s:6:"整型";i:5;s:6:"整型";i:6;s:9:"字符型";i:7;s:9:"字符型";i:8;s:9:"字符型";i:9;s:9:"字符型";i:10;s:9:"字符型";i:11;s:6:"整型";i:12;s:9:"字符型";i:13;s:9:"字符型";i:14;s:6:"整型";}s:4:"type";a:15:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"N";i:3;s:1:"N";i:4;s:1:"N";i:5;s:1:"N";i:6;s:1:"N";i:7;s:1:"N";i:8;s:1:"N";i:9;s:1:"N";i:10;s:1:"N";i:11;s:1:"N";i:12;s:1:"N";i:13;s:1:"N";i:14;s:1:"N";}s:7:"default";a:15:{i:0;s:6:"search";i:1;s:2:"20";i:2;s:1:"1";i:3;s:0:"";i:4;s:1:"3";i:5;s:1:"1";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";i:11;s:0:"";i:12;s:0:"";i:13;s:0:"";i:14;s:1:"1";}s:3:"des";a:15:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:12:"公司名称";i:4;s:21:"排序:2最新3推荐";i:5;s:12:"默认全国";i:6;s:26:"行业id，用逗号隔开";i:7;s:26:"性质id，用逗号隔开";i:8;s:26:"规模id，用逗号隔开";i:9;s:26:"认证id，用逗号隔开";i:10;s:26:"融资id，用逗号隔开";i:11;s:18:"附近公司距离";i:12;s:18:"附近公司经度";i:13;s:18:"附近公司纬度";i:14;s:64:"知名企业，认证的一种（尽量不加auth认证条件）";}}<|-|>https://api.597.com/v1/company/company.api<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_efe937780e95574250dabe07151bdc23" >
+                <a href="index_2.htm#info_api_efe937780e95574250dabe07151bdc23" id="menu_efe937780e95574250dabe07151bdc23">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    个人取消关注企业                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="efe937780e95574250dabe07151bdc23">个人取消关注企业<|-|>5<|-|>个人关注企业<|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:3:"cid";i:2;s:5:"token";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"字符型";i:2;s:9:"字符型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:8:"fans_del";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:12:"加密的cid";i:2;s:20:"服务端用户token";}}<|-|>https://api.597.com/web/person.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9de6d14fff9806d4bcd1ef555be766cd" >
+                <a href="index_2.htm#info_api_9de6d14fff9806d4bcd1ef555be766cd" id="menu_9de6d14fff9806d4bcd1ef555be766cd">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    个人关注企业                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9de6d14fff9806d4bcd1ef555be766cd">个人关注企业<|-|>4<|-|>个人关注企业<|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:3:"cid";i:2;s:5:"token";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"字符型";i:2;s:9:"字符型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:9:"fans_save";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:12:"加密的cid";i:2;s:20:"服务端用户token";}}<|-|>https://api.597.com/web/person.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_0bb4aec1710521c12ee76289d9440817" >
+                <a href="index_2.htm#info_api_0bb4aec1710521c12ee76289d9440817" id="menu_0bb4aec1710521c12ee76289d9440817">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    企业工商信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="0bb4aec1710521c12ee76289d9440817">企业工商信息<|-|>3<|-|>企业工商信息<|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:3:"cid";i:2;s:5:"cname";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"字符型";i:2;s:9:"字符型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:12:"businessInfo";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:12:"加密的cid";i:2;s:12:"公司名称";}}<|-|>https://api.597.com/v1/company/company.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c5ff2543b53f4cc0ad3819a36752467b" >
+                <a href="index_2.htm#info_api_c5ff2543b53f4cc0ad3819a36752467b" id="menu_c5ff2543b53f4cc0ad3819a36752467b">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    相似职位                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="c5ff2543b53f4cc0ad3819a36752467b">相似职位<|-|>2<|-|>相似职位（按职位名称、所在地区筛选）<|-|><|-|>a:5:{s:4:"name";a:4:{i:0;s:3:"jid";i:1;s:6:"cityid";i:2;s:5:"jname";i:3;s:3:"act";}s:9:"paramType";a:4:{i:0;s:9:"字符型";i:1;s:9:"数字型";i:2;s:9:"字符型";i:3;s:9:"字符型";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:12:"加密的jid";i:1;s:8:"城市id";i:2;s:12:"职位名称";i:3;s:10:"similarJob";}}<|-|>https://api.597.com/v1/company/company.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_13f9896df61279c928f19721878fac41" >
+                <a href="index_2.htm#info_api_13f9896df61279c928f19721878fac41" id="menu_13f9896df61279c928f19721878fac41">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    相似公司                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="13f9896df61279c928f19721878fac41">相似公司<|-|>1<|-|>相似公司（按公司行业类别、所在地区筛选）<|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"cid";i:1;s:13:"comIndustryId";i:2;s:3:"act";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"字符型";i:2;s:9:"字符型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:12:"加密的cid";i:1;s:18:"公司行业类别";i:2;s:14:"similarCompany";}}<|-|>https://api.597.com/v1/company/company.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+    </div>
+    <form action="index_13.htm" method="post">
+            </form>
+<!--jquery模糊查询start-->
+<script>
+    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+    function search(type,obj){
+        var $find = $.trim($(obj).val());//得到搜索内容
+        if(type == 'cate'){//对接口分类进行搜索操作
+            if($find != ''){
+                $(".menu").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#info_"+menu_id).show();
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+            }
+        }else if(type == 'api'){//对接口进行搜索操作
+            if($find != ''){
+                $(".menu").hide();//左侧导航菜单隐藏
+                $(".info_api").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#api_"+menu_id).show();//左侧导航菜单 部份 隐藏
+                    $("#info_api_"+menu_id).show();//接口详情 部份 隐藏
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+            }
+        }
+    }
+
+    window.onload=function(){
+        //添加关闭,打开左侧菜单的功能
+        var status_flg="&lt";var cursor="w-resize"
+        var navbarButton = '<div onclick="navbar(this)" ' +
+            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:'+cursor+';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+            status_flg +
+            '</div>'
+        $('body').append(navbarButton);
+    }
+    // 全屏和normal
+    function navbar(obj){
+        if($('#mainwindow').hasClass('col-md-9')){
+            $(obj).html('&gt;');
+            $(obj).css("cursor","e-resize");
+            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+            $('#navbar').hide();
+            $.cookie($COOKIE_KEY, '1');
+        }else{
+            $(obj).html('&lt;');
+            $(obj).css("cursor","w-resize");
+            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+            $('#navbar').show();
+            $.cookie($COOKIE_KEY, '0');
+        }
+    }
+</script>
+<!--jquery模糊查询end-->
+<!--end-->        </div>
+        <!--左侧导航end-->
+        <div id="mainwindow" class="col-md-9"   style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+            <!--顶部导航start-->
+            <div class="textshadow" style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                <span> <a class="home" href="index.htm">Home</a> - 手机版</span>
+        <span id="topbutton" style="float:right">
+            <a href="index_11.htm">登录&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>        </span>
+            </div>
+            <!--顶部导航end-->
+            <!--主窗口start-->
+            <div style="padding:16px;">
+                <!--接口详情列表与接口管理start-->
+    <script type="text/javascript" src="MinPHP/res/jquery.min.js"></script>
+    <script type="text/javascript" src="MinPHP/res/layer.js"></script>
+    <!--接口详细列表start-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_c058f544c737782deacefa532d9add4c">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2020-03-19 16:04:10&nbsp;
+                                    </div>
+                <h4 class="textshadow">企业关联搜索</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">8</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">GET</kbd> - <kbd>https://api.597.com/web/company.api</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>act</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td>company_search</td>
+                        <td></td>
+                    </tr>
+                                        <tr>
+                        <td>keyword</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>关键词</td>
+                    </tr>
+                                        <tr>
+                        <td>cityid</td>
+						<td>整型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>城市id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+	&quot;status&quot;: 1,
+	&quot;list&quot;: [{
+		&quot;cname&quot;: &quot;厦门智宇信息技术有限公司&quot;,
+		&quot;cid&quot;: &quot;1ed896723759&quot;
+	}, {
+		&quot;cname&quot;: &quot;冠捷显示科技（厦门）有限公司&quot;,
+		&quot;cid&quot;: &quot;22d3b4733894&quot;
+	}, {
+		&quot;cname&quot;: &quot;厦门大垠精密金属有限公司&quot;,
+		&quot;cid&quot;: &quot;cab8813324458&quot;
+	}, {
+		&quot;cname&quot;: &quot;厦门光宝电子有限公司&quot;,
+		&quot;cid&quot;: &quot;fe0276782340&quot;
+	}, {
+		&quot;cname&quot;: &quot;厦门逸臻进出口有限公司&quot;,
+		&quot;cid&quot;: &quot;81af0e811671&quot;
+	}, {
+		&quot;cname&quot;: &quot;上海依木贸易有限公司厦门分公司&quot;,
+		&quot;cid&quot;: &quot;41a5f9709849&quot;
+	}, {
+		&quot;cname&quot;: &quot;厦门兴海龙石油有限公司&quot;,
+		&quot;cid&quot;: &quot;33c001755734&quot;
+	}]
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_138bb0696595b338afbab333c555292a">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2020-03-25 10:40:36&nbsp;
+                                    </div>
+                <h4 class="textshadow">个人关注企业列表（或判断关注的企业）</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">7</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">GET</kbd> - <kbd>https://api.597.com/web/person.api</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>act</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td>get_company_fans</td>
+                        <td></td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>uid</td>
+                    </tr>
+                                        <tr>
+                        <td>cid</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>加密的企业id，可以用来判断有没有关注该企业</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+	&quot;status&quot;: 1,
+	&quot;list&quot;: [{
+		&quot;_cname&quot;: &quot;厦门艺木长源电子商务有限公司&quot;,
+		&quot;comIndustry&quot;: &quot;原材料及加工,礼品/玩具/工艺品/收藏品,家具/家电&quot;,
+		&quot;comWorkers&quot;: &quot;50～200人&quot;,
+		&quot;comType&quot;: &quot;私营企业&quot;,
+		&quot;_cid&quot;: &quot;229765&quot;,
+		&quot;jobNum&quot;: 0,
+		&quot;jname&quot;: null,
+		&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2018/06/28/18062805154435435.jpg&quot;
+	}, {
+		&quot;_cname&quot;: &quot;厦门才盛人才服务有限公司（内测）&quot;,
+		&quot;comIndustry&quot;: &quot;广告/会展/公关,印刷/包装/造纸,服饰/纺织/皮革&quot;,
+		&quot;comWorkers&quot;: &quot;1000人以上&quot;,
+		&quot;comType&quot;: &quot;合资企业&quot;,
+		&quot;_cid&quot;: &quot;229765&quot;,
+		&quot;jobNum&quot;: 2,
+		&quot;jname&quot;: &quot;普工&quot;,
+		&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2019/11/18/19111805182642954.png&quot;
+	}, {
+		&quot;_cname&quot;: &quot;雨润深加工销售公司分公司&quot;,
+		&quot;comIndustry&quot;: &quot;&quot;,
+		&quot;comWorkers&quot;: &quot;10000人以上&quot;,
+		&quot;comType&quot;: &quot;上市公司&quot;,
+		&quot;_cid&quot;: &quot;229765&quot;,
+		&quot;jobNum&quot;: 5,
+		&quot;jname&quot;: &quot;招商经理&quot;,
+		&quot;logoUrl&quot;: &quot;//cdn.597.com/img/job/newjob/default_logo.png&quot;
+	}]
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_371bce7dc83817b7893bcdeed13799b5">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2020-03-13 14:15:04&nbsp;
+                                    </div>
+                <h4 class="textshadow">公司搜索</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">6</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">GET</kbd> - <kbd>https://api.597.com/v1/company/company.api</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                公司搜索
+知名名企 famous=1            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>act</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td>search</td>
+                        <td></td>
+                    </tr>
+                                        <tr>
+                        <td>pp</td>
+						<td>整型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td>20</td>
+                        <td></td>
+                    </tr>
+                                        <tr>
+                        <td>page</td>
+						<td>整型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td>1</td>
+                        <td></td>
+                    </tr>
+                                        <tr>
+                        <td>q</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>公司名称</td>
+                    </tr>
+                                        <tr>
+                        <td>order</td>
+						<td>整型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td>3</td>
+                        <td>排序:2最新3推荐</td>
+                    </tr>
+                                        <tr>
+                        <td>area</td>
+						<td>整型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td>1</td>
+                        <td>默认全国</td>
+                    </tr>
+                                        <tr>
+                        <td>comIndustryId</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>行业id，用逗号隔开</td>
+                    </tr>
+                                        <tr>
+                        <td>comType</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>性质id，用逗号隔开</td>
+                    </tr>
+                                        <tr>
+                        <td>comWorkers</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>规模id，用逗号隔开</td>
+                    </tr>
+                                        <tr>
+                        <td>auth</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>认证id，用逗号隔开</td>
+                    </tr>
+                                        <tr>
+                        <td>financing</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>融资id，用逗号隔开</td>
+                    </tr>
+                                        <tr>
+                        <td>distance</td>
+						<td>整型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>附近公司距离</td>
+                    </tr>
+                                        <tr>
+                        <td>comLatitude</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>附近公司经度</td>
+                    </tr>
+                                        <tr>
+                        <td>comLongitude</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>附近公司纬度</td>
+                    </tr>
+                                        <tr>
+                        <td>famous</td>
+						<td>整型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td>1</td>
+                        <td>知名企业，认证的一种（尽量不加auth认证条件）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>&quot;status&quot;: 1,
+	&quot;list&quot;: {
+{
+	&quot;cname&quot;: &quot;厦门才盛网络科技有限公司(天津分公司)&quot;,
+	&quot;csName&quot;: &quot;厦门才盛&quot;,
+	&quot;comIndustry&quot;: &quot;网络游戏&quot;,
+	&quot;comType&quot;: &quot;合资企业&quot;,
+	&quot;comWorkers&quot;: &quot;200～500人&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2020/01/17/20011709120599805.jpg&quot;,
+	&quot;cid&quot;: &quot;d5de934017675&quot;,
+	&quot;jobNum&quot;: 5,
+	&quot;jname&quot;: &quot;111&quot;
+}, {
+	&quot;cname&quot;: &quot;厦门才盛人才服务有限公司&quot;,
+	&quot;csName&quot;: &quot;597人才网&quot;,
+	&quot;comIndustry&quot;: &quot;互联网/电子商务,中介服务&quot;,
+	&quot;comType&quot;: &quot;私营企业&quot;,
+	&quot;comWorkers&quot;: &quot;50～200人&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2018/01/17/18011703283919028.gif&quot;,
+	&quot;cid&quot;: &quot;7a0a51823265&quot;,
+	&quot;jobNum&quot;: 11,
+	&quot;jname&quot;: &quot;客服专员（九牧）&quot;
+}, {
+	&quot;cname&quot;: &quot;陶氏化学(中国)投资有限公司&quot;,
+	&quot;csName&quot;: &quot;&quot;,
+	&quot;comIndustry&quot;: &quot;&quot;,
+	&quot;comType&quot;: &quot;独资外企&quot;,
+	&quot;comWorkers&quot;: &quot;1000人以上&quot;,
+	&quot;logoUrl&quot;: &quot;//cdn.597.com/img/job/newjob/default_logo.png&quot;,
+	&quot;cid&quot;: &quot;c0bdf75524710&quot;,
+	&quot;jobNum&quot;: 2,
+	&quot;jname&quot;: &quot;SAPSystemOperator-第三方合同工&quot;
+}, {
+	&quot;cname&quot;: &quot;上好佳(中国)有限公司&quot;,
+	&quot;csName&quot;: &quot;&quot;,
+	&quot;comIndustry&quot;: &quot;&quot;,
+	&quot;comType&quot;: &quot;独资外企&quot;,
+	&quot;comWorkers&quot;: &quot;1000人以上&quot;,
+	&quot;logoUrl&quot;: &quot;//cdn.597.com/img/job/newjob/default_logo.png&quot;,
+	&quot;cid&quot;: &quot;8249245524690&quot;,
+	&quot;jobNum&quot;: 1,
+	&quot;jname&quot;: &quot;生产文员&quot;
+}, {
+	&quot;cname&quot;: &quot;厦门才盛人才服务有限公司&quot;,
+	&quot;csName&quot;: &quot;爬坡上海自动&quot;,
+	&quot;comIndustry&quot;: &quot;计算机软件,计算机服务(系统/数据/维护),印刷/包装/造纸&quot;,
+	&quot;comType&quot;: &quot;私营企业&quot;,
+	&quot;comWorkers&quot;: &quot;10～50人&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2019/11/18/19111803160729245.png&quot;,
+	&quot;cid&quot;: &quot;47b0452373153&quot;,
+	&quot;jobNum&quot;: 3,
+	&quot;jname&quot;: &quot;行政&quot;
+}, {
+	&quot;cname&quot;: &quot;远东国际融资租赁有限公司&quot;,
+	&quot;csName&quot;: &quot;&quot;,
+	&quot;comIndustry&quot;: &quot;&quot;,
+	&quot;comType&quot;: &quot;上市公司&quot;,
+	&quot;comWorkers&quot;: &quot;10000人以上&quot;,
+	&quot;logoUrl&quot;: &quot;//cdn.597.com/img/job/newjob/default_logo.png&quot;,
+	&quot;cid&quot;: &quot;d62f355524747&quot;,
+	&quot;jobNum&quot;: 14,
+	&quot;jname&quot;: &quot;美术老师&quot;
+}, {
+	&quot;cname&quot;: &quot;厦门才盛人才服务有限公司&quot;,
+	&quot;csName&quot;: &quot;&quot;,
+	&quot;comIndustry&quot;: &quot;计算机软件,电子技术/半导体/集成电路,通信(设备/运营/增值服务)&quot;,
+	&quot;comType&quot;: &quot;独资外企&quot;,
+	&quot;comWorkers&quot;: &quot;10～50人&quot;,
+	&quot;logoUrl&quot;: &quot;//cdn.597.com/img/job/newjob/default_logo.png&quot;,
+	&quot;cid&quot;: &quot;5b4b475509411&quot;,
+	&quot;jobNum&quot;: 0,
+	&quot;jname&quot;: null
+}, {
+	&quot;cname&quot;: &quot;厦门才盛人才服务有限公司（内测）&quot;,
+	&quot;csName&quot;: &quot;&quot;,
+	&quot;comIndustry&quot;: &quot;广告/会展/公关,印刷/包装/造纸,服饰/纺织/皮革&quot;,
+	&quot;comType&quot;: &quot;合资企业&quot;,
+	&quot;comWorkers&quot;: &quot;1000人以上&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2019/11/18/19111805182642954.png&quot;,
+	&quot;cid&quot;: &quot;dc525c3&quot;,
+	&quot;jobNum&quot;: 2,
+	&quot;jname&quot;: &quot;普工&quot;
+}, {
+	&quot;cname&quot;: &quot;厦门想补习科技有限公司&quot;,
+	&quot;csName&quot;: &quot;想补习&quot;,
+	&quot;comIndustry&quot;: &quot;互联网/电子商务&quot;,
+	&quot;comType&quot;: &quot;独资外企&quot;,
+	&quot;comWorkers&quot;: &quot;200～500人&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2018/01/25/18012502524615111.jpeg&quot;,
+	&quot;cid&quot;: &quot;c086cb3230911&quot;,
+	&quot;jobNum&quot;: 1,
+	&quot;jname&quot;: &quot;销售&quot;
+}, {
+	&quot;cname&quot;: &quot;厦门才盛&quot;,
+	&quot;csName&quot;: &quot;597&quot;,
+	&quot;comIndustry&quot;: &quot;家居/室内设计/装饰装潢&quot;,
+	&quot;comType&quot;: &quot;私营企业&quot;,
+	&quot;comWorkers&quot;: &quot;200～500人&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2020/03/02/20030204580253578.jpg&quot;,
+	&quot;cid&quot;: &quot;f12fdb5524647&quot;,
+	&quot;jobNum&quot;: 0,
+	&quot;jname&quot;: null
+}, {
+	&quot;cname&quot;: &quot;襄阳市一嘉仓储货架设备有限公司&quot;,
+	&quot;csName&quot;: &quot;&quot;,
+	&quot;comIndustry&quot;: &quot;原材料及加工&quot;,
+	&quot;comType&quot;: &quot;私营企业&quot;,
+	&quot;comWorkers&quot;: &quot;50～200人&quot;,
+	&quot;logoUrl&quot;: &quot;//cdn.597.com/img/job/newjob/default_logo.png&quot;,
+	&quot;cid&quot;: &quot;b9c7a45514386&quot;,
+	&quot;jobNum&quot;: 1,
+	&quot;jname&quot;: &quot;焊工&quot;
+}, {
+	&quot;cname&quot;: &quot;厦门佰伦德贸易有限公司（莆田）&quot;,
+	&quot;csName&quot;: &quot;佰伦德贸易&quot;,
+	&quot;comIndustry&quot;: &quot;贸易/进出口&quot;,
+	&quot;comType&quot;: &quot;私营企业&quot;,
+	&quot;comWorkers&quot;: &quot;10～50人&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2019/07/29/19072908305990106.png&quot;,
+	&quot;cid&quot;: &quot;3f3c6d3428280&quot;,
+	&quot;jobNum&quot;: 8,
+	&quot;jname&quot;: &quot;电商学徒&quot;
+}, {
+	&quot;cname&quot;: &quot;莆田市贝凯尼服饰有限公司&quot;,
+	&quot;csName&quot;: &quot;莆田市贝凯尼服饰有限公司&quot;,
+	&quot;comIndustry&quot;: &quot;服饰/纺织/皮革&quot;,
+	&quot;comType&quot;: &quot;合资企业&quot;,
+	&quot;comWorkers&quot;: &quot;200～500人&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2017/10/24/17102412400832641.png&quot;,
+	&quot;cid&quot;: &quot;ad222c3413235&quot;,
+	&quot;jobNum&quot;: 10,
+	&quot;jname&quot;: &quot;童装销售&quot;
+}, {
+	&quot;cname&quot;: &quot;泽蓝生态湖北科技有限公司&quot;,
+	&quot;csName&quot;: &quot;&quot;,
+	&quot;comIndustry&quot;: &quot;环保&quot;,
+	&quot;comType&quot;: &quot;私营企业&quot;,
+	&quot;comWorkers&quot;: &quot;10～50人&quot;,
+	&quot;logoUrl&quot;: &quot;//cdn.597.com/img/job/newjob/default_logo.png&quot;,
+	&quot;cid&quot;: &quot;4c1bc64904492&quot;,
+	&quot;jobNum&quot;: 5,
+	&quot;jname&quot;: &quot;普工&quot;
+}, {
+	&quot;cname&quot;: &quot;仙游县枫亭镇程程家政服务部&quot;,
+	&quot;csName&quot;: &quot;程程学辅&quot;,
+	&quot;comIndustry&quot;: &quot;教育/培训&quot;,
+	&quot;comType&quot;: &quot;其他&quot;,
+	&quot;comWorkers&quot;: &quot;10～50人&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2018/09/08/18090807003941040.png&quot;,
+	&quot;cid&quot;: &quot;516a244901219&quot;,
+	&quot;jobNum&quot;: 3,
+	&quot;jname&quot;: &quot;教育&quot;
+}, {
+	&quot;cname&quot;: &quot;卓越台球会所&quot;,
+	&quot;csName&quot;: &quot;卓越台球连锁&quot;,
+	&quot;comIndustry&quot;: &quot;餐饮业,娱乐/休闲/体育&quot;,
+	&quot;comType&quot;: &quot;私营企业&quot;,
+	&quot;comWorkers&quot;: &quot;10人以下&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2019/10/15/19101511192190508.png&quot;,
+	&quot;cid&quot;: &quot;3a2a862394861&quot;,
+	&quot;jobNum&quot;: 3,
+	&quot;jname&quot;: &quot;服务员&quot;
+}, {
+	&quot;cname&quot;: &quot;莆田市涵江区韩武跆拳道俱乐部&quot;,
+	&quot;csName&quot;: &quot;韩武国际跆拳道&quot;,
+	&quot;comIndustry&quot;: &quot;教育/培训&quot;,
+	&quot;comType&quot;: &quot;私营企业&quot;,
+	&quot;comWorkers&quot;: &quot;10～50人&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2018/05/04/18050411275258296.jpeg&quot;,
+	&quot;cid&quot;: &quot;9ce2184669711&quot;,
+	&quot;jobNum&quot;: 2,
+	&quot;jname&quot;: &quot;跆拳道教练&quot;
+}, {
+	&quot;cname&quot;: &quot;福建省恒通智造科技有限公司&quot;,
+	&quot;csName&quot;: &quot;&quot;,
+	&quot;comIndustry&quot;: &quot;原材料及加工&quot;,
+	&quot;comType&quot;: &quot;私营企业&quot;,
+	&quot;comWorkers&quot;: &quot;50～200人&quot;,
+	&quot;logoUrl&quot;: &quot;//cdn.597.com/img/job/newjob/default_logo.png&quot;,
+	&quot;cid&quot;: &quot;03f96a3419076&quot;,
+	&quot;jobNum&quot;: 1,
+	&quot;jname&quot;: &quot;生产厂长&quot;
+}, {
+	&quot;cname&quot;: &quot;福建省德化益盛彩印有限公司&quot;,
+	&quot;csName&quot;: &quot;德化益盛彩印&quot;,
+	&quot;comIndustry&quot;: &quot;礼品/玩具/工艺品/收藏品,贸易/进出口&quot;,
+	&quot;comType&quot;: &quot;私营企业&quot;,
+	&quot;comWorkers&quot;: &quot;50～200人&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2019/12/16/19121605010465859.jpeg&quot;,
+	&quot;cid&quot;: &quot;6b3af65501456&quot;,
+	&quot;jobNum&quot;: 4,
+	&quot;jname&quot;: &quot;包装设计师&quot;
+}, {
+	&quot;cname&quot;: &quot;泉州市大宇纸塑制品有限公司&quot;,
+	&quot;csName&quot;: &quot;大宇公司&quot;,
+	&quot;comIndustry&quot;: &quot;快速消费品(饮食/烟酒/日化),原材料及加工&quot;,
+	&quot;comType&quot;: &quot;私营企业&quot;,
+	&quot;comWorkers&quot;: &quot;50～200人&quot;,
+	&quot;logoUrl&quot;: &quot;//pic.597.com/logo/2019/11/12/19111210033129601.jpg&quot;,
+	&quot;cid&quot;: &quot;8a3dda725829&quot;,
+	&quot;jobNum&quot;: 7,
+	&quot;jname&quot;: &quot;电商运营经理&quot;
+}}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_efe937780e95574250dabe07151bdc23">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2020-03-09 16:04:05&nbsp;
+                                    </div>
+                <h4 class="textshadow">个人取消关注企业</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">5</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/web/person.api</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                个人关注企业            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>act</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td>fans_del</td>
+                        <td></td>
+                    </tr>
+                                        <tr>
+                        <td>cid</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>加密的cid</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{status:0,&#039;&#039;登陆过期，请重新登陆！&quot;}
+{status:-10,&#039;参数错误&quot;}
+{status:-600,&#039;&#039;关注失败&quot;}
+{status:1,&#039;&#039;您已关注该企业/关注成功!&quot;}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_9de6d14fff9806d4bcd1ef555be766cd">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2020-03-09 16:01:56&nbsp;
+                                    </div>
+                <h4 class="textshadow">个人关注企业</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">4</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/web/person.api</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                个人关注企业            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>act</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td>fans_save</td>
+                        <td></td>
+                    </tr>
+                                        <tr>
+                        <td>cid</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>加密的cid</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{status:0,&#039;&#039;登陆过期，请重新登陆！&quot;}
+{status:-10,&#039;参数错误&quot;}
+{status:-600,&#039;&#039;关注失败&quot;}
+{status:1,&#039;&#039;您已关注该企业/关注成功!&quot;}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_0bb4aec1710521c12ee76289d9440817">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2020-03-11 14:27:35&nbsp;
+                                    </div>
+                <h4 class="textshadow">企业工商信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">3</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/v1/company/company.api</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                企业工商信息            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>act</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td>businessInfo</td>
+                        <td></td>
+                    </tr>
+                                        <tr>
+                        <td>cid</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>加密的cid</td>
+                    </tr>
+                                        <tr>
+                        <td>cname</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>公司名称</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+	&quot;status&quot;: 1,
+	&quot;list&quot;: {
+		&quot;toTime&quot;: &quot;0&quot;,
+		&quot;historyNames&quot;: &quot;&quot;,
+		&quot;fromTime&quot;: &quot;1539273600&quot;,
+		&quot;regCapital&quot;: &quot;32000万人民币&quot;,
+		&quot;industry&quot;: &quot;住宿业&quot;,
+		&quot;name&quot;: &quot;厦门市特房波特曼七星湾酒店有限公司&quot;,
+		&quot;companyOrgType&quot;: &quot;有限责任公司（非自然人投资或控股的法人独资）&quot;,
+		&quot;estiblishTime&quot;: &quot;2018-10-12&quot;,
+		&quot;legalPersonName&quot;: &quot;吴韶辉&quot;,
+		&quot;regNumber&quot;: &quot;&quot;,
+		&quot;regStatus&quot;: &quot;存续&quot;,
+		&quot;businessScope&quot;: &quot;旅游饭店；正餐服务（热食类食品、冷食类食品、生食类食品、糕点类食品、自制饮品）；酒吧服务（热食类食品、冷食类食品、生食类食品、糕点类食品、自制饮品）；咖啡馆服务（热食类食品、冷食类食品、生食类食品、糕点类食品、自制饮品）；餐饮配送服务（热食类食品、冷食类食品、生食类食品、糕点类食品、自制饮品）；其他未列明餐饮业（热食类食品、冷食类食品、生食类食品、糕点类食品、自制饮品）；糕点、面包类预包装食品零售（含冷藏冷冻食品）；糕点、面包类散装食品零售（含冷藏冷冻食品）；烟草制品零售；酒、饮料及茶叶类预包装食品零售（含冷藏冷冻食品）；酒、饮料及茶叶类散装食品零售（含冷藏冷冻食品）；啤酒制造；其他酒制造；理发及美容服务；洗浴服务；歌舞厅娱乐活动；经营高危险体育项目活动（不含游泳）；游泳场馆经营；足浴；洗车场；不含食品制售的餐饮配送服务；鞋帽零售；其他日用品零售；珠宝首饰零售；互联网销售；旅游管理服务（不含须经许可审批的项目）；会议及展览服务；提供小型儿童游乐设备服务（不含须经许可审批的项目）；其他娱乐业（不含须经许可审批的项目）；体育组织；体育用品及器材批发（不含弩）；体育用品及器材零售（不含弩）；其他体育（不含需经许可审批的项目）；停车场管理；汽车租赁（不含营运）；纺织品及针织品零售；服装零售；洗染服务。&quot;,
+		&quot;id&quot;: &quot;102430&quot;,
+		&quot;createTime&quot;: &quot;1578450822&quot;,
+		&quot;regLocation&quot;: &quot;厦门市同安区西柯镇观洲路7号&quot;,
+		&quot;creditCode&quot;: &quot;91350200MA325D744E&quot;,
+		&quot;modTime&quot;: &quot;0&quot;
+	}
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_c5ff2543b53f4cc0ad3819a36752467b">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2020-03-11 14:39:42&nbsp;
+                                    </div>
+                <h4 class="textshadow">相似职位</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">2</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/v1/company/company.api</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                相似职位（按职位名称、所在地区筛选）            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>jid</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>加密的jid</td>
+                    </tr>
+                                        <tr>
+                        <td>cityid</td>
+						<td>数字型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>城市id</td>
+                    </tr>
+                                        <tr>
+                        <td>jname</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>职位名称</td>
+                    </tr>
+                                        <tr>
+                        <td>act</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>similarJob</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>&quot;status&quot;: 1,
+	&quot;list&quot;: {
+{
+	&quot;jname&quot;: &quot;销售经理/销售代表/销售顾问/网络销售&quot;,
+	&quot;jobSalaryType&quot;: &quot;1&quot;,
+	&quot;jobSalaryMin&quot;: &quot;8000&quot;,
+	&quot;jobSalaryMax&quot;: &quot;10000&quot;,
+	&quot;jobSalaryMin1&quot;: &quot;5000&quot;,
+	&quot;jobSalaryMax1&quot;: &quot;5000&quot;,
+	&quot;jobWorkYear&quot;: &quot;0&quot;,
+	&quot;jobAreaId&quot;: &quot;350203&quot;,
+	&quot;updateTime&quot;: &quot;08-16&quot;,
+	&quot;modTime&quot;: &quot;1543809562&quot;,
+	&quot;createTime&quot;: &quot;12-03&quot;,
+	&quot;urgency&quot;: &quot;0&quot;,
+	&quot;rewardStr&quot;: [&quot;五险&quot;, &quot;单休&quot;, &quot;加班补助&quot;],
+	&quot;jobDegree&quot;: &quot;30&quot;,
+	&quot;geodist&quot;: 100,
+	&quot;jobSalary&quot;: &quot;8千-1万&quot;,
+	&quot;_jobWorkYear&quot;: &quot;经验不限&quot;,
+	&quot;_jobDegree&quot;: &quot;高中&quot;,
+	&quot;jobArea&quot;: &quot;思明区&quot;,
+	&quot;_rewardID&quot;: [&quot;&quot;],
+	&quot;cusername&quot;: &quot;ya597&quot;,
+	&quot;cname&quot;: &quot;21世纪不动产厦门有爱加盟店&quot;,
+	&quot;_jid&quot;: &quot;539eba3947408&quot;,
+	&quot;_cid&quot;: &quot;5da2a24091073&quot;,
+	&quot;comUser&quot;: &quot;小蓝&quot;,
+	&quot;logoUrl&quot;: &quot;http://pic.597.com/logo/2018/12/02/18120212225684683.png&quot;,
+	&quot;comType&quot;: &quot;民营、私营公司&quot;,
+	&quot;comWorkers&quot;: &quot;10～50人&quot;,
+	&quot;comIndustry&quot;: &quot;房地产开发,生活服务,中介服务&quot;,
+	&quot;onDay&quot;: null,
+	&quot;_createTime&quot;: &quot;12-03&quot;
+}
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_13f9896df61279c928f19721878fac41">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2020-03-11 14:39:53&nbsp;
+                                    </div>
+                <h4 class="textshadow">相似公司</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">1</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>https://api.597.com/v1/company/company.api</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                相似公司（按公司行业类别、所在地区筛选）            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>cid</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>加密的cid</td>
+                    </tr>
+                                        <tr>
+                        <td>comIndustryId</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>公司行业类别</td>
+                    </tr>
+                                        <tr>
+                        <td>act</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>similarCompany</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>&quot;status&quot;: 1,
+	&quot;list&quot;: {
+{
+	&quot;cname&quot;: &quot;厦门我来啦网络信息技术有限公司&quot;,
+	&quot;csName&quot;: &quot;中邮速递易厦门分公司&quot;,
+	&quot;comIndustry&quot;: &quot;通信(设备/运营/增值服务),计算机软件,计算机硬件&quot;,
+	&quot;comType&quot;: &quot;上市公司&quot;,
+	&quot;comWorkers&quot;: &quot;1000人以上&quot;,
+	&quot;logoUrl&quot;: &quot;https://pic.597.com/logo/2018/08/07/18080705474217175.png&quot;,
+	&quot;cid&quot;: &quot;d4ddf54844406&quot;,
+	&quot;jobNum&quot;: 0,
+	&quot;jname&quot;: null
+}
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <script>
+        //删除某个接口
+        var $url = 'index.php?act=ajax&op=apiDelete';
+        function deleteApi(apiId,divId){
+            if(confirm('是否确认删除此接口?')){
+                $.post($url,{id:apiId},function(data){
+                    if(data == '1'){
+                        $('#api_'+divId).remove();//删除左侧菜单
+                        $('#info_api_'+divId).remove();//删除接口详情
+                    }
+                })
+            }
+        }
+        //编辑某个接口
+        function editApi(gourl){
+            window.location.href=gourl;
+        }
+        //复制某个api
+        function copyApi( apiId ) {
+          var askName = layer.prompt({
+            title: '输入新的api名称',
+            formType: 0 //prompt风格，支持0-2
+          }, function(pass){
+            location.href = "index.php?act=api&op=copy&id="+apiId+"&name="+pass;
+          });
+        }
+
+        //返回顶部
+        function goTop(){
+            $('#mainwindow').animate(
+                { scrollTop: '0px' }, 200
+            );
+        }
+
+        //检测滚动条,显示返回顶部按钮
+        document.getElementById('mainwindow').onscroll = function () {
+            if(document.getElementById('mainwindow').scrollTop > 100){
+                document.getElementById('gotop').style.display='block';
+            }else{
+                document.getElementById('gotop').style.display='none';
+            }
+        };
+    </script>
+<!--接口详情列表与接口管理end-->            </div>
+            <!--主窗口end-->
+        </div>
+    </div>
+</div>
+<script src="MinPHP/res/jquery.min.js"></script>
+<script src="MinPHP/res/jquery.cookie.js"></script>
+<script src="MinPHP/res/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="MinPHP/res/favicon.ico">
+    <link href="MinPHP/res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="MinPHP/res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./MinPHP/res/html5shiv.min.js"></script>
+    <script src="./MinPHP/res/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="height:100%">
+<div class="container-fluid" style="background:white;height:100%;">
+    <div class="row" style="height:100%;">
+        <!--左侧导航start-->
+        <div id="navbar" class="col-md-3" style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+            <div style="height:50px;font-size:30px;line-height:50px;">
+                <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none" href="index.htm">
+                    <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+        <span style="position: relative;top:-3px;">API Manager <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.1</span>
+                </a>
+                </span>
+            </div>
+            <!--导航-->
+    <div class="form-group">
+        <input type="text" class="form-control" id="searchcate" onkeyup="search('cate',this)" placeholder="search here">
+    </div>
+    <div class="list">
+        <ul class="list-unstyled">
+                        <form action="index_8.htm" method="post">
+            <li class="menu" id="info_10">
+                <a href="index_2.htm">
+                    手机版                </a>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;手机版<input type='hidden' name='aid' value='10'>                <br>
+                                <hr>
+            </li>
+            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="10">手机版<|-|>手机版</span>
+                <!--接口关键字(js通过此关健字进行模糊查找)end-->
+            </form>
+                        <form action="index_8.htm" method="post">
+            <li class="menu" id="info_9">
+                <a href="index_3.htm">
+                    IM                </a>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;网易云信<input type='hidden' name='aid' value='9'>                <br>
+                                <hr>
+            </li>
+            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9">网易云信<|-|>IM</span>
+                <!--接口关键字(js通过此关健字进行模糊查找)end-->
+            </form>
+                        <form action="index_8.htm" method="post">
+            <li class="menu" id="info_8">
+                <a href="index_4.htm">
+                    用户user                </a>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;用户user<input type='hidden' name='aid' value='8'>                <br>
+                                <hr>
+            </li>
+            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="8">用户user<|-|>用户user</span>
+                <!--接口关键字(js通过此关健字进行模糊查找)end-->
+            </form>
+                        <form action="index_8.htm" method="post">
+            <li class="menu" id="info_7">
+                <a href="index_5.htm">
+                    新系统api                </a>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;sys<input type='hidden' name='aid' value='7'>                <br>
+                                <hr>
+            </li>
+            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="7">sys<|-|>新系统api</span>
+                <!--接口关键字(js通过此关健字进行模糊查找)end-->
+            </form>
+                        <form action="index_8.htm" method="post">
+            <li class="menu" id="info_6">
+                <a href="index_6.htm">
+                    新个人api                </a>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;resume<input type='hidden' name='aid' value='6'>                <br>
+                                <hr>
+            </li>
+            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="6">resume<|-|>新个人api</span>
+                <!--接口关键字(js通过此关健字进行模糊查找)end-->
+            </form>
+                        <form action="index_8.htm" method="post">
+            <li class="menu" id="info_5">
+                <a href="index_23.htm">
+                    新企业api                </a>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;company<input type='hidden' name='aid' value='5'>                <br>
+                                <hr>
+            </li>
+            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="5">company<|-|>新企业api</span>
+                <!--接口关键字(js通过此关健字进行模糊查找)end-->
+            </form>
+                        <form action="index_8.htm" method="post">
+            <li class="menu" id="info_4">
+                <a href="index_7.htm">
+                    管理API                </a>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;crm<input type='hidden' name='aid' value='4'>                <br>
+                                <hr>
+            </li>
+            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="4">crm<|-|>管理API</span>
+                <!--接口关键字(js通过此关健字进行模糊查找)end-->
+            </form>
+                        <form action="index_8.htm" method="post">
+            <li class="menu" id="info_3">
+                <a href="index_9.htm">
+                    企业API                </a>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;company<input type='hidden' name='aid' value='3'>                <br>
+                                <hr>
+            </li>
+            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="3">company<|-|>企业API</span>
+                <!--接口关键字(js通过此关健字进行模糊查找)end-->
+            </form>
+                        <form action="index_8.htm" method="post">
+            <li class="menu" id="info_2">
+                <a href="index_10.htm">
+                    个人API                </a>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;person<input type='hidden' name='aid' value='2'>                <br>
+                                <hr>
+            </li>
+            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="2">person<|-|>个人API</span>
+                <!--接口关键字(js通过此关健字进行模糊查找)end-->
+            </form>
+                        <form action="index_8.htm" method="post">
+            <li class="menu" id="info_1">
+                <a href="index_12.htm">
+                    系统API                </a>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;sys<input type='hidden' name='aid' value='1'>                <br>
+                                <hr>
+            </li>
+            <!--接口分类关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="1">sys<|-|>系统API</span>
+                <!--接口关键字(js通过此关健字进行模糊查找)end-->
+            </form>
+                    </ul>
+    </div>
+
+    <form action="index_8.htm" method="post">
+            </form>
+<!--jquery模糊查询start-->
+<script>
+    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+    function search(type,obj){
+        var $find = $.trim($(obj).val());//得到搜索内容
+        if(type == 'cate'){//对接口分类进行搜索操作
+            if($find != ''){
+                $(".menu").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#info_"+menu_id).show();
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+            }
+        }else if(type == 'api'){//对接口进行搜索操作
+            if($find != ''){
+                $(".menu").hide();//左侧导航菜单隐藏
+                $(".info_api").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#api_"+menu_id).show();//左侧导航菜单 部份 隐藏
+                    $("#info_api_"+menu_id).show();//接口详情 部份 隐藏
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+            }
+        }
+    }
+
+    window.onload=function(){
+        //添加关闭,打开左侧菜单的功能
+        var status_flg="&lt";var cursor="w-resize"
+        var navbarButton = '<div onclick="navbar(this)" ' +
+            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:'+cursor+';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+            status_flg +
+            '</div>'
+        $('body').append(navbarButton);
+    }
+    // 全屏和normal
+    function navbar(obj){
+        if($('#mainwindow').hasClass('col-md-9')){
+            $(obj).html('&gt;');
+            $(obj).css("cursor","e-resize");
+            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+            $('#navbar').hide();
+            $.cookie($COOKIE_KEY, '1');
+        }else{
+            $(obj).html('&lt;');
+            $(obj).css("cursor","w-resize");
+            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+            $('#navbar').show();
+            $.cookie($COOKIE_KEY, '0');
+        }
+    }
+</script>
+<!--jquery模糊查询end-->
+<!--end-->        </div>
+        <!--左侧导航end-->
+        <div id="mainwindow" class="col-md-9"   style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+            <!--顶部导航start-->
+            <div class="textshadow" style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                <span> <a class="home" href="index.htm">Home</a> - 欢迎</span>
+        <span id="topbutton" style="float:right">
+            <a href="index_11.htm">登录&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>        </span>
+            </div>
+            <!--顶部导航end-->
+            <!--主窗口start-->
+            <div style="padding:16px;">
+                <!--欢迎页-->
+<!--info start-->
+<div style="font-size:18px;">
+    <div class="info" style="font-size:14px;">
+        <span style="font-size:30px;" class="glyphicon glyphicon-grain" aria-hidden="true"></span> <span style="font-size:16px;">欢迎使用接口管理工具 v1.1版</span><br>
+        <pre class="info" style="margin:10px 34px 10px 34px">
+什么是接口文档管理工具?
+&nbsp;&nbsp;&nbsp;&nbsp;是一个在线API文档系统；其致力于快速解决团队内部接口文档的编写、维护、存档，和减少团队协作开发的沟通成本。
+        </pre>
+    </div>
+    <div style="font-size:12px;position:absolute;bottom:0;right:20px;height:20px;text-align:right;">
+        路人庚 | qq : 309581329 | github : <a target="_blank" href="https://github.com/gongwalker/ApiManager.git">https://github.com/gongwalker/ApiManager.git</a>
+    </div>
+</div>
+<!--欢迎页 end-->            </div>
+            <!--主窗口end-->
+        </div>
+    </div>
+</div>
+<script src="MinPHP/res/jquery.min.js"></script>
+<script src="MinPHP/res/jquery.cookie.js"></script>
+<script src="MinPHP/res/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

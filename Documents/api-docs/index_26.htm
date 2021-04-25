@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="MinPHP/res/favicon.ico">
+    <link href="MinPHP/res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="MinPHP/res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./MinPHP/res/html5shiv.min.js"></script>
+    <script src="./MinPHP/res/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="height:100%">
+<div class="container-fluid" style="background:white;height:100%;">
+    <div class="row" style="height:100%;">
+        <!--左侧导航start-->
+        <div id="navbar" class="col-md-3" style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+            <div style="height:50px;font-size:30px;line-height:50px;">
+                <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none" href="index.htm">
+                    <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+        <span style="position: relative;top:-3px;">API Manager <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.1</span>
+                </a>
+                </span>
+            </div>
+            <!--导航-->
+    <div class="form-group">
+        <input type="text" class="form-control" id="searchapi" placeholder="search here" onkeyup="search('api',this)">
+    </div>
+    <div class="list">
+        <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_d9fc5b73a8d78fad3d6dffe419384e70" >
+                <a href="index_3.htm#info_api_d9fc5b73a8d78fad3d6dffe419384e70" id="menu_d9fc5b73a8d78fad3d6dffe419384e70">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    清除单个未读消息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d9fc5b73a8d78fad3d6dffe419384e70">清除单个未读消息<|-|>19<|-|>点击单个用户打开聊天框时请求<|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:10:"SESSIONKEY";i:1;s:7:"fromUid";i:2;s:5:"toUid";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:32:"发送方：加密的597用户id";i:2;s:32:"接收方：加密的597用户id";}}<|-|>https://api.597.com/web/chatter/clearMsg.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_8efb100a295c0c690931222ff4467bb8" >
+                <a href="index_3.htm#info_api_8efb100a295c0c690931222ff4467bb8" id="menu_8efb100a295c0c690931222ff4467bb8">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    客户端传接收方id，获取聊天数据                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="8efb100a295c0c690931222ff4467bb8">客户端传接收方id，获取聊天数据<|-|>18<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:10:"SESSIONKEY";i:1;s:7:"fromUid";i:2;s:5:"imArr";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:5:"array";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:28:"登录成功返回的session";i:1;s:32:"发送方：加密的597用户id";i:2;s:91:"云信推送的接收放数据：
+imArr[0][toUid] =per_ad72f16105129
+imArr[0][noRead] = 0";}}<|-|>https://api.597.com/web/chatter/conversationAllList.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ad972f10e0800b49d76fed33a21f6698" >
+                <a href="index_3.htm#info_api_ad972f10e0800b49d76fed33a21f6698" id="menu_ad972f10e0800b49d76fed33a21f6698">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    批量聊天                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="ad972f10e0800b49d76fed33a21f6698">批量聊天<|-|>17<|-|><|-|>status  
+     -1008：当前聊天点不够噢！
+     -1006：当前已经超过日上限
+     -1005：当前已经超过月上限<|-|>a:5:{s:4:"name";a:4:{i:0;s:10:"SESSIONKEY";i:1;s:3:"jid";i:2;s:3:"rid";i:3;s:7:"fromUid";}s:9:"paramType";a:4:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:17:"加密的职位id";i:2;s:39:"加密的简历id（多个用,隔开）";i:3;s:32:"发送方：加密的597用户id";}}<|-|>https://api.597.com/web/chatter/batchChat.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_04025959b191f8f9de3f924f0940515f" >
+                <a href="index_3.htm#info_api_04025959b191f8f9de3f924f0940515f" id="menu_04025959b191f8f9de3f924f0940515f">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    第一次聊天发送自定义消息（新增fromUid）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="04025959b191f8f9de3f924f0940515f">第一次聊天发送自定义消息（新增fromUid）<|-|>016<|-|>该接口内已经判断了是否可以聊天<|-|><|-|>a:5:{s:4:"name";a:4:{i:0;s:10:"SESSIONKEY";i:1;s:5:"toUid";i:2;s:3:"jid";i:3;s:7:"fromUid";}s:9:"paramType";a:4:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:32:"接收方：加密的597用户id";i:2;s:17:"加密的职位id";i:3;s:32:"发送方：加密的597用户id";}}<|-|>https://api.597.com/web/chatter/isFirstChat.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_f9b902fc3289af4dd08de5d1de54f68f" >
+                <a href="index_3.htm#info_api_f9b902fc3289af4dd08de5d1de54f68f" id="menu_f9b902fc3289af4dd08de5d1de54f68f">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    是否聊过天                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="f9b902fc3289af4dd08de5d1de54f68f">是否聊过天<|-|>015<|-|><|-|>isChat  是否聊过天，1是，0否
+jid   聊天职位（当isChat=1时，jid=0的情况有：职位已下架，职位审核未通过）
+isChat=1，jid有值，  直接跳到聊天页
+isChat=1，jid=0， 提示 msg，然后弹出职位选择框
+isCha=0， 直接弹出职位选择框<|-|>a:5:{s:4:"name";a:4:{i:0;s:10:"SESSIONKEY";i:1;s:5:"toUid";i:2;s:7:"fromUid";i:3;s:3:"jid";}s:9:"paramType";a:4:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"N";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:32:"接收方：加密的597用户id";i:2;s:32:"发送方：加密的597用户id";i:3;s:17:"职位加密的id";}}<|-|>https://api.597.com/web/chatter/iChat.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_310dcbbf4cce62f762a2aaa148d556bd" >
+                <a href="index_3.htm#info_api_310dcbbf4cce62f762a2aaa148d556bd" id="menu_310dcbbf4cce62f762a2aaa148d556bd">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除常用语                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="310dcbbf4cce62f762a2aaa148d556bd">删除常用语<|-|>014<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:10:"SESSIONKEY";i:1;s:2:"id";i:2;s:5:"fixed";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:3:"int";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:11:"常用语id";i:2;s:6:"排序";}}<|-|>https://api.597.com/web/chatter/replyword.api?act=del<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c042f4db68f23406c6cecf84a7ebb0fe" >
+                <a href="index_3.htm#info_api_c042f4db68f23406c6cecf84a7ebb0fe" id="menu_c042f4db68f23406c6cecf84a7ebb0fe">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑常用语                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="c042f4db68f23406c6cecf84a7ebb0fe">编辑常用语<|-|>013<|-|><|-|><|-|>a:5:{s:4:"name";a:4:{i:0;s:10:"SESSIONKEY";i:1;s:4:"word";i:2;s:2:"id";i:3;s:5:"fixed";}s:9:"paramType";a:4:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";i:3;s:3:"int";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"N";i:3;s:1:"Y";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:9:"常用语";i:2;s:41:"常用语id：编辑必传，新增不传";i:3;s:6:"排序";}}<|-|>https://api.597.com/web/chatter/replyword.api?act=edit<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_6da37dd3139aa4d9aa55b8d237ec5d4a" >
+                <a href="index_3.htm#info_api_6da37dd3139aa4d9aa55b8d237ec5d4a" id="menu_6da37dd3139aa4d9aa55b8d237ec5d4a">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取常用语列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="6da37dd3139aa4d9aa55b8d237ec5d4a">获取常用语列表<|-|>012<|-|><|-|>id     编号
+word     常用语<|-|>a:5:{s:4:"name";a:1:{i:0;s:10:"SESSIONKEY";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:25:"登录返回的SESSIONKEY";}}<|-|>https://api.597.com/web/chatter/replyword.api?act=list<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_fe73f687e5bc5280214e0486b273a5f9" >
+                <a href="index_3.htm#info_api_fe73f687e5bc5280214e0486b273a5f9" id="menu_fe73f687e5bc5280214e0486b273a5f9">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    变更聊天职位（新增fromUid，URL变更）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="fe73f687e5bc5280214e0486b273a5f9">变更聊天职位（新增fromUid，URL变更）<|-|>011<|-|>旧：  https://api.597.com/web/neteaseIm.api?act=setConversationJob<|-|><|-|>a:5:{s:4:"name";a:4:{i:0;s:10:"SESSIONKEY";i:1;s:5:"toUid";i:2;s:3:"jid";i:3;s:7:"fromUid";}s:9:"paramType";a:4:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:32:"接收方：加密的597用户id";i:2;s:17:"加密的职位id";i:3;s:29:"发送：加密的597用户id";}}<|-|>https://api.597.com/web/chatter/setConversationJob.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_b83aac23b9528732c23cc7352950e880" >
+                <a href="index_3.htm#info_api_b83aac23b9528732c23cc7352950e880" id="menu_b83aac23b9528732c23cc7352950e880">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    请求交换电话/微信/简历/变更职位/投递简历（新增fromUid，URL变更）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="b83aac23b9528732c23cc7352950e880">请求交换电话/微信/简历/变更职位/投递简历（新增fromUid，URL变更）<|-|>010<|-|>旧  https://api.597.com/web/neteaseIm.api?act=sendDemand<|-|><|-|>a:5:{s:4:"name";a:8:{i:0;s:10:"SESSIONKEY";i:1;s:5:"toUid";i:2;s:8:"showType";i:3;s:5:"state";i:4;s:5:"msgId";i:5;s:6:"joinId";i:6;s:3:"jid";i:7;s:7:"fromUid";}s:9:"paramType";a:8:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";i:3;s:3:"int";i:4;s:6:"string";i:5;s:6:"string";i:6;s:6:"string";i:7;s:6:"string";}s:4:"type";a:8:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"N";i:5;s:1:"N";i:6;s:1:"N";i:7;s:1:"Y";}s:7:"default";a:8:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";}s:3:"des";a:8:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:32:"接收方：加密的597用户id";i:2;s:142:"自定义消息类型 showType2简历交换，3电话交换，4微信交换，5变更职位，6简历（职位）信息）,7发送面试邀请";i:3;s:43:"状态：0发送请求，1同意，-1拒绝";i:4;s:20:"需要处理的msgId";i:5;s:89:"投递简历接口成功返回的 joinId；（个人投递简历 请求该接口比传）";i:6;s:34:"showType=2（交换简历）必传";i:7;s:32:"接收方：加密的597用户id";}}<|-|>https://api.597.com/web/chatter/sendDemand.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_a666587afda6e89aec274a3657558a27" >
+                <a href="index_3.htm#info_api_a666587afda6e89aec274a3657558a27" id="menu_a666587afda6e89aec274a3657558a27">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除会话（新增fromUid，URL变更）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="a666587afda6e89aec274a3657558a27">删除会话（新增fromUid，URL变更）<|-|>009<|-|>https://api.597.com/web/neteaseIm.api?act=delConversation<|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:10:"SESSIONKEY";i:1;s:5:"toUid";i:2;s:7:"fromUid";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:32:"接收方：加密的597用户id";i:2;s:32:"发送方：加密的597用户id";}}<|-|>https://api.597.com/web/chatter/delConversation.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_89f0fd5c927d466d6ec9a21b9ac34ffa" >
+                <a href="index_3.htm#info_api_89f0fd5c927d466d6ec9a21b9ac34ffa" id="menu_89f0fd5c927d466d6ec9a21b9ac34ffa">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    设置聊天拉黑（新增fromUid，URL变更）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="89f0fd5c927d466d6ec9a21b9ac34ffa">设置聊天拉黑（新增fromUid，URL变更）<|-|>008<|-|>旧   https://api.597.com/web/neteaseIm.api?act=setConversationBan<|-|><|-|>a:5:{s:4:"name";a:4:{i:0;s:10:"SESSIONKEY";i:1;s:5:"toUid";i:2;s:5:"isBan";i:3;s:7:"fromUid";}s:9:"paramType";a:4:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";i:3;s:6:"string";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:32:"接收方：加密的597用户id";i:2;s:26:"是否拉黑：0否，1是";i:3;s:32:"发送方：加密的597用户id";}}<|-|>https://api.597.com/web/chatter/setConversationBan.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_f2fc990265c712c49d51a18a32b39f0c" >
+                <a href="index_3.htm#info_api_f2fc990265c712c49d51a18a32b39f0c" id="menu_f2fc990265c712c49d51a18a32b39f0c">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取聊天接收方的用户信息（新增fromUid，URL变更）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="f2fc990265c712c49d51a18a32b39f0c">获取聊天接收方的用户信息（新增fromUid，URL变更）<|-|>007<|-|>旧   https://api.597.com/web/neteaseIm.api?act=getChatter<|-|>isFirst    第一次聊天：1是（需发自定义消息）
+isJidChange   改变职位：1是（需发自定义消息）<|-|>a:5:{s:4:"name";a:4:{i:0;s:10:"SESSIONKEY";i:1;s:5:"toUid";i:2;s:7:"fromUid";i:3;s:3:"jid";}s:9:"paramType";a:4:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"N";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:85:"接收方：加密的597用户id（多个值用逗号隔开：dc525c3,dc253d376450）";i:2;s:29:"发送：加密的597用户id";i:3;s:17:"加密的职位id";}}<|-|>https://api.597.com/web/chatter/getChatter.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_bc6dc48b743dc5d013b1abaebd2faed2" >
+                <a href="index_3.htm#info_api_bc6dc48b743dc5d013b1abaebd2faed2" id="menu_bc6dc48b743dc5d013b1abaebd2faed2">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    判断是否可以聊天（新增fromUid，URL变更）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="bc6dc48b743dc5d013b1abaebd2faed2">判断是否可以聊天（新增fromUid，URL变更）<|-|>006<|-|>旧  https://api.597.com/web/neteaseIm.api?act=setConversation<|-|><|-|>a:5:{s:4:"name";a:5:{i:0;s:7:"fromUid";i:1;s:5:"toUid";i:2;s:3:"msg";i:3;s:3:"jid";i:4;s:10:"SESSIONKEY";}s:9:"paramType";a:5:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";}s:4:"type";a:5:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"N";i:3;s:1:"N";i:4;s:1:"Y";}s:7:"default";a:5:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";}s:3:"des";a:5:{i:0;s:32:"发送方：加密的597用户id";i:1;s:32:"接收方：加密的597用户id";i:2;s:12:"聊天内容";i:3;s:32:"加密的职位id（新会话）";i:4;s:34:"登录成功后返回的SESSIONKEY";}}<|-|>https://api.597.com/web/chatter/setConversation.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_5737c6ec2e0716f3d8a7a5c4e0de0d9a" >
+                <a href="index_3.htm#info_api_5737c6ec2e0716f3d8a7a5c4e0de0d9a" id="menu_5737c6ec2e0716f3d8a7a5c4e0de0d9a">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取token                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="5737c6ec2e0716f3d8a7a5c4e0de0d9a">获取token<|-|>005<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:10:"SESSIONKEY";i:1;s:7:"fromUid";i:2;s:5:"token";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"N";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:34:"登录成功后返回的SESSIONKEY";i:1;s:32:"发送方：加密的597用户id";i:2;s:72:"旧云信token（不存就是获取token，传就是获取最新token）";}}<|-|>https://api.597.com/web/chatter/getToken.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_caf1a3dfb505ffed0d024130f58c5cfa" >
+                <a href="index_3.htm#info_api_caf1a3dfb505ffed0d024130f58c5cfa" id="menu_caf1a3dfb505ffed0d024130f58c5cfa">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    设置不感兴趣（新增fromUid，URL变更）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="caf1a3dfb505ffed0d024130f58c5cfa">设置不感兴趣（新增fromUid，URL变更）<|-|>004<|-|>旧  https://api.597.com/web/neteaseIm.api?act=setConversationInterest<|-|><|-|>a:5:{s:4:"name";a:4:{i:0;s:10:"SESSIONKEY";i:1;s:5:"toUid";i:2;s:10:"isInterest";i:3;s:7:"fromUid";}s:9:"paramType";a:4:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";i:3;s:3:"int";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:32:"接收方：加密的597用户id";i:2;s:29:"是否感兴趣：0否，1是";i:3;s:32:"发送方：加密的597用户id";}}<|-|>https://api.597.com/web/chatter/setConversationInterest.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_320722549d1751cf3f247855f937b982" >
+                <a href="index_3.htm#info_api_320722549d1751cf3f247855f937b982" id="menu_320722549d1751cf3f247855f937b982">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    设置置顶（新增fromUid，URL变更）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="320722549d1751cf3f247855f937b982">设置置顶（新增fromUid，URL变更）<|-|>003<|-|>旧   https://api.597.com/web/neteaseIm.api?act=setConversationTop<|-|><|-|>a:5:{s:4:"name";a:4:{i:0;s:10:"SESSIONKEY";i:1;s:5:"toUid";i:2;s:5:"isTop";i:3;s:7:"fromUid";}s:9:"paramType";a:4:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";i:3;s:6:"string";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:32:"接收方：加密的597用户id";i:2;s:20:"置顶：0否，1是";i:3;s:32:"发送方：加密的597用户id";}}<|-|>https://api.597.com/web/chatter/setConversationTop.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_432aca3a1e345e339f35a30c8f65edce" >
+                <a href="index_3.htm#info_api_432aca3a1e345e339f35a30c8f65edce" id="menu_432aca3a1e345e339f35a30c8f65edce">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取会话列表（新增fromUid，URL变更）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="432aca3a1e345e339f35a30c8f65edce">获取会话列表（新增fromUid，URL变更）<|-|>001<|-|>旧    https://api.597.com/web/neteaseIm.api?act=conversationList<|-|>count  //总数量
+nStart  //起始个数
+name //招聘者|求职者
+csName //企业名称
+logoUrl  //头像
+toAccid // 聊天对方 云信id
+toUid // 聊天对方 597加密的用户id
+isShow  // 是否显示：1 显示，0不显示
+isTop  //是否置顶： 1置顶，0不置顶
+imType  // 聊天控制：1第三方回调， 0 api接口控制<|-|>a:5:{s:4:"name";a:10:{i:0;s:10:"SESSIONKEY";i:1;s:6:"nStart";i:2;s:2:"pp";i:3;s:8:"workflow";i:4;s:3:"jid";i:5;s:7:"keyword";i:6;s:10:"isInterest";i:7;s:10:"jobClassId";i:8;s:7:"fromUid";i:9;s:8:"isNoRead";}s:9:"paramType";a:10:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:3:"int";i:3;s:3:"int";i:4;s:6:"string";i:5;s:6:"string";i:6;s:3:"int";i:7;s:3:"int";i:8;s:6:"string";i:9;s:3:"int";}s:4:"type";a:10:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"N";i:3;s:1:"N";i:4;s:1:"N";i:5;s:1:"N";i:6;s:1:"N";i:7;s:1:"N";i:8;s:1:"Y";i:9;s:1:"N";}s:7:"default";a:10:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";}s:3:"des";a:10:{i:0;s:25:"登录返回的SESSIONKEY";i:1;s:12:"起始个数";i:2;s:38:"每页显示的数量（默认20条）";i:3;s:58:"类型：1新招呼，2沟通者，3已投递，4已约面";i:4;s:41:"加密的职位id（企业职位筛选）";i:5;s:15:"搜索关键词";i:6;s:29:"是否感兴趣：0否，1是";i:7;s:42:"求职意向（个人求职意向筛选）";i:8;s:32:"发送方：加密的597用户id";i:9;s:24:"是否未读： 0否1是";}}<|-|>https://api.597.com/web/chatter/conversationList.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+    </div>
+    <form action="index_15.htm" method="post">
+            </form>
+<!--jquery模糊查询start-->
+<script>
+    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+    function search(type,obj){
+        var $find = $.trim($(obj).val());//得到搜索内容
+        if(type == 'cate'){//对接口分类进行搜索操作
+            if($find != ''){
+                $(".menu").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#info_"+menu_id).show();
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+            }
+        }else if(type == 'api'){//对接口进行搜索操作
+            if($find != ''){
+                $(".menu").hide();//左侧导航菜单隐藏
+                $(".info_api").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#api_"+menu_id).show();//左侧导航菜单 部份 隐藏
+                    $("#info_api_"+menu_id).show();//接口详情 部份 隐藏
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+            }
+        }
+    }
+
+    window.onload=function(){
+        //添加关闭,打开左侧菜单的功能
+        var status_flg="&lt";var cursor="w-resize"
+        var navbarButton = '<div onclick="navbar(this)" ' +
+            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:'+cursor+';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+            status_flg +
+            '</div>'
+        $('body').append(navbarButton);
+    }
+    // 全屏和normal
+    function navbar(obj){
+        if($('#mainwindow').hasClass('col-md-9')){
+            $(obj).html('&gt;');
+            $(obj).css("cursor","e-resize");
+            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+            $('#navbar').hide();
+            $.cookie($COOKIE_KEY, '1');
+        }else{
+            $(obj).html('&lt;');
+            $(obj).css("cursor","w-resize");
+            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+            $('#navbar').show();
+            $.cookie($COOKIE_KEY, '0');
+        }
+    }
+</script>
+<!--jquery模糊查询end-->
+<!--end-->        </div>
+        <!--左侧导航end-->
+        <div id="mainwindow" class="col-md-9"   style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+            <!--顶部导航start-->
+            <div class="textshadow" style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                <span> <a class="home" href="index.htm">Home</a> - IM</span>
+        <span id="topbutton" style="float:right">
+            <a href="index_11.htm">登录&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>        </span>
+            </div>
+            <!--顶部导航end-->
+            <!--主窗口start-->
+            <div style="padding:16px;">
+                <!--接口详情列表与接口管理start-->
+只有超级管理员才可对接口进行操作

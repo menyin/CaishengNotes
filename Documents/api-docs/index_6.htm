@@ -1,0 +1,2829 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="MinPHP/res/favicon.ico">
+    <link href="MinPHP/res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="MinPHP/res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./MinPHP/res/html5shiv.min.js"></script>
+    <script src="./MinPHP/res/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="height:100%">
+<div class="container-fluid" style="background:white;height:100%;">
+    <div class="row" style="height:100%;">
+        <!--左侧导航start-->
+        <div id="navbar" class="col-md-3" style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+            <div style="height:50px;font-size:30px;line-height:50px;">
+                <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none" href="index.htm">
+                    <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+        <span style="position: relative;top:-3px;">API Manager <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.1</span>
+                </a>
+                </span>
+            </div>
+            <!--导航-->
+    <div class="form-group">
+        <input type="text" class="form-control" id="searchapi" placeholder="search here" onkeyup="search('api',this)">
+    </div>
+    <div class="list">
+        <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_b2eb7349035754953b57a32e2841bda5" >
+                <a href="index_6.htm#info_api_b2eb7349035754953b57a32e2841bda5" id="menu_b2eb7349035754953b57a32e2841bda5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取个性简答问题列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="b2eb7349035754953b57a32e2841bda5">获取个性简答问题列表<|-|>34<|-|><|-|>title  问题标题
+_options    问题选项<|-|>N;<|-|>https://api.597.com/resume/questionList<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_63923f49e5241343aa7acb6a06a751e7" >
+                <a href="index_6.htm#info_api_63923f49e5241343aa7acb6a06a751e7" id="menu_63923f49e5241343aa7acb6a06a751e7">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除社交主页                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="63923f49e5241343aa7acb6a06a751e7">删除社交主页<|-|>33<|-|>{id} 为社交主页id<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/site/{id}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d947bf06a885db0d477d707121934ff8" >
+                <a href="index_6.htm#info_api_d947bf06a885db0d477d707121934ff8" id="menu_d947bf06a885db0d477d707121934ff8">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取社交主页                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d947bf06a885db0d477d707121934ff8">获取社交主页<|-|>32<|-|>{id} 为社交主页id<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/site/{id}<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_4734ba6f3de83d861c3176a6273cac6d" >
+                <a href="index_6.htm#info_api_4734ba6f3de83d861c3176a6273cac6d" id="menu_4734ba6f3de83d861c3176a6273cac6d">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑社交主页                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="4734ba6f3de83d861c3176a6273cac6d">编辑社交主页<|-|>31<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:5:"token";i:1;s:2:"id";i:2;s:4:"site";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:14:"社交主页id";i:2;s:12:"社交主页";}}<|-|>http://api.597.com/resume/site<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_eda80a3d5b344bc40f3bc04f65b7a357" >
+                <a href="index_6.htm#info_api_eda80a3d5b344bc40f3bc04f65b7a357" id="menu_eda80a3d5b344bc40f3bc04f65b7a357">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除个性简答                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="eda80a3d5b344bc40f3bc04f65b7a357">删除个性简答<|-|>30<|-|><|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/answer/{id}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_f7664060cc52bc6f3d620bcedc94a4b6" >
+                <a href="index_6.htm#info_api_f7664060cc52bc6f3d620bcedc94a4b6" id="menu_f7664060cc52bc6f3d620bcedc94a4b6">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取个性简答                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="f7664060cc52bc6f3d620bcedc94a4b6">获取个性简答<|-|>29<|-|>{id} 为个性简答id<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/answer/{id}<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_e56954b4f6347e897f954495eab16a88" >
+                <a href="index_6.htm#info_api_e56954b4f6347e897f954495eab16a88" id="menu_e56954b4f6347e897f954495eab16a88">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑个性简答                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="e56954b4f6347e897f954495eab16a88">编辑个性简答<|-|>28<|-|><|-|><|-|>a:5:{s:4:"name";a:5:{i:0;s:5:"token";i:1;s:2:"id";i:2;s:10:"questionId";i:3;s:6:"answer";i:4;s:11:"otherAnswer";}s:9:"paramType";a:5:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:3:"int";i:3;s:6:"string";i:4;s:6:"string";}s:4:"type";a:5:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"N";}s:7:"default";a:5:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";}s:3:"des";a:5:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:2:"id";i:2;s:8:"问题id";i:3;s:21:"答案；例如：A,B";i:4;s:12:"其他答案";}}<|-|>http://api.597.com/resume/answer<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d6baf65e0b240ce177cf70da146c8dc8" >
+                <a href="index_6.htm#info_api_d6baf65e0b240ce177cf70da146c8dc8" id="menu_d6baf65e0b240ce177cf70da146c8dc8">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除我的作品                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d6baf65e0b240ce177cf70da146c8dc8">删除我的作品<|-|>27<|-|>{id} 为作品id<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/zuopin/{id}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_8c19f571e251e61cb8dd3612f26d5ecf" >
+                <a href="index_6.htm#info_api_8c19f571e251e61cb8dd3612f26d5ecf" id="menu_8c19f571e251e61cb8dd3612f26d5ecf">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取我的作品                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="8c19f571e251e61cb8dd3612f26d5ecf">获取我的作品<|-|>26<|-|>{id} 为作品id<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/zuopin/{id}<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_b1a59b315fc9a3002ce38bbe070ec3f5" >
+                <a href="index_6.htm#info_api_b1a59b315fc9a3002ce38bbe070ec3f5" id="menu_b1a59b315fc9a3002ce38bbe070ec3f5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑我的作品                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="b1a59b315fc9a3002ce38bbe070ec3f5">编辑我的作品<|-|>25<|-|><|-|><|-|>a:5:{s:4:"name";a:5:{i:0;s:5:"token";i:1;s:8:"zuopinid";i:2;s:15:"AchievementName";i:3;s:22:"AchievementDescription";i:4;s:7:"picList";}s:9:"paramType";a:5:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";}s:4:"type";a:5:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"N";i:4;s:1:"N";}s:7:"default";a:5:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";}s:3:"des";a:5:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:8:"作品id";i:2;s:12:"作品名称";i:3;s:12:"作品描述";i:4;s:18:"上传的作品ids";}}<|-|>http://api.597.com/resume/zuopin<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_a4f23670e1833f3fdb077ca70bbd5d66" >
+                <a href="index_6.htm#info_api_a4f23670e1833f3fdb077ca70bbd5d66" id="menu_a4f23670e1833f3fdb077ca70bbd5d66">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除项目经历                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="a4f23670e1833f3fdb077ca70bbd5d66">删除项目经历<|-|>24<|-|>{id} 为项目经历id<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/project/{id}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_cfa0860e83a4c3a763a7e62d825349f7" >
+                <a href="index_6.htm#info_api_cfa0860e83a4c3a763a7e62d825349f7" id="menu_cfa0860e83a4c3a763a7e62d825349f7">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取项目经历                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="cfa0860e83a4c3a763a7e62d825349f7">获取项目经历<|-|>23<|-|>{id} 为项目经历id<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/project/{id}<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_502e4a16930e414107ee22b6198c578f" >
+                <a href="index_6.htm#info_api_502e4a16930e414107ee22b6198c578f" id="menu_502e4a16930e414107ee22b6198c578f">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑项目经历                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="502e4a16930e414107ee22b6198c578f">编辑项目经历<|-|>22<|-|><|-|><|-|>a:5:{s:4:"name";a:7:{i:0;s:5:"token";i:1;s:9:"projectid";i:2;s:11:"projectName";i:3;s:16:"projectStartTime";i:4;s:14:"projectEndTime";i:5;s:11:"projectDuty";i:6;s:11:"projectIntr";}s:9:"paramType";a:7:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";i:3;s:4:"date";i:4;s:4:"date";i:5;s:6:"string";i:6;s:6:"string";}s:4:"type";a:7:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"N";i:5;s:1:"Y";i:6;s:1:"Y";}s:7:"default";a:7:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";}s:3:"des";a:7:{i:0;s:43:"服务端用户session（登录注册返回";i:1;s:8:"项目id";i:2;s:12:"项目名称";i:3;s:12:"开始时间";i:4;s:12:"结束时间";i:5;s:12:"项目角色";i:6;s:12:"项目描述";}}<|-|>http://api.597.com/resume/project<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d96409bf894217686ba124d7356686c9" >
+                <a href="index_6.htm#info_api_d96409bf894217686ba124d7356686c9" id="menu_d96409bf894217686ba124d7356686c9">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除技能标签                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d96409bf894217686ba124d7356686c9">删除技能标签<|-|>21<|-|><|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/skill/{id}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_f718499c1c8cef6730f9fd03c8125cab" >
+                <a href="index_6.htm#info_api_f718499c1c8cef6730f9fd03c8125cab" id="menu_f718499c1c8cef6730f9fd03c8125cab">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取技能标签                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="f718499c1c8cef6730f9fd03c8125cab">获取技能标签<|-|>20<|-|>{id} 为技能标签id<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/skill/{id}<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_fe131d7f5a6b38b23cc967316c13dae2" >
+                <a href="index_6.htm#info_api_fe131d7f5a6b38b23cc967316c13dae2" id="menu_fe131d7f5a6b38b23cc967316c13dae2">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑技能标签                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="fe131d7f5a6b38b23cc967316c13dae2">编辑技能标签<|-|>19<|-|><|-|><|-|>a:5:{s:4:"name";a:5:{i:0;s:5:"token";i:1;s:7:"skillid";i:2;s:9:"SkillName";i:3;s:10:"SkillLevel";i:4;s:9:"SkillCert";}s:9:"paramType";a:5:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";}s:4:"type";a:5:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"N";}s:7:"default";a:5:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";}s:3:"des";a:5:{i:0;s:43:"服务端用户session（登录注册返回";i:1;s:8:"标签id";i:2;s:12:"标签名称";i:3;s:6:"程度";i:4;s:12:"证书名称";}}<|-|>http://api.597.com/resume/skill<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c52f1bd66cc19d05628bd8bf27af3ad6" >
+                <a href="index_6.htm#info_api_c52f1bd66cc19d05628bd8bf27af3ad6" id="menu_c52f1bd66cc19d05628bd8bf27af3ad6">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除教育经历                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="c52f1bd66cc19d05628bd8bf27af3ad6">删除教育经历<|-|>18<|-|>{id} 为教育经历id<|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:10:"session_id";i:1;s:5:"token";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:46:"服务端用户session（登录注册返回）";i:1;s:44:"服务端用户token（登录注册返回）";}}<|-|>ttp://api.597.com/resume/edu/{id}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c24cd76e1ce41366a4bbe8a49b02a028" >
+                <a href="index_6.htm#info_api_c24cd76e1ce41366a4bbe8a49b02a028" id="menu_c24cd76e1ce41366a4bbe8a49b02a028">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取教育经历                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="c24cd76e1ce41366a4bbe8a49b02a028">获取教育经历<|-|>17<|-|>{id} 为教育经历id<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/edu/{id}<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_03c6b06952c750899bb03d998e631860" >
+                <a href="index_6.htm#info_api_03c6b06952c750899bb03d998e631860" id="menu_03c6b06952c750899bb03d998e631860">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑教育经历                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="03c6b06952c750899bb03d998e631860">编辑教育经历<|-|>16<|-|><|-|><|-|>a:5:{s:4:"name";a:8:{i:0;s:5:"token";i:1;s:5:"eduid";i:2;s:7:"eduName";i:3;s:12:"eduDateStart";i:4;s:10:"eduDateEnd";i:5;s:12:"eduSpecialty";i:6;s:13:"eduBackGround";i:7;s:13:"eduExperience";}s:9:"paramType";a:8:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";i:3;s:4:"date";i:4;s:4:"date";i:5;s:6:"string";i:6;s:6:"string";i:7;s:6:"string";}s:4:"type";a:8:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"N";i:5;s:1:"Y";i:6;s:1:"Y";i:7;s:1:"N";}s:7:"default";a:8:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";}s:3:"des";a:8:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:0:"";i:2;s:9:"学校名";i:3;s:12:"开始时间";i:4;s:12:"结束时间";i:5;s:12:"专业名称";i:6;s:6:"学历";i:7;s:12:"在校经历";}}<|-|>http://api.597.com/resume/edu<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_19f3cd308f1455b3fa09a282e0d496f4" >
+                <a href="index_6.htm#info_api_19f3cd308f1455b3fa09a282e0d496f4" id="menu_19f3cd308f1455b3fa09a282e0d496f4">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除工作经历                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="19f3cd308f1455b3fa09a282e0d496f4">删除工作经历<|-|>15<|-|>{id} 为工作经历id<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/work/{id}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_6c9882bbac1c7093bd25041881277658" >
+                <a href="index_6.htm#info_api_6c9882bbac1c7093bd25041881277658" id="menu_6c9882bbac1c7093bd25041881277658">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取工作经历                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="6c9882bbac1c7093bd25041881277658">获取工作经历<|-|>14<|-|>{id} 为工作经历id<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/work/{id}<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_077e29b11be80ab57e1a2ecabb7da330" >
+                <a href="index_6.htm#info_api_077e29b11be80ab57e1a2ecabb7da330" id="menu_077e29b11be80ab57e1a2ecabb7da330">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑工作经历                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="077e29b11be80ab57e1a2ecabb7da330">编辑工作经历<|-|>13<|-|><|-|><|-|>a:5:{s:4:"name";a:11:{i:0;s:5:"token";i:1;s:6:"workid";i:2;s:8:"workName";i:3;s:13:"workDateStart";i:4;s:11:"workDateEnd";i:5;s:14:"workIndustryId";i:6;s:14:"workJobClassId";i:7;s:11:"workContent";i:8;s:5:"isBan";i:9;s:15:"WorkLeaveReason";i:10;s:10:"workOffice";}s:9:"paramType";a:11:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";i:3;s:4:"date";i:4;s:4:"date";i:5;s:3:"int";i:6;s:3:"int";i:7;s:6:"string";i:8;s:3:"int";i:9;s:6:"string";i:10;s:6:"string";}s:4:"type";a:11:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";i:6;s:1:"Y";i:7;s:1:"Y";i:8;s:1:"Y";i:9;s:1:"N";i:10;s:1:"N";}s:7:"default";a:11:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";}s:3:"des";a:11:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:14:"工作经历id";i:2;s:12:"公司名称";i:3;s:12:"开始时间";i:4;s:12:"结束时间";i:5;s:14:"公司行业id";i:6;s:14:"岗位类型id";i:7;s:12:"工作内容";i:8;s:32:"是否拉黑企业。0否，1是";i:9;s:12:"离职原因";i:10;s:12:"岗位名称";}}<|-|>http://api.597.com/resume/work<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_621bf66ddb7c962aa0d22ac97d69b793" >
+                <a href="index_6.htm#info_api_621bf66ddb7c962aa0d22ac97d69b793" id="menu_621bf66ddb7c962aa0d22ac97d69b793">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    屏蔽行业                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="621bf66ddb7c962aa0d22ac97d69b793">屏蔽行业<|-|>12<|-|><|-|>indStr    多个值用英文逗号（,）隔开。 例如：1,2<|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:6:"indStr";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:8:"行业id";}}<|-|>http://api.597.com/resume/banIndustry<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_3cec07e9ba5f5bb252d13f5f431e4bbb" >
+                <a href="index_6.htm#info_api_3cec07e9ba5f5bb252d13f5f431e4bbb" id="menu_3cec07e9ba5f5bb252d13f5f431e4bbb">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    屏蔽公司                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="3cec07e9ba5f5bb252d13f5f431e4bbb">屏蔽公司<|-|>11<|-|><|-|>cidStr         多个值用英文逗号（,）隔开。 例如：1,2<|-|>a:5:{s:4:"name";a:3:{i:0;s:5:"token";i:1;s:9:"banStatus";i:2;s:6:"cidStr";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:23:"0取消屏蔽，1屏蔽";i:2;s:17:"加密的公司id";}}<|-|>http://api.597.com/resume/banCom<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_38db3aed920cf82ab059bfccbd02be6a" >
+                <a href="index_6.htm#info_api_38db3aed920cf82ab059bfccbd02be6a" id="menu_38db3aed920cf82ab059bfccbd02be6a">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    隐私设置（单一设置, 自定义设置）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="38db3aed920cf82ab059bfccbd02be6a">隐私设置（单一设置, 自定义设置）<|-|>10<|-|><|-|>display          如有多个值，用，隔开。 例如：1,2<|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:7:"display";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:8:"隐私id";}}<|-|>http://api.597.com/resume/display<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_0266e33d3f546cb5436a10798e657d97" >
+                <a href="index_6.htm#info_api_0266e33d3f546cb5436a10798e657d97" id="menu_0266e33d3f546cb5436a10798e657d97">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    隐私设置（组合设置）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="0266e33d3f546cb5436a10798e657d97">隐私设置（组合设置）<|-|>9<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:7:"display";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:8:"隐私id";}}<|-|>http://api.597.com/resume/displayShow<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9188905e74c28e489b44e954ec0b9bca" >
+                <a href="index_6.htm#info_api_9188905e74c28e489b44e954ec0b9bca" id="menu_9188905e74c28e489b44e954ec0b9bca">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除求职意向                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9188905e74c28e489b44e954ec0b9bca">删除求职意向<|-|>8<|-|>{id} 为求职意向id<|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/intention/{id}<|-|>DELETE<|-|>delete</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_cb70ab375662576bd1ac5aaf16b3fca4" >
+                <a href="index_6.htm#info_api_cb70ab375662576bd1ac5aaf16b3fca4" id="menu_cb70ab375662576bd1ac5aaf16b3fca4">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取求职意向                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="cb70ab375662576bd1ac5aaf16b3fca4">获取求职意向<|-|>7<|-|>{id} 为求职意向id<|-|>id                                    求职意向id
+rid                                   简历id
+joinSalary                       期望薪资最低
+joinSalaryMax                期望薪资最高
+joinCity                           期望城市
+joinCityId                        期望城市id  
+joinIndustry                    期望行业
+joinIndustryId                  期望行业id
+joinJobClass                   期望职位
+joinJobClassId                期望职位id<|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:44:"服务端用户token（登录注册返回）";}}<|-|>http://api.597.com/resume/intention/{id}<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_e4a6222cdb5b34375400904f03d8e6a5" >
+                <a href="index_6.htm#info_api_e4a6222cdb5b34375400904f03d8e6a5" id="menu_e4a6222cdb5b34375400904f03d8e6a5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑求职意向                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="e4a6222cdb5b34375400904f03d8e6a5">编辑求职意向<|-|>6<|-|><|-|>joinCityId             多个值用英文逗号（,）隔开。 例如：1,2
+joinIndustryId      多个值用英文逗号（,）隔开。 例如：1,2<|-|>a:5:{s:4:"name";a:7:{i:0;s:5:"token";i:1;s:2:"id";i:2;s:10:"joinSalary";i:3;s:13:"joinSalaryMax";i:4;s:10:"joinCityId";i:5;s:14:"joinIndustryId";i:6;s:14:"joinJobClassId";}s:9:"paramType";a:7:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:3:"int";i:3;s:3:"int";i:4;s:6:"string";i:5;s:6:"string";i:6;s:3:"int";}s:4:"type";a:7:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"Y";i:6;s:1:"Y";}s:7:"default";a:7:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";}s:3:"des";a:7:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:14:"求职意向id";i:2;s:21:"意向薪资最小值";i:3;s:21:"意向薪资最大值";i:4;s:12:"意向城市";i:5;s:12:"意向行业";i:6;s:18:"意向职位类型";}}<|-|>http://api.597.com/resume/intention<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_f340f1b1f65b6df5b5e3f94d95b11daf" >
+                <a href="index_6.htm#info_api_f340f1b1f65b6df5b5e3f94d95b11daf" id="menu_f340f1b1f65b6df5b5e3f94d95b11daf">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑期望福利                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="f340f1b1f65b6df5b5e3f94d95b11daf">编辑期望福利<|-|>5<|-|><|-|>rewardIdMay     多个值用英文逗号（,）隔开。 例如：1,2
+rewardIdMust     多个值用英文逗号（,）隔开。 例如：1,2<|-|>a:5:{s:4:"name";a:3:{i:0;s:5:"token";i:1;s:11:"rewardIdMay";i:2;s:12:"rewardIdMust";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:18:"期望有的福利";i:2;s:18:"必须有的福利";}}<|-|>http://api.597.com/resume/reward<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_555d6702c950ecb729a966504af0a635" >
+                <a href="index_6.htm#info_api_555d6702c950ecb729a966504af0a635" id="menu_555d6702c950ecb729a966504af0a635">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    编辑自我简介                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="555d6702c950ecb729a966504af0a635">编辑自我简介<|-|>3<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:12:"joinEvaluate";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:44:"服务端用户token（登录注册返回）";i:1;s:12:"自我简介";}}<|-|>http://api.597.com/resume/evaluate<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ac1dd209cbcc5e5d1c6e28598e8cbbe8" >
+                <a href="index_6.htm#info_api_ac1dd209cbcc5e5d1c6e28598e8cbbe8" id="menu_ac1dd209cbcc5e5d1c6e28598e8cbbe8">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取简历信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="ac1dd209cbcc5e5d1c6e28598e8cbbe8">获取简历信息<|-|>2<|-|>rid 获取简历  or  token获取自己的简历<|-|>fields    需要返回的字段名称（多个字段用，隔开）   例如：realname,gender,attachment
+
+realname   姓名
+realname1  *先生或女士
+nameShow  称呼字段
+birthday    生日
+workYear   工作年限
+learningState  工作年限(在校生，应届毕业生) 
+jobState    工作状态
+display     简历显示状态
+maxEdu    学历
+marriage    婚姻
+political     政治面貌
+nation      民族
+gender      性别
+attachment    头像
+nativeid   户籍地区id
+native    户籍地区
+stature  身高
+avoirdupois    体重
+intentionList  求职意向
+rewardIdMay    期望福利 期望有
+rewardIdMust    期望福利 必须有
+workList    工作经历
+projectList    项目经历
+eduList    教育经历
+skillList    技能标签
+answerList    个性简答
+zuopinList    作品
+banIndustry    屏蔽行业
+mobile   手机（自己的简历才返回）
+email    邮箱（自己的简历才返回）
+qq    QQ号（自己的简历才返回）<|-|>a:5:{s:4:"name";a:3:{i:0;s:5:"token";i:1;s:3:"rid";i:2;s:6:"fields";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"N";i:1;s:1:"N";i:2;s:1:"N";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:41:"服务用户token（登录注册返回）";i:1;s:17:"加密的简历id";i:2;s:27:"需要返回的字段名称";}}<|-|>http://api.597.com/resume/info<|-|>PUT<|-|>put</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_01161aaa0b6d1345dd8fe4e481144d84" >
+                <a href="index_6.htm#info_api_01161aaa0b6d1345dd8fe4e481144d84" id="menu_01161aaa0b6d1345dd8fe4e481144d84">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    简历基本信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="01161aaa0b6d1345dd8fe4e481144d84">简历基本信息<|-|>1<|-|>learningState 和 workYear  两个必须填一个。<|-|>添加/修改简历信息<|-|>a:5:{s:4:"name";a:16:{i:0;s:8:"realname";i:1;s:6:"gender";i:2;s:8:"birthday";i:3;s:6:"maxEdu";i:4;s:8:"jobState";i:5;s:10:"attachment";i:6;s:8:"nativeid";i:7;s:8:"marriage";i:8;s:9:"political";i:9;s:6:"nation";i:10;s:7:"stature";i:11;s:11:"avoirdupois";i:12;s:5:"token";i:13;s:13:"learningState";i:14;s:8:"workYear";i:15;s:8:"nameShow";}s:9:"paramType";a:16:{i:0;s:9:"字符型";i:1;s:9:"数字型";i:2;s:9:"数字型";i:3;s:9:"数字型";i:4;s:9:"数字型";i:5;s:9:"字符型";i:6;s:9:"数字型";i:7;s:9:"数字型";i:8;s:9:"数字型";i:9;s:9:"字符型";i:10;s:9:"数字型";i:11;s:9:"数字型";i:12;s:9:"字符型";i:13;s:9:"字符型";i:14;s:9:"字符型";i:15;s:9:"数字型";}s:4:"type";a:16:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";i:5;s:1:"N";i:6;s:1:"N";i:7;s:1:"N";i:8;s:1:"N";i:9;s:1:"N";i:10;s:1:"N";i:11;s:1:"N";i:12;s:1:"Y";i:13;s:1:"N";i:14;s:1:"N";i:15;s:1:"N";}s:7:"default";a:16:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";i:11;s:0:"";i:12;s:0:"";i:13;s:0:"";i:14;s:0:"";i:15;s:0:"";}s:3:"des";a:16:{i:0;s:6:"姓名";i:1;s:6:"性别";i:2;s:63:"生日年份（格式：2018 或者 2018-08 或者2018-08-08）";i:3;s:6:"学历";i:4;s:12:"工作状态";i:5;s:6:"头像";i:6;s:12:"户籍地区";i:7;s:12:"婚姻状况";i:8;s:12:"政治面貌";i:9;s:6:"民族";i:10;s:6:"身高";i:11;s:6:"体重";i:12;s:38:"服务的token（登录注册返回）";i:13;s:23:"1在校生，2应届生";i:14;s:63:"工作年份（格式：2018 或者 2018-08 或者2018-08-08）";i:15;s:30:"称呼，显示先生或女士";}}<|-|>http://api.597.com/resume/info<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+    </div>
+    <form action="index_17.htm" method="post">
+            </form>
+<!--jquery模糊查询start-->
+<script>
+    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+    function search(type,obj){
+        var $find = $.trim($(obj).val());//得到搜索内容
+        if(type == 'cate'){//对接口分类进行搜索操作
+            if($find != ''){
+                $(".menu").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#info_"+menu_id).show();
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+            }
+        }else if(type == 'api'){//对接口进行搜索操作
+            if($find != ''){
+                $(".menu").hide();//左侧导航菜单隐藏
+                $(".info_api").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#api_"+menu_id).show();//左侧导航菜单 部份 隐藏
+                    $("#info_api_"+menu_id).show();//接口详情 部份 隐藏
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+            }
+        }
+    }
+
+    window.onload=function(){
+        //添加关闭,打开左侧菜单的功能
+        var status_flg="&lt";var cursor="w-resize"
+        var navbarButton = '<div onclick="navbar(this)" ' +
+            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:'+cursor+';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+            status_flg +
+            '</div>'
+        $('body').append(navbarButton);
+    }
+    // 全屏和normal
+    function navbar(obj){
+        if($('#mainwindow').hasClass('col-md-9')){
+            $(obj).html('&gt;');
+            $(obj).css("cursor","e-resize");
+            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+            $('#navbar').hide();
+            $.cookie($COOKIE_KEY, '1');
+        }else{
+            $(obj).html('&lt;');
+            $(obj).css("cursor","w-resize");
+            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+            $('#navbar').show();
+            $.cookie($COOKIE_KEY, '0');
+        }
+    }
+</script>
+<!--jquery模糊查询end-->
+<!--end-->        </div>
+        <!--左侧导航end-->
+        <div id="mainwindow" class="col-md-9"   style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+            <!--顶部导航start-->
+            <div class="textshadow" style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                <span> <a class="home" href="index.htm">Home</a> - 新个人api</span>
+        <span id="topbutton" style="float:right">
+            <a href="index_11.htm">登录&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>        </span>
+            </div>
+            <!--顶部导航end-->
+            <!--主窗口start-->
+            <div style="padding:16px;">
+                <!--接口详情列表与接口管理start-->
+    <script type="text/javascript" src="MinPHP/res/jquery.min.js"></script>
+    <script type="text/javascript" src="MinPHP/res/layer.js"></script>
+    <!--接口详细列表start-->
+                    <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_b2eb7349035754953b57a32e2841bda5">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-07 10:48:32&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取个性简答问题列表</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">34</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">GET</kbd> - <kbd>https://api.597.com/resume/questionList</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;row&quot;: [
+    {
+      &quot;id&quot;: &quot;3&quot;,
+      &quot;type&quot;: &quot;1&quot;,
+      &quot;classId&quot;: &quot;1&quot;,
+      &quot;title&quot;: &quot;我是问题标题&quot;,
+      &quot;options&quot;: &quot;a.选项1;b.选项1&quot;,
+      &quot;isShow&quot;: &quot;1&quot;,
+      &quot;_options&quot;: [
+        &quot;a.选项1&quot;,
+        &quot;b.选项1&quot;
+      ]
+    }
+  ]
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">title  问题标题
+_options    问题选项</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_63923f49e5241343aa7acb6a06a751e7">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-03-26 15:01:43&nbsp;
+                                    </div>
+                <h4 class="textshadow">删除社交主页</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">33</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">DELETE</kbd> - <kbd>http://api.597.com/resume/site/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为社交主页id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;删除成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_d947bf06a885db0d477d707121934ff8">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-03-26 15:00:54&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取社交主页</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">32</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>http://api.597.com/resume/site/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为社交主页id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;row&quot;: {
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;rid&quot;: &quot;4717298&quot;,
+    &quot;site&quot;: &quot;www.baidu.com3&quot;
+  }
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_4734ba6f3de83d861c3176a6273cac6d">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-03-26 15:01:52&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑社交主页</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">31</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/site</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>id</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>社交主页id</td>
+                    </tr>
+                                        <tr>
+                        <td>site</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>社交主页</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;编辑社交主页成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_eda80a3d5b344bc40f3bc04f65b7a357">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:56:35&nbsp;
+                                    </div>
+                <h4 class="textshadow">删除个性简答</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">30</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">DELETE</kbd> - <kbd>http://api.597.com/resume/answer/{id}</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;删除成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_f7664060cc52bc6f3d620bcedc94a4b6">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:56:44&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取个性简答</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">29</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>http://api.597.com/resume/answer/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为个性简答id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;row&quot;: {
+    &quot;id&quot;: &quot;2&quot;,
+    &quot;rid&quot;: &quot;4717298&quot;,
+    &quot;questionId&quot;: &quot;1&quot;,
+    &quot;answer&quot;: &quot;1,2,3,4&quot;,
+    &quot;otherAnswer&quot;: &quot;我是其他答案2&quot;
+  }
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_e56954b4f6347e897f954495eab16a88">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-28 16:20:40&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑个性简答</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">28</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/answer</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>id</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>id</td>
+                    </tr>
+                                        <tr>
+                        <td>questionId</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>问题id</td>
+                    </tr>
+                                        <tr>
+                        <td>answer</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>答案；例如：A,B</td>
+                    </tr>
+                                        <tr>
+                        <td>otherAnswer</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>其他答案</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;提交答案成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_d6baf65e0b240ce177cf70da146c8dc8">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:57:09&nbsp;
+                                    </div>
+                <h4 class="textshadow">删除我的作品</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">27</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">DELETE</kbd> - <kbd>http://api.597.com/resume/zuopin/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为作品id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;删除成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_8c19f571e251e61cb8dd3612f26d5ecf">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:57:18&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取我的作品</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">26</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>http://api.597.com/resume/zuopin/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为作品id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;row&quot;: {
+    &quot;zuopinid&quot;: &quot;25780&quot;,
+    &quot;rid&quot;: &quot;4717298&quot;,
+    &quot;AchievementName&quot;: &quot;123&quot;,
+    &quot;AchievementDescription&quot;: &quot;3&quot;,
+    &quot;picList&quot;: &quot;3&quot;,
+    &quot;creatimeTime&quot;: &quot;1553078616&quot;
+  }
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_b1a59b315fc9a3002ce38bbe070ec3f5">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:57:26&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑我的作品</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">25</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/zuopin</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>zuopinid</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>作品id</td>
+                    </tr>
+                                        <tr>
+                        <td>AchievementName</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>作品名称</td>
+                    </tr>
+                                        <tr>
+                        <td>AchievementDescription</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>作品描述</td>
+                    </tr>
+                                        <tr>
+                        <td>picList</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>上传的作品ids</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;编辑作品信息成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_a4f23670e1833f3fdb077ca70bbd5d66">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:58:22&nbsp;
+                                    </div>
+                <h4 class="textshadow">删除项目经历</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">24</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">DELETE</kbd> - <kbd>http://api.597.com/resume/project/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为项目经历id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;删除成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_cfa0860e83a4c3a763a7e62d825349f7">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:58:35&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取项目经历</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">23</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>http://api.597.com/resume/project/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为项目经历id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;row&quot;: {
+    &quot;projectid&quot;: &quot;104241&quot;,
+    &quot;projectName&quot;: &quot;我是名称&quot;,
+    &quot;projectStartTime&quot;: &quot;2018-05-05&quot;,
+    &quot;projectEndTime&quot;: &quot;&quot;,
+    &quot;projectDuty&quot;: &quot;我是职位&quot;,
+    &quot;projectIntr&quot;: &quot;我是描述&quot;,
+    &quot;projectExperience&quot;: &quot;&quot;,
+    &quot;rid&quot;: &quot;4717298&quot;
+  }
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_502e4a16930e414107ee22b6198c578f">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:58:41&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑项目经历</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">22</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/project</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户session（登录注册返回</td>
+                    </tr>
+                                        <tr>
+                        <td>projectid</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>项目id</td>
+                    </tr>
+                                        <tr>
+                        <td>projectName</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>项目名称</td>
+                    </tr>
+                                        <tr>
+                        <td>projectStartTime</td>
+						<td>date</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>开始时间</td>
+                    </tr>
+                                        <tr>
+                        <td>projectEndTime</td>
+						<td>date</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>结束时间</td>
+                    </tr>
+                                        <tr>
+                        <td>projectDuty</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>项目角色</td>
+                    </tr>
+                                        <tr>
+                        <td>projectIntr</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>项目描述</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;编辑项目经历成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_d96409bf894217686ba124d7356686c9">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:58:48&nbsp;
+                                    </div>
+                <h4 class="textshadow">删除技能标签</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">21</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">DELETE</kbd> - <kbd>http://api.597.com/resume/skill/{id}</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;删除成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_f718499c1c8cef6730f9fd03c8125cab">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:58:54&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取技能标签</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">20</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>http://api.597.com/resume/skill/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为技能标签id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;row&quot;: {
+    &quot;skillid&quot;: &quot;373906&quot;,
+    &quot;rid&quot;: &quot;4717298&quot;,
+    &quot;SkillName&quot;: &quot;我是名称&quot;,
+    &quot;SkillLevel&quot;: &quot;02&quot;,
+    &quot;SkillCert&quot;: &quot;我是证书&quot;
+  }
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_fe131d7f5a6b38b23cc967316c13dae2">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:59:02&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑技能标签</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">19</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/skill</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户session（登录注册返回</td>
+                    </tr>
+                                        <tr>
+                        <td>skillid</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>标签id</td>
+                    </tr>
+                                        <tr>
+                        <td>SkillName</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>标签名称</td>
+                    </tr>
+                                        <tr>
+                        <td>SkillLevel</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>程度</td>
+                    </tr>
+                                        <tr>
+                        <td>SkillCert</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>证书名称</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;编辑技能标签成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_c52f1bd66cc19d05628bd8bf27af3ad6">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-03-25 09:59:56&nbsp;
+                                    </div>
+                <h4 class="textshadow">删除教育经历</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">18</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">DELETE</kbd> - <kbd>ttp://api.597.com/resume/edu/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为教育经历id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>session_id</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户session（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;删除成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_c24cd76e1ce41366a4bbe8a49b02a028">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:59:10&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取教育经历</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">17</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>http://api.597.com/resume/edu/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为教育经历id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;row&quot;: {
+    &quot;eduid&quot;: &quot;1964732&quot;,
+    &quot;rid&quot;: &quot;4717298&quot;,
+    &quot;eduName&quot;: &quot;我是学校1&quot;,
+    &quot;eduDateStart&quot;: &quot;2018-01-01&quot;,
+    &quot;eduDateEnd&quot;: &quot;&quot;,
+    &quot;eduSpecialty&quot;: &quot;我是专业1&quot;,
+    &quot;eduBackGround&quot;: &quot;10&quot;,
+    &quot;eduDetail&quot;: &quot;&quot;,
+    &quot;eduDuty&quot;: &quot;&quot;,
+    &quot;eduExperience&quot;: &quot;&quot;
+  }
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_03c6b06952c750899bb03d998e631860">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:59:17&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑教育经历</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">16</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/edu</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>eduid</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                                        <tr>
+                        <td>eduName</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>学校名</td>
+                    </tr>
+                                        <tr>
+                        <td>eduDateStart</td>
+						<td>date</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>开始时间</td>
+                    </tr>
+                                        <tr>
+                        <td>eduDateEnd</td>
+						<td>date</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>结束时间</td>
+                    </tr>
+                                        <tr>
+                        <td>eduSpecialty</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>专业名称</td>
+                    </tr>
+                                        <tr>
+                        <td>eduBackGround</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>学历</td>
+                    </tr>
+                                        <tr>
+                        <td>eduExperience</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>在校经历</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;编辑学习经历成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_19f3cd308f1455b3fa09a282e0d496f4">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:59:22&nbsp;
+                                    </div>
+                <h4 class="textshadow">删除工作经历</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">15</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">DELETE</kbd> - <kbd>http://api.597.com/resume/work/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为工作经历id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;删除成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_6c9882bbac1c7093bd25041881277658">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:59:29&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取工作经历</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">14</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>http://api.597.com/resume/work/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为工作经历id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;row&quot;: {
+    &quot;workid&quot;: &quot;4376442&quot;,
+    &quot;rid&quot;: &quot;4717298&quot;,
+    &quot;workName&quot;: &quot;厦门才盛人才服务有限公司（内测）&quot;,
+    &quot;workDateStart&quot;: &quot;2018-01-03&quot;,
+    &quot;workDateEnd&quot;: &quot;2018-01-04&quot;,
+    &quot;workUnit&quot;: &quot;&quot;,
+    &quot;workOffice&quot;: &quot;阿萨德和阿斯顿发送到&quot;,
+    &quot;workIndustry&quot;: &quot;房产/建筑建设/物业&quot;,
+    &quot;workIndustryId&quot;: &quot;3&quot;,
+    &quot;workJobClass&quot;: &quot;会计/金融/银行/保险&quot;,
+    &quot;workJobClassId&quot;: &quot;3&quot;,
+    &quot;workComTypeId&quot;: &quot;&quot;,
+    &quot;workSalary&quot;: &quot;0&quot;,
+    &quot;workHideSalary&quot;: &quot;0&quot;,
+    &quot;workContent&quot;: &quot;我是内容3&quot;,
+    &quot;WorkComProperty&quot;: &quot;0&quot;,
+    &quot;WorkComSize&quot;: &quot;0&quot;,
+    &quot;WorkJobType&quot;: &quot;0&quot;,
+    &quot;WorkJobLevel&quot;: &quot;0&quot;,
+    &quot;WorkManageDempartment&quot;: &quot;&quot;,
+    &quot;WorkSubordinate&quot;: &quot;0&quot;,
+    &quot;WorkReportMan&quot;: &quot;&quot;,
+    &quot;WorkLeaveReason&quot;: &quot;&quot;,
+    &quot;isBan&quot;: &quot;1&quot;
+  }
+}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_077e29b11be80ab57e1a2ecabb7da330">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:59:37&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑工作经历</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">13</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/work</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>workid</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>工作经历id</td>
+                    </tr>
+                                        <tr>
+                        <td>workName</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>公司名称</td>
+                    </tr>
+                                        <tr>
+                        <td>workDateStart</td>
+						<td>date</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>开始时间</td>
+                    </tr>
+                                        <tr>
+                        <td>workDateEnd</td>
+						<td>date</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>结束时间</td>
+                    </tr>
+                                        <tr>
+                        <td>workIndustryId</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>公司行业id</td>
+                    </tr>
+                                        <tr>
+                        <td>workJobClassId</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>岗位类型id</td>
+                    </tr>
+                                        <tr>
+                        <td>workContent</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>工作内容</td>
+                    </tr>
+                                        <tr>
+                        <td>isBan</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>是否拉黑企业。0否，1是</td>
+                    </tr>
+                                        <tr>
+                        <td>WorkLeaveReason</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>离职原因</td>
+                    </tr>
+                                        <tr>
+                        <td>workOffice</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>岗位名称</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;编辑工作经历成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_621bf66ddb7c962aa0d22ac97d69b793">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 18:59:43&nbsp;
+                                    </div>
+                <h4 class="textshadow">屏蔽行业</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">12</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/banIndustry</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>indStr</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>行业id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;设置成功!‘}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">indStr    多个值用英文逗号（,）隔开。 例如：1,2</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_3cec07e9ba5f5bb252d13f5f431e4bbb">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-27 10:22:33&nbsp;
+                                    </div>
+                <h4 class="textshadow">屏蔽公司</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">11</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/banCom</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>banStatus</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>0取消屏蔽，1屏蔽</td>
+                    </tr>
+                                        <tr>
+                        <td>cidStr</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>加密的公司id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;设置成功!‘}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">cidStr         多个值用英文逗号（,）隔开。 例如：1,2</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_38db3aed920cf82ab059bfccbd02be6a">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zy &nbsp;2019-05-21 10:25:30&nbsp;
+                                    </div>
+                <h4 class="textshadow">隐私设置（单一设置, 自定义设置）</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">10</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/display</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>display</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>隐私id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;设置成功!‘}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">display          如有多个值，用，隔开。 例如：1,2</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_0266e33d3f546cb5436a10798e657d97">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 19:00:09&nbsp;
+                                    </div>
+                <h4 class="textshadow">隐私设置（组合设置）</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">9</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/displayShow</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>display</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>隐私id</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;设置成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_9188905e74c28e489b44e954ec0b9bca">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 19:00:16&nbsp;
+                                    </div>
+                <h4 class="textshadow">删除求职意向</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">8</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">DELETE</kbd> - <kbd>http://api.597.com/resume/intention/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为求职意向id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;删除成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_cb70ab375662576bd1ac5aaf16b3fca4">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 19:00:22&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取求职意向</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">7</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>http://api.597.com/resume/intention/{id}</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                {id} 为求职意向id            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{
+  &quot;status&quot;: 1,
+  &quot;row&quot;: {
+    &quot;joinIndustryId&quot;: &quot;14,15,16,13,12&quot;,
+    &quot;joinSalary&quot;: &quot;8000&quot;,
+    &quot;rid&quot;: &quot;4717298&quot;,
+    &quot;joinJobClassId&quot;: &quot;15,16,17,6210&quot;,
+    &quot;joinCity&quot;: &quot;天津市&quot;,
+    &quot;joinSalaryMax&quot;: &quot;8000&quot;,
+    &quot;joinCityId&quot;: &quot;1200&quot;,
+    &quot;joinJobClass&quot;: &quot;IT-管理,IT-品管、技术支持及其它,通信技术开发及应用,公务员&quot;,
+    &quot;id&quot;: &quot;2981014&quot;,
+    &quot;joinIndustry&quot;: &quot;计算机服务(系统/数据/维护),互联网/电子商务,网络游戏,计算机硬件,计算机软件&quot;
+  }
+}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">id                                    求职意向id
+rid                                   简历id
+joinSalary                       期望薪资最低
+joinSalaryMax                期望薪资最高
+joinCity                           期望城市
+joinCityId                        期望城市id  
+joinIndustry                    期望行业
+joinIndustryId                  期望行业id
+joinJobClass                   期望职位
+joinJobClassId                期望职位id</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_e4a6222cdb5b34375400904f03d8e6a5">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 19:00:28&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑求职意向</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">6</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/intention</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>id</td>
+						<td>int</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>求职意向id</td>
+                    </tr>
+                                        <tr>
+                        <td>joinSalary</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>意向薪资最小值</td>
+                    </tr>
+                                        <tr>
+                        <td>joinSalaryMax</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>意向薪资最大值</td>
+                    </tr>
+                                        <tr>
+                        <td>joinCityId</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>意向城市</td>
+                    </tr>
+                                        <tr>
+                        <td>joinIndustryId</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>意向行业</td>
+                    </tr>
+                                        <tr>
+                        <td>joinJobClassId</td>
+						<td>int</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>意向职位类型</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;编辑求职意向成功!‘}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">joinCityId             多个值用英文逗号（,）隔开。 例如：1,2
+joinIndustryId      多个值用英文逗号（,）隔开。 例如：1,2</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_f340f1b1f65b6df5b5e3f94d95b11daf">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 19:00:37&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑期望福利</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">5</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/reward</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>rewardIdMay</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>期望有的福利</td>
+                    </tr>
+                                        <tr>
+                        <td>rewardIdMust</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>必须有的福利</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;编辑期望福利成功!‘}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">rewardIdMay     多个值用英文逗号（,）隔开。 例如：1,2
+rewardIdMust     多个值用英文逗号（,）隔开。 例如：1,2</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_555d6702c950ecb729a966504af0a635">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-03-25 19:00:49&nbsp;
+                                    </div>
+                <h4 class="textshadow">编辑自我简介</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">3</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/evaluate</kbd>
+                </div>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务端用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>joinEvaluate</td>
+						<td>string</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>自我简介</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;编辑自我简介成功!‘}</pre>
+            </div>
+            
+            
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_ac1dd209cbcc5e5d1c6e28598e8cbbe8">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-05-15 10:56:42&nbsp;
+                                    </div>
+                <h4 class="textshadow">获取简历信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">2</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:yellow">PUT</kbd> - <kbd>http://api.597.com/resume/info</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                rid 获取简历  or  token获取自己的简历            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>token</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>服务用户token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>rid</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>加密的简历id</td>
+                    </tr>
+                                        <tr>
+                        <td>fields</td>
+						<td>string</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>需要返回的字段名称</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">fields    需要返回的字段名称（多个字段用，隔开）   例如：realname,gender,attachment
+
+realname   姓名
+realname1  *先生或女士
+nameShow  称呼字段
+birthday    生日
+workYear   工作年限
+learningState  工作年限(在校生，应届毕业生) 
+jobState    工作状态
+display     简历显示状态
+maxEdu    学历
+marriage    婚姻
+political     政治面貌
+nation      民族
+gender      性别
+attachment    头像
+nativeid   户籍地区id
+native    户籍地区
+stature  身高
+avoirdupois    体重
+intentionList  求职意向
+rewardIdMay    期望福利 期望有
+rewardIdMust    期望福利 必须有
+workList    工作经历
+projectList    项目经历
+eduList    教育经历
+skillList    技能标签
+answerList    个性简答
+zuopinList    作品
+banIndustry    屏蔽行业
+mobile   手机（自己的简历才返回）
+email    邮箱（自己的简历才返回）
+qq    QQ号（自己的简历才返回）</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <div class="info_api" style="border:1px solid #ddd;margin-bottom:20px;" id="info_api_01161aaa0b6d1345dd8fe4e481144d84">
+            <div style="background:#f5f5f5;padding:20px;position:relative">
+                <div class="textshadow" style="position: absolute;right:0;top:4px;right:8px;">
+                    最后修改者: zl &nbsp;2019-05-15 11:10:21&nbsp;
+                                    </div>
+                <h4 class="textshadow">简历基本信息</h4>
+                <p>
+                    <b>编号&nbsp;&nbsp;:&nbsp;&nbsp;<span style="color:red">1</span></b>
+                </p>
+                <div>
+                                        <kbd style="color:red">POST</kbd> - <kbd>http://api.597.com/resume/info</kbd>
+                </div>
+            </div>
+                        <div class="info">
+                learningState 和 workYear  两个必须填一个。            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >请求参数</h5>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-3">参数名</th>
+                        <th class="col-md-2">参数类型</th>
+						<th class="col-md-2">必传</th>
+                        <th class="col-md-2">缺省值</th>
+                        <th class="col-md-5">描述</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                                            <tr>
+                        <td>realname</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>姓名</td>
+                    </tr>
+                                        <tr>
+                        <td>gender</td>
+						<td>数字型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>性别</td>
+                    </tr>
+                                        <tr>
+                        <td>birthday</td>
+						<td>数字型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>生日年份（格式：2018 或者 2018-08 或者2018-08-08）</td>
+                    </tr>
+                                        <tr>
+                        <td>maxEdu</td>
+						<td>数字型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>学历</td>
+                    </tr>
+                                        <tr>
+                        <td>jobState</td>
+						<td>数字型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>工作状态</td>
+                    </tr>
+                                        <tr>
+                        <td>attachment</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>头像</td>
+                    </tr>
+                                        <tr>
+                        <td>nativeid</td>
+						<td>数字型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>户籍地区</td>
+                    </tr>
+                                        <tr>
+                        <td>marriage</td>
+						<td>数字型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>婚姻状况</td>
+                    </tr>
+                                        <tr>
+                        <td>political</td>
+						<td>数字型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>政治面貌</td>
+                    </tr>
+                                        <tr>
+                        <td>nation</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>民族</td>
+                    </tr>
+                                        <tr>
+                        <td>stature</td>
+						<td>数字型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>身高</td>
+                    </tr>
+                                        <tr>
+                        <td>avoirdupois</td>
+						<td>数字型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>体重</td>
+                    </tr>
+                                        <tr>
+                        <td>token</td>
+						<td>字符型</td>
+                        <td><span style="color:red">Y<span></td>
+                        <td></td>
+                        <td>服务的token（登录注册返回）</td>
+                    </tr>
+                                        <tr>
+                        <td>learningState</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>1在校生，2应届生</td>
+                    </tr>
+                                        <tr>
+                        <td>workYear</td>
+						<td>字符型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>工作年份（格式：2018 或者 2018-08 或者2018-08-08）</td>
+                    </tr>
+                                        <tr>
+                        <td>nameShow</td>
+						<td>数字型</td>
+                        <td><span style="color:green">N<span></td>
+                        <td></td>
+                        <td>称呼，显示先生或女士</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow" >返回值</h5>
+                <pre>{&#039;status:&#039; 1, &#039;msg&#039;:&#039;成功修改简历!‘}或{&#039;status:&#039; 1, &#039;msg&#039;:&#039;成功添加简历!‘}</pre>
+            </div>
+            
+            
+                        <div style="background:#ffffff;padding:20px;">
+                <h5 class="textshadow">备注</h5>
+                <pre style="background:honeydew">添加/修改简历信息</pre>
+            </div>
+                    </div>
+        <!--接口详细列表end-->
+        <!--接口详情返回顶部按钮start-->
+        <div id="gotop" onclick="goTop()" style="z-index:999999;font-size:18px;display:none;color:#e6e6e6;cursor:pointer;width:42px;height:42px;border:#ddd 1px solid;line-height:42px;text-align:center;background:rgba(91,192,222, 0.8);position:fixed;right:20px;bottom:200px;border-radius:50%;box-shadow: 0px 0px 0px 1px #cccccc;">
+            T
+        </div>
+        <!--接口详情返回顶部按钮end-->
+                <script>
+        //删除某个接口
+        var $url = 'index.php?act=ajax&op=apiDelete';
+        function deleteApi(apiId,divId){
+            if(confirm('是否确认删除此接口?')){
+                $.post($url,{id:apiId},function(data){
+                    if(data == '1'){
+                        $('#api_'+divId).remove();//删除左侧菜单
+                        $('#info_api_'+divId).remove();//删除接口详情
+                    }
+                })
+            }
+        }
+        //编辑某个接口
+        function editApi(gourl){
+            window.location.href=gourl;
+        }
+        //复制某个api
+        function copyApi( apiId ) {
+          var askName = layer.prompt({
+            title: '输入新的api名称',
+            formType: 0 //prompt风格，支持0-2
+          }, function(pass){
+            location.href = "index.php?act=api&op=copy&id="+apiId+"&name="+pass;
+          });
+        }
+
+        //返回顶部
+        function goTop(){
+            $('#mainwindow').animate(
+                { scrollTop: '0px' }, 200
+            );
+        }
+
+        //检测滚动条,显示返回顶部按钮
+        document.getElementById('mainwindow').onscroll = function () {
+            if(document.getElementById('mainwindow').scrollTop > 100){
+                document.getElementById('gotop').style.display='block';
+            }else{
+                document.getElementById('gotop').style.display='none';
+            }
+        };
+    </script>
+<!--接口详情列表与接口管理end-->            </div>
+            <!--主窗口end-->
+        </div>
+    </div>
+</div>
+<script src="MinPHP/res/jquery.min.js"></script>
+<script src="MinPHP/res/jquery.cookie.js"></script>
+<script src="MinPHP/res/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

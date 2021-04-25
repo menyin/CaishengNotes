@@ -1,4 +1,6 @@
-﻿*597总体数据统计
+﻿*597总体数据统计 zabblx.597.com/screens.php?ddreset=1
+
+*郭总推荐抓包工具wireshark
 
 *张良测试环境http://www.597.cc/passport/  18106969297  验证码 3697   密码 112233
   \\DESKTOP-KCRAQKG\tpl  用户名/密码 tpl/tplqq
@@ -12,9 +14,13 @@
 
 *597企业微信小程序：qyzpzs597@qq.com 密码：597QYzs8566
 
+*js-sdk文档 https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#112
+
 *crm  账号597pm1 密码tu1819   账号guo guo116   cny cny9293
  
 *597人才网测试环境搭建详见《597测试环境搭建.txt》
+
+*597wifi Volans_56C8    abcd1231a
 
 *597数据统计方案elasticsearch选型参考官网https://www.elastic.co/cn/
 
@@ -151,6 +157,9 @@ https://item.jd.com/10020285757.html   959
 
 *郭总说，当我们客户端带着ip:port请求入口服务器（如Nginx），而Nginx则需要带着客户端的请求去请求具体的服务（如web服务），此时Nginx就相当于客户端。
  所以其实对于单个web服务来说，它的并发量也会由于端口数量而受到限制。好像一台机器的可用端口有65535个，其中1-1023号为系统保留。可用只有五万左右。
+
+*百度小程序用户名：xm597rcw(13375929312) 密码：Xm597795
+ https://smartprogram.baidu.com/developer/applist.html
 
 *征信登录名menyin0 密码cfcny362331
 

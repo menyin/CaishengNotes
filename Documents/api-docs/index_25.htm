@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="MinPHP/res/favicon.ico">
+    <link href="MinPHP/res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="MinPHP/res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./MinPHP/res/html5shiv.min.js"></script>
+    <script src="./MinPHP/res/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="height:100%">
+<div class="container-fluid" style="background:white;height:100%;">
+    <div class="row" style="height:100%;">
+        <!--左侧导航start-->
+        <div id="navbar" class="col-md-3" style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+            <div style="height:50px;font-size:30px;line-height:50px;">
+                <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none" href="index.htm">
+                    <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+        <span style="position: relative;top:-3px;">API Manager <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.1</span>
+                </a>
+                </span>
+            </div>
+            <!--导航-->
+    <div class="form-group">
+        <input type="text" class="form-control" id="searchapi" placeholder="search here" onkeyup="search('api',this)">
+    </div>
+    <div class="list">
+        <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_e46de7e1bcaaced9a54f1e9d0d2f800d" >
+                <a href="index_12.htm#info_api_e46de7e1bcaaced9a54f1e9d0d2f800d" id="menu_e46de7e1bcaaced9a54f1e9d0d2f800d">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    余额充值                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="e46de7e1bcaaced9a54f1e9d0d2f800d">余额充值<|-|>050<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:5:"token";i:1;s:9:"txtAmount";i:2;s:7:"payType";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:5:"floot";i:2;s:3:"int";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:26:"登录成功返回的token";i:1;s:6:"金额";i:2;s:36:"支付类型：1支付宝，10微信";}}<|-|>https://api.597.com/web/kuaiJie.api?act=pay<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_f8c1f23d6a8d8d7904fc0ea8e066b3bb" >
+                <a href="index_12.htm#info_api_f8c1f23d6a8d8d7904fc0ea8e066b3bb" id="menu_f8c1f23d6a8d8d7904fc0ea8e066b3bb">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    是否当天第一次登录                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="f8c1f23d6a8d8d7904fc0ea8e066b3bb">是否当天第一次登录<|-|>049<|-|><|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:5:"token";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>https://xm.597.com/api/web/firstLogin.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_28f0b864598a1291557bed248a998d4e" >
+                <a href="index_12.htm#info_api_28f0b864598a1291557bed248a998d4e" id="menu_28f0b864598a1291557bed248a998d4e">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取职位曝光统计图数据                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="28f0b864598a1291557bed248a998d4e">获取职位曝光统计图数据<|-|>dq_2<|-|><|-|>时间格式不符合，可以更改<|-|>a:5:{s:4:"name";a:5:{i:0;s:10:"search_jid";i:1;s:17:"search_start_date";i:2;s:15:"search_end_date";i:3;s:10:"before_day";i:4;s:9:"after_day";}s:9:"paramType";a:5:{i:0;s:3:"int";i:1;s:6:"string";i:2;s:6:"string";i:3;s:3:"int";i:4;s:3:"int";}s:4:"type";a:5:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";}s:7:"default";a:5:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:2:"30";i:4;s:1:"7";}s:3:"des";a:5:{i:0;s:33:"职位id，示例：8af4f65039283";i:1;s:40:"搜索开始时间，示例：2020-12-25";i:2;s:65:"搜索结束时间，不可只传结束时间，示例：20210107";i:3;s:31:"该职位连续N天前的曝光";i:4;s:31:"该职位连续N天后的曝光";}}<|-|>http://api.597.test/web/jobExposure.api?act=diagram<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_70c639df5e30bdee440e4cdf599fec2b" >
+                <a href="index_12.htm#info_api_70c639df5e30bdee440e4cdf599fec2b" id="menu_70c639df5e30bdee440e4cdf599fec2b">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    统计职位曝光率                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="70c639df5e30bdee440e4cdf599fec2b">统计职位曝光率<|-|>dq_1<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:7:"appType";i:1;s:7:"keyword";i:2;s:4:"jids";}s:9:"paramType";a:3:{i:0;s:3:"int";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:84:"客户端：1电脑，2手机，3安卓app，4苹果app，5微信，6微信小程序";i:1;s:15:"搜索关键词";i:2;s:141:"职位id | act类型，`|` 分隔，act为曝光类型，0：其他，1：搜索，2：推荐，3：首页3，4：相似，如d422ac5038912|1";}}<|-|>https://api.597.com/web/jobExposure.api?act=stat<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ffd52f3c7e12435a724a8f30fddadd9c" >
+                <a href="index_12.htm#info_api_ffd52f3c7e12435a724a8f30fddadd9c" id="menu_ffd52f3c7e12435a724a8f30fddadd9c">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    向服务器发送用户坐标                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="ffd52f3c7e12435a724a8f30fddadd9c">向服务器发送用户坐标<|-|>s52<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:8:"location";i:1;s:3:"uid";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:29:"坐标：24.524636,117.983551";i:1;s:17:"加密的用户id";}}<|-|>https://api.597.com/web/analysis.api?act=map<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_41f1f19176d383480afa65d325c06ed0" >
+                <a href="index_12.htm#info_api_41f1f19176d383480afa65d325c06ed0" id="menu_41f1f19176d383480afa65d325c06ed0">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    极验验证                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="41f1f19176d383480afa65d325c06ed0">极验验证<|-|>1<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:3:"act";i:1;s:11:"client_type";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:7:"getCode";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:0:"";i:1;s:150:"web:电脑上的浏览器；h5:手机上的浏览器，包括移动应用内完全内置的web_view；native：通过原生SDK植入APP应用的方式";}}<|-|>https://api.597.com/v1/captcha.api<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d709f38ef758b5066ef31b18039b8ce5" >
+                <a href="index_12.htm#info_api_d709f38ef758b5066ef31b18039b8ce5" id="menu_d709f38ef758b5066ef31b18039b8ce5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    极光一键登录                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d709f38ef758b5066ef31b18039b8ce5">极光一键登录<|-|>1<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:10:"loginToken";i:2;s:7:"appType";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:9:"autoLogin";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:9:"app类型";}}<|-|>https://api.597.com/v1/jpush.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_0c74b7f78409a4022a2c4c5a5ca3ee19" >
+                <a href="index_12.htm#info_api_0c74b7f78409a4022a2c4c5a5ca3ee19" id="menu_0c74b7f78409a4022a2c4c5a5ca3ee19">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    又拍云鉴权                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="0c74b7f78409a4022a2c4c5a5ca3ee19">又拍云鉴权<|-|>1<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:4:"type";i:2;s:3:"num";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:3:"int";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:4:"auth";i:1;s:0:"";i:2;s:1:"1";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:12:"例如:photo";i:2;s:18:"图片数组数量";}}<|-|>https://api.597.com/web/upyun.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_5ef698cd9fe650923ea331c15af3b160" >
+                <a href="index_12.htm#info_api_5ef698cd9fe650923ea331c15af3b160" id="menu_5ef698cd9fe650923ea331c15af3b160">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    第三方登录                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="5ef698cd9fe650923ea331c15af3b160">第三方登录<|-|>048<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"iosId";i:1;s:8:"userType";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:8:"苹果id";i:1;s:33:"用户类型： 1个人，2企业";}}<|-|>https://api.597.com/web/user/thirdLogin.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9be40cee5b0eee1462c82c6964087ff9" >
+                <a href="index_12.htm#info_api_9be40cee5b0eee1462c82c6964087ff9" id="menu_9be40cee5b0eee1462c82c6964087ff9">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    ios第三方列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9be40cee5b0eee1462c82c6964087ff9">ios第三方列表<|-|>047<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:5:"token";i:1;s:3:"act";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:26:"登录成功返回的token";i:1;s:4:"list";}}<|-|>https://api.597.com/web/user/thirdIos.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_bac9162b47c56fc8a4d2a519803d51b3" >
+                <a href="index_12.htm#info_api_bac9162b47c56fc8a4d2a519803d51b3" id="menu_bac9162b47c56fc8a4d2a519803d51b3">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    ios第三方绑定解绑                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="bac9162b47c56fc8a4d2a519803d51b3">ios第三方绑定解绑<|-|>046<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:5:"token";i:1;s:3:"act";i:2;s:5:"iosId";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:26:"登录成功返回的token";i:1;s:6:"unbind";i:2;s:8:"苹果id";}}<|-|>https://api.597.com/web/user/thirdIos.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_00411460f7c92d2124a67ea0f4cb5f85" >
+                <a href="index_12.htm#info_api_00411460f7c92d2124a67ea0f4cb5f85" id="menu_00411460f7c92d2124a67ea0f4cb5f85">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    ios第三放绑定                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="00411460f7c92d2124a67ea0f4cb5f85">ios第三放绑定<|-|>045<|-|><|-|><|-|>a:5:{s:4:"name";a:5:{i:0;s:5:"token";i:1;s:5:"iosId";i:2;s:4:"name";i:3;s:5:"email";i:4;s:7:"jpushId";}s:9:"paramType";a:5:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";}s:4:"type";a:5:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"N";}s:7:"default";a:5:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";}s:3:"des";a:5:{i:0;s:26:"登录成功返回的token";i:1;s:8:"苹果id";i:2;s:12:"苹果名称";i:3;s:12:"苹果邮箱";i:4;s:8:"极光id";}}<|-|>https://api.597.com/web/user/thirdBind.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_01386bd6d8e091c2ab4c7c7de644d37b" >
+                <a href="index_12.htm#info_api_01386bd6d8e091c2ab4c7c7de644d37b" id="menu_01386bd6d8e091c2ab4c7c7de644d37b">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    广告（头条）转化返回                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="01386bd6d8e091c2ab4c7c7de644d37b">广告（头条）转化返回<|-|>1<|-|><|-|><|-|>a:5:{s:4:"name";a:7:{i:0;s:3:"act";i:1;s:9:"device_id";i:2;s:9:"androidid";i:3;s:3:"mac";i:4;s:2:"ua";i:5;s:2:"os";i:6;s:4:"oaid";}s:9:"paramType";a:7:{i:0;s:9:"字符型";i:1;s:9:"字符串";i:2;s:9:"字符型";i:3;s:9:"字符型";i:4;s:9:"字符串";i:5;s:9:"字符串";i:6;s:9:"字符串";}s:4:"type";a:7:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"N";i:3;s:1:"N";i:4;s:1:"N";i:5;s:1:"N";i:6;s:1:"N";}s:7:"default";a:7:{i:0;s:14:"returnCallback";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";i:5;s:0:"";i:6;s:0:"";}s:3:"des";a:7:{i:0;s:0:"";i:1;s:23:"md5加密的imei或idfa";i:2;s:15:"不需要加密";i:3;s:15:"md5加密的mac";i:4;s:0:"";i:5;s:26:"0安卓系统1苹果系统";i:6;s:0:"";}}<|-|>https://api.597.com/v1/ad.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_357a6fdf7642bf815a88822c447d9dc4" >
+                <a href="index_12.htm#info_api_357a6fdf7642bf815a88822c447d9dc4" id="menu_357a6fdf7642bf815a88822c447d9dc4">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取推送消息开关                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="357a6fdf7642bf815a88822c447d9dc4">获取推送消息开关<|-|>42<|-|>获取推送消息开关
+0默认（启动）1关闭<|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:4:"type";i:2;s:10:"SESSIONKEY";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"数字型";i:2;s:9:"字符型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:16:"getMessageSwitch";i:1;s:1:"1";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:39:"1个人微信推送 2企业微信推送";i:2;s:0:"";}}<|-|>https://api.597.com/web/message.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_6855456e2fe46a9d49d3d3af4f57443d" >
+                <a href="index_12.htm#info_api_6855456e2fe46a9d49d3d3af4f57443d" id="menu_6855456e2fe46a9d49d3d3af4f57443d">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    推送消息开关保存                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="6855456e2fe46a9d49d3d3af4f57443d">推送消息开关保存<|-|>41<|-|>推送消息开关
+act
+perVisitMessage 简历被浏览微信推送
+comVisitMessage 职位被浏览微信推送<|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:3:"act";i:1;s:10:"SESSIONKEY";}s:9:"paramType";a:2:{i:0;s:9:"字符型";i:1;s:9:"字符型";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:15:"perVisitMessage";i:1;s:0:"";}}<|-|>https://api.597.com/web/message.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_6faa8040da20ef399b63a72d0e4ab575" >
+                <a href="index_12.htm#info_api_6faa8040da20ef399b63a72d0e4ab575" id="menu_6faa8040da20ef399b63a72d0e4ab575">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    二维码扫描登录返回信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="6faa8040da20ef399b63a72d0e4ab575">二维码扫描登录返回信息<|-|>s40<|-|>获取二维码扫码登录信息，前端每秒请求，一旦status返回1登录成功<|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:3:"act";i:1;s:7:"scanKey";}s:9:"paramType";a:2:{i:0;s:9:"字符型";i:1;s:9:"字符型";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:16:"qrCodeScanReturn";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:0:"";i:1;s:14:"32位随机数";}}<|-|>https://api.597.com/web/user.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_cd00692c3bfe59267d5ecfac5310286c" >
+                <a href="index_12.htm#info_api_cd00692c3bfe59267d5ecfac5310286c" id="menu_cd00692c3bfe59267d5ecfac5310286c">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    二维码扫描登录                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="cd00692c3bfe59267d5ecfac5310286c">二维码扫描登录<|-|>s39<|-|>app扫描二维码登录，step 为步骤：0（扫码后发送，需再次确认）；1（确认登陆）。可直接发送1一次性直接登录； 也可以0发送一次提示pc已扫描，1再发送一次确认登陆，共发送两次。<|-|><|-|>a:5:{s:4:"name";a:5:{i:0;s:4:"type";i:1;s:7:"scanKey";i:2;s:4:"step";i:3;s:3:"act";i:4;s:10:"sessionKey";}s:9:"paramType";a:5:{i:0;s:6:"数字";i:1;s:6:"字符";i:2;s:6:"数字";i:3;s:9:"字符型";i:4;s:9:"字符型";}s:4:"type";a:5:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"Y";}s:7:"default";a:5:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:10:"qrCodeScan";i:4;s:0:"";}s:3:"des";a:5:{i:0;s:14:"1个人2企业";i:1;s:14:"32位随机数";i:2;s:14:"0扫码1确认";i:3;s:0:"";i:4;s:0:"";}}<|-|>https://api.597.com/web/user.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_3fe94a002317b5f9259f82690aeea4cd" >
+                <a href="index_12.htm#info_api_3fe94a002317b5f9259f82690aeea4cd" id="menu_3fe94a002317b5f9259f82690aeea4cd">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    记录app启动次数                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="3fe94a002317b5f9259f82690aeea4cd">记录app启动次数<|-|>s38<|-|>加header上  
+UUID（i:值 或 a:值）      //应用安装期间唯一id；
+UDID      //ios[IDFA] | android[ANDROID_ID_MD5]设备标识（广告商用）；
+IMEI    //ANDROID设备标识（广告商用）<|-|><|-|>a:5:{s:4:"name";a:5:{i:0;s:3:"act";i:1;s:6:"system";i:2;s:5:"model";i:3;s:7:"version";i:4;s:3:"uid";}s:9:"paramType";a:5:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:6:"string";i:4;s:6:"string";}s:4:"type";a:5:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";i:4;s:1:"N";}s:7:"default";a:5:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";}s:3:"des";a:5:{i:0;s:10:"appStartUp";i:1;s:15:"系统版本号";i:2;s:18:"手机型号名称";i:3;s:15:"软件版本号";i:4;s:17:"加密的用户id";}}<|-|>https://api.597.com/web/appConfig.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_705f2172834666788607efbfca35afb3" >
+                <a href="index_12.htm#info_api_705f2172834666788607efbfca35afb3" id="menu_705f2172834666788607efbfca35afb3">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取用户是否可以绑定微信                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="705f2172834666788607efbfca35afb3">获取用户是否可以绑定微信<|-|>s37<|-|><|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:10:"SESSIONKEY";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:34:"登陆成功后返回的SESSIONKEY";}}<|-|>http://api.597.com/web/user.api?act=canBinWx<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_eecca5b6365d9607ee5a9d336962c534" >
+                <a href="index_12.htm#info_api_eecca5b6365d9607ee5a9d336962c534" id="menu_eecca5b6365d9607ee5a9d336962c534">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取打招呼模板列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="eecca5b6365d9607ee5a9d336962c534">获取打招呼模板列表<|-|>s36<|-|><|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:8:"userType";}s:9:"paramType";a:1:{i:0;s:3:"int";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:29:"用户类型：1个人2企业";}}<|-|>https://api.597.com/web/user/getSayTemplateList/<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_6cdd60ea0045eb7a6ec44c54d29ed402" >
+                <a href="index_12.htm#info_api_6cdd60ea0045eb7a6ec44c54d29ed402" id="menu_6cdd60ea0045eb7a6ec44c54d29ed402">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    设置 打招呼                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="6cdd60ea0045eb7a6ec44c54d29ed402">设置 打招呼<|-|>s35<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:10:"SESSIONKEY";i:1;s:5:"isSay";i:2;s:10:"templateId";}s:9:"paramType";a:3:{i:0;s:6:"string";i:1;s:3:"int";i:2;s:3:"int";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"N";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:31:"登陆成功返回的SESSIONKEY";i:1;s:30:"是否打招呼： 0否，1是";i:2;s:17:"打招呼模板id";}}<|-|>https://api.597.com/web/user/setSayHello/<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_cedebb6e872f539bef8c3f919874e9d7" >
+                <a href="index_12.htm#info_api_cedebb6e872f539bef8c3f919874e9d7" id="menu_cedebb6e872f539bef8c3f919874e9d7">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取打招呼                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="cedebb6e872f539bef8c3f919874e9d7">获取打招呼<|-|>s34<|-|><|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:10:"SESSIONKEY";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:31:"登陆成功返回的SESSIONKEY";}}<|-|>https://api.597.com/web/user/getSayHello/<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_4c5bde74a8f110656874902f07378009" >
+                <a href="index_12.htm#info_api_4c5bde74a8f110656874902f07378009" id="menu_4c5bde74a8f110656874902f07378009">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取用户头像，姓名（融云用）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="4c5bde74a8f110656874902f07378009">获取用户头像，姓名（融云用）<|-|>s33<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:10:"SESSIONKEY";i:1;s:3:"uid";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:31:"登录成功返回的SESSIONKEY";i:1;s:47:"加密的uid。多个值逗号隔开（a,b,c）";}}<|-|>https://api.597.com/web/user/getRongyunInfo/<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_8f53295a73878494e9bc8dd6c3c7104f" >
+                <a href="index_12.htm#info_api_8f53295a73878494e9bc8dd6c3c7104f" id="menu_8f53295a73878494e9bc8dd6c3c7104f">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取广告列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="8f53295a73878494e9bc8dd6c3c7104f">获取广告列表<|-|>s32<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:6:"cityId";i:1;s:10:"positionId";}s:9:"paramType";a:2:{i:0;s:3:"int";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:8:"城市id";i:1;s:414:"位置ID:0-最新企业，1-金牌图标，8-首页轮播，9-轮播旁边，10-热门招聘，301-顶部广告A，18-推荐企业，19-品牌企业,20-轮播广告,21-手机轮播广告,22-个人企业后台顶部广告,23-手机个人企业后台顶部广告，24-电脑个人后台顶部广告，25-电脑企业后台顶部广告，26-个人app，27-企业app, 29-微信小程序个人, 30-微信小程序企业";}}<|-|>https://api.597.com/web/mi/getAdList/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_8f85517967795eeef66c225f7883bdcb" >
+                <a href="index_12.htm#info_api_8f85517967795eeef66c225f7883bdcb" id="menu_8f85517967795eeef66c225f7883bdcb">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取融云token信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="8f85517967795eeef66c225f7883bdcb">获取融云token信息<|-|>s31<|-|><|-|>uid是加密的用户id<|-|>a:5:{s:4:"name";a:1:{i:0;s:10:"SESSIONKEY";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:34:"登录成功后返回的SESSIONKEY";}}<|-|>https://api.597.com/web/user/getRongyunToken/<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_96da2f590cd7246bbde0051047b0d6f7" >
+                <a href="index_12.htm#info_api_96da2f590cd7246bbde0051047b0d6f7" id="menu_96da2f590cd7246bbde0051047b0d6f7">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取app的版本信息 （新）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="96da2f590cd7246bbde0051047b0d6f7">获取app的版本信息 （新）<|-|>s30<|-|>获取app版本信息，请使用此接口， 旧接口后续会停用<|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:4:"type";i:1;s:8:"userType";}s:9:"paramType";a:2:{i:0;s:3:"int";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:26:"app类型  1ios，2android";i:1;s:29:"用户类型   1个人2企业";}}<|-|>https://api.597.com/web/appConfig/getAppConfig/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_38af86134b65d0f10fe33d30dd76442e" >
+                <a href="index_12.htm#info_api_38af86134b65d0f10fe33d30dd76442e" id="menu_38af86134b65d0f10fe33d30dd76442e">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取app启动页图片                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="38af86134b65d0f10fe33d30dd76442e">获取app启动页图片<|-|>s29<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:4:"type";i:1;s:6:"cityid";}s:9:"paramType";a:2:{i:0;s:3:"int";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"N";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:29:"app类型。1个人，2企业";i:1;s:8:"城市id";}}<|-|>https://api.597.com/web/appConfig/getAppStartPage/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_f7e6c85504ce6e82442c770f7c8606f0" >
+                <a href="index_12.htm#info_api_f7e6c85504ce6e82442c770f7c8606f0" id="menu_f7e6c85504ce6e82442c770f7c8606f0">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取（不需要图片验证码直接获取）手机验证码                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="f7e6c85504ce6e82442c770f7c8606f0">获取（不需要图片验证码直接获取）手机验证码<|-|>s28<|-|>不需要登录，   需要登录的不能使用本接口<|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:9:"txtMobile";i:1;s:13:"noCheckMobile";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:12:"手机号码";i:1;s:77:"验证手机是否注册过。1不验证手机号码是否注册，0验证。";}}<|-|>https://api.597.com/web/user/getAutoCode/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_149e9677a5989fd342ae44213df68868" >
+                <a href="index_12.htm#info_api_149e9677a5989fd342ae44213df68868" id="menu_149e9677a5989fd342ae44213df68868">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    app扫二维码登录（改变二维码状态为已扫）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="149e9677a5989fd342ae44213df68868">app扫二维码登录（改变二维码状态为已扫）<|-|>s27<|-|>扫二维码获取到的数据 {&quot;id&quot;:&quot;54&quot;,&quot;sid&quot;:&quot;mJWVxcmjjtWjpX%2ByzK5%2FxW2ZiMVll2aclZo%3D&quot;,&quot;type&quot;:2}<|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:2:"id";i:1;s:3:"sid";}s:9:"paramType";a:2:{i:0;s:3:"int";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:17:"扫码的数据id";i:1;s:18:"扫码的数据sid";}}<|-|>https://api.597.com/web/user/isSao/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_3636638817772e42b59d74cff571fbb3" >
+                <a href="index_12.htm#info_api_3636638817772e42b59d74cff571fbb3" id="menu_3636638817772e42b59d74cff571fbb3">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    app扫二维码登录（确认登录）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="3636638817772e42b59d74cff571fbb3">app扫二维码登录（确认登录）<|-|>s26<|-|>扫二维码获取到的数据 {&quot;id&quot;:&quot;54&quot;,&quot;sid&quot;:&quot;mJWVxcmjjtWjpX%2ByzK5%2FxW2ZiMVll2aclZo%3D&quot;,&quot;type&quot;:2}<|-|><|-|>a:5:{s:4:"name";a:4:{i:0;s:2:"id";i:1;s:3:"sid";i:2;s:10:"SESSIONKEY";i:3;s:8:"userType";}s:9:"paramType";a:4:{i:0;s:3:"int";i:1;s:6:"string";i:2;s:6:"string";i:3;s:3:"int";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:17:"扫码的数据id";i:1;s:18:"扫码的数据sid";i:2;s:31:"登录成功返回的SESSIONKEY";i:3;s:19:"扫码的数据type";}}<|-|>https://api.597.com/web/user/codeLogin/<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_bd4c9ab730f5513206b999ec0d90d1fb" >
+                <a href="index_12.htm#info_api_bd4c9ab730f5513206b999ec0d90d1fb" id="menu_bd4c9ab730f5513206b999ec0d90d1fb">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    可购买产品列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="bd4c9ab730f5513206b999ec0d90d1fb">可购买产品列表<|-|>s25<|-|><|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:4:"type";}s:9:"paramType";a:1:{i:0;s:3:"int";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:29:"产品类型：0会员1短信";}}<|-|>https://api.597.com/web/company/getAllProduct/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_7ef605fc8dba5425d6965fbd4c8fbe1f" >
+                <a href="index_12.htm#info_api_7ef605fc8dba5425d6965fbd4c8fbe1f" id="menu_7ef605fc8dba5425d6965fbd4c8fbe1f">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    极光解绑                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="7ef605fc8dba5425d6965fbd4c8fbe1f">极光解绑<|-|>s24<|-|><|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:7:"jpushId";i:1;s:3:"uid";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:8:"极光id";i:1;s:8:"用户id";}}<|-|>https://api.597.com/web/mi/unBindJpush/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_f2217062e9a397a1dca429e7d70bc6ca" >
+                <a href="index_12.htm#info_api_f2217062e9a397a1dca429e7d70bc6ca" id="menu_f2217062e9a397a1dca429e7d70bc6ca">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    判断极光是否绑定                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="f2217062e9a397a1dca429e7d70bc6ca">判断极光是否绑定<|-|>s23<|-|><|-|>status:-1     极光id不存在或用户id不存在
+status:-2     用户信息不存在
+status:-3     极光绑定信息有误，请重新登录<|-|>a:5:{s:4:"name";a:2:{i:0;s:7:"jpushId";i:1;s:3:"uid";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:3:"int";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:8:"极光id";i:1;s:8:"用户id";}}<|-|>https://api.597.com/web/mi/isBindJpush/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_903ce9225fca3e988c2af215d4e544d3" >
+                <a href="index_12.htm#info_api_903ce9225fca3e988c2af215d4e544d3" id="menu_903ce9225fca3e988c2af215d4e544d3">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    根据城市id获取城市信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="903ce9225fca3e988c2af215d4e544d3">根据城市id获取城市信息<|-|>s22<|-|><|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:2:"id";}s:9:"paramType";a:1:{i:0;s:3:"int";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:8:"城市id";}}<|-|>https://api.597.com/web/region/getRegionInfo/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9fc3d7152ba9336a670e36d0ed79bc43" >
+                <a href="index_12.htm#info_api_9fc3d7152ba9336a670e36d0ed79bc43" id="menu_9fc3d7152ba9336a670e36d0ed79bc43">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取职位类别的所有列表（3级）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9fc3d7152ba9336a670e36d0ed79bc43">获取职位类别的所有列表（3级）<|-|>sy21<|-|><|-|><|-|>N;<|-|>https://api.597.com/web/jobclass/allThree/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d1f491a404d6854880943e5c3cd9ca25" >
+                <a href="index_12.htm#info_api_d1f491a404d6854880943e5c3cd9ca25" id="menu_d1f491a404d6854880943e5c3cd9ca25">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    删除融云信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d1f491a404d6854880943e5c3cd9ca25">删除融云信息<|-|>sy20<|-|><|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:3:"uid";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:17:"加密的用户id";}}<|-|>https://api.597.com/web/person/delRongyun/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_76dc611d6ebaafc66cc0879c71b5db5c" >
+                <a href="index_12.htm#info_api_76dc611d6ebaafc66cc0879c71b5db5c" id="menu_76dc611d6ebaafc66cc0879c71b5db5c">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    图片上传                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="76dc611d6ebaafc66cc0879c71b5db5c">图片上传<|-|>sy19<|-|>上传图片需多加下面两个参数。  上传图片的 name 为  Filedata<|-|><|-|>a:5:{s:4:"name";a:2:{i:0;s:10:"SESSIONKEY";i:1;s:3:"act";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"Y";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:31:"登录成功返回的SESSIONKEY";i:1;s:619:"上传图片类型。
+营业执照上传“licence”，
+公司LOGO上传“logo”，
+公司LOGO上传 手机版“mobileLogo”，公司照片上传“com”，个人证书上传“certificate”，个人照片上传“photo”，个人照片上传 手机版“mobilePhoto”，实名认证“identity”，后台 广告素材“advSc”，后台广告位图片“advPic”，后台新闻的相关图“news_pic”，后台新闻的相关图(数据库)“news”，名企“companyGood”，企业模板图片“companyTemplate”，作品“works”，简历举报“resumeReport”， 职位举报“jobReport”";}}<|-|>https://api.597.com/web/uploadify.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ec5decca5ed3d6b8079e2e7e7bacc9f2" >
+                <a href="index_12.htm#info_api_ec5decca5ed3d6b8079e2e7e7bacc9f2" id="menu_ec5decca5ed3d6b8079e2e7e7bacc9f2">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取app的版本信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="ec5decca5ed3d6b8079e2e7e7bacc9f2">获取app的版本信息<|-|>sy18<|-|><|-|><|-|>a:5:{s:4:"name";a:1:{i:0;s:4:"type";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:21:"per个人，com企业";}}<|-|>https://api.597.com/web/mi/getAppVersions/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ec8956637a99787bd197eacd77acce5e" >
+                <a href="index_12.htm#info_api_ec8956637a99787bd197eacd77acce5e" id="menu_ec8956637a99787bd197eacd77acce5e">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    热门城市                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="ec8956637a99787bd197eacd77acce5e">热门城市<|-|>sy17<|-|><|-|><|-|>N;<|-|>https://api.597.com/web/region/hotArea/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_812b4ba287f5ee0bc9d43bbf5bbe87fb" >
+                <a href="index_12.htm#info_api_812b4ba287f5ee0bc9d43bbf5bbe87fb" id="menu_812b4ba287f5ee0bc9d43bbf5bbe87fb">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    通过第三方qqid/wbid/unionid获取用户信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="812b4ba287f5ee0bc9d43bbf5bbe87fb">通过第三方qqid/wbid/unionid获取用户信息<|-|>sy16<|-|>wbid 、 qqid、unionid、三个参数必须传一个<|-|>status    大于0成功，该值是用户id；-1 未绑定
+msg      提示信息
+userType     用户类型
+username    用户名
+nickname    姓名
+attachment    头像
+token    加密的用户信息
+SESSIONKEY       服务器上用户新的SESSIONKEY，post提交必须带上<|-|>a:5:{s:4:"name";a:5:{i:0;s:4:"qqid";i:1;s:4:"wbid";i:2;s:7:"unionid";i:3;s:10:"cookieTime";i:4;s:7:"jpushId";}s:9:"paramType";a:5:{i:0;s:6:"string";i:1;s:6:"string";i:2;s:6:"string";i:3;s:3:"int";i:4;s:6:"string";}s:4:"type";a:5:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"N";i:3;s:1:"N";i:4;s:1:"N";}s:7:"default";a:5:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";i:4;s:0:"";}s:3:"des";a:5:{i:0;s:4:"qqid";i:1;s:8:"微博id";i:2;s:21:"unionid微信全局id";i:3;s:24:"登录信息保存时间";i:4;s:8:"极光id";}}<|-|>https://api.597.com/web/person/getUserFormThird/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d09bf41544a3365a46c9077ebb5e35c3" >
+                <a href="index_12.htm#info_api_d09bf41544a3365a46c9077ebb5e35c3" id="menu_d09bf41544a3365a46c9077ebb5e35c3">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    验证用户名是否有重复                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d09bf41544a3365a46c9077ebb5e35c3">验证用户名是否有重复<|-|>sy15<|-|><|-|>status         1不重名；-1重名；0用户名格式错误<|-|>a:5:{s:4:"name";a:1:{i:0;s:11:"txtUsername";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:9:"用户名";}}<|-|>https://api.597.com/web/user/usernameRepeat/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_ad61ab143223efbc24c7d2583be69251" >
+                <a href="index_12.htm#info_api_ad61ab143223efbc24c7d2583be69251" id="menu_ad61ab143223efbc24c7d2583be69251">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    验证手机是否有重复                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="ad61ab143223efbc24c7d2583be69251">验证手机是否有重复<|-|>sy14<|-|><|-|>status      1成功；小于等于0失败
+msg         提示信息<|-|>a:5:{s:4:"name";a:1:{i:0;s:10:"_txtMobile";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:12:"手机号码";}}<|-|>https://api.597.com/web/user/mobileRepeat/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d2ddea18f00665ce8623e36bd4e3c7c5" >
+                <a href="index_12.htm#info_api_d2ddea18f00665ce8623e36bd4e3c7c5" id="menu_d2ddea18f00665ce8623e36bd4e3c7c5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    验证邮箱是否存在                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d2ddea18f00665ce8623e36bd4e3c7c5">验证邮箱是否存在<|-|>sy13<|-|><|-|>status      1不存在；0邮箱格式错误；-1存在<|-|>a:5:{s:4:"name";a:1:{i:0;s:12:"txtPageEmail";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>https://api.597.com/web/user/emailRepeat/<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9bf31c7ff062936a96d3c8bd1f8f2ff3" >
+                <a href="index_12.htm#info_api_9bf31c7ff062936a96d3c8bd1f8f2ff3" id="menu_9bf31c7ff062936a96d3c8bd1f8f2ff3">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    图片验证码                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9bf31c7ff062936a96d3c8bd1f8f2ff3">图片验证码<|-|>sy12<|-|><|-|>手机个人注册       key=mPerMobile
+手机个人登录       key=personLogin
+个人手机验证码登陆         key=mobileCodeLogin
+个人忘记密码（手机）               key=mobilePassword
+个人忘记密码（邮箱）      key=get_password
+更新邮箱              key=updEmail
+企业登录              key=companyLogin
+企业注册              key=companyRegister
+个人发送简历到邮箱      key=resumeCode<|-|>a:5:{s:4:"name";a:2:{i:0;s:3:"key";i:1;s:10:"facilityId";}s:9:"paramType";a:2:{i:0;s:6:"string";i:1;s:6:"string";}s:4:"type";a:2:{i:0;s:1:"Y";i:1;s:1:"N";}s:7:"default";a:2:{i:0;s:0:"";i:1;s:0:"";}s:3:"des";a:2:{i:0;s:18:"验证码的类型";i:1;s:85:"android专用字段。设备id。
+如登录后SESSIONKEY存在就必须传SESSIONKEY";}}<|-|>https://api.597.com/web/authCode.api<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_aab3238922bcc25a6f606eb525ffdc56" >
+                <a href="index_12.htm#info_api_aab3238922bcc25a6f606eb525ffdc56" id="menu_aab3238922bcc25a6f606eb525ffdc56">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取某个职位类别的子信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="aab3238922bcc25a6f606eb525ffdc56">获取某个职位类别的子信息<|-|>sy11<|-|><|-|>success:
+jobsort-&gt;职位类别ID
+jobsort_name-&gt;职位类别名称
+parent_id-&gt;父级ID
+order_no-&gt;排序<|-|>a:5:{s:4:"name";a:1:{i:0;s:2:"id";}s:9:"paramType";a:1:{i:0;s:3:"Int";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>https://api.597.com/web/jobclass.api<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c51ce410c124a10e0db5e4b97fc2af39" >
+                <a href="index_12.htm#info_api_c51ce410c124a10e0db5e4b97fc2af39" id="menu_c51ce410c124a10e0db5e4b97fc2af39">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取单个或多个职位类别及父级职位类别信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="c51ce410c124a10e0db5e4b97fc2af39">获取单个或多个职位类别及父级职位类别信息<|-|>sy10<|-|><|-|>success:
+jobsort-&gt;职位类别ID
+jobsort_name-&gt;职位类别名称
+parent_id-&gt;父级ID
+order_no-&gt;排序<|-|>a:5:{s:4:"name";a:1:{i:0;s:2:"id";}s:9:"paramType";a:1:{i:0;s:6:"String";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:30:"多个时，用逗号分割开";}}<|-|>https://api.597.com/web/jobclass.api?act=multiple<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c20ad4d76fe97759aa27a0c99bff6710" >
+                <a href="index_12.htm#info_api_c20ad4d76fe97759aa27a0c99bff6710" id="menu_c20ad4d76fe97759aa27a0c99bff6710">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取职位类别的所有列表（2级）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="c20ad4d76fe97759aa27a0c99bff6710">获取职位类别的所有列表（2级）<|-|>sy9<|-|><|-|>success:
+jobsort-&gt;职位类别ID
+jobsort_name-&gt;职位类别名称
+parent_id-&gt;父级ID
+order_no-&gt;排序<|-|>N;<|-|>https://api.597.com/web/jobclass.api?act=all<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_6512bd43d9caa6e02c990b0a82652dca" >
+                <a href="index_12.htm#info_api_6512bd43d9caa6e02c990b0a82652dca" id="menu_6512bd43d9caa6e02c990b0a82652dca">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取行业的所有列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="6512bd43d9caa6e02c990b0a82652dca">获取行业的所有列表<|-|>sy8<|-|><|-|>success:
+calling_id-&gt;行业ID
+calling_name-&gt;行业名称
+parent_id-&gt;父级ID
+order_no-&gt;排序<|-|>N;<|-|>https://api.597.com/web/industry.api?act=all<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_d3d9446802a44259755d38e6d163e820" >
+                <a href="index_12.htm#info_api_d3d9446802a44259755d38e6d163e820" id="menu_d3d9446802a44259755d38e6d163e820">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取单个或多个区域及父级区域信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="d3d9446802a44259755d38e6d163e820">获取单个或多个区域及父级区域信息<|-|>sy7<|-|>通过挨个区域ID获取该区域及父级区域信息<|-|>success:
+area_id-&gt;区域ID
+area_name-&gt;区域名称
+parent_id-&gt;父级ID
+order_no-&gt;排序<|-|>a:5:{s:4:"name";a:1:{i:0;s:2:"id";}s:9:"paramType";a:1:{i:0;s:6:"String";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:30:"多个时，用逗号分割开";}}<|-|>https://api.597.com/web/region.api?act=multipleList<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_45c48cce2e2d7fbdea1afc51c7c6ad26" >
+                <a href="index_12.htm#info_api_45c48cce2e2d7fbdea1afc51c7c6ad26" id="menu_45c48cce2e2d7fbdea1afc51c7c6ad26">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取区域的所有列表                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="45c48cce2e2d7fbdea1afc51c7c6ad26">获取区域的所有列表<|-|>sy6<|-|><|-|>regionId    地址id
+regionName           地址名称
+parent_id       父类id
+order_no       排序
+subItems       子城市<|-|>N;<|-|>https://api.597.com/web/region.api?act=all<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c9f0f895fb98ab9159f51fd0297e236d" >
+                <a href="index_12.htm#info_api_c9f0f895fb98ab9159f51fd0297e236d" id="menu_c9f0f895fb98ab9159f51fd0297e236d">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取单个或多个行业及父级行业信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="c9f0f895fb98ab9159f51fd0297e236d">获取单个或多个行业及父级行业信息<|-|>sy5<|-|>通过挨个行业ID获取该行业及父级行业信息<|-|>success:
+calling_id-&gt;行业ID
+calling_name-&gt;行业名称
+parent_id-&gt;父级ID
+order_no-&gt;排序<|-|>a:5:{s:4:"name";a:1:{i:0;s:2:"id";}s:9:"paramType";a:1:{i:0;s:6:"String";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:30:"多个时，用逗号分割开";}}<|-|>https://api.597.com/web/industry.api?act=multiple<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_8f14e45fceea167a5a36dedd4bea2543" >
+                <a href="index_12.htm#info_api_8f14e45fceea167a5a36dedd4bea2543" id="menu_8f14e45fceea167a5a36dedd4bea2543">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取某个行业的子信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="8f14e45fceea167a5a36dedd4bea2543">获取某个行业的子信息<|-|>sy4<|-|>通过ID获取该industry的子信息数组（返回数组）<|-|>success:
+calling_id-&gt;行业ID
+calling_name-&gt;行业名称
+parent_id-&gt;父级ID
+order_no-&gt;排序<|-|>a:5:{s:4:"name";a:1:{i:0;s:2:"id";}s:9:"paramType";a:1:{i:0;s:3:"Int";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>https://api.597.com/web/industry.api<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_1679091c5a880faf6fb5e6087eb1b2dc" >
+                <a href="index_12.htm#info_api_1679091c5a880faf6fb5e6087eb1b2dc" id="menu_1679091c5a880faf6fb5e6087eb1b2dc">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取某个区域及父级区域信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="1679091c5a880faf6fb5e6087eb1b2dc">获取某个区域及父级区域信息<|-|>sy3<|-|>通过区域ID获取该区域及父级地区信息<|-|>success:
+area_id-&gt;区域ID
+area_name-&gt;区域名称
+parent_id-&gt;父级ID<|-|>a:5:{s:4:"name";a:1:{i:0;s:2:"id";}s:9:"paramType";a:1:{i:0;s:3:"Int";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:0:"";}}<|-|>https://api.597.com/web/region.api?act=path<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_e4da3b7fbbce2345d7772b0674a318d5" >
+                <a href="index_12.htm#info_api_e4da3b7fbbce2345d7772b0674a318d5" id="menu_e4da3b7fbbce2345d7772b0674a318d5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    获取某个区域的子区域                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="e4da3b7fbbce2345d7772b0674a318d5">获取某个区域的子区域<|-|>sy2<|-|>通过区域ID获取该区域的子区域信息数组（返回数组）<|-|>success:
+area_id-&gt;区域ID
+area_name-&gt;区域名称
+parent_id-&gt;父级ID<|-|>a:5:{s:4:"name";a:1:{i:0;s:2:"id";}s:9:"paramType";a:1:{i:0;s:3:"Int";}s:4:"type";a:1:{i:0;s:1:"N";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:11:"区域ID值";}}<|-|>https://api.597.com/web/region.api<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_a87ff679a2f3e71d9181a67b7542122c" >
+                <a href="index_12.htm#info_api_a87ff679a2f3e71d9181a67b7542122c" id="menu_a87ff679a2f3e71d9181a67b7542122c">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    手机所在地                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="a87ff679a2f3e71d9181a67b7542122c">手机所在地<|-|>sys1<|-|>通过手机号码查找手机所在地<|-|>success:
+provice-&gt;省
+city-&gt;市
+type-&gt;手机的网络
+msg-&gt;null<|-|>a:5:{s:4:"name";a:1:{i:0;s:1:"m";}s:9:"paramType";a:1:{i:0;s:6:"string";}s:4:"type";a:1:{i:0;s:1:"Y";}s:7:"default";a:1:{i:0;s:0:"";}s:3:"des";a:1:{i:0;s:20:"11位的手机号码";}}<|-|>https://api.597.com/_mobile/index.php<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+    </div>
+    <form action="index_25.htm" method="post">
+            </form>
+<!--jquery模糊查询start-->
+<script>
+    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+    function search(type,obj){
+        var $find = $.trim($(obj).val());//得到搜索内容
+        if(type == 'cate'){//对接口分类进行搜索操作
+            if($find != ''){
+                $(".menu").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#info_"+menu_id).show();
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+            }
+        }else if(type == 'api'){//对接口进行搜索操作
+            if($find != ''){
+                $(".menu").hide();//左侧导航菜单隐藏
+                $(".info_api").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#api_"+menu_id).show();//左侧导航菜单 部份 隐藏
+                    $("#info_api_"+menu_id).show();//接口详情 部份 隐藏
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+            }
+        }
+    }
+
+    window.onload=function(){
+        //添加关闭,打开左侧菜单的功能
+        var status_flg="&lt";var cursor="w-resize"
+        var navbarButton = '<div onclick="navbar(this)" ' +
+            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:'+cursor+';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+            status_flg +
+            '</div>'
+        $('body').append(navbarButton);
+    }
+    // 全屏和normal
+    function navbar(obj){
+        if($('#mainwindow').hasClass('col-md-9')){
+            $(obj).html('&gt;');
+            $(obj).css("cursor","e-resize");
+            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+            $('#navbar').hide();
+            $.cookie($COOKIE_KEY, '1');
+        }else{
+            $(obj).html('&lt;');
+            $(obj).css("cursor","w-resize");
+            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+            $('#navbar').show();
+            $.cookie($COOKIE_KEY, '0');
+        }
+    }
+</script>
+<!--jquery模糊查询end-->
+<!--end-->        </div>
+        <!--左侧导航end-->
+        <div id="mainwindow" class="col-md-9"   style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+            <!--顶部导航start-->
+            <div class="textshadow" style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                <span> <a class="home" href="index.htm">Home</a> - 系统API</span>
+        <span id="topbutton" style="float:right">
+            <a href="index_11.htm">登录&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>        </span>
+            </div>
+            <!--顶部导航end-->
+            <!--主窗口start-->
+            <div style="padding:16px;">
+                <!--接口详情列表与接口管理start-->
+    <!--添加接口 start-->
+    
+<!--js自动保存到cookie  star-->
+    <script src="MinPHP/res/jquery.min.js"></script>
+    <script>
+    	
+    	$(function(){
+    		
+					$("textarea[name='des'],textarea[name='re'],textarea[name='memo']").keydown(function () {
+						AutoSave();
+					});
+					
+					$(".btn-success").click(function(){
+						DeleteCookie('apimanage');
+					});
+    		
+    	});
+		</script>
+<script>	
+/**
+*
+*自动保存文字到cookie中
+*http://www.xuebuyuan.com/1323493.html
+*
+*/
+function AutoSave() {
+	var des = $("textarea[name='des']").val();
+	var re  = $("textarea[name='re']").val();
+  var er  = $("textarea[name='er']").val();
+	var memo= $("textarea[name='memo']").val();
+	var _value = des + ";"+ re + ";"+ er+";"+memo;
+	if (_value==";;"){
+		var LastContent = GetCookie('apimanage');
+		
+		if (LastContent == ";;") return;
+		var text = LastContent.split(";");
+		if (des != text[0] || re!=text[1] || er!=text[2] || memo!=text[3] ){
+			if (confirm("加载保存的记录")) {
+				$("textarea[name='des']").html(text[0]);
+        $("textarea[name='re']").html(text[1]);
+        $("textarea[name='er']").html(text[2]);
+				$("textarea[name='memo']").html(text[3]);
+				return true;
+			}
+		}
+
+	} else {
+		var expDays = 30;
+		var exp = new Date();
+		exp.setTime(exp.getTime() + (expDays * 86400000)); // 24*60*60*1000 = 86400000
+		var expires = '; expires=' + exp.toGMTString();
+
+		// SetCookie
+		document.cookie = "apimanage=" + escape(_value) + expires;
+	}
+}
+
+function getCookieVal(offset) {
+	var endstr = document.cookie.indexOf(";", offset);
+	if (endstr == -1) endstr = document.cookie.length;
+	return unescape(document.cookie.substring(offset, endstr));
+}
+
+function GetCookie(name) {
+	var arg = name + "=";
+	var alen = arg.length;
+	var clen = document.cookie.length;
+	var i = 0;
+	while (i < clen) {
+		var j = i + alen;
+		if (document.cookie.substring(i, j) == arg) return getCookieVal(j);
+		i = document.cookie.indexOf(" ", i) + 1;
+		if (i == 0) break;
+	}
+	return null;
+}
+
+function DeleteCookie(name) {
+	var exp = new Date();
+	exp.setTime(exp.getTime() - 1);
+	var cval = GetCookie(name);
+	document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+}
+</script>
+<!--js自动保存到cookie  end-->
+
+    <div style="border:1px solid #ddd">
+        <div style="background:#f5f5f5;padding:20px;position:relative">
+            <h4>添加接口<span style="font-size:12px;padding-left:20px;color:#a94442">注:"此色"边框为必填项</span></h4>
+            <div style="margin-left:20px;">
+                <form action="index_34.htm" method="post">
+                    <h5>基本信息</h5>
+                    <div class="form-group has-error">
+                        <div class="input-group">
+                            <div class="input-group-addon">接口编号</div>
+                            <input type="text" class="form-control" name="num" placeholder="接口编号" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group has-error">
+                        <div class="input-group">
+                            <div class="input-group-addon">接口名称</div>
+                            <input type="text" class="form-control" name="name" placeholder="接口名称" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group has-error">
+                        <div class="input-group">
+                            <div class="input-group-addon">请求地址</div>
+                            <input type="text" class="form-control" name="url" placeholder="请求地址" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="des" class="form-control" placeholder="描述"></textarea>
+                    </div>
+                    <div class="form-group" required="required">
+                        <select class="form-control" name="type">
+                            <option value="GET">GET</option>
+                            <option value="POST">POST</option>
+                            <option value="PUT">PUT</option>
+                            <option value="DELETE">DELETE</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <h5>请求参数</h5>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th class="col-md-3">参数名</th>
+								<th class="col-md-2">参数类型</th>
+                                <th class="col-md-2">必传</th>
+                                <th class="col-md-2">缺省值</th>
+                                <th class="col-md-4">描述</th>
+                                <th class="col-md-1">
+                                    <button type="button" class="btn btn-success" onclick="add()">新增</button>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody id="parameter">
+                            <tr>
+                                <td class="form-group has-error">
+                                    <input type="text" class="form-control" name="p[name][]" placeholder="参数名" required="required">
+                                </td>
+								<td class="form-group has-error"><input type="text" class="form-control" name="p[paramType][]" placeholder="参数类型" required="required"></td>
+                                <td>
+                                    <select class="form-control" name="p[type][]">
+                                        <option value="Y">Y</option>
+                                        <option value="N">N</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control" name="p[default][]" placeholder="缺省值"></td>
+                                <td><textarea name="p[des][]" rows="1" class="form-control" placeholder="描述"></textarea></td>
+                                <td><button type="button" class="btn btn-danger" onclick="del(this)">删除</button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form-group">
+                        <h5>返回结果</h5>
+                        <textarea name="re" rows="3" class="form-control" placeholder="返回结果"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <h5>错误</h5>
+                        <textarea name="er" rows="3" class="form-control" placeholder="错误"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <h5>备注</h5>
+                        <textarea name="memo" rows="3" class="form-control" placeholder="备注"></textarea>
+                    </div>
+                    <button class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function add(){
+            var $html ='<tr>' +
+                '<td class="form-group has-error" ><input type="text" class="form-control has-error" name="p[name][]" placeholder="参数名" required="required"></td>' +
+				'<td class="form-group has-error">' +
+				'<input type="text" class="form-control" name="p[paramType][]" placeholder="参数类型" required="required"></td>' +
+                '<td>' +
+                '<select class="form-control" name="p[type][]">' +
+                '<option value="Y">Y</option> <option value="N">N</option>' +
+                '</select >' +
+                '</td>' +
+                '<td>' +
+                '<input type="text" class="form-control" name="p[default][]" placeholder="缺省值"></td>' +
+                '<td>' +
+                '<textarea name="p[des][]" rows="1" class="form-control" placeholder="描述"></textarea>' +
+                '</td>' +
+                '<td>' +
+                '<button type="button" class="btn btn-danger" onclick="del(this)">删除</button>' +
+                '</td>' +
+                '</tr >';
+            $('#parameter').append($html);
+        }
+        function del(obj){
+            $(obj).parents('tr').remove();
+        }
+    </script>
+    <!--添加接口 end-->
+<!--接口详情列表与接口管理end-->            </div>
+            <!--主窗口end-->
+        </div>
+    </div>
+</div>
+<script src="MinPHP/res/jquery.min.js"></script>
+<script src="MinPHP/res/jquery.cookie.js"></script>
+<script src="MinPHP/res/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

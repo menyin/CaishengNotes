@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>API接口管理工具</title>
+    <link rel="icon" type="image/x-icon" href="MinPHP/res/favicon.ico">
+    <link href="MinPHP/res/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="MinPHP/res/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./MinPHP/res/html5shiv.min.js"></script>
+    <script src="./MinPHP/res/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="height:100%">
+<div class="container-fluid" style="background:white;height:100%;">
+    <div class="row" style="height:100%;">
+        <!--左侧导航start-->
+        <div id="navbar" class="col-md-3" style="position:relative;background:#f5f5f5;padding:10px;height:100%;border-right:#ddd 1px solid;overflow-y:auto;">
+            <div style="height:50px;font-size:30px;line-height:50px;">
+                <a class="home" style="color:#000000;text-shadow:1px 0px 1px #666;text-decoration: none" href="index.htm">
+                    <span class="glyphicon glyphicon-random" aria-hidden="true" style="width:40px;"></span>&nbsp;
+        <span style="position: relative;top:-3px;">API Manager <span style="font-size:12px;position:relative;top:-13px;">&nbsp;v1.1</span>
+                </a>
+                </span>
+            </div>
+            <!--导航-->
+    <div class="form-group">
+        <input type="text" class="form-control" id="searchapi" placeholder="search here" onkeyup="search('api',this)">
+    </div>
+    <div class="list">
+        <ul class="list-unstyled" style="padding:10px">
+                        <li class="menu" id="api_c058f544c737782deacefa532d9add4c" >
+                <a href="index_2.htm#info_api_c058f544c737782deacefa532d9add4c" id="menu_c058f544c737782deacefa532d9add4c">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    企业关联搜索                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="c058f544c737782deacefa532d9add4c">企业关联搜索<|-|>8<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:7:"keyword";i:2;s:6:"cityid";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"字符型";i:2;s:6:"整型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"N";}s:7:"default";a:3:{i:0;s:14:"company_search";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:9:"关键词";i:2;s:8:"城市id";}}<|-|>https://api.597.com/web/company.api<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_138bb0696595b338afbab333c555292a" >
+                <a href="index_2.htm#info_api_138bb0696595b338afbab333c555292a" id="menu_138bb0696595b338afbab333c555292a">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    个人关注企业列表（或判断关注的企业）                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="138bb0696595b338afbab333c555292a">个人关注企业列表（或判断关注的企业）<|-|>7<|-|><|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:5:"token";i:2;s:3:"cid";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"字符型";i:2;s:9:"字符型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"N";}s:7:"default";a:3:{i:0;s:16:"get_company_fans";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:3:"uid";i:2;s:62:"加密的企业id，可以用来判断有没有关注该企业";}}<|-|>https://api.597.com/web/person.api<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_371bce7dc83817b7893bcdeed13799b5" >
+                <a href="index_2.htm#info_api_371bce7dc83817b7893bcdeed13799b5" id="menu_371bce7dc83817b7893bcdeed13799b5">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    公司搜索                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="371bce7dc83817b7893bcdeed13799b5">公司搜索<|-|>6<|-|>公司搜索
+知名名企 famous=1<|-|><|-|>a:5:{s:4:"name";a:15:{i:0;s:3:"act";i:1;s:2:"pp";i:2;s:4:"page";i:3;s:1:"q";i:4;s:5:"order";i:5;s:4:"area";i:6;s:13:"comIndustryId";i:7;s:7:"comType";i:8;s:10:"comWorkers";i:9;s:4:"auth";i:10;s:9:"financing";i:11;s:8:"distance";i:12;s:11:"comLatitude";i:13;s:12:"comLongitude";i:14;s:6:"famous";}s:9:"paramType";a:15:{i:0;s:9:"字符型";i:1;s:6:"整型";i:2;s:6:"整型";i:3;s:9:"字符型";i:4;s:6:"整型";i:5;s:6:"整型";i:6;s:9:"字符型";i:7;s:9:"字符型";i:8;s:9:"字符型";i:9;s:9:"字符型";i:10;s:9:"字符型";i:11;s:6:"整型";i:12;s:9:"字符型";i:13;s:9:"字符型";i:14;s:6:"整型";}s:4:"type";a:15:{i:0;s:1:"Y";i:1;s:1:"N";i:2;s:1:"N";i:3;s:1:"N";i:4;s:1:"N";i:5;s:1:"N";i:6;s:1:"N";i:7;s:1:"N";i:8;s:1:"N";i:9;s:1:"N";i:10;s:1:"N";i:11;s:1:"N";i:12;s:1:"N";i:13;s:1:"N";i:14;s:1:"N";}s:7:"default";a:15:{i:0;s:6:"search";i:1;s:2:"20";i:2;s:1:"1";i:3;s:0:"";i:4;s:1:"3";i:5;s:1:"1";i:6;s:0:"";i:7;s:0:"";i:8;s:0:"";i:9;s:0:"";i:10;s:0:"";i:11;s:0:"";i:12;s:0:"";i:13;s:0:"";i:14;s:1:"1";}s:3:"des";a:15:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:12:"公司名称";i:4;s:21:"排序:2最新3推荐";i:5;s:12:"默认全国";i:6;s:26:"行业id，用逗号隔开";i:7;s:26:"性质id，用逗号隔开";i:8;s:26:"规模id，用逗号隔开";i:9;s:26:"认证id，用逗号隔开";i:10;s:26:"融资id，用逗号隔开";i:11;s:18:"附近公司距离";i:12;s:18:"附近公司经度";i:13;s:18:"附近公司纬度";i:14;s:64:"知名企业，认证的一种（尽量不加auth认证条件）";}}<|-|>https://api.597.com/v1/company/company.api<|-|>GET<|-|>get</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_efe937780e95574250dabe07151bdc23" >
+                <a href="index_2.htm#info_api_efe937780e95574250dabe07151bdc23" id="menu_efe937780e95574250dabe07151bdc23">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    个人取消关注企业                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="efe937780e95574250dabe07151bdc23">个人取消关注企业<|-|>5<|-|>个人关注企业<|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:3:"cid";i:2;s:5:"token";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"字符型";i:2;s:9:"字符型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:8:"fans_del";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:12:"加密的cid";i:2;s:20:"服务端用户token";}}<|-|>https://api.597.com/web/person.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_9de6d14fff9806d4bcd1ef555be766cd" >
+                <a href="index_2.htm#info_api_9de6d14fff9806d4bcd1ef555be766cd" id="menu_9de6d14fff9806d4bcd1ef555be766cd">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    个人关注企业                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="9de6d14fff9806d4bcd1ef555be766cd">个人关注企业<|-|>4<|-|>个人关注企业<|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:3:"cid";i:2;s:5:"token";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"字符型";i:2;s:9:"字符型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:9:"fans_save";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:12:"加密的cid";i:2;s:20:"服务端用户token";}}<|-|>https://api.597.com/web/person.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_0bb4aec1710521c12ee76289d9440817" >
+                <a href="index_2.htm#info_api_0bb4aec1710521c12ee76289d9440817" id="menu_0bb4aec1710521c12ee76289d9440817">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    企业工商信息                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="0bb4aec1710521c12ee76289d9440817">企业工商信息<|-|>3<|-|>企业工商信息<|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"act";i:1;s:3:"cid";i:2;s:5:"cname";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"字符型";i:2;s:9:"字符型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:12:"businessInfo";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:0:"";i:1;s:12:"加密的cid";i:2;s:12:"公司名称";}}<|-|>https://api.597.com/v1/company/company.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_c5ff2543b53f4cc0ad3819a36752467b" >
+                <a href="index_2.htm#info_api_c5ff2543b53f4cc0ad3819a36752467b" id="menu_c5ff2543b53f4cc0ad3819a36752467b">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    相似职位                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="c5ff2543b53f4cc0ad3819a36752467b">相似职位<|-|>2<|-|>相似职位（按职位名称、所在地区筛选）<|-|><|-|>a:5:{s:4:"name";a:4:{i:0;s:3:"jid";i:1;s:6:"cityid";i:2;s:5:"jname";i:3;s:3:"act";}s:9:"paramType";a:4:{i:0;s:9:"字符型";i:1;s:9:"数字型";i:2;s:9:"字符型";i:3;s:9:"字符型";}s:4:"type";a:4:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";i:3;s:1:"Y";}s:7:"default";a:4:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";i:3;s:0:"";}s:3:"des";a:4:{i:0;s:12:"加密的jid";i:1;s:8:"城市id";i:2;s:12:"职位名称";i:3;s:10:"similarJob";}}<|-|>https://api.597.com/v1/company/company.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                        <li class="menu" id="api_13f9896df61279c928f19721878fac41" >
+                <a href="index_2.htm#info_api_13f9896df61279c928f19721878fac41" id="menu_13f9896df61279c928f19721878fac41">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    相似公司                </a>
+            </li>
+            <!--接口关键字(js通过此关健字进行模糊查找)start-->
+            <span class="keyword" id="13f9896df61279c928f19721878fac41">相似公司<|-|>1<|-|>相似公司（按公司行业类别、所在地区筛选）<|-|><|-|>a:5:{s:4:"name";a:3:{i:0;s:3:"cid";i:1;s:13:"comIndustryId";i:2;s:3:"act";}s:9:"paramType";a:3:{i:0;s:9:"字符型";i:1;s:9:"字符型";i:2;s:9:"字符型";}s:4:"type";a:3:{i:0;s:1:"Y";i:1;s:1:"Y";i:2;s:1:"Y";}s:7:"default";a:3:{i:0;s:0:"";i:1;s:0:"";i:2;s:0:"";}s:3:"des";a:3:{i:0;s:12:"加密的cid";i:1;s:18:"公司行业类别";i:2;s:14:"similarCompany";}}<|-|>https://api.597.com/v1/company/company.api<|-|>POST<|-|>post</span>
+            <!--接口关键字(js通过此关健字进行模糊查找)end-->
+                    </ul>
+    </div>
+    <form action="index_13.htm" method="post">
+            </form>
+<!--jquery模糊查询start-->
+<script>
+    var $COOKIE_KEY = "API_NAVBAR_STATUS"; //记录左侧菜单栏的开打与关闭状态的cookie的值
+    function search(type,obj){
+        var $find = $.trim($(obj).val());//得到搜索内容
+        if(type == 'cate'){//对接口分类进行搜索操作
+            if($find != ''){
+                $(".menu").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#info_"+menu_id).show();
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+            }
+        }else if(type == 'api'){//对接口进行搜索操作
+            if($find != ''){
+                $(".menu").hide();//左侧导航菜单隐藏
+                $(".info_api").hide();
+                //找到符合关键字的对象
+                var $keywordobj = $(".keyword:contains('"+$find+"')")
+                $keywordobj.each(function(i) {
+                    var menu_id = $($keywordobj[i]).attr('id');
+                    $("#api_"+menu_id).show();//左侧导航菜单 部份 隐藏
+                    $("#info_api_"+menu_id).show();//接口详情 部份 隐藏
+                });
+            }else{
+                $(".menu").show();//在没有搜索内容的情况下,左侧导航菜单 全部 显示
+                $(".info_api").show();//在没有搜索内容的情况下,接口详情 全部 显示
+            }
+        }
+    }
+
+    window.onload=function(){
+        //添加关闭,打开左侧菜单的功能
+        var status_flg="&lt";var cursor="w-resize"
+        var navbarButton = '<div onclick="navbar(this)" ' +
+            'style="text-align:center;line-height:120px;border-bottom-right-radius:5px;cursor:'+cursor+';border-top-right-radius:5px;width:14px;height:120px;background: rgba(91,192,222, 0.8);position:fixed;left:0;top:260px;color:#fff;box-shadow: 0px 0px 0px 1px #cccccc;">' +
+            status_flg +
+            '</div>'
+        $('body').append(navbarButton);
+    }
+    // 全屏和normal
+    function navbar(obj){
+        if($('#mainwindow').hasClass('col-md-9')){
+            $(obj).html('&gt;');
+            $(obj).css("cursor","e-resize");
+            $('#mainwindow').removeClass('col-md-9').addClass('col-md-12');
+            $('#navbar').hide();
+            $.cookie($COOKIE_KEY, '1');
+        }else{
+            $(obj).html('&lt;');
+            $(obj).css("cursor","w-resize");
+            $('#mainwindow').removeClass('col-md-12').addClass('col-md-9');
+            $('#navbar').show();
+            $.cookie($COOKIE_KEY, '0');
+        }
+    }
+</script>
+<!--jquery模糊查询end-->
+<!--end-->        </div>
+        <!--左侧导航end-->
+        <div id="mainwindow" class="col-md-9"   style="height:100%;background:white;margin:0px;overflow-y:auto;padding:0px;">
+            <!--顶部导航start-->
+            <div class="textshadow" style="font-size:16px;widht:100%;height:60px;line-height:60px;padding:0 16px 0 16px;;border-bottom:#ddd 1px solid">
+                <span> <a class="home" href="index.htm">Home</a> - 手机版</span>
+        <span id="topbutton" style="float:right">
+            <a href="index_11.htm">登录&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>        </span>
+            </div>
+            <!--顶部导航end-->
+            <!--主窗口start-->
+            <div style="padding:16px;">
+                <!--接口详情列表与接口管理start-->
+只有超级管理员才可对接口进行操作
