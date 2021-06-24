@@ -161,6 +161,14 @@ https://item.jd.com/10020285757.html   959
 *百度小程序用户名：xm597rcw(13375929312) 密码：Xm597795
  https://smartprogram.baidu.com/developer/applist.html
 
+*钉钉小程序
+ AgentId：1216024723
+
+ AppKey：dingtcupr5wtcsogeybz
+
+ AppSecret：ugFzp3o3QZnJMWsbIs9VW8mIPVAdRW_-smen_199e7tnaxX2ydlzL3LMNqLZ4J40
+
+
 *征信登录名menyin0 密码cfcny362331
 
 *女孩
